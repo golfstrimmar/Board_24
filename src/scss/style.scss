@@ -1,9 +1,9 @@
-@import "utils/libs";
+// @import "utils/libs";
 @import "utils/variables";
 @import "utils/mixins";
 @import "utils/fonts";
-@import "utils/reset";
-@import "utils/slick";
+// @import "utils/reset";
+// @import "utils/slick";
 
 //---------- подключение font avesome
 
@@ -15,20 +15,20 @@
 // @import 'node_modules/bootstrap/scss/bootstrap-grid';
 // ------------это отдельные компоненты-------------
 
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/mixins";
-@import "~bootstrap/scss/root";
-@import "~bootstrap/scss/reboot";
-@import "~bootstrap/scss/type";
-@import "~bootstrap/scss/images";
-@import "~bootstrap/scss/code";
-@import "~bootstrap/scss/grid";
-@import "~bootstrap/scss/utilities";
+// @import "~bootstrap/scss/functions";
+// @import "~bootstrap/scss/variables";
+// @import "~bootstrap/scss/mixins";
+// @import "~bootstrap/scss/root";
+// @import "~bootstrap/scss/reboot";
+// @import "~bootstrap/scss/type";
+// @import "~bootstrap/scss/images";
+// @import "~bootstrap/scss/code";
+// @import "~bootstrap/scss/grid";
+// @import "~bootstrap/scss/utilities";
 // @import "~bootstrap/scss/tables";
 // @import "~bootstrap/scss/forms";
-@import "~bootstrap/scss/buttons";
-@import "~bootstrap/scss/transitions";
+// @import "~bootstrap/scss/buttons";
+// @import "~bootstrap/scss/transitions";
 // @import "~bootstrap/scss/dropdown";
 // @import "~bootstrap/scss/button-group";
 // @import "~bootstrap/scss/input-group";
@@ -52,22 +52,15 @@
 
 // @import "~bootstrap/scss/print";
 
-// -----------это модули, которые сверстаны------
-@import "modules/work";
-// @import "modules/create-pro";
-// @import "modules/collect";
-// @import "modules/fairytales";
-// @import "modules/scheme";
-// @import "modules/designers";
-// @import "modules/invitation";
-// @import "modules/confirm";
-// @import "modules/footer";
-// @import "modules/link"; 
-// @import "modules/projects"; 
-// @import "modules/garant"; 
-// @import "modules/calc"; 
-// @import "modules/pro"; 
+// ----------------------------
+@import "common/common.scss";
 
-@import "common/header";
-@import "common/common";
-@import "common/bagajnik";
+// -----------main-------------
+@import "collect/main.scss";
+
+
+
+
+// @import "common/header";
+// @import "common/common";
+// @import "common/bagajnik";
