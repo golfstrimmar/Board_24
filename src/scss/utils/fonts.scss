@@ -1,5 +1,4 @@
 @import "variables";
-@import "mixins";
 
 
 // @font-face {
@@ -47,11 +46,49 @@ font-style: normal;
 font-stretch: normal;
 }
 
+@font-face {
+font-family: OpenSans;
+src:
+local(OpenSans-SemiBold),
+url('/assets/fonts/OpenSans-SemiBold.woff') format('woff'),
+url('/assets/fonts/OpenSans-SemiBold.ttf') format('truetype'),
+url('/assets/fonts/OpenSans-SemiBold}') format('embedded-opentype'),
+url('/assets/fonts/OpenSans-SemiBold.svg  ') format('svg'),
+url('/assets/fonts/OpenSans-SemiBold.otf  '),
+url('/assets/fonts/OpenSans-SemiBold.eot  ');
+font-weight: 600;
+font-style: normal;
+font-stretch: normal;
+}
 
-
-
-
-
+// @font-face {
+// font-family: Poppins;
+// src:
+// local(Poppins-SemiBold),
+// url('/assets/fonts/Poppins-SemiBold.woff') format('woff'),
+// url('/assets/fonts/Poppins-SemiBold.ttf') format('truetype'),
+// url('/assets/fonts/Poppins-SemiBold}') format('embedded-opentype'),
+// url('/assets/fonts/Poppins-SemiBold.svg  ') format('svg'),
+// url('/assets/fonts/Poppins-SemiBold.otf  '),
+// url('/assets/fonts/Poppins-SemiBold.eot  ');
+// font-weight: 600;
+// font-style: normal;
+// font-stretch: normal;
+// }
+@font-face {
+font-family: Poppins;
+src:
+local(8145),
+url('/assets/fonts/8145.woff') format('woff'),
+url('/assets/fonts/8145.ttf') format('truetype'),
+url('/assets/fonts/8145}') format('embedded-opentype'),
+url('/assets/fonts/8145.svg  ') format('svg'),
+url('/assets/fonts/8145.otf  '),
+url('/assets/fonts/8145.eot  ');
+font-weight: 600;
+font-style: normal;
+font-stretch: normal;
+}
 
 
 
@@ -133,7 +170,7 @@ font-stretch: normal;
   color: $dark-grey-blue;
 }
 @mixin Text-Style-21 {
-  font-family: Poppins;
+  font-family: OpenSans;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.13px;
