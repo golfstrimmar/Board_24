@@ -363,10 +363,7 @@
   overflow: hidden;
 }
 .board24_container {
-<<<<<<< HEAD
   /* outline: 1px solid #4164ff; */
-=======
->>>>>>> c65763119418f9f8b47743c3331fbf081b84a4ef
   width: 100%;
   min-width: 1024px;
   display: -webkit-box;
