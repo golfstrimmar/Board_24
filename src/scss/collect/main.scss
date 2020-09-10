@@ -88,6 +88,9 @@
         background-color: $white;
         margin: 10px auto 0 auto;
         padding: 12px;
+        .board24_line-plaha__miting{
+          opacity: 0.5;
+        }
         &__text {
           padding: 9px 38px 3px 0 !important;
         }
@@ -145,7 +148,6 @@
             width: auto;
             height: auto;
             @include Text-Style-37;
-            opacity: 0.5;
           }
         }
 
