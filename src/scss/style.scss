@@ -6,7 +6,7 @@
 // @import "utils/reset";
 // @import "utils/slick";
 
-//---------- подключение font avesome
+@import "utils/for-work-only.scss";
 
 
 // ----подключение bootstrap-------------------- 
@@ -55,6 +55,7 @@
 
 // ----------------------------
 @import "common/common.scss";
+
 
 // -----------main-------------
 @import "collect/main.scss";
