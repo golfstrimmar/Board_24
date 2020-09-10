@@ -5,201 +5,192 @@
     width: 100%;
     height: 100vh;
     position: relative;
-    padding: 60px 0 0 0;
   }
   &__body {
     width: 100%;
     height: 100%;
     position: relative;
     @include jucs();
-
-  }
-}
-
-// ----------------------------------------
-.board24_menu-side {
-  &__wrapper {
-    width: 220px;
-    height: 200px;
-    position: relative;
-    margin: 7px 0 0 0;
-    
-  }
- 
-&__plaza{
-  width: 100%;
-  height: 100%;
-}
-  .board24_menu-side-plaza {
-    &__body {
-      position: relative;
-width: 100%;
-height: 100%;
-    }
-    &__item {
-display: inline-flex;
-border-radius: 20px;
-padding: 0 20px;
-margin: 0 0 10px 0;
-background-color: transparent;
-@include anim(0.2s);
-      &:hover {
-      background-color: #9e9e9e;
-      .menu-side-plaza__link{
-         color: $white; 
-      }
-      }
-    }
-    &__link {
-      @include Text-Style-18;
-      line-height: 2;
+    max-height: 670px;
+    [data-simplebar] {
+      height: 670px;
     }
   }
 }
-
-
-
-
 
 // -------------------------------------------------
 
 .board24_middle {
-  margin: 0 auto 0 0;
-  flex: 0 1 62%;
+  margin: 0 30px 0 0;
+  flex: 1 0 20%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+
   &__body {
     height: 100%;
     position: relative;
-    // min-width: 1024px;
-    margin: 11px 0 0 0;
   }
 
-&__title{
-padding: 0 0 0 21px;
-}
-
+  &__title {
+    padding: 0 0 0 21px;
+  }
 
   &__plaza {
-  max-height: 670px;
-  border-radius: 4px;
-  box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.06);
-  background-color: $white;
-  margin: 23px 0 0 0;
+    border-radius: 4px;
+    box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.06);
+    background-color: $white;
   }
-
-    
 
   .board24_middle-plaza {
     &__body {
       width: 100%;
       height: 100%;
-            @include flex();
+      @include flex();
+      max-height: 670px;
+      .board24_middle-plaza__title {
+        padding: 0 0 0 0;
+        @include Text-Style-22;
+      }
+    }
+    // .board24_middle-plaza__header,.board24_middle-plaza__line{
+    // padding: 0 0 0 0;
+    // }
 
+    &__link {
+      @include Text-Style-29;
+      width: auto;
     }
-   
- 
-     &__static {
-flex: 0 1 483px;
-height: 240px;
+    // ------------------------
+    &__static {
+      flex: 0 1 483px;
+      height: 240px;
     }
-   &__calendar{
-  width: 100%;
-  height: 100%;
-  box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.06);
-  background-color: $white;
+    &__calendar {
+      width: 100%;
+      height: 100%;
+      box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.06);
+      background-color: $white;
     }
+    &__column {
+      padding: 0 23px;
+    }
+    &__line {
+      @include jucb();
+    }
+    .line-button {
+      position: relative;
+      flex: 0 1 28.3%;
 
-    &__stretsh{
+      .board24_person-cabinet__mark {
+        left: 100px;
+        width: auto;
+        padding: 0 5px;
+      }
+      &:last-child {
+        a {
+          color: $bluey-grey;
+        }
+      }
+    }
+    // -----------------
+    &__stretsh {
       border-radius: 4px;
-  background-color: $pale-grey-two;
-  flex: 1 0 20%; 
-  padding: 0 24px;
-  overflow-y: scroll;
-max-height: 670px;
+      background-color: $pale-grey-two;
+      padding: 0 24px;
+      flex: 1 0 20%;
     }
-    &__line{
-             padding: 20px 0 22px;
+    &__line {
+      padding: 20px 0 22px;
     }
-    &__title{
-        padding: 25px 0 0 0;
+    &__title {
+      padding: 25px 0 0 0;
     }
-    &__img{
-    position: relative;
-    padding: 0 0 51%;
-    margin: 19px 0 0 0;
+    &__img {
+      position: relative;
+      padding: 0 0 51%;
+      margin: 19px 0 0 0;
     }
-    &__text{
-    padding: 0 0 0 0;
-    @include Text-Style-39;
-    padding: 14px 0 0 0;
-    
+    &__text {
+      @include Text-Style-39;
+      padding: 14px 0 0 0;
     }
-    &__header{
-    padding: 0 0 0 0;
-    @include Text-Style-38;
+    &__header {
+      padding: 0 0 0 0;
+      @include Text-Style-38;
     }
   }
 }
 
 // -----------------------------------------------------------
-.board24_person{
+.board24_person {
+  flex: 0 0 255px;
 
- &__body{
-  width: 255px;
-  // height: 800px;
- position: relative;
-}
-&__button{
-
-}
-&__cabinet{
-  width: 255px;
-  height: 455px;
- overflow: hidden;
-margin: 19px 0 0;
-border-radius: 4px;
-}
-&__link{
- margin: 10px 0 0 0;
-}
-
-
-.board24_person-cabinet{
-  &__body{
-  width: 100%;
-  height: 100%;
-  padding: 24px 12px;
-  
-    @include flex();
-        @include fdc();
-
- border-radius: 4px;
-  box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.06);
-  background-color: $white;
-  }
-  &__img{
-  width: 40px;
-  height: 40px;
-    margin: 0 18px 0 0;
-  img{
+  &__body {
+    position: relative;
     width: 100%;
     height: 100%;
-    border-radius: 50%; 
+    @include juce();
+    height: 455px;
+  }
+
+  &__cabinet {
+    width: 255px;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+  &__link {
+    margin: 10px 0 0 0;
+  }
+
+  .board24_person-cabinet {
+    &__body {
+      width: 100%;
+      height: 100%;
+      padding: 24px 12px;
+      @include flex();
+      @include fdc();
+
+      border-radius: 4px;
+      box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.06);
+      background-color: $white;
+    }
+    &__img {
+      width: 40px;
+      height: 40px;
+      margin: 0 18px 0 0;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+
+    .board24_flex-align {
+      margin: 0 0 48px 0;
+    }
+
+    &__line {
+      @include Text-Style-40;
+      position: relative;
+      padding: 0 0 0 58px;
+      margin: 0 0 29px 0;
+    }
+  }
+
+  &__link {
+    width: 255px;
+    height: 50px;
+    border-radius: 4px;
+    box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.06);
+    background-color: $white;
+    @include center();
   }
 }
-
-.board24_flex-align{
-  margin: 0 0 48px 0;
-}
-
-&__line{
-@include Text-Style-40;
-position: relative;
-// flex: 0 1 100%;
-padding: 0 0 0 58px;
-margin: 0 0 29px 0;
-}
-&__mark{
- width: 32px;
+.board24_person-cabinet__mark {
+  width: 32px;
   height: 16px;
   border-radius: 10px;
   background-color: $butterscotch;
@@ -208,21 +199,5 @@ margin: 0 0 29px 0;
   position: absolute;
   top: 50%;
   left: 8px;
-  transform: translate( 0%, -50%); 
+  transform: translate(0%, -50%);
 }
-  }
-
-&__link{
-  width: 255px;
-  height: 50px;
-  border-radius: 4px;
-  box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.06);
-  background-color: $white;
-  @include center();
-}
-
-}
-
-
-
-

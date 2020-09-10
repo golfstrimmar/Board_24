@@ -1,34 +1,40 @@
-// .menu-side {
-//   &__wrapper {
-//     width: 220px;
-//     height: 200px;
-//     position: relative;
+// ----------------------------------------
+.board24_menu-side {
+  &__wrapper {
+    width: 220px;
+    height: 200px;
+    position: relative;
+    margin: 7px 0 0 0;
     
-//   }
+  }
  
-// &__plaza{
-//   width: 100%;
-//   height: 100%;
-// }
-//   .menu-side-plaza {
-//     &__body {
-//       position: relative;
-// width: 100%;
-// height: 100%;
-//     }
-//     &__item {
-// display: inline-flex;
-// border-radius: 20px;
-//  padding: 0 20px 10px 20px;  
-// background-color: transparent;
-// @include anim(0.2s);
-//       &:hover {
-//       background-color: #9e9e9e;
-//       }
-//     }
-//     &__link {
-//       @include Text-Style-18;
-//       line-height: 2;
-//     }
-//   }
-// }
+&__plaza{
+  width: 100%;
+  height: 100%;
+}
+  .board24_menu-side-plaza {
+    &__body {
+      position: relative;
+width: 100%;
+height: 100%;
+    }
+    &__item {
+display: inline-flex;
+border-radius: 20px;
+padding: 0 20px;
+margin: 0 0 10px 0;
+background-color: transparent;
+@include anim(0.2s);
+      &:hover {
+      background-color: #9e9e9e;
+      .menu-side-plaza__link{
+         color: $white; 
+      }
+      }
+    }
+    &__link {
+      @include Text-Style-18;
+      line-height: 2;
+    }
+  }
+}

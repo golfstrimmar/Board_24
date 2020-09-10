@@ -1,3 +1,7 @@
 mixin button-blue(text)
   .button.button-blue
     a.button-blue__link(href="#!")=text
+
+mixin button-color(text, color)
+  div(class="board24_button-color" + " "+ color)
+    a(href="#!")=text

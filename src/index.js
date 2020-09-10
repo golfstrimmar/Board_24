@@ -2,6 +2,7 @@
 import $ from 'jquery';
 // ------------------------------------
 // ----------это подключает все стили и в этом файле есть scss bootstrap из node modules------
+import "./css/simplebar.css";
 import './scss/style.scss';
 // ----------------------------------------------
 
@@ -9,8 +10,7 @@ import './scss/style.scss';
 
 
 import './js/common.js'
-// import "./js/bagajnik.js";
-
+import "./js/simplebar.min.js";
 // alert("ppppp"); 
 
 
