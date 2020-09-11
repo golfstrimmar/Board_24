@@ -234,6 +234,11 @@
       position: relative;
       padding: 0 0 0 58px;
       margin: 0 0 29px 0;
+      height: auto;
+      .board24_person-cabinet__mark{
+        top: 50%;
+        transform: translate( 0%, -33%);
+      }
     }
   }
 
