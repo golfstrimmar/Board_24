@@ -1,4 +1,4 @@
-.board24_body#body{
+.board24_body#board24_body{
   margin: 0;
   padding: 0; 
   width: 100%;
@@ -133,7 +133,3 @@ display: block;
 // @include Text-Style-20;
 // }
 
-h2{
-  @include Text-Style-20;
-  margin: 0 0 0 0;
-}

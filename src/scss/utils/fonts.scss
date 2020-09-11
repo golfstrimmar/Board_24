@@ -2,19 +2,71 @@
 
 
 // @font-face {
-// font-family: Montserrat;
+//   font-family: OpenSans;
+//   src: local(OpenSans-Italic),
+//     url(../fonts/OpenSans-Italic.woff) format("woff"),
+//     url(../fonts/OpenSans-Italic.ttf) format("truetype"),
+//     url(../fonts/OpenSans-Italic}) format("embedded-opentype"),
+//     url(../fonts/OpenSans-Italic.svg) format("svg"),
+//     url(../fonts/OpenSans-Italic.otf),
+//     url(../fonts/OpenSans-Italic.eot);
+//   font-weight: 400;
+//   font-style: italic;
+//   font-stretch: normal;
+// }
+// @font-face {
+//   font-family: OpenSans;
+//   src: local(OpenSans-Regular),
+//     url(../fonts/OpenSans-Regular.woff) format("woff"),
+//     url(../fonts/OpenSans-Regular.ttf) format("truetype"),
+//     url(../fonts/OpenSans-Regular}) format("embedded-opentype"),
+//     url(../fonts/OpenSans-Regular.svg) format("svg"),
+//     url(../fonts/OpenSans-Regular.otf),
+//     url(../fonts/OpenSans-Regular.eot);
+//   font-weight: 400;
+//   font-style: normal;
+//   font-stretch: normal;
+// }
+// @font-face {
+//   font-family: OpenSans;
+//   src: local(OpenSans-SemiBold),
+//     url(../fonts/OpenSans-SemiBold.woff) format("woff"),
+//     url(../fonts/OpenSans-SemiBold.ttf) format("truetype"),
+//     url(../fonts/OpenSans-SemiBold}) format("embedded-opentype"),
+//     url(../fonts/OpenSans-SemiBold.svg) format("svg"),
+//     url(../fonts/OpenSans-SemiBold.otf),
+//     url(../fonts/OpenSans-SemiBold.eot);
+//   font-weight: 600;
+//   font-style: normal;
+//   font-stretch: normal;
+// }
+// @font-face {
+//   font-family: Poppins;
+//   src: local(8145), url(../fonts/8145.woff) format("woff"),
+//     url(../fonts/8145.ttf) format("truetype"),
+//     url(../fonts/8145}) format("embedded-opentype"),
+//     url(../fonts/8145.svg) format("svg"), url(../fonts/8145.otf),
+//     url(../fonts/8145.eot);
+//   font-weight: 600;
+//   font-style: normal;
+//   font-stretch: normal;
+// }
+
+// @font-face {
+// font-family: icomoon;
 // src:
-// local(Montserrat-Regular),
-// url('/assets/fonts/Montserrat-Regular.woff') format('woff'),
-// url('/assets/fonts/Montserrat-Regular.ttf') format('truetype'),
-// url('/assets/fonts/Montserrat-Regular}') format('embedded-opentype'),
-// url('/assets/fonts/Montserrat-Regular.svg  ') format('svg'),
-// url('/assets/fonts/Montserrat-Regular.otf  '),
-// url('/assets/fonts/Montserrat-Regular.eot  ');
+// local(icomoon),
+// url('../fonts/icomoon.woff') format('woff'),
+// url('../fonts/icomoon.ttf') format('truetype'),
+// url('../fonts/icomoon}') format('embedded-opentype'),
+// url('../fonts/icomoon.svg  ') format('svg'),
+// url('../fonts/icomoon.otf  '),
+// url('../fonts/icomoon.eot  ');
 // font-weight: normal;
 // font-style: normal;
 // font-stretch: normal;
 // }
+
 
 @font-face {
 font-family: OpenSans;
@@ -61,20 +113,7 @@ font-style: normal;
 font-stretch: normal;
 }
 
-// @font-face {
-// font-family: Poppins;
-// src:
-// local(Poppins-SemiBold),
-// url('/assets/fonts/Poppins-SemiBold.woff') format('woff'),
-// url('/assets/fonts/Poppins-SemiBold.ttf') format('truetype'),
-// url('/assets/fonts/Poppins-SemiBold}') format('embedded-opentype'),
-// url('/assets/fonts/Poppins-SemiBold.svg  ') format('svg'),
-// url('/assets/fonts/Poppins-SemiBold.otf  '),
-// url('/assets/fonts/Poppins-SemiBold.eot  ');
-// font-weight: 600;
-// font-style: normal;
-// font-stretch: normal;
-// }
+
 @font-face {
 font-family: Poppins;
 src:
@@ -89,7 +128,36 @@ font-weight: 600;
 font-style: normal;
 font-stretch: normal;
 }
+@font-face {
+font-family: icomoon;
+src:
+local(icomoon),
+url('/assets/fonts/icomoon.woff') format('woff'),
+url('/assets/fonts/icomoon.ttf') format('truetype'),
+url('/assets/fonts/icomoon}') format('embedded-opentype'),
+url('/assets/fonts/icomoon.svg  ') format('svg'),
+url('/assets/fonts/icomoon.otf  '),
+url('/assets/fonts/icomoon.eot  ');
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+}
 
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow_drop_down:before {
+  content: "\e906";
+}
 
 
 @mixin Text-Style-20 {
@@ -283,3 +351,34 @@ font-stretch: normal;
   letter-spacing: 0.2px;
   color: $dark-blue-grey;
 }
+// -----------------------
+h5{
+  @include Text-Style-38;
+margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+h2{
+  @include Text-Style-20;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+
+h4 {
+@include Text-Style-22;
+margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+h3 {
+@include Text-Style-34;
+margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+h6{
+  @include Text-Style-25;
+margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+

@@ -69,6 +69,7 @@
       height: 240px;
       box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.06);
       background-color: $white;
+      border-top-left-radius: 4px;
     }
     &__column {
       padding: 13px 23px 0;
@@ -81,11 +82,11 @@
         margin: 10px auto 0 auto;
         padding: 12px;
 
-        .board24_line-plaha__miting{
+        .board24_line-plaha__miting {
           opacity: 0.5;
-           width: auto;
-            height: auto;
-            @include Text-Style-37;
+          width: auto;
+          height: auto;
+          @include Text-Style-37;
         }
         &__text {
           padding: 9px 38px 3px 0 !important;
@@ -96,9 +97,9 @@
         &__text-link {
           padding: 0 20px 0 0;
           color: $azure !important;
-               width: auto;
-            height: auto;
-            @include Text-Style-37;
+          width: auto;
+          height: auto;
+          @include Text-Style-37;
         }
         &__img1 {
           @include fdc();
@@ -124,9 +125,7 @@
           @include jucb();
           width: 100%;
         }
-
         &__text {
-          @include Text-Style-34;
           padding: 5px 38px 3px 0;
         }
       }
@@ -177,7 +176,6 @@
     }
     &__header {
       padding: 0 0 0 0;
-      @include Text-Style-38;
     }
   }
 }
@@ -198,6 +196,7 @@
     width: 255px;
     overflow: hidden;
     border-radius: 4px;
+    box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.1);
   }
   &__link {
     margin: 10px 0 0 0;
@@ -205,13 +204,10 @@
 
   .board24_person-cabinet {
     &__body {
-      width: 100%;
-      height: 100%;
       @include flex();
       @include fdc();
       padding: 24px 12px 0px;
       border-radius: 4px;
-      box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.06);
       background-color: $white;
     }
     &__img {
@@ -235,9 +231,9 @@
       padding: 0 0 0 58px;
       margin: 0 0 29px 0;
       height: auto;
-      .board24_person-cabinet__mark{
+      .board24_person-cabinet__mark {
         top: 50%;
-        transform: translate( 0%, -33%);
+        transform: translate(0%, -33%);
       }
     }
   }
@@ -246,7 +242,7 @@
     width: 255px;
     height: 50px;
     border-radius: 4px;
-    box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.1);
     background-color: $white;
     @include center();
   }
@@ -261,4 +257,94 @@
   position: absolute;
   top: 0;
   left: 8px;
+}
+
+// ------------------
+.board24_calendar {
+  .board24_calendar__body {
+    box-sizing: border-box;
+    width: 483px;
+    height: 240px;
+    // background-color: rgba(36, 36, 36, 0.2);
+    padding: 28px 23px;
+    border-top-left-radius: 4px;
+    .board24_calendar__header {
+      @include jucb();
+    }
+    .board24_calendar__date {
+      @include jucs();
+      span {
+        @include Text-Style-23;
+        padding: 0 0 0 5px;
+      }
+    }
+    .board24_calendar__show {
+      @include Text-Style-35;
+      position: relative;
+      padding: 0 3px 0 0;
+
+      .board24_calendar__triangle {
+        position: absolute;
+        top: 50%;
+        left: 85%;
+        transform: translateY(-50%);
+
+        &:hover {
+          span {
+            color: $azure;
+          }
+        }
+        span {
+          font-size: 22px;
+          color: $greyish;
+          @include anim(0.3s);
+        }
+      }
+      .board24_calendar__link {
+        @include Text-Style-29;
+        padding: 0 16px 0 2px;
+      }
+    }
+    .board24_calendar__table {
+      padding: 14px 0 0 0;
+    }
+    .board24_calendar-table {
+      .board24_calendar-table__row {
+        @include jucb();
+        margin: 0 0 8px 0;
+        .board24_table-row-active {
+          color: $azure !important;
+        }
+        .board24_calendar-table__item {
+          @include Text-Style-24;
+          flex: 0 0 30px;
+        }
+      }
+      .board24_calendar-table__row-numbers {
+        @include jucs();
+        // margin: 0 0 6px 0;
+
+        .board24_table-active {
+          background-color: $azure;
+          border-radius: 50%;
+        }
+        .board24_calendar-table__item {
+          @include Text-Style-25;
+          @include center();
+          width: 24px;
+          height: 24px;
+          margin: 0 44px 0 0;
+          &:nth-child(n + 7) {
+            margin: 0 0 0 0;
+          }
+          &:hover {
+            @include scale(1.4);
+          }
+          &_next {
+            @include Text-Style-28;
+          }
+        }
+      }
+    }
+  }
 }
