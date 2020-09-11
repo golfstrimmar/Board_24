@@ -10,7 +10,6 @@ import './scss/style.scss';
 
 
 import './js/common.js'
-import "./js/simplebar.min.js";
 // alert("ppppp"); 
 
 

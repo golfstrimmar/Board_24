@@ -11,10 +11,10 @@
     height: 100%;
     position: relative;
     @include jucs();
-    max-height: 670px;
-    [data-simplebar] {
-      height: 670px;
-    }
+    // max-height: 670px;
+    // [data-simplebar] {
+    //   height: 670px;
+    // }
   }
 }
 
@@ -23,7 +23,7 @@
 .board24_middle {
   margin: 0 30px 0 0;
   flex: 1 0 20%;
-  overflow-y: scroll;
+  // overflow-y: scroll;
   scrollbar-width: none;
   &::-webkit-scrollbar {
     width: 0;

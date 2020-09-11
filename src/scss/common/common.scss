@@ -11,19 +11,21 @@
 
 .board24_page {
   position: absolute;
-  width: 100%;
+  // width: 100%;
+  width: 82.5%;
   min-height: 100%;
   top: 0;
   left: 0;
   @include fdc();
-  overflow: hidden;
+  // overflow: hidden;
+margin: 197px 0 0 240px;
 }
 .board24_container {
   // outline: 1px solid #4164ff;
 // width: 71%;
 width: 100%;
 // max-height: 100%;
-min-width: 1024px;
+// min-width: 1024px;
  
  @include jucb();
   // width: 60.41666666666%; 
@@ -116,6 +118,13 @@ display: block;
 
 .board24_flex-align{
     @include alic();
+}
+
+// ------------------------------------------
+
+#workarea-content{
+  opacity: 1 !important;
+  background: transparent;
 }
 
 // ------------------------------------------------

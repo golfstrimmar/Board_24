@@ -319,6 +319,7 @@
   font-style: normal;
   font-stretch: normal;
 }
+
 .Text-Style-22 {
   font-size: 15px;
   font-weight: 600;
@@ -356,15 +357,14 @@
 }
 .board24_page {
   position: absolute;
-  width: 100%;
+  width: 82.5%;
   min-height: 100%;
   top: 0;
   left: 0;
-  overflow: hidden;
+  margin: 197px 0 0 240px;
 }
 .board24_container {
   width: 100%;
-  min-width: 1024px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -436,6 +436,10 @@ ul {
   -ms-flex-align: center;
   align-items: center;
 }
+#workarea-content {
+  opacity: 1;
+  background: transparent;
+}
 h2 {
   font-family: OpenSans;
   font-size: 18px;
@@ -504,17 +508,12 @@ h2 {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  max-height: 670px;
-}
-.board24_home__body [data-simplebar] {
-  height: 670px;
 }
 .board24_middle {
   margin: 0 30px 0 0;
   -webkit-box-flex: 1;
   -ms-flex: 1 0 20%;
   flex: 1 0 20%;
-  overflow-y: scroll;
   scrollbar-width: none;
 }
 .board24_middle::-webkit-scrollbar {
