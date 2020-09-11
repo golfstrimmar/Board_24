@@ -1,0 +1,121 @@
+
+//- нужно найти здесь подходящий объект. если нет - создать новый и перенести его в mixins.pug
+
+
+
+include ./../common/mixins
+
+//- ------------------------------------------
+//- -------------------mixins.scss--   154--
+mixin button-color(text, color)
+  div(class="board24_button-color" + " " + color)
+    a(href="#!")=text
+
+
+//- .board24_button-color{
+//-   width: 96px;
+//-   height: 22px;
+//-   border-radius: 14px;
+//-   // background-color: #ffb946;
+//-    a{
+//- @include Text-Style-30;
+//- @include center();
+//-    }
+
+//- }
+
+//- .butterscotch{
+//- background-color: #ffb946;
+//-  }
+//- .apple-green{
+//-   background-color: $apple-green;
+//- }
+//- .silver{
+//-   background-color: $silver;}
+
+
+hr
++button-color("Подготовка","butterscotch")
+hr
++button-color("Проведение","apple-green")
+hr
++button-color("Завершено","silver")
+hr
+
+
+
+//- -----------------------------------------------------------------------
+//-  ------------mixins.scss--   168------------------------------------ //
+
+mixin button-color-cub(text, color)
+  div(class="board24_button-color-cub" + " " + color)
+    a(href="#!")=text
+
++button-color-cub("Проведение","apple-green")
+
+
+//- .board24_button-color-cub{
+//- width: 102px;
+//-     height: 23px;
+//-     border-radius: 4px;
+//-       a{
+//- @include Text-Style-30;
+//- @include center();
+//- line-height: 0.5;
+//-    }
+//- }
+
+
+hr
+
+mixin button-blue(text)
+  .button.button-blue
+    a.button-blue__link(href="#!")=text
+
++button-blue("Перейти к заседанию")
+
+//- mixins.scss  139
+
+//- .button-blue{
+//-     width: 255px;
+//-   height: 42px;
+//-   border-radius: 4px;
+//-   box-shadow: 0 4px 10px 0 rgba(16, 156, 241, 0.24);
+//-   background-color: $azure;
+//-     @include center();
+//-  &__link{
+//- @include Text-Style-21;
+//- width: 100%;
+//- height: 100%;
+//- @include center();
+//-  } 
+//- }
+
+hr
+
+mixin button-blue-small(text)
+  .button.button-blue-small
+    a.button-blue-small__link(href="#!")=text
++button-blue-small("Перейти к заседанию")
+
+//- mixins.scss  154
+
+//- .button-blue-small{
+//- width: 180px;
+//-     height: 22.9px;
+//-     border-radius: 4px;
+//-     background-color: #109cf1;
+//- &__link{
+//- @include Text-Style-33; 
+//- width: 100%;
+//- height: 100%;
+//- @include center();
+//-  } 
+
+//- }
+
+hr
+hr
+hr
+hr
+hr

@@ -11,10 +11,6 @@
     height: 100%;
     position: relative;
     @include jucs();
-    // max-height: 670px;
-    // [data-simplebar] {
-    //   height: 670px;
-    // }
   }
 }
 
@@ -55,10 +51,6 @@
         @include Text-Style-22;
       }
     }
-    // .board24_middle-plaza__header,.board24_middle-plaza__line{
-    // padding: 0 0 0 0;
-    // }
-
     &__link {
       @include Text-Style-29;
       width: auto;
@@ -80,16 +72,20 @@
     }
     &__column {
       padding: 13px 23px 0;
+
       .board24_line-plaha {
-        // width: 100%;
         height: 136px;
         border-radius: 4px;
         border: solid 1px #e5e5e5;
         background-color: $white;
         margin: 10px auto 0 auto;
         padding: 12px;
+
         .board24_line-plaha__miting{
           opacity: 0.5;
+           width: auto;
+            height: auto;
+            @include Text-Style-37;
         }
         &__text {
           padding: 9px 38px 3px 0 !important;
@@ -100,6 +96,9 @@
         &__text-link {
           padding: 0 20px 0 0;
           color: $azure !important;
+               width: auto;
+            height: auto;
+            @include Text-Style-37;
         }
         &__img1 {
           @include fdc();
@@ -113,14 +112,6 @@
         &__download {
           position: relative;
           margin: 11px 0 0 0;
-          .button-blue {
-            width: 180px;
-            height: 22.9px;
-            border-radius: 4px;
-            .button-blue__link {
-              color: $white;
-            }
-          }
         }
         span {
           @include Text-Style-35;
@@ -132,23 +123,6 @@
         .board24_alic {
           @include jucb();
           width: 100%;
-
-          .board24_button-color {
-            width: 102px;
-            height: 23px;
-            border-radius: 4px;
-            // background-color: $apple-green;
-            a {
-              color: $white;
-              width: 100%;
-              height: 100%;
-            }
-          }
-          a {
-            width: auto;
-            height: auto;
-            @include Text-Style-37;
-          }
         }
 
         &__text {
@@ -183,6 +157,7 @@
       background-color: $pale-grey-two;
       padding: 26px 24px 0;
       flex: 1 0 20%;
+      margin: 0 0 50px 0;
     }
     &__line {
       padding: 20px 0 20px;
