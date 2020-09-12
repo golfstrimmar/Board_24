@@ -1,10 +1,13 @@
 @import "../includes/main/menu.scss";
 
 .board24_home {
+ 
   &__wrapper {
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
     position: relative;
+    min-width: 1110px;
+    
   }
   &__body {
     width: 100%;
@@ -21,6 +24,7 @@
   flex: 1 0 20%;
   // overflow-y: scroll;
   scrollbar-width: none;
+  
   &::-webkit-scrollbar {
     width: 0;
   }
@@ -156,10 +160,15 @@
       background-color: $pale-grey-two;
       padding: 26px 24px 0;
       flex: 1 0 20%;
-      margin: 0 0 50px 0;
+      // margin: 0 0 50px 0;
+      margin: 0 0 100px 0;
     }
     &__line {
       padding: 20px 0 20px;
+    }
+    .board24_middle-plaza__date{
+      width: auto;
+      height: auto;
     }
     &__title {
       padding: 25px 0 0 0;
@@ -176,6 +185,8 @@
     }
     &__header {
       padding: 0 0 0 0;
+       width: auto;
+      height: auto;
     }
   }
 }
