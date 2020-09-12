@@ -7,9 +7,9 @@ include ./../common/mixins
 
 //- ------------------------------------------
 //- -------------------mixins.scss--   154--
-mixin button-color(text, color)
+mixin button-color(text, color, link)
   div(class="board24_button-color" + " " + color)
-    a(href="#!")=text
+    a(href=link)=text
 
 
 //- .board24_button-color{
@@ -35,11 +35,11 @@ mixin button-color(text, color)
 
 
 hr
-+button-color("Подготовка","butterscotch")
++button-color("Подготовка","butterscotch","home.html")
 hr
-+button-color("Проведение","apple-green")
++button-color("Проведение","apple-green","home.html")
 hr
-+button-color("Завершено","silver")
++button-color("Завершено","silver","home.html")
 hr
 
 
@@ -47,11 +47,11 @@ hr
 //- -----------------------------------------------------------------------
 //-  ------------mixins.scss--   168------------------------------------ //
 
-mixin button-color-cub(text, color)
+mixin button-color-cub(text, color,link)
   div(class="board24_button-color-cub" + " " + color)
-    a(href="#!")=text
+    a(href=link)=text
 
-+button-color-cub("Проведение","apple-green")
++button-color-cub("Проведение","apple-green","home.html")
 
 
 //- .board24_button-color-cub{
@@ -68,11 +68,11 @@ mixin button-color-cub(text, color)
 
 hr
 
-mixin button-blue(text)
+mixin button-blue(text,link)
   .board24_button-blue
-    a.board24_button-blue__link(href="#!")=text
+    a.board24_button-blue__link(href=link)=text
 
-+button-blue("Перейти к заседанию")
++button-blue("Перейти к заседанию","home.html")
 
 //- mixins.scss  139
 
@@ -93,10 +93,10 @@ mixin button-blue(text)
 
 hr
 
-mixin button-blue-small(text)
+mixin button-blue-small(text,link)
   .board24_button-blue-small
-    a.board24_button-blue-small__link(href="#!")=text
-+button-blue-small("Перейти к заседанию")
+    a.board24_button-blue-small__link(href=link)=text
++button-blue-small("Перейти к заседанию","home.html")
 
 //- mixins.scss  154
 

@@ -1,15 +1,15 @@
-mixin button-blue(text)
+mixin button-blue(text,link)
   .board24_button-blue
-    a.board24_button-blue__link(href="#!")=text
+    a.board24_button-blue__link(href=link)=text
 
-mixin button-color(text, color)
+mixin button-color(text, color,link)
   div(class="board24_button-color" + " "+ color)
-    a(href="#!")=text
+    a(href=link)=text
 
-mixin button-color-cub(text, color)
+mixin button-color-cub(text, color,link)
   div(class="board24_button-color-cub" + " " + color)
-    a(href="#!")=text    
+    a(href=link)=text    
 
-mixin button-blue-small(text)
+mixin button-blue-small(text,link)
   .board24_button-blue-small 
-    a.board24_button-blue-small__link(href="#!")=text
+    a.board24_button-blue-small__link(href=link)=text

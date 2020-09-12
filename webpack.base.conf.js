@@ -127,6 +127,16 @@ module.exports = {
       template: "src/pug/pages/parts.pug",
       filename: "./parts.html",
     }),
+    new HtmlWebpackPlugin({
+      // hash: false,
+      template: "src/pug/pages/news.pug",
+      filename: "./news.html",
+    }),
+    new HtmlWebpackPlugin({
+      // hash: false,
+      template: "src/pug/pages/static.pug",
+      filename: "./static.html",
+    }),
     //  ...PAGES.map(page => new HtmlWebpackPlugin({
     //   template: `${PAGES_DIR}/${page}`,
     //   filename: `./${page.replace(/\.pug/,'.html')}`

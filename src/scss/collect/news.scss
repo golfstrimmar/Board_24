@@ -1,0 +1,34 @@
+
+
+.board24_news_middle{
+.board24_middle__plaza{
+  box-shadow: none;
+}
+
+
+
+  .board24_middle-plaza__stretsh{
+padding: 26px 35px 0;
+box-shadow: 0 6px 18px 0 rgba(0,0,0,.1);
+  }
+.board24_middle-plaza__line{
+padding: 20px 0 2px;
+@include fdc();
+&:last-child{
+  padding: 20px 0 20px;
+
+}
+
+} 
+   .board24_middle-plaza__date{
+// flex: 0 1 100%;
+width: 20% !important;
+  }
+  .board24_middle-plaza__header{
+    // flex: 0 1 36%;
+width: 36%;
+  }
+   .board24_middle-plaza__img{
+padding: 0 0 19.8%;
+  }
+}

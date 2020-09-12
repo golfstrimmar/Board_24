@@ -1,9 +1,20 @@
 
-extends ../layout/main
-include ../common/mixins
+
 
 block content
+  //- include ../common/animals
+  include ../common/mixins
   .board24_middle__title 
     h2 BOARD 24
-  .board24_person__button
-    +button-blue("Создать заседание")
+  hr
+  +button-color("Подготовка","butterscotch","home.html")
+  hr
+  +button-color("Проведение","apple-green","home.html")
+  hr
+  +button-color("Завершено","silver","home.html")
+  hr
+  +button-color-cub("Проведение","apple-green","home.html")
+  hr
+  +button-blue("Перейти к заседанию","home.html")
+  hr
+  +button-blue-small("Перейти к заседанию","home.html")
