@@ -190,8 +190,43 @@ width: 102px;
 line-height: 0.5;
    }
 }
+// ------
 
+
+.board24_button-empty{
+  width: 130px;
+  height: 30px;
+  border-radius: 4px;
+  border: solid 1px $azure;
+
+    &__link{
+@include Text-Style-36;
+@include center();
+line-height: 0.5;
+    }
+  }
 // ---
+
+.board24_button-arrow{
+  width: 70px;
+  height: 20px;
+ border: solid 1px $warm-grey-26;
+
+  &__link{
+  @include Text-Style-39;
+@include jucb();
+@include alic();
+  padding: 0 8px; 
+  .board24_line-plaha__img1{
+    @include fdc();
+  }}
+}
+  
+
+
+
+
+
 .butterscotch{
 background-color: #ffb946;
  }

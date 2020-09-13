@@ -13,3 +13,14 @@ mixin button-color-cub(text, color,link)
 mixin button-blue-small(text,link)
   .board24_button-blue-small 
     a.board24_button-blue-small__link(href=link)=text
+
+mixin button-empty(text,link)
+  .board24_button-empty
+    a.board24_button-empty__link(href=link)=text
+
+mixin button-arrow(text,link)
+  .board24_button-arrow
+    a.board24_button-arrow__link(href=link)=text
+      .board24_line-plaha__img1
+        img(src="assets/img/main/Vector-1.svg",alt="img")
+        img(src="assets/img/main/Vector-2.svg",alt="img")

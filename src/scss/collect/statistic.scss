@@ -1,0 +1,125 @@
+.board24_middle-statistic{
+.board24 {
+
+
+		&_middle-statistic {
+
+		}
+
+
+		&_middle-plaza {
+       
+		}
+
+
+
+
+		&_plaza-statistic-content {
+     
+      margin: 11px 0 0 0;
+
+		}
+
+
+}
+.board24_middle {
+
+
+		&__body {
+		}
+
+
+		&__plaza {
+		}
+}
+.board24_middle-plaza {
+
+
+		&__body {
+		}
+
+
+		&__stretsh {
+      background-color: $white!important; 
+      padding: 19px 24px 0;
+		}
+
+
+		&__header {
+      @include jucb();
+      @include alic();
+		}
+
+
+		&__title {
+		}
+
+
+		&__button {
+		}
+
+
+		&__content {
+		}
+}
+.board24_plaza-statistic-content {
+  
+ 
+
+		&__line {
+         margin: 14px 0 24px;
+      box-sizing: border-box;
+      padding: 0 0 36px 0;
+      background-color: $ice-blue;
+      padding: 16px 15px 36px 21px;
+            &:last-child{
+              margin: 14px 0 0;
+            }
+
+		}
+
+
+		&__header {
+      @include jucb();
+		}
+
+
+		&__text {
+      @include Text-Style;
+		}
+
+
+		&__button {
+		}
+
+
+		&__info {
+      @include jucs();
+       margin: 18px 0 0 0;
+		}
+
+
+		&__big {
+    width: 59.2%!important;
+  padding: 0 0 32.2%;
+  border: solid 1px $dodger-blue; 
+   position: relative;
+		}
+
+
+		&__small {
+        width: 24.5%!important;
+  height: 240px!important;
+  border: solid 1px $dodger-blue;
+    margin: 0 0 0 20px;
+position: relative; 
+padding: 0 0 32.2%;
+		}
+}
+.board24_line-plaha {
+
+		&__img1 {
+      margin: 3px 0 0px 0;
+		}
+}
+}

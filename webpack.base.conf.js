@@ -134,8 +134,8 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       // hash: false,
-      template: "src/pug/pages/static.pug",
-      filename: "./static.html",
+      template: "src/pug/pages/statistic.pug",
+      filename: "./statistic.html",
     }),
     //  ...PAGES.map(page => new HtmlWebpackPlugin({
     //   template: `${PAGES_DIR}/${page}`,

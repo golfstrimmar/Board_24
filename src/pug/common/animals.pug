@@ -113,6 +113,39 @@ mixin button-blue-small(text,link)
 //-  } 
 
 //- }
+
+//- ---------button-empty-----------------
+mixin button-empty(text,link)
+  .board24_button-empty
+    a.board24_button-empty__link(href=link)=text
++button-empty("Добавить","home.html")
+
+//- mixins--196
+
+//- .board24_button-empty{
+//-   width: 130px;
+//-   height: 30px;
+//-   border-radius: 4px;
+//-   border: solid 1px $azure;
+//-     &__link{
+//- @include Text-Style-36;
+//- @include center();
+//- line-height: 0.5;
+//-     }
+//-   }
+//- -------button-arrow------------
+mixin button-arrow(text,link)
+  .board24_button-arrow
+    a.board24_button-arrow__link(href=link)=text
+      .board24_line-plaha__img1
+        img(src="assets/img/main/Vector-1.svg",alt="img")
+        img(src="assets/img/main/Vector-2.svg",alt="img")
++button-arrow("Скачать","home.html")
+
+
+
+
+
 //- --------- fonts.scss 287----------------------
 hr
 
