@@ -155,10 +155,22 @@ font-stretch: normal;
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+.icon-edit:before {
+  content: "\e900";
+  color: #90a0b7;
+}
+.icon-attach:before {
+  content: "\e901";
+  color: #90a0b7;
+}
+.icon-emoji:before {
+  content: "\e902";
+  color: #90a0b7;
+}
 .icon-arrow_drop_down:before {
   content: "\e906";
 }
-
 
 @mixin Text-Style-20 {
   font-family: OpenSans;

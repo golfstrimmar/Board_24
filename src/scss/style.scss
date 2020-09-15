@@ -7,7 +7,7 @@
 // @import "utils/slick";
 
 // !!!!!!----отключать перед production
-@import "utils/for-work-only.scss";
+// @import "utils/for-work-only.scss";
 // !!!!!!!!!!!!!!!!!!!!!!!
 
 // ----подключение bootstrap-------------------- 
@@ -72,6 +72,8 @@
 
 //--------------- group------------
 @import "collect/group.scss";
+//--------------- group------------
+@import "collect/group-card.scss";
 
 
 

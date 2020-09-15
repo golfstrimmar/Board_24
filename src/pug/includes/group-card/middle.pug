@@ -1,0 +1,122 @@
+include ../../common/mixins
+
+section.board24_middle.board24_middle-group.board24_middle-group-card
+  .board24_middle__body
+    .board24_middle__plaza.board24_middle-plaza
+      .board24_middle-plaza__body.board24_stretch-group-js
+        .board24_middle-plaza__stretsh 
+          .board24_middle-plaza__title
+            h4 Группы 
+          .board24_middle-plaza__line.board24_plaza-line
+            .board24_plaza-line__img
+              img(src="assets/img/group/img-1.png",alt="img-1")
+            .board24_plaza-line__column
+              .board24_plaza-line__title
+                h2 Совет директоров АО
+              .board24_plaza-line__title-low
+                h2 &laquo;Test_01&raquo;
+              .board24_plaza-line__text Группа для взаимодействия членов совета директоров
+            .board24_plaza-line__buttons  
+              +button-empty("Собрать заседание группы","home.html")
+              +button-empty("Групповой звонок","home.html")
+              +button-empty("Написать в чат","home.html")
+          .board24_plaza-line__detail.board24_line-detail
+            .board24_line-detail__body
+              .board24_line-detail__header.board24_flex
+                .board24_line-detail__item
+                  a.board24_line-detail__description(href="#!") Владелец (1):
+                    .board24_100
+                  a.board24_line-detail__img(href="#!")
+                    img(src="assets/img/group/image-6.png",alt="img") 
+                .board24_line-detail__item
+                  a.board24_line-detail__description(href="#!") Модераторы (2):
+                  div.board24_flex
+                    a.board24_line-detail__img(href="#!")
+                      img(src="assets/img/group/image-3.png",alt="img") 
+                    .a.board24_line-detail__img(href="#!")
+                      img(src="assets/img/group/image-2.png",alt="img") 
+                .board24_line-detail__item
+                  div.board24_flex
+                    a.board24_line-detail__description(href="#!") Участники 92:
+                    a.board24_line-detail__description(href="#!") Смотреть всех 
+                  div.board24_flex
+                    a.board24_line-detail__img(href="#!")
+                      img(src="assets/img/group/image-3.png",alt="img") 
+                    a.board24_line-detail__img(href="#!")
+                      img(src="assets/img/group/image-4.png",alt="img") 
+                    a.board24_line-detail__img(href="#!")
+                      img(src="assets/img/group/image-2.png",alt="img") 
+                    a.board24_line-detail__img(href="#!")
+                      img(src="assets/img/group/image-2.png",alt="img") 
+                    a.board24_line-detail__img(href="#!")
+                      img(src="assets/img/group/image-5.png",alt="img") 
+                    a.board24_line-detail__img(href="#!")
+                      img(src="assets/img/group/image-2.png",alt="img") 
+                    a.board24_line-detail__img.board24_line-detail__img_arrow(href="#!")
+                .board24_line-detail__item
+                  +button-empty("+ Пригласить","home.html")
+              //- ---------------
+              .board24_tab-item-items
+                +tab-item("Материалы")
+                +tab-item("Отчеты")
+                +tab-item("Опрос")
+                +tab-item("Календарь")
+                +tab-item("Новости")
+                +tab-item("Задачи группы") 
+              .board24_middle-plaza__search
+                img(src="assets/img/group/search.svg",alt="img")
+                span Поиск по комментариям
+              .board24_middle-plaza__comments.board24_plaza-comments
+                .board24_plaza-comments__body
+                  .board24_plaza-comments__title Комментарии
+                  .board24_plaza-comments__plaza
+                    .board24_plaza-comments__text-area
+                      a.board24_plaza-comments__icon(href="#!")
+                        span.icon-attach
+                      a.board24_plaza-comments__icon(href="#!")
+                        span.icon-emoji
+                      a.board24_plaza-comments__icon(href="#!")
+                        span.icon-edit 
+                    a.board24_plaza-comments__img(href="#!")
+                      img(src="assets/img/group/profile.png",alt="img")
+              .board24_middle-plaza__person.plaza-person
+                .board24_plaza-person__header
+                  a.board24_plaza-person__icon(href="#!")
+                    img(src="assets/img/group/avatar.png",alt="img") 
+                  a.board24_plaza-person__name(href="#!") Name Surname 1
+                  a.board24_plaza-person__time(href="#!") 11.10
+                .board24_plaza-person__message
+                  p Your idea for this application is nice! 
+             
+             
+              .board24_middle-plaza__person.plaza-person
+                .board24_plaza-person__header
+                  a.board24_plaza-person__icon(href="#!")
+                    img(src="assets/img/group/avatar.png",alt="img") 
+                  a.board24_plaza-person__name(href="#!") Name Surname 2
+                  a.board24_plaza-person__time(href="#!") 11.10
+                .board24_plaza-person__message
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis sed, amet nemo ipsam dicta aut fugiat soluta nobis quis perferendis ratione deleniti corporis ipsum, eos tempora accusamus hic commodi reprehenderit. Отметьте в 
+                    a.board24_plaza-person__link(href="#!") своем календаре.
+              .board24_middle-plaza__confirm
+                +button-color-cub("Подтвердить участие","azure","#!") 
+                +button-color-cub("Отказаться","coral-two","#!") 
+              .board24_middle-plaza__answer
+                .board24_plaza-person__header
+                  a.board24_plaza-person__icon(href="#!")
+                    img(src="assets/img/group/avatar.png",alt="img") 
+                  a.board24_plaza-person__name(href="#!") Вы
+                  a.board24_plaza-person__time(href="#!") 11.20
+                .board24_plaza-person__message 
+                  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae optio doloribus repellendus facilis at id hic pariatur sunt itaque officia! Harum voluptatem voluptate modi incidunt deleniti iste alias quisquam facere? 
+              .board24_middle-plaza__person.plaza-person
+                .board24_plaza-person__header
+                  a.board24_plaza-person__icon(href="#!")
+                    img(src="assets/img/group/avatar.png",alt="img") 
+                  a.board24_plaza-person__name(href="#!") Name Surname 3
+                  a.board24_plaza-person__time(href="#!") 11.10
+                .board24_plaza-person__message
+                  p Your idea for this application is nice! 
+
+
+

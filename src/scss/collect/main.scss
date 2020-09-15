@@ -59,7 +59,7 @@
     // ------------------------
     &__static {
       flex: 0 1 482px;
-      height: 240px;
+      margin: 0 0 20px 0;
     }
     &__line-left {
       padding: 12px 0 8px;
@@ -234,6 +234,10 @@
         border-radius: 50%;
       }
     }
+ .board24_person-cabinet__title{
+        width: auto !important;
+        display: inline-flex;
+     }
 
     .board24_flex-align {
     margin: 0 0 35px;
@@ -262,12 +266,13 @@ color: $azure;
   }
 
   &__link {
-    width: 255px;
-    height: 50px;
+    width: 255px !important;
+    height: 50px !important;
     border-radius: 4px;
     box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.1);
     background-color: $white;
     @include center();
+
   }
 }
 .board24_person-cabinet__mark {
