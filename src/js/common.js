@@ -7,7 +7,8 @@ import $ from "jquery";
 let tab = $(".board24_tab-js");
 let tabitem = $(".board24_item-js");
 
-tabitem.fadeOut().removeClass("act");
+// tabitem.fadeOut().removeClass("act");
+tabitem.fadeOut().fadeIn(10).addClass("act");
 
 tab.on("click", function () {
 if (tabitem.eq($(this).index()).hasClass("act")){
