@@ -281,7 +281,7 @@
       .board24_question-drop-down {
       margin: 54px 0 70px 0;
     //  display: none;
-     
+     flex: 0 1 100%;
 
       .board24_question-drop-down__title {
         @include alic();

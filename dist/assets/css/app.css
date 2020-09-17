@@ -1936,6 +1936,9 @@ h6 {
   .board24_tab-item__interview
   .board24_question-drop-down {
   margin: 54px 0 70px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
 }
 .board24_middle-group-card
   .board24_tab-item__interview
@@ -2088,7 +2091,7 @@ h6 {
   width: 16px;
   height: 16px;
   border: 1px solid #109cf1;
-  background-image: url(/assets/img/group/v-1.svg);
+  background-image: url(../img/group/v-1.svg);
   background-repeat: no-repeat;
   background-size: 80%;
   background-position: 50%;

@@ -4,146 +4,38 @@ import $ from "jquery";
 
 
 // -------------табы на странице group-card
-// let tab = $(".board24_tab-js");
-// let tabitem = $(".board24_item-js");
 
+let tab = $(".board24_tab-js");
+$(".board24_item-js").fadeOut(10);
 
+tab.find(".board24_tab-item__title").on("click", function () {
+let tabitem = $(this).siblings(".board24_item-js");
+if (tabitem.hasClass("act")) {
+  tabitem.fadeOut(10).removeClass("act");
+  $(this).find(".icon-arrow_drop_down").css("transform", "rotate(0deg)");
+} else {
+  tabitem.fadeIn(10).addClass("act");
+  $(this).find(".icon-arrow_drop_down").css("transform","rotate(180deg)");
+}
 
-
-
-
-
-// ----------технологический скрипт---потом убрать-------------
-// tabitem.fadeOut().addClass("act");
-// tabitem.fadeIn().addClass("act");
-// --------------------------------------------
-
-
-// tab.on("click", function () {
-// if (tabitem.eq($(this).index()).hasClass("act")){
-// tabitem.eq($(this).index()).fadeOut(10).removeClass("act");
-// $(".icon-arrow_drop_down").eq($(this).index()).removeClass("act");
-
-// }else{
-//   tabitem.eq($(this).index()).fadeIn(10).addClass("act");
-// $(".icon-arrow_drop_down").eq($(this).index()).addClass("act");
-// }
-// });
-
-
-// --------materials-------------
-let tabmaterials = $("#board24_item__materials .board24_tab-item__title");
-let tabitemmaterials = $("#board24_item__materials .board24_item-js");
-tabitemmaterials.fadeOut().removeClass("act");
-
-tabmaterials.on("click", function () {
-  if (tabitemmaterials.hasClass("act")) {
-    tabitemmaterials.fadeOut(10).removeClass("act");
-    $(".materials-icomoon").eq($(this).index()).removeClass("act");
-  } else {
-    tabitemmaterials.fadeIn(10).addClass("act");
-    $(".materials-icomoon").eq($(this).index()).addClass("act");
-  }
 });
-
-// -----------reports----------------
-
-let tabreports = $("#board24_item_reports .board24_tab-item__title");
-let tabitemreports = $("#board24_item_reports .board24_item-js");
-tabitemreports.fadeOut().removeClass("act");
-
-tabreports.on("click", function () {
-  if (tabitemreports.hasClass("act")) {
-    tabitemreports.fadeOut(10).removeClass("act");
-    $(".reports-icomoon").removeClass("act");
-  } else {
-    tabitemreports.fadeIn(10).addClass("act");
-    $(".reports-icomoon").addClass("act");
-  }
-});
-
-// -----------interview----------------
-
-let tabinterview = $("#board24_item-interview .board24_tab-item__title");
-let tabiteminterview = $("#board24_item-interview .board24_item-js");
-tabiteminterview.fadeOut().removeClass("act");
-
-tabinterview.on("click", function () {
-  if (tabiteminterview.hasClass("act")) {
-    tabiteminterview.fadeOut(10).removeClass("act");
-    $(".interview-icomoon").removeClass("act");
-  } else {
-    tabiteminterview.fadeIn(10).addClass("act");
-    $(".interview-icomoon").addClass("act");
-  }
-});
-
-// -----------------calendar------------------------------
-
-let tabcalendar = $("#board24_item-calendar .board24_tab-item__title");
-let tabitemcalendar = $("#board24_item-calendar .board24_item-js");
-tabitemcalendar.fadeOut().removeClass("act");
-
-tabcalendar.on("click", function () {
-  if (tabitemcalendar.hasClass("act")) {
-    tabitemcalendar.fadeOut(10).removeClass("act");
-    $(".calendar-icomoon").removeClass("act");
-  } else {
-    tabitemcalendar.fadeIn(10).addClass("act");
-    $(".calendar-icomoon").addClass("act");
-  }
-});
-
-// ---------------news------------------------
-
-let tabnews = $("#board24_item-news .board24_tab-item__title");
-let tabitemnews = $("#board24_item-news .board24_item-js");
-tabitemnews.fadeOut().removeClass("act");
-
-tabnews.on("click", function () {
-  if (tabitemnews.hasClass("act")) {
-    tabitemnews.fadeOut(10).removeClass("act");
-    $(".news-icomoon").removeClass("act");
-  } else {
-    tabitemnews.fadeIn(10).addClass("act");
-    $(".news-icomoon").addClass("act");
-  }
-});
-// ---------------tasks------------------------
-
-let tabtasks = $("#board24_item-tasks .board24_tab-item__title");
-let tabitemtasks = $("#board24_item-tasks .board24_item-js");
-tabitemtasks.fadeOut().removeClass("act");
-
-tabtasks.on("click", function () {
-  if (tabitemtasks.hasClass("act")) {
-    tabitemtasks.fadeOut(10).removeClass("act");
-    $(".tasks-icomoon").removeClass("act");
-  } else {
-    tabitemtasks.fadeIn(10).addClass("act");
-    $(".tasks-icomoon").addClass("act");
-  }
-});
-
-
-
 
 // ------------раздел опрос-------------------------
 let question = $(".js-question");
-let questiondrop = $(".js-question-drop");
+$(".js-question-drop").fadeOut(10);
 
-questiondrop.fadeOut().removeClass("act");
-question.on("click", function () {
-  if (questiondrop.eq($(this).index()).hasClass("act")) {
-    questiondrop.eq($(this).index()).fadeOut(10).removeClass("act");
-    $(".board24_interview-icomoon-del").eq($(this).index()).css("opacity", "1");
-  } else {
-    questiondrop.eq($(this).index()).fadeIn(10).addClass("act");
-    $(".board24_interview-icomoon-del").eq($(this).index()).css("opacity", "0");
-  }
+question.find(".q-js").on("click", function () {
+let questiondrop = $(this).siblings(".js-question-drop");
+
+if(questiondrop.hasClass("act")){
+ questiondrop.fadeOut(10).removeClass("act");
+ $(this).siblings(".icon-arrow_drop_down").css("opacity", "1"); 
+}
+else {
+questiondrop.fadeIn(10).addClass("act");
+$(this).siblings(".icon-arrow_drop_down").css("opacity", "0");
+ }
 });
-
-
 
 
 
