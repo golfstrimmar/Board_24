@@ -1,9 +1,6 @@
 @import "../includes/main/menu.scss";
 
-
-
 .board24_home {
- 
   &__wrapper {
     width: 100%;
     // height: 100vh;
@@ -21,7 +18,7 @@
   flex: 1 0 20%;
   // overflow-y: scroll;
   scrollbar-width: none;
-  
+
   &::-webkit-scrollbar {
     width: 0;
   }
@@ -133,8 +130,7 @@
     }
     &__line {
       @include jucb();
-      &_plaha {
-      }
+      position: relative;
     }
     .board24_line-button {
       position: relative;
@@ -157,28 +153,67 @@
       background-color: $pale-grey-two;
       padding: 26px 24px 0;
       flex: 1 0 20%;
-    margin: 0 0 20px;
+      margin: 0 0 20px;
+
+ 
     }
+  
+  // ----------------------------------
+  
     &__line {
       padding: 20px 0 20px;
-      
-    }
-    .board24_middle-plaza__date{
-      width: 20% !important;
-      height: auto;
-      flex: 0 1 100%;
 
+
+      .board24_middle-plaza__link {
+        @include Text-Style-39;
+        color: $azure;
+        &_big {
+          flex: 0 1 100%;
+        }
+      }
+       .board24_button-color-cub{
+      width: 120px;
+      height: 20px;
+border: 1px solid #E5E5E5;
+box-sizing: border-box;
+border-radius: 12px;
+background-color: transparent;
+margin: 0 10px 0 0;
+        a {
+          font-family: OpenSans;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 10px;
+          line-height: 16px;
+          text-align: center;
+          letter-spacing: 0.2px;
+          color: #707683 !important;
+        }
+      }
+
+    .board24_middle-plaza__date {
+      height: auto;
+      flex: 0 1 34%;  
+      position: relative;
+      @include Text-Style-25;
+    
     }
+   
+    }
+
+   
+    
+ 
+// -----------------------------------------
+
     &__title {
       padding: 25px 0 0 0;
-
     }
     &__img {
       position: relative;
       padding: 0 0 51%;
       margin: 19px 0 0 0;
       width: 100%;
-
     }
     &__text {
       @include Text-Style-39;
@@ -186,10 +221,9 @@
     }
     &__header {
       padding: 0 0 0 0;
-       width: auto;
+      width: auto;
       height: auto;
-          flex: 1 1 35%;
-
+      flex: 1 1 35%;
     }
   }
 }
@@ -234,13 +268,13 @@
         border-radius: 50%;
       }
     }
- .board24_person-cabinet__title{
-        width: auto !important;
-        display: inline-flex;
-     }
+    .board24_person-cabinet__title {
+      width: auto !important;
+      display: inline-flex;
+    }
 
     .board24_flex-align {
-    margin: 0 0 35px;
+      margin: 0 0 35px;
     }
 
     &__line {
@@ -251,13 +285,13 @@
       // height: auto;
       height: 49px;
       @include alic();
-      &:hover{
+      &:hover {
         // width: 240px;
-  // height: 48px;
-  background-color: $ice-blue;
-  transform: scale(1.0);
-color: $azure;
-        }
+        // height: 48px;
+        background-color: $ice-blue;
+        transform: scale(1);
+        color: $azure;
+      }
       .board24_person-cabinet__mark {
         top: 50%;
         transform: translate(0%, -33%);
@@ -272,7 +306,6 @@ color: $azure;
     box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.1);
     background-color: $white;
     @include center();
-
   }
 }
 .board24_person-cabinet__mark {
@@ -376,3 +409,5 @@ color: $azure;
     }
   }
 }
+
+
