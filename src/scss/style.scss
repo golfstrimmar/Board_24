@@ -7,7 +7,7 @@
 // @import "utils/slick";
 
 // !!!!!!----отключать перед production
-// @import "utils/for-work-only.scss";
+@import "utils/for-work-only.scss";
 // !!!!!!!!!!!!!!!!!!!!!!!
 
 // ----подключение bootstrap-------------------- 
@@ -77,6 +77,9 @@
 
 // ------inter----------
 @import "collect/inter.scss";
+
+// ------inter-1----------
+@import "collect/inter-1.scss";
 
 
 

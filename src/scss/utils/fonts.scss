@@ -156,6 +156,7 @@ font-stretch: normal;
 }
 
 
+
 .icon-edit:before {
   content: "\e900";
   color: #90a0b7;
@@ -171,6 +172,12 @@ font-stretch: normal;
 .icon-arrow_drop_down:before {
   content: "\e906";
 }
+.icon-close2:before {
+  content: "\e904";
+}
+
+
+
 
 @mixin Text-Style-20 {
   font-family: OpenSans;
