@@ -39,13 +39,10 @@
   display: flex;
   flex-wrap: wrap;
 }
-.flex {
+.board24_flex {
   display: flex;
   flex-wrap: wrap;
 }
-
-
-
 
 @mixin fdc {
   display: flex;
@@ -64,6 +61,12 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+.board24_jucc{
+display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 
 @mixin jucs {
   display: flex;
@@ -71,11 +74,19 @@
   justify-content: flex-start;
 }
 
+
+
 @mixin juce {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
 }
+.board24_juce{
+display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
 
 @mixin jucb {
   display: flex;
@@ -136,94 +147,93 @@
 
 // ---------mixins страница  main----------------------
 
-.board24_button-blue{
-    width: 255px;
+.board24_button-blue {
+  width: 255px;
   height: 42px;
   border-radius: 4px;
   box-shadow: 0 4px 10px 0 rgba(16, 156, 241, 0.24);
   background-color: $azure;
+  @include center();
+  &__link {
+    @include Text-Style-21;
+    width: 100%;
+    height: 100%;
     @include center();
- &__link{
-@include Text-Style-21;
-width: 100%;
-height: 100%;
-@include center();
- } 
+  }
 }
 // ----------
-.board24_button-blue-small{  
-width: 180px;
-    height: 22.9px;
-    border-radius: 4px;
-    background-color: #109cf1;
-&__link{
-@include Text-Style-33; 
-width: 100%;
-height: 100%;
-@include center();
-line-height: 2;
- } 
+.board24_button-blue-small {
+  width: 180px;
+  height: 22.9px;
+  border-radius: 4px;
+  background-color: #109cf1;
+  &__link {
+    @include Text-Style-33;
+    width: 100%;
+    height: 100%;
+    @include center();
+    line-height: 2;
+  }
 }
 
 // ----------
-.board24_button-color{
+.board24_button-color {
   width: 96px;
   height: 22px;
   border-radius: 14px;
   // background-color: #ffb946;
-   a{
-@include Text-Style-30;
-@include center();
-line-height: 0.5;
-   }
-
+  a {
+    @include Text-Style-30;
+    @include center();
+    line-height: 0.5;
+  }
 }
 
 // ----
-.board24_button-color-cub{
-width: 102px;
-    height: 23px;
-    border-radius: 4px;
-      a{
-@include Text-Style-30;
-@include center();
-line-height: 0.5;
-   }
+.board24_button-color-cub {
+  width: 102px;
+  height: 23px;
+  border-radius: 4px;
+  a {
+    @include Text-Style-30;
+    @include center();
+    line-height: 0.5;
+  }
 }
 // ------
 
-
-.board24_button-empty{
+.board24_button-empty {
   width: 130px;
   height: 30px;
   border-radius: 4px;
   border: solid 1px $azure;
 
-    &__link{
-@include Text-Style-36;
-@include center();
-line-height: 0.5;
-    }
+  &__link {
+    @include Text-Style-36;
+    @include center();
+    line-height: 0.5;
   }
+}
 // ---
 
-.board24_button-arrow{
+.board24_button-arrow {
   width: 70px;
   height: 20px;
- border: solid 1px $warm-grey-26;
+  border: solid 1px $warm-grey-26;
 
-  &__link{
-  @include Text-Style-39;
-@include jucb();
-@include alic();
-  padding: 0 8px; 
-  .board24_line-plaha__img1{
-    @include fdc();
-  }}
+  &__link {
+    @include Text-Style-39;
+    @include jucb();
+    @include alic();
+    padding: 0 8px;
+    .board24_line-plaha__img1 {
+      @include fdc();
+    }
+  }
 }
-  
+
 // ---------
-.board24_line-plaha__img1{
+.board24_line-plaha__img1 {
   @include fdc();
   margin: 0 0 0 0;
   padding: 0 0 0 0;
@@ -234,28 +244,85 @@ line-height: 0.5;
 // ------для задания background----------
 
 .board24_img-bg {
-    background: {
-      repeat: no-repeat;
-      size: cover;
-      position: center;
+  background: {
+    repeat: no-repeat;
+    size: cover;
+    position: center;
+  }
+}
+
+// ---------------
+.board24_chef__img {
+  width: 40px;
+  height: 40px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+}
+
+// -avatar-name()
+
+.board24_avatar-name {
+  @include jucs();
+  img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 13px 0 0;
+  }
+  .board24_board24_avatar-name__name {
+    p {
+      @include Text-Style-39;
+      &:last-child {
+        @include Text-Style-31;
+      }
     }
   }
+}
+
+// ---------------------------
 
 
-.butterscotch{
-background-color: #ffb946;
- }
-.apple-green{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ----------------------------
+.butterscotch {
+  background-color: #ffb946;
+}
+.apple-green {
   background-color: $apple-green;
 }
-.silver{
-  background-color: $silver;}
+.silver {
+  background-color: $silver;
+}
 
-.azure{
-   background-color: $azure;
- }
-  
- .coral-two{
-background-color: $coral-two;
- }
+.azure {
+  background-color: $azure;
+}
 
+.coral-two {
+  background-color: $coral-two;
+}
+.pale-grey{
+background-color: $pale-grey;}
