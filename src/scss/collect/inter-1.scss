@@ -92,3 +92,11 @@ opacity: 1!important;
     }
   }
 }
+
+// ---------------------------------
+
+.board24_middle-inter-4{
+  &__title{
+  @include  H1---medium-20-30-01px;
+  }
+}
