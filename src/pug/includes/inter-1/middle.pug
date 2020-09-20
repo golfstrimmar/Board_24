@@ -130,78 +130,164 @@ include ../../common/mixins
 
 
 //- ---------------------------------------
-section.board24_middle-inter-2.board24_middle-inter-4
-  span.board24_cross.icon-close2
-  .board24_middle-inter-4__title Собрание совета директоров по центральному региону от 13.11.19
-  .board24_area1 
-    .board24_area1__text <span>Leave a note here ..</span> Loipsum dolor sit, amet   consectetur adipisicing elDoloremque eligendi quibusdam hic, dolorem, laboriosam  vullam blanditiis labore ex quo autem, dolores similisapiente quod. Officia saepe  autem delectus perspiciatis!
-    .board24_jucb
-      .board24_jucb
-        a.board24_area1__img(href="#!") 
-          img(src="assets/img/inter/vt-1.svg",   alt="img")
-        a.board24_area1__img(href="#!")
-          img(src="assets/img/inter/vt-2.svg",   alt="img")
-        a.board24_area1__img(href="#!")
-          img(src="assets/img/inter/vt-3.svg",   alt="img")
-      .board24_flex
-        .board24_area1__button 
-          +button-color-cub("Отменить","pale-grey","#!")
-        .board24_area1__button
-          +button-color-cub("Сохранить","silver","#!")
-  .board24-corvet.board24-corvet
-    .board24-corvet__text Кому
-    .board24-corvet__text-area 
-      .board24-corvet__in-text Добавить
-  .board24_inter-plaza
-    .board24-corvet.board24-corvet_dark
-      .board24-corvet__text Вопрос №1
-      .board24-corvet__text-area 
-        .board24-corvet__in-text_dark Вопрос решения проекта для совета директоров
-        .board24-corvet__link(href="#!")
-          img(src="assets/img/inter/edit.svg",alt="img") 
-    .board24-corvet.board24-corvet_dark
-      .board24-corvet__text Ответ №1
-      .board24-corvet__text-area 
-        .board24-corvet__in-text_dark Проект решение №1
-        .board24-corvet__link(href="#!")
-          img(src="assets/img/inter/edit.svg",alt="img") 
-    .board24-corvet.board24-corvet_dark
-      .board24-corvet__text Ответ №2
-      .board24-corvet__text-area 
-        .board24-corvet__in-text_dark Проект решение от 12.08.11
-        .board24-corvet__link(href="#!")
-          img(src="assets/img/inter/edit.svg",alt="img")  
-  .board24_inter-plaza
-    .board24-corvet.board24-corvet_dark
-      .board24-corvet__text Вопрос №2
-      .board24-corvet__text-area 
-        .board24-corvet__in-text_dark Вопрос решения проекта для совета директоров
-        .board24-corvet__link(href="#!")
-          img(src="assets/img/inter/edit.svg",alt="img") 
-    .board24-corvet.board24-corvet_dark
-      .board24-corvet__text Ответ №1
-      .board24-corvet__text-area 
-        .board24-corvet__in-text_dark Проект решение №1
-        .board24-corvet__link(href="#!")
-          img(src="assets/img/inter/edit.svg",alt="img") 
-    .board24-corvet.board24-corvet_dark
-      .board24-corvet__text Ответ №2
-      .board24-corvet__text-area 
-        .board24-corvet__in-text_dark Проект решение от 12.08.11
-        .board24-corvet__link(href="#!")
-          img(src="assets/img/inter/edit.svg",alt="img")
-  .board24_middle-inter-4__buttons.board24_jucs.board24_alic.g
-    +button-blue("+ Добавить вопрос","#!")
-    +button-empty("Добавить из поручения","#!")
-    +button-empty("Добавить из заседания","#!")
-    +button-empty("+ Вопросы вне повестки","#!")
-  .board24_inter-comments
-    .board24_inter-comments__title Комментарии
-    .board24_inter-comments__block
-      .board24_inter-comments__plaha
-        p Lorem ipsum dolor sit amet, ut per pertinax assueverit, dissenthonestatis usu an. Ei vim feugait aliquando, mei enim insolens ut.
-        .board24_inter-plaza__link
-          img(src="assets/img/inter/edit.svg",alt="img") 
-      .board24_inter-comments__shef
-        +chef()
-  +button-blue("Начать заседание","#!") 
+//- section.board24_middle-inter-2.board24_middle-inter-4
+//-   span.board24_cross.icon-close2
+//-   .board24_middle-inter-4__title Собрание совета директоров по центральному региону от 13.11.19
+//-   .board24_area1 
+//-     .board24_area1__text <span>Leave a note here ..</span> Loipsum dolor sit, amet   consectetur adipisicing elDoloremque eligendi quibusdam hic, dolorem, laboriosam  vullam blanditiis labore ex quo autem, dolores similisapiente quod. Officia saepe  autem delectus perspiciatis!
+//-     .board24_jucb
+//-       .board24_jucb
+//-         a.board24_area1__img(href="#!") 
+//-           img(src="assets/img/inter/vt-1.svg",   alt="img")
+//-         a.board24_area1__img(href="#!")
+//-           img(src="assets/img/inter/vt-2.svg",   alt="img")
+//-         a.board24_area1__img(href="#!")
+//-           img(src="assets/img/inter/vt-3.svg",   alt="img")
+//-       .board24_flex
+//-         .board24_area1__button 
+//-           +button-color-cub("Отменить","pale-grey","#!")
+//-         .board24_area1__button
+//-           +button-color-cub("Сохранить","silver","#!")
+//-   .board24_middle-inter-4__c1.board24-corvet
+//-     .board24-corvet__text Кому
+//-     .board24-corvet__text-area 
+//-       .board24-corvet__in-text Добавить
+//-   .board24_middle-inter-4__p1.board24_inter-plaza
+//-     .board24-corvet.board24-corvet_dark
+//-       .board24-corvet__text Вопрос №1
+//-       .board24-corvet__text-area 
+//-         .board24-corvet__in-text_dark Вопрос решения проекта для совета директоров
+//-         .board24-corvet__link(href="#!")
+//-           img(src="assets/img/inter/edit.svg",alt="img") 
+//-     .board24-corvet.board24-corvet_dark.board24_mar60
+//-       .board24-corvet__text Ответ №1
+//-       .board24-corvet__text-area 
+//-         .board24-corvet__in-text_dark Проект решение №1
+//-         .board24-corvet__link(href="#!")
+//-           img(src="assets/img/inter/edit.svg",alt="img") 
+//-     .board24-corvet.board24-corvet_dark.board24_mar60
+//-       .board24-corvet__text Ответ №2
+//-       .board24-corvet__text-area 
+//-         .board24-corvet__in-text_dark Проект решение от 12.08.11
+//-         .board24-corvet__link(href="#!")
+//-           img(src="assets/img/inter/edit.svg",alt="img")  
+//-   .board24_middle-inter-4__p2.board24_inter-plaza  
+//-     .board24-corvet.board24-corvet_dark
+//-       .board24-corvet__text Вопрос №2
+//-       .board24-corvet__text-area 
+//-         .board24-corvet__in-text_dark Вопрос решения проекта для совета директоров
+//-         .board24-corvet__link(href="#!")
+//-           img(src="assets/img/inter/edit.svg",alt="img") 
+//-     .board24-corvet.board24-corvet_dark.board24_mar60
+//-       .board24-corvet__text Ответ №1
+//-       .board24-corvet__text-area 
+//-         .board24-corvet__in-text_dark Проект решение №1
+//-         .board24-corvet__link(href="#!")
+//-           img(src="assets/img/inter/edit.svg",alt="img") 
+//-     .board24-corvet.board24-corvet_dark.board24_mar60
+//-       .board24-corvet__text Ответ №2
+//-       .board24-corvet__text-area 
+//-         .board24-corvet__in-text_dark Проект решение от 12.08.11
+//-         .board24-corvet__link(href="#!")
+//-           img(src="assets/img/inter/edit.svg",alt="img")
+//-   .board24_middle-inter-4__buttons.board24_jucs.board24_alic.g
+//-     +button-blue("+ Добавить вопрос","#!")
+//-     +button-empty("Добавить из поручения","#!")
+//-     +button-empty("Добавить из заседания","#!")
+//-     +button-empty("+ Вопросы вне повестки","#!")
+//-   .board24_middle-inter-4__k1.board24_inter-comments
+//-     .board24_inter-comments__title Комментарии
+//-     .board24_inter-comments__block
+//-       .board24_inter-comments__plaha
+//-         p Lorem ipsum dolor sit amet, ut per pertinax assueverit, dissenthonestatis usu an. Ei vim feugait aliquando, mei enim insolens ut.
+//-         .board24_inter-plaza__link
+//-           img(src="assets/img/inter/edit.svg",alt="img") 
+//-       .board24_inter-comments__shef
+//-         +chef()
+//-   +button-blue("Начать заседание","#!") 
+
+
+//- ----------------------------------------------------------------
+section.board24_middle-inter-2.board24_middle-inter-5.board24_middle-inter
+
+      .board24_middle__plaza.board24_middle-plaza
+      .board24_middle-plaza__body
+        .board24_middle-plaza__stretsh
+          .board24_inter__header Новое поручение
+          //- inter-plaza
+          .board24_inter__plaza.board24_inter-plaza
+            .board24_inter-plaza__header Название поручения
+            .board24_inter-plaza__discription Поручение №1234567890
+              forma.board24_inter-forma.board24_flex  
+              .board24_flex.board24_inter-forma__item 
+                input.custom-checkbox(type="checkbox" name="inter" value="1" id="yes")
+                label.board24_text-small-blue(for="yes") Сохранить как шаблон
+            hr
+            //- area1
+            .board24_inter-plaza__text-area1.board24_area1 
+              .board24_area1__text Leave a note here
+              .board24_jucb
+                .board24_jucb
+                  a.board24_area1__img(href="#!") 
+                    img(src="assets/img/inter/vt-1.svg",   alt="img")
+                  a.board24_area1__img(href="#!")
+                    img(src="assets/img/inter/vt-2.svg",   alt="img")
+                  a.board24_area1__img(href="#!")
+                    img(src="assets/img/inter/vt-3.svg",   alt="img")
+                .board24_flex
+                  .board24_area1__button 
+                    +button-color-cub("Отменить","pale-grey","#!")
+                  .board24_area1__button
+                    +button-color-cub("Сохранить","silver","#!")
+            //- corvet
+            .board24_inter-plaza__corvet1.board24-corvet
+              .board24-corvet__text Ответственный
+              .board24-corvet__text-area 
+                .board24-corvet__in-text Добавить еще
+            //- corvet
+            .board24_inter-plaza__corvet1.board24-corvet
+              .board24-corvet__text Ответственный
+              .board24-corvet__text-area 
+                .board24-corvet__in-text Добавить еще
+            //- corvet
+            .board24_inter-plaza__corvet1.board24-corvet
+              .board24-corvet__text Ответственный
+              .board24-corvet__text-area 
+                .board24-corvet__in-text Добавить еще
+            //- corvet
+            .board24_inter-plaza__corvet1.board24-corvet
+              .board24-corvet__text Ответственный
+              .board24-corvet__text-area 
+                .board24-corvet__in-text Добавить еще
+            
+            //- bots
+            .board24_inter-plaza__bots.board24-corvet.board24-bots
+              .board24-corvet__text 
+              .board24-corvet__text-area
+                //- bot
+                .board24_bot
+                  .board24_bot__text Крайний <br> срок
+                  .board24_bot__text-area
+                    .board24_bot__in-text 01.01.2000
+                    img(src="assets/img/inter/schedule.svg",alt="img")
+                //- bot
+                .board24_bot
+                  .board24_bot__text Планирование сроков
+                  .board24_bot__text-area 
+                    .board24_bot__in-text-blue
+                      p Дополнительно 
+                      span.icon-arrow_drop_down
+
+            //- corvet
+            .board24_inter-plaza__corvet1.board24-corvet
+              .board24-corvet__text Ответственный
+              .board24-corvet__text-area 
+                .board24-corvet__in-text Добавить еще
+          
+          .board24_inter__buttons.board24_jucs
+            forma.board24_inter-forma.board24_flex 
+              .board24_flex.board24_inter-forma__item 
+                input.custom-checkbox(type="checkbox" name="inter" value="1" id="yes")
+                label.board24_text-small-blue(for="yes") Сохранить как шаблон
+            +button-empty("Отменить","#!") 
+            +button-blue("Поставить поручение","#!")

@@ -1,5 +1,7 @@
 .board24_middle-inter-1 {
   // background-color: #e74c45;
+  background-color: $white;
+
   width: 735px;
   // height: 650px;
   border-radius: 4px;
@@ -35,6 +37,7 @@
 }
 // --------------------------------------------
 .board24_middle-inter-2 {
+  background-color: $white;
   width: 825px;
   border-radius: 4px;
   border: solid 1px #e5e5e5;
@@ -96,7 +99,78 @@ opacity: 1!important;
 // ---------------------------------
 
 .board24_middle-inter-4{
+  background-color: $white;
+    // background-color: #d24a4c;
+
+  padding: 18px 21px 53px;
   &__title{
   @include  H1---medium-20-30-01px;
+  width: 70%;
+  margin: 0 0 19px 0;
   }
+ 
+ &__c1
+{ margin: 26px 0 0 0;
+} 
+  &__p1
+ {margin: 44px 0 0;
+    padding: 22px 24px 22px;}
+ 
+&__p2 {
+    margin: 20px 0 0;
+    padding: 22px 24px;
+}
+
+ .board24_mar60 {
+    margin: 9px 0 0 60px;
+}
+ 
+ 
+  .board24_middle-inter-4__buttons
+ { 
+   margin: 23px 0 0 0; 
+  
+  .board24_button-blue{
+   margin: 0 0 0 0;
+      width: 150px;
+  height: 30px;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 0 rgba(16, 156, 241, 0.24);
+  background-color: $azure;
+  .board24_button-blue__link{
+    @include Text-Style-33;
+  }
+  }
+.board24_button-empty {
+    margin: 0 0 0 14px;
+}
+
+}
+.board24_button-empty{
+   width: 150px;
+}
+&__k1
+{margin: 36px 0;}
+
+
+}
+
+
+// -------------------------------
+.board24_mar60{
+  margin: 0 0 0 60px;
+}
+
+
+// ------------------------------
+
+.board24_middle-inter-5
+{
+   .board24_inter__header {
+    font-family: OpenSans;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: .1px;
+}
 }
