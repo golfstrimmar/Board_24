@@ -50,7 +50,26 @@ $(this).css(
 //   "height","auto",
 // );;
 
-  
+  // --------табы на модалке собрание совета директров---------------
+  // .board24_inter-4-box1__drop
+  // .board24_tab-js
+let tab1 = $(".board24_tab-js");
+$(".board24_inter-4-box1__drop").fadeOut(10); 
+
+tab1.find(".board24_inter-4-box1__title").on("click", function () {
+  let box1 = $(this).siblings(".board24_inter-4-box1__drop");
+
+  if (box1.hasClass("act")) {
+    box1.fadeOut(10).removeClass("act");
+$(this).siblings(".icon-arrow_drop_down").css("transform", "rotate(0deg)");
+  } else {
+    box1.fadeIn(10).addClass("act");
+    $(this)
+      .siblings(".icon-arrow_drop_down")
+      .css("transform", "rotate(180deg)");
+  }
+});
+
 // ==========ibg=========
 function ibg() {
   $.each($(".board24_ibg"), function (index, val) {

@@ -5,6 +5,17 @@
 
 include ./../common/mixins
 
+
+//- --------- fonts.scss 287----------------------
+h4 h4 Text Style 22
+h2 h2 Text Style 20
+h3 h3 Text Style 34
+h5 h5 Text Style 38
+h6 h6 Text Style 25
+
+
+
+
 //- ------------------------------------------
 //- -------------------mixins.scss--   154--
 mixin button-color(text, color, link)
@@ -175,32 +186,13 @@ mixin avatar-name()
 
 //- +avatar-name()
 
-//- --------- fonts.scss 287----------------------
 
 
-
-h4 h4 Text Style 22
-
-
-h2 h2 Text Style 20
-
-
-h3 h3 Text Style 34
-
-
-h5 h5 Text Style 38
-
-
-h6 h6 Text Style 25
-
-
-
-//- text-area с тремя иконками и двумя кнопками
-//- ---------------------------------
-//- ---------------------------------
-
-.board24_area1 
-  .board24_area1__text <span>Описание опроса. ..</span> Loipsum dolor sit, amet consectetur adipisicing elDoloremque eligendi quibusdam hic, dolorem, laboriosam vullam blanditiis labore ex quo autem, dolores similisapiente quod. Officia saepe autem delectus perspiciatis!
+//- area1
+.board24_inter-plaza__text-area1.board24_area1 
+  .board24_area1__text.board24_ts 
+    span.board24_ts Описание опроса. ..
+    span  Lorem ipsum dolor sit, amet consectetur adipisicing Doloremque eligendi quibusdam hic, dolorem, laboriosam vero blanditiis labore ex quo autem, dolores similique sapiente Officia saepe autem delectus perspiciatis!
   .board24_jucb
     .board24_jucb
       a.board24_area1__img(href="#!") 
@@ -215,312 +207,49 @@ h6 h6 Text Style 25
       .board24_area1__button
         +button-color-cub("Сохранить","silver","#!")
 
-//- .board24_area1 {
-//-   border-radius: 4px;
-//-   border: solid 1px #e5e5e5;
-//-   background-color: $white;
-//-   padding: 14px 23px 6px 12px;
-//-   min-height: 60px;
-//-   @include fdc();
-//-   @include jucb();
-//-   &__text {
-//-     @include Text-Style;
-//-     padding: 0 0 10px 0;
-//-     span {
-//-       opacity: 0.4;
-//-     }
-//-   }
-//-   .board24_area1__img {
-//-     margin: 0 16px 0px 0;
-//-     width: 18px;
-//-     @include center();
-//-   }
 
-//-   .board24_area1__button {
-//-     margin: 0 6px 0 0;
-//-     &:last-child {
-//-       margin: 0 0 0 0;
-//-     }
-//-     .board24_button-color-cub {
-//-       width: 100px;
-//-       height: 20px;
-//-       border-radius: 2px;
-//-       border: solid 1px #e5e5e5;
-//-       background-color: $pale-grey;
-//-       a {
-//-         @include Text-Style-24;
-//-         opacity: 0.4;
-//-       }
-//-     }
-
-//-     &:last-child {
-//-       .board24_button-color-cub {
-//-         a {
-//-           @include Text-Style-26;
-//-         }
-//-       }
-//-     }
-//-   }
-//- }
-
-//- ---------------------------------
-
-
-
-//- // ------------corvet*-------блок с синим текстом .board24-corvet --и блок с серым текстом  .board24-corvet.board24-corvet_dark-----------------------
-
+//-  corvet
 .board24-corvet
-  .board24-corvet__text Вопрос №1
+  .board24-corvet__text.board24_ts-5 Вопрос №1
   .board24-corvet__text-area   
-    .board24-corvet__in-text Добавить 
-    .board24-corvet__link(href="#!")
-      img(src="assets/img/inter/edit.svg",alt="img") 
+    a.board24-corvet__in-text(href="#!").board24_ts
+      span.board24_ts-7-b Добавить 
+      span.board24_ts Lorem ipsum dolor, sit amet consecadipisicing elit. Sed sunt quam neque voluptates accusdicta assumenda, molestiae obcaecati suscipit harum facead veniam, consectetur quae quas? Vel, accusantium minus?
+    img(src="assets/img/inter/edit.svg",alt="img") 
 
-
-.board24-corvet.board24-corvet_dark
-  .board24-corvet__text Участники
-  .board24-corvet__text-area 
-    .board24-corvet__in-text_dark Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla voluptates deleniti aliquid tempora modi, facere quod quae. Accusantium quaerat unde laborum? Similique a nam
-
-
-
-
-//- .board24-corvet {
-//-   min-height: 40px;
-//-   box-sizing: border-box;
-//-   @include jucb();
-
-//-   &__text-area {
-//-     padding: 5px 10px 5px 17px;
-//-     box-sizing: border-box;
-//-     width: 89%;
-//-     min-height: 40px;
-//-     border-radius: 4px;
-//-     border: solid 1px #e5e5e5;
-//-     background-color: $white;
-//-     position: relative;
-//-     @include jucb();
-//-     @include alic();
-//-   }
-//-   &__in-text {
-//-     @include small-3---regular-10-16-02px;
-//-     color: $azure;
-//-   }
-//-   &__link {
-//-     width: 16px;
-//-     height: 16px;
-//-     position: absolute;
-//-     bottom: 10px;
-//-     right: 10px;
-//-   }
-//-   &__text {
-//-     width: 8.4%;
-//-     text-align: right;
-//-     @include small-3---regular-10-16-02px;
-//-   }
-
-//-   &_dark {
-//-     .board24-corvet__text-area {
-//-       .board24-corvet__in-text_dark {
-//-         @include Body-2---regular-12-18-01px;
-//-       }
-//-     }
-//-   }
-//- } 
 
 //- // -----bots*--------планка из 2-х bot вровень с корветом---------------------
 
-//- bots
+//-- bots
 .board24_inter-plaza__bots.board24-corvet.board24-bots
   .board24-corvet__text 
   .board24-corvet__text-area
     //- bot
     .board24_bot
-      .board24_bot__text Крайний <br> срок
+      .board24_bot__text.board24_ts-5 Крайний <br> срок
       .board24_bot__text-area
-        .board24_bot__in-text 01.01.2000
+        .board24_bot__in-text.board24_ts 01.01.2000
         img(src="assets/img/inter/schedule.svg",alt="img")
     //- bot
     .board24_bot
-      .board24_bot__text Планирование сроков
+      .board24_bot__text.board24_ts-3 Планирование сроков
       .board24_bot__text-area 
         .board24_bot__in-text-blue
-          p Дополнительно 
+          p.board24_ts-29 Дополнительно 
           span.icon-arrow_drop_down
 
 
-//- // -----------меньший блок* с рогатой иконкой--------
-//- .board24_bot {
-//-   width: 50%;
-//-   @include juce();
-//-   &__text {
-//-     margin: 0 20px 0 0;
-//-     text-align: right;
-//-     @include small-3---regular-10-16-02px;
-//-   }
-//-   &__text-area {
-//-     box-sizing: border-box;
-//-     position: relative;
-//-     padding: 3px 10px;
-//-     min-width: 200px;
-//-     flex: 0 1 56%;
-//-     height: 40px;
-//-     border-radius: 4px;
-//-     border: solid 1px #e5e5e5;
-//-     background-color: $white;
-
-//-     .board24_inter__text-blue {
-//-       width: 100%;
-//-       height: 100%;
-
-//-       @include alic();
-//-       @include jucb();
-//-       p {
-//-         @include Text-Style-29;
-//-       }
-//-     }
-//-     img {
-//-       position: absolute;
-//-       width: 16px;
-//-       height: 16px;
-//-       right: 10px;
-//-       top: 50%;
-//-       transform: translate(0%, -50%);
-//-     }
-//-   }
-
-//-   &__in-text {
-//-     @include Text-Style;
-//-   }
-
-//-   // меньший блок с селектом "дополнительно"
-//-   &__in-text-blue {
-//-     width: 100%;
-//-     height: 100%;
-
-//-     @include alic();
-//-     @include jucb();
-//-     p {
-//-       @include Text-Style-29;
-//-     }
-//-   }
-//- }
-//- // -----bots*--------планка из 2-х bot вровень с корветом---------------------
-//-   .board24-bots {
-//-       margin: 0 0 0 54px;
-//-       .board24-corvet__text-area {
-//-         padding: 0 0 0 0;
-//-         border: none;
-//-         background-color: transparent;
-//-         .board24_bot {
-//-           position: relative;
-//-           width: 33.2%;
-//-           .board24_bot__text-area {
-//-             flex: 0 1 100%;
-//-           }
-
-//-           &:first-child {
-//-             .board24_bot__text {
-//-               position: absolute;
-//-               width: 25%;
-//-               height: 100%;
-//-               top: 0%;
-//-               right: 100%;
-//-               margin: 0 9% 0 0;
-//-             }
-//-           }
-//-           &:last-child {
-//-             .board24_bot__text {
-//-               position: absolute;
-//-               width: 100%;
-//-               height: 100%;
-//-               top: 0%;
-//-               right: 100%;
-//-               margin: 0 9% 0 0 !important;
-//-             }
-//-           }
-//-         }
-//-       }
-    }
-
-
-//-comments
-.board24_inter-comments
-  .board24_inter-comments__title Комментарии
+//--comments
+.board24_inter__comments.board24_inter-comments
+  .board24_inter-comments__title.board24_ts-2 Комментарии
   .board24_inter-comments__block
     .board24_inter-comments__plaha
-      p Lorem ipsum dolor sit amet, ut per pertinax assueverit,dissenthonestatis usu an. Ei vim feugait aliquando, mei eniminsolens ut.
+      p.board24_ts Lorem ipsum dolor sit amet, ut per pertassueverit, dissentias honestatis usu an. Ei vim feualiquando, mei enim insolens ut.
       .board24_inter-plaza__link
         img(src="assets/img/inter/edit.svg",alt="img") 
     .board24_inter-comments__shef
       +chef()
 
-//-  // ------------раздел с комментариями*----------------------------
-
-//-   .board24_inter-comments {
-//-     .board24_inter-comments__title {
-//-       @include small-2---medium-11-16-02px;
-//-       margin: 0 0 10px 0;
-//-     }
-//-     .board24_inter-comments__block {
-//-       @include jucb();
-//-       .board24_inter-comments__plaha {
-//-         width: 92.3%;
-//-         height: 110px;
-//-         border-radius: 4px;
-//-         border: solid 1px #e5e5e5;
-//-         background-color: $pale-grey;
-//-         padding: 16px;
-//-         box-sizing: border-box;
-//-         position: relative;
-//-         p {
-//-           @include Text-Style;
-//-         }
-//-         .board24_inter-plaza__link {
-//-           position: absolute;
-//-           width: 16px;
-//-           height: 16px;
-//-           bottom: 13px;
-//-           right: 13px;
-//-         }
-//-       }
-//-       .board24_inter-comments__shef {
-//-         margin: 0 auto;
-//-       }
-//-     }
-//-   }
-
 //- -------------голубая область---------------------
 .board24_inter-plaza
-
-//- .board24_inter-plaza {
-//-     flex: 0 1 100%;
-//-     background-color: $ice-blue;
-//-     margin: 25px 0 0 0;
-//-     padding: 7px 24px 36px 24px;
-//-     box-sizing: border-box;
-//-     hr {
-//-       height: 1px;
-//-       background-color: $silver;
-//-       opacity: 0.3;
-//-     }
-
-//-     .board24_inter-plaza__header {
-//-       @include small-3---regular-10-16-02px;
-//-     }
-//-     .board24_inter-plaza__discription {
-//-       @include Body-1---regular-13-20-01px;
-//-       padding: 3px 0 0px;
-//-     }
-
-//-     // ---------------------------------
-//-     .board24_inter-plaza__text-area1 {
-//-       margin: 14px 0 0 0;
-//-     }
-//-     // --------------------------------
-//-     &__corvet1 {
-//-       margin: 29px 0 8px 54px;
-//-     }
-   
-//-   }
 

@@ -187,6 +187,9 @@ font-stretch: normal;
   letter-spacing: 0.1px;
   color: $dark-blue-grey;
 }
+
+
+
 @mixin Text-Style-23 {
   font-family: OpenSans;
   font-size: 15px;
@@ -211,7 +214,8 @@ font-stretch: normal;
   letter-spacing: 0.1px;
   color: $dark-blue-grey;
 }
-.Text-Style-22 {
+.Text-Style-22
+{
   font-family: OpenSans;
   font-size: 15px;
   font-weight: 600;
@@ -221,6 +225,17 @@ font-stretch: normal;
 }
 
 
+
+
+
+@mixin Text-Style-4 {
+  font-family: OpenSans;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  color: $charcoal-grey;
+}
 
 
 
@@ -283,7 +298,8 @@ font-stretch: normal;
   letter-spacing: 0.1px;
   color: $gunmetal;
 }
-.Text-Style-25 {
+.Text-Style-25
+{
   font-family: OpenSans;
   font-size: 12px;
   line-height: 1.5;
@@ -311,6 +327,10 @@ font-stretch: normal;
   letter-spacing: 0.1px;
   color: $azure;
 }
+
+
+
+
 @mixin Text-Style-27 {
   font-family: OpenSans;
   font-size: 12px;
@@ -372,15 +392,24 @@ font-stretch: normal;
 }
 
 @mixin Text-Style {
-  font-family: OpenSans;
+    font-family: OpenSans;
+  font-size: 13px;
+  line-height: 1.54;
+  letter-spacing: 0.1px;
+  color: $dark-blue-grey;
+}
+// //////////////////////////////////////////////////
+.board24_ts{
+   font-family: OpenSans;
   font-size: 13px;
   line-height: 1.54;
   letter-spacing: 0.1px;
   color: $dark-blue-grey;
 }
 
-@mixin Text-Style-2 {
-  font-family: OpenSans;
+
+.board24_ts-2{
+   font-family: OpenSans;
   font-size: 11px;
   font-weight: 600;
   line-height: 1.45;
@@ -389,7 +418,7 @@ font-stretch: normal;
 }
 
 
-@mixin Text-Style-3 {
+.board24_ts-3{
   font-family: OpenSans;
   font-size: 12px;
   line-height: 1.5;
@@ -397,9 +426,142 @@ font-stretch: normal;
   color: $charcoal-grey;
 }
 
+.board24_ts-6 {
+  font-family: OpenSans;
+  font-size: 13px;
+  line-height: 1.54;
+  letter-spacing: 0.1px;
+  color: $charcoal-grey;  
+}
 
-// -----------------------
+.board24_ts-5{
+   font-family: OpenSans;
+  font-size: 10px;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+  color: $textual-help-gray;
+}
 
+
+.board24_ts-7 {
+  font-family: OpenSans;
+  font-size: 10px;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+}
+.board24_ts-7-b {
+  font-family: OpenSans;
+  font-size: 10px;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+  color: $azure;
+}
+
+.board24_ts-29{
+   font-family: OpenSans;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  color: $azure;
+}
+
+.board24_ts-25
+{
+  font-family: OpenSans;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  color: $gunmetal;
+}
+
+.board24_ts-22
+{
+  font-family: OpenSans;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.53;
+  letter-spacing: 0.1px;
+  color: $dark-blue-grey;
+}
+
+.board24_ts-20 {
+  font-family: OpenSans;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.56;
+  letter-spacing: 0.1px;
+  color: $dark-blue-grey;
+}
+.board24_ts-4{
+   font-family: OpenSans;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+}
+.board24_ts-24{
+  font-family: OpenSans;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.54;
+  letter-spacing: 0.1px;
+  color: $dark-grey-blue;
+}
+
+.board24_ts-38 {
+  font-family: OpenSans;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.54;
+  letter-spacing: 0.1px;
+  color: $charcoal-grey;
+}
+
+
+.board24_ts-8 {
+  font-family: OpenSans;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  color: $bluey-grey;
+}
+
+.board24_ts-9 {
+  font-family: OpenSans;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  color: $dark-blue-grey;
+}
+.board24_ts-33 {
+  font-family: OpenSans;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: 0.2px;
+  color: $white;
+}
+
+.board24_ts-24 {
+  font-family: OpenSans;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.54;
+  letter-spacing: 0.1px;
+  color: $dark-grey-blue;
+}
+
+.board24_ts-11 {
+  font-family: OpenSans;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: 0.2px;
+  color: $charcoal-grey;
+}
+
+
+////////////////////////////////////////////////////////////////
 
 
 @mixin small-1---medium-12-18-02px {
@@ -417,13 +579,7 @@ font-stretch: normal;
   font-weight: 600;
   line-height: 1.5;
 }
-@mixin H1---medium-20-30-01px {
-  font-family: OpenSans;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.5;
-  letter-spacing: 0.1px;
-}
+
 
 @mixin H2---medium-18-28-01px {
   font-family: OpenSans;
@@ -464,12 +620,9 @@ font-stretch: normal;
   letter-spacing: 0.1px;
 }
 
-@mixin Body-1---regular-13-20-01px {
-  font-family: OpenSans;
-  font-size: 13px;
-  line-height: 1.54;
-  letter-spacing: 0.1px;
-}
+
+
+
 @mixin Text-Style-100 {
   font-family: OpenSans;
   font-size: 12px;
@@ -486,21 +639,11 @@ font-stretch: normal;
   line-height: 1.5;
   letter-spacing: 0.1px;
 }
-@mixin Body-2---regular-12-18-01px {
-//   font-family: OpenSans;
-// font-style: normal;
-// font-weight: normal;
-// font-size: 12px;
-// line-height: 18px;
-// letter-spacing: 0.1px;
-// color: #323C47; 
 
-  font-family: OpenSans;
-  font-size: 12px;
-  line-height: 1.5;
-  letter-spacing: 0.1px;
-  color: $charcoal-grey;
-}
+
+
+
+
 @mixin small-2---medium-11-16-02px {
   font-family: OpenSans;
   font-size: 11px;
@@ -518,41 +661,6 @@ font-stretch: normal;
   line-height: 1.4;
   letter-spacing: 0.1px;
 }
-
- 
-@mixin small-3---regular-10-16-02px {
-font-family: OpenSans;
-font-style: normal;
-font-weight: normal;
-font-size: 10px;
-line-height: 16px;
-letter-spacing: 0.2px;
-color: #818E9B;
-}
-.board24_inter__text-small {
-      @include small-3---regular-10-16-02px;
-}
-
-
-
-.board24_text-small-blue{
-   font-family: OpenSans;
-  font-size: 10px;
-  line-height: 1.6;
-  letter-spacing: 0.2px;
-  color: $azure;
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 h5{
@@ -584,5 +692,39 @@ h6{
 margin: 0 0 0 0;
   padding: 0 0 0 0;
   opacity: 0.5;
+}
+
+.board24_m2{
+  margin: 2px 0 0 0;
+}
+.board24_m3{
+  margin: 3px 0 0 0;
+}
+.board24_m4{
+  margin: 4px 0 0 0;
+}
+.board24_m5{
+  margin: 5px 0 0 0;
+}
+.board24_m6{
+  margin: 6px 0 0 0;
+}
+.board24_m7{
+  margin: 7px 0 0 0;
+}
+.board24_m8{
+  margin: 8px 0 0 0;
+}
+.board24_m9{
+  margin: 9px 0 0 0;
+}
+.board24_m10{
+  margin: 10px 0 0 0;
+}
+.board24_m24{
+  margin: 24px 0 0 0;
+}
+.board24_m34{
+  margin: 34px 0 0 0;
 }
 
