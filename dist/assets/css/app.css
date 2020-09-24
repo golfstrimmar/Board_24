@@ -4153,6 +4153,9 @@ hr {
   letter-spacing: 0.1px;
   color: #109cf1;
 }
+.icon-close2:hover {
+  cursor: pointer;
+}
 .board24_meet {
   margin: 0;
 }
@@ -4298,4 +4301,28 @@ hr {
   -webkit-box-flex: 0;
   -ms-flex: 0 1 21.3%;
   flex: 0 1 21.3%;
+}
+.board24_meet__popup {
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  overflow: visible;
+}
+.board24_meet__overlay {
+  width: 100%;
+  height: 100%;
+  min-height: 150vh;
+  background-color: rgba(0, 0, 0, 0.56);
+  overflow: visible;
+}
+.board24_meet__center {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
