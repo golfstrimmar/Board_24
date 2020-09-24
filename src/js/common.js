@@ -70,6 +70,33 @@ $(this).siblings(".icon-arrow_drop_down").css("transform", "rotate(0deg)");
   }
 });
 
+// ----------#board24_create-meeting--------------------
+let meeting = $("#board24_create-meeting");
+let meetPopup = $("#board24_meet-popup");
+let center = meetPopup.find($(".board24_meet__center"));
+
+meetPopup.css("display","none");
+
+meeting.on("click",function(){
+meetPopup.fadeIn();
+});
+
+
+meetPopup.find($(".icon-close2")).on("click", function () {
+  meetPopup.fadeOut();
+});
+
+$(document).on("mouseup",function (e) {
+   if (
+     !center.is(e.target) && // если клик был не по нашему блоку
+     center.has(e.target).length === 0// и не по его дочерним элементам
+   ) {
+    meetPopup.fadeOut(); // скрываем его
+   }
+  });
+
+
+
 // ==========ibg=========
 function ibg() {
   $.each($(".board24_ibg"), function (index, val) {

@@ -551,6 +551,18 @@ font-stretch: normal;
   color: $dark-grey-blue;
 }
 
+.board24_ts-24-opacity{
+   font-family: OpenSans;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.54;
+  letter-spacing: 0.1px;
+  color: $dark-grey-blue;
+  opacity: 0.5;
+}
+
+
+
 .board24_ts-11 {
   font-family: OpenSans;
   font-size: 11px;
@@ -559,6 +571,23 @@ font-stretch: normal;
   letter-spacing: 0.2px;
   color: $charcoal-grey;
 }
+.board24_ts-34 {
+  font-family: OpenSans;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.53;
+  letter-spacing: 0.1px;
+  color: $charcoal-grey;
+}
+
+.board24_ts-12 { 
+  font-family: OpenSans;
+  font-size: 13px;
+  line-height: 1.54;
+  letter-spacing: 0.1px;
+  color: $table-gray;
+}
+
 
 
 ////////////////////////////////////////////////////////////////
