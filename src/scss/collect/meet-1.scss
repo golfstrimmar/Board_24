@@ -1,0 +1,314 @@
+.board24_middle-meet-1 {
+  margin: 0 30px 50px 0;
+  .board24_meet-nav {
+    margin: 0 0 16px 0;
+    font-family: OpenSans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+    color: #6a707e;
+    height: 42px;
+    position: relative;
+    &__img {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-bottom: 2px solid $azure;
+      border-left: 2px solid $azure;
+      transform: rotate(45deg);
+      margin: 0 6px 0 0;
+    }
+  }
+
+  .board24_middle-plaza__stretsh {
+    margin: 0 0 0 0;
+    padding: 24px 0 0;
+  }
+  .board24_stretsh-meet-1 {
+    width: 100%;
+    height: 100%;
+    background-color: $white;
+    padding: 25px 0px 95px;
+    box-sizing: border-box;
+    position: relative;
+   
+    padding: 24px 0 0 0;
+
+    // -----------line-------------------
+    &__line {
+      padding: 0 24px;
+      box-sizing: border-box;
+      margin: 0 0 12px 0;
+      &_line1 {
+      }
+      &_line2 {
+      }
+      &_line3 {
+        margin: 23px 0 0 0;
+
+        .board24_left {
+          .board24_text {
+            .board24_ts-34 {
+              margin: 0 6px 0 0;
+            }
+            .board24_ts-14 {
+              margin: 0 0 0 9px;
+            }
+          }
+
+          .board24_link {
+            display: inline-flex;
+          }
+        }
+
+        .board24_right {
+          .icon-arrow_drop_down {
+            margin: 0 0 0 2px;
+          }
+          .icon-delete {
+            margin: 0 0 0 12px;
+          }
+          .icon-edit {
+            margin: 0 0 0 16px;
+          }
+        }
+      }
+      &_line4 {
+        padding: 24px 24px 22px;
+      }
+
+      // ----------------
+      &_line5 {
+        
+        .board24_plaza {
+         width: 94.5%; 
+          border-radius: 4px;
+          margin: 0 auto; 
+          background-color: $pale-grey-two;
+          padding: 14px 15px 20px 24px;
+          box-sizing: border-box;
+          .board24_text1 {
+            margin: 0 20px 0 0;
+          }
+          .board24_button-empty-grey {
+            display: inline-block;
+            width: 175px;
+            height: 20px;
+            border-radius: 14px;
+            border: 1px solid $bluey-grey;
+            box-sizing: border-box;
+            @include center();
+            margin: 0 auto 0 0;
+            a {
+              width: 100%;
+              height: 100%;
+              text-align: center;
+            }
+          }
+
+          .board24_text2 {
+            margin: 14px 0 0 0;
+          }
+          .board24_level {
+            margin: 20px 0 0 0;
+            .board24_button-blue {
+              margin: 0 20px 0 0;
+              width: 180px;
+              height: 22px;
+              a {
+                @include Text-Style-33;
+              }
+            }
+
+            .board24_ts-36 {
+              margin: 0 auto 0 0;
+              img {
+                margin: 0 0 0 5px;
+              }
+            }
+
+            .board24_chef__img {
+              width: 24px;
+              height: 24px;
+              margin: 0 0 0 14px;
+            }
+          }
+        }
+      }
+
+      // -------------
+
+      &_line6 {
+        margin: 37px 0 0 0;
+        .board24_button-blue {
+          width: 180px;
+          height: 30px;
+          margin: 0 0 0 0;
+          &:last-child {
+            background-color: $coral-two;
+          }
+          &__link {
+            @include Text-Style-33;
+          }
+        }
+        .board24_button-empty {
+          width: 180px;
+          height: 30px;
+          &__link {
+            @include Text-Style-36;
+          }
+        }
+      }
+      // -----
+
+      &_line7 {
+        // width: 83.6%;
+        //  width: 89.6%;
+          border-radius: 4px;
+          // padding: 14px 15px 20px 24px;
+          box-sizing: border-box;
+        
+        // background-color: $white;
+        // padding: 16px 24px 33px;
+        // margin: 0 0 0 auto;
+
+        .board24_plaza{
+          width: 94.5%;
+             margin: 0 auto;  
+             box-sizing: border-box;
+             .board24_plaza-wrap{
+               padding: 16px 24px 33px;
+                background-color: $white;
+             border: solid 1px #e5e5e5;
+             border-radius: 4px;
+             width: 93.8%; 
+             height: 100%;
+             box-sizing: border-box;
+             }
+        }
+      }
+      // -----
+
+      // ---------------
+
+      &_line8 {
+        padding: 30px 24px 0;
+        .board24_plaza{
+           width: 89.6%; 
+           margin: 0 auto; 
+           padding: 0 !important;
+        }
+      }
+      &_line9 {
+      }
+    }
+
+    // -----------/line------------------
+    
+    .board24_inter__comments {
+      padding: 27px 0 0 0;
+      width: 100%;
+      height: 100%;
+      .board24_inter-comments__block {
+      .board24_inter-comments__plaha {
+          width: 87.4%;
+      }
+      }
+      .board24_inter-comments__shef{
+        margin: 0 auto 0 24px;
+      }
+    }
+
+    &__plaza {
+      .board24_inter-plaza {
+        box-sizing: border-box;
+        padding: 0 27px 35px;
+
+        // -----------
+        .board24_left {
+          flex: 0 1 32.5%;
+          padding: 30px 0 0 0;
+          .board24_text1,
+          .board24_text2 {
+            padding: 0 0 0 14px;
+          }
+
+          .board24_text1 {
+          }
+          .board24_text {
+            padding: 20px 0 0 0;
+          }
+        }
+        // -----------------
+        .board24_right {
+          flex: 0 1 62.8%;
+          padding: 16px 0 0 0;
+
+          .board24_column {
+            width: 8.4%;
+            height: 343px;
+            border-radius: 4px;
+            background-color: $white;
+            margin: 0 6px 0 0;
+            position: relative;
+            @include anim(0.3s);
+
+            &:last-child {
+              margin: 0 0 0 0;
+            }
+
+            // -----
+            .board24_chef__img {
+              width: 30px;
+              height: 30px;
+              margin: 5px 0 0 0;
+              position: relative;
+              &:hover {
+                cursor: pointer;
+              }
+              // --------
+              .board24_person {
+                position: relative;
+                position: absolute;
+                width: 240px;
+                height: 100px;
+                top: -36px;
+                left: 22px;
+                border-radius: 4px;
+                box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.14);
+                background-color: $white;
+                z-index: 2;
+                padding: 16px;
+                box-sizing: border-box;
+                display: none;
+                &:after {
+                  content: "";
+                  background-color: $white;
+                  position: absolute;
+                  width: 10px;
+                  height: 10px;
+                  left: -5px;
+                  top: 50%;
+                  transform: translate(0, -50%) rotate(45deg);
+                }
+              }
+              // ------
+            }
+            .board24_img1 {
+              margin: 80px 0 0 0;
+            }
+            .board24_img2 {
+              margin: 48px 0 0 0;
+            }
+            .board24_img3 {
+              margin: 120px 0 0 0;
+            }
+          }
+        }
+      }
+    }
+    // ----------------------
+  }
+}

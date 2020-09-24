@@ -155,6 +155,10 @@ font-stretch: normal;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-delete:before {
+  content: "\e903";
+  color: #c2cfe0;
+}
 
 
 .icon-edit:before {
@@ -176,7 +180,14 @@ font-stretch: normal;
   content: "\e904";
 }
 
-
+.icon-Vector-2:before {
+  content: "\e905";
+  color: #84c729;
+}
+.icon-Vector-1:before {
+  content: "\e907";
+  color: #f7685b;
+}
 
 
 @mixin Text-Style-20 {
@@ -188,7 +199,13 @@ font-stretch: normal;
   color: $dark-blue-grey;
 }
 
-
+@mixin Text-Style-41 {
+  font-family: OpenSans;
+  font-size: 10px;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+  color: $table-gray;
+}
 
 @mixin Text-Style-23 {
   font-family: OpenSans;
@@ -328,7 +345,14 @@ font-stretch: normal;
   color: $azure;
 }
 
-
+@mixin Text-Style-17 {
+  font-family: OpenSans;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  color: $dark-blue-grey;
+}
 
 
 @mixin Text-Style-27 {
@@ -406,6 +430,32 @@ font-stretch: normal;
   line-height: 1.54;
   letter-spacing: 0.1px;
   color: $white;
+}
+@mixin Text-Style-14 {
+  font-family: OpenSans;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.54;
+  letter-spacing: 0.1px;
+  color: $cerulean;
+}
+
+@mixin Text-Style-15 {
+  font-family: OpenSans;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  color: $dodger-blue;
+}
+
+@mixin Text-Style-16 {
+  font-family: OpenSans;
+  font-size: 10px;
+  font-style: italic;
+  line-height: 1.4;
+  letter-spacing: 0.1px;
+  color: $dodger-blue;
 }
 
 
@@ -605,6 +655,81 @@ font-stretch: normal;
   letter-spacing: 0.1px;
   color: $table-gray;
 }
+.board24_ts-14 {
+  font-family: OpenSans;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.54;
+  letter-spacing: 0.1px;
+  color: $cerulean;
+}
+.board24_ts-15 {
+  font-family: OpenSans;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  color: $dodger-blue;
+}
+.board24_ts-16 {
+  font-family: OpenSans;
+  font-size: 10px;
+  font-style: italic;
+  line-height: 1.4;
+  letter-spacing: 0.1px;
+  color: $dodger-blue;
+}
+
+.board24_ts-17 {
+  font-family: OpenSans;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  color: $dark-blue-grey;
+}
+
+
+.board24_ts-31 {
+  font-family: OpenSans;
+  font-size: 10px;
+  font-style: italic;
+  line-height: 1.4;
+  letter-spacing: 0.1px;
+  color: $dark-blue-grey;
+}
+
+.board24_ts-40 {
+  font-family: OpenSans;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.54;
+  letter-spacing: 0.1px;
+  color: $dark-blue-grey;
+}
+.board24_ts-41 {
+  font-family: OpenSans;
+  font-size: 10px;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+  color: $table-gray;
+}
+.board24_ts-36 {
+  font-family: OpenSans;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: 0.2px;
+  color: $azure;
+}
+
+.board24_ts-35 {
+  font-family: OpenSans;
+  font-size: 13px;
+  line-height: 1.54;
+  letter-spacing: 0.1px;
+  color: $gunmetal;
+}
 
 
 
@@ -741,37 +866,5 @@ margin: 0 0 0 0;
   opacity: 0.5;
 }
 
-.board24_m2{
-  margin: 2px 0 0 0;
-}
-.board24_m3{
-  margin: 3px 0 0 0;
-}
-.board24_m4{
-  margin: 4px 0 0 0;
-}
-.board24_m5{
-  margin: 5px 0 0 0;
-}
-.board24_m6{
-  margin: 6px 0 0 0;
-}
-.board24_m7{
-  margin: 7px 0 0 0;
-}
-.board24_m8{
-  margin: 8px 0 0 0;
-}
-.board24_m9{
-  margin: 9px 0 0 0;
-}
-.board24_m10{
-  margin: 10px 0 0 0;
-}
-.board24_m24{
-  margin: 24px 0 0 0;
-}
-.board24_m34{
-  margin: 34px 0 0 0;
-}
+
 

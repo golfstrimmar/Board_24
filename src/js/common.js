@@ -150,6 +150,22 @@ $("#board24_meet-popup3")
     $("#board24_meet-popup3").fadeOut();
   });
 
+
+// ---------------------
+// $(".board24_person").fadeOut(); 
+$(".board24_chef__img").on("click", function () {
+  let var1 = $(this).find(".board24_person");
+  if ($(this).hasClass("act")) {
+  var1.fadeOut();
+  $(this).removeClass("act");
+   $(this).parent().css("background-color", "rgba(255, 255, 255, 1)");
+    } else {
+      var1.fadeIn(200);
+      $(this).addClass("act");
+      $(this).parent().css("background-color","rgba(196, 196, 196, 0.3)");
+    }
+});
+
 // ==========ibg=========
 function ibg() {
   $.each($(".board24_ibg"), function (index, val) {
