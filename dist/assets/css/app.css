@@ -467,11 +467,18 @@ font-stretch: normal;
   color: #4c5862;
 }
 .board24_ts {
+  color: #192a3e;
+}
+.board24_ts,
+.board24_ts-13 {
   font-family: OpenSans;
   font-size: 13px;
   line-height: 1.54;
   letter-spacing: 0.1px;
-  color: #192a3e;
+}
+.board24_ts-13 {
+  font-weight: 600;
+  color: #fff;
 }
 .board24_ts-2 {
   font-family: OpenSans;
@@ -4325,4 +4332,61 @@ hr {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+#board24_meet-popup2 .board24_meet__center {
+  width: 800px;
+  height: 223px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+  padding: 38px 108px 45px;
+  text-align: center;
+}
+#board24_meet-popup2 .board24_meet__center .board24_meet__buttons {
+  width: 100%;
+}
+#board24_meet-popup2
+  .board24_meet__center
+  .board24_meet__buttons
+  .board24_button-empty {
+  width: 280px;
+  height: 48px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 24px 0 0;
+}
+#board24_meet-popup2
+  .board24_meet__center
+  .board24_meet__buttons
+  .board24_button-empty
+  .board24_button-empty__link {
+  font-family: OpenSans;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.54;
+  letter-spacing: 0.1px;
+  color: #109cf1;
+}
+#board24_meet-popup2
+  .board24_meet__center
+  .board24_meet__buttons
+  .board24_button-blue {
+  width: 280px;
+  height: 48px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+}
+#board24_meet-popup2
+  .board24_meet__center
+  .board24_meet__buttons
+  .board24_button-blue
+  .board24_button-blue__link {
+  font-family: OpenSans;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.54;
+  letter-spacing: 0.1px;
+  color: #fff;
 }

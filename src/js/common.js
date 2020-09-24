@@ -71,31 +71,84 @@ $(this).siblings(".icon-arrow_drop_down").css("transform", "rotate(0deg)");
 });
 
 // ----------#board24_create-meeting--------------------
-let meeting = $("#board24_create-meeting");
-let meetPopup = $("#board24_meet-popup");
-let center = meetPopup.find($(".board24_meet__center"));
+let meeting1 = $("#board24_create-meeting1");
+let meetPopup2 = $("#board24_meet-popup2"); 
 
-meetPopup.css("display","none");
 
-meeting.on("click",function(){
-meetPopup.fadeIn();
+meetPopup2.css("display","none");
+$("#board24_meet-popup1").css("display", "none");
+
+meeting1.on("click",function(){
+meetPopup2.fadeIn();
 });
 
 
-meetPopup.find($(".icon-close2")).on("click", function () {
-  meetPopup.fadeOut();
+meetPopup2.find($(".board24_cross")).on("click", function () {
+  meetPopup2.fadeOut();
 });
+
+
 
 $(document).on("mouseup",function (e) {
    if (
      !center.is(e.target) && // если клик был не по нашему блоку
      center.has(e.target).length === 0// и не по его дочерним элементам
    ) {
-    meetPopup.fadeOut(); // скрываем его
+    meetPopup2.fadeOut(); // скрываем его
    }
   });
 
+// -----------------------------
+let meetPopup1 = $("#board24_meet-popup1"); 
+let buttonblue2=$("#board24_meet-popup2").find($(".board24_button-blue"));
+let center = meetPopup1.find($(".board24_meet__center"));
 
+
+meetPopup1.find($(".board24_cross")).on("click", function () {
+  meetPopup1.fadeOut();
+});
+
+
+$("#board24_meet-popup2")
+  .find($(".board24_button-blue"))
+  .on("click", function () {
+    meetPopup1.fadeIn();
+    $("#board24_meet-popup2").fadeOut();
+  });
+
+$(document).on("mouseup", function (e) {
+  if (
+    !center.is(e.target) && // если клик был не по нашему блоку
+    center.has(e.target).length === 0 // и не по его дочерним элементам
+  ) {
+    meetPopup1.fadeOut(); // скрываем его
+  }
+});
+
+// --------------------------------------
+$("#board24_meet-popup3").fadeOut();
+$("#board24_meet-popup2")
+  .find($(".board24_button-empty"))
+  .on("click", function () {
+    $("#board24_meet-popup3").fadeIn();
+    $("#board24_meet-popup2").fadeOut();
+  });
+let center1 = $("#board24_meet-popup3").find($(".board24_meet__center"));
+$(document).on("mouseup", function (e) {
+  if (
+    !center1.is(e.target) && // если клик был не по нашему блоку
+    center1.has(e.target).length === 0 // и не по его дочерним элементам
+  ) {
+    $("#board24_meet-popup3").fadeOut(); // скрываем его
+
+  }
+});
+
+$("#board24_meet-popup3")
+  .find($(".board24_cross"))
+  .on("click", function () {
+    $("#board24_meet-popup3").fadeOut();
+  });
 
 // ==========ibg=========
 function ibg() {
