@@ -150,6 +150,29 @@ $("#board24_meet-popup3")
     $("#board24_meet-popup3").fadeOut();
   });
 
+  // ------------meet-popup--------------
+let meetlink1=$("#board24_link-meet");
+let meetpopup1 =$("#board24_person-meet-popup");
+let fademeet1 = meetpopup1.find(".board24_popup__body");
+meetpopup1.fadeOut();
+meetlink1.on("click", function () {
+  meetpopup1.fadeIn();
+});
+$(document).on("mouseup", function (e) {
+  if (
+    !fademeet1.is(e.target) && // если клик был не по нашему блоку
+    fademeet1.has(e.target).length === 0 // и не по его дочерним элементам
+  ) {
+    meetpopup1.fadeOut(); // скрываем его
+  }
+});
+
+meetpopup1.find($(".board24_cross")).on("click", function () {
+  meetpopup1.fadeOut();
+});
+
+
+
 
 // ---------------------
 // $(".board24_person").fadeOut(); 
@@ -165,6 +188,19 @@ $(".board24_chef__img").on("click", function () {
       $(this).parent().css("background-color","rgba(196, 196, 196, 0.3)");
     }
 });
+
+
+// -----------крестики и галочки-----------
+
+let boardcolumn=$(".board24_middle-meet-1").find($(".board24_column"));
+let img = $(".board24_text1-band-img");
+let band = $(".board24_text1-band");
+let margin1=boardcolumn.width()-8+6;
+let res1 = boardcolumn.width()/2-4;  
+// половина ширины колонки  минус  половина ширины картинки. получаем отступ для band точно равный половине ширины колонки за вычетом половины ширины картинки.
+img.css("margin-right", margin1);
+band.css("margin-left", res1);   
+
 
 // ==========ibg=========
 function ibg() {
