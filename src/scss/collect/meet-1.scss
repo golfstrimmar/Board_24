@@ -3,8 +3,6 @@
 .board24_middle-meet-1 {
   margin: 0 30px 50px 0;
   .board24_meet-nav {
-    background-color: #246eb9;
-
     margin: 0 0 16px 0;
     font-family: OpenSans;
     font-style: normal;
@@ -37,8 +35,7 @@
     padding: 25px 0px 95px;
     box-sizing: border-box;
     position: relative;
-    background-color: #9fff0f;
-    padding: 24px 0 0 0;
+    padding: 24px 0 30px 0;
 
     // -----------line-------------------
     &__line {
@@ -246,6 +243,28 @@
       }
       // ----
       &_blue2 {
+.board24_inter-plaza{
+  .board24_left{
+    .board24_italic{
+      position: relative;
+      .board24_text1-band{
+              width: 193.4%;
+              z-index: 5;
+              @include alic();
+              position: absolute;
+              height: 100%;
+              top: 50%;
+              left: 114.461538%;
+              transform: translate(0, -50%);
+              img.board24_text1-band-img {
+                width: 8px;
+                height: 8px;
+            }
+      }
+    }
+  }
+}
+
       }
 
       // ----
@@ -261,22 +280,19 @@
         // -----------
         .board24_left {
           flex: 0 1 32.5%;
-          background-color: #bee1ff;
           padding: 30px 0 0 0;
-
-          .board24_text1,
+ 
+         .board24_text1,
           .board24_text2 {
             padding: 0 0 0 14px;
           }
           // ----
           .board24_text1 {
             position: relative;
-            // background-color: rgba(0,0,0,.4);
 
             .board24_text1-band {
               width: 193.4%;
               z-index: 5;
-              background-color: #d24a4c;
               @include alic();
               position: absolute;
               height: 100%;
@@ -304,7 +320,6 @@
         .board24_right {
           flex: 0 1 62.8%;
           padding: 16px 0 0 0;
-          background-color: #64c29e;
 
           .board24_column {
             width: 8.4%;

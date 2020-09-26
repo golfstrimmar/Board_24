@@ -1,10 +1,4 @@
 .board24_person-meet {
-
-
-
-
-
-
   .board24_person__body {
     height: auto;
   }
@@ -18,53 +12,99 @@
       width: 100%;
       height: 100%;
       box-sizing: border-box;
-      &_narrow{
-      padding: 20px 6px 9px;
+      &_narrow {
+        padding: 18px 16px 18px;
+        
       }
-&_wide{
-  padding: 19px 6px;
-}
-      
+
+      // -----------------------
+      &_wide {
+        padding: 18px 16px 18px;
+
+        .board24_person-cabinet {
+        
+          &__search {
+            height: 40px;
+            border-radius: 4px;
+            background-color: $pale-grey-three;
+            padding: 0 16px;
+            position: relative;
+            input{
+width: 100%;
+height: 100%;
+position: absolute;
+width: 80%;
+height: 100%;
+top: 0%;
+right: 0%;
+// padding: 0 16px;
+background-color: $pale-grey-three;
+border: none;
+outline: none;
+            }
+
+            input:active{
+              background-color: $pale-grey-three;
+border: none;
+            }
+            .icon-Vector {
+              margin: 0 12px 0 0;
+            }
+          }
+          &__band {
+            position: relative;
+            padding: 15px 0;
+            background-color: transparent;
+            hr {
+              position: absolute;
+              top: 100%;
+              left: -16px;
+              width: 255px !important;
+              height: 1px;
+              flex: 0 1 1px;
+              margin: 0 0 0 0;
+              border: none;
+              background-color: #e5e5e5;
+            }
+          }
+        }
+      }
+      //  -------------------
     }
 
-&__title{
-  box-sizing: border-box;
-  padding: 0 13px;
-}
-.icon-arrow_drop_down
-{
-  font-size: 20px; 
-}
-span.icon-arrow_drop_down_rot {
-  transform: rotate(180deg);
-}
-&__plaha 
- {       
-  border-radius: 4px;
-  border: solid 1px #e5e5e5;
-  background-color: $white;
-  position: relative;
-  padding: 11px 20px;
-.board24_line-plaha__img1{
-  position: absolute;
-  top: 50%;
-  left: 90%;
-  transform: translate( 0, -50%);
-}
-}
-
-
-
-
+    &__title {
+      box-sizing: border-box;
+      padding: 0 7px;
+      &:hover{
+      cursor: pointer;
+        }
+    }
+    .icon-arrow_drop_down {
+      font-size: 20px;
+    }
+    // span.icon-arrow_drop_down_rot {
+    //   transform: rotate(180deg);
+    // }
+    &__plaha {
+      border-radius: 4px;
+      border: solid 1px #e5e5e5;
+      background-color: $white;
+      position: relative;
+      padding: 11px 20px;
+      .board24_line-plaha__img1 {
+        position: absolute;
+        top: 50%;
+        left: 90%;
+        transform: translate(0, -50%);
+      }
+    }
 
     &__band {
       width: 235px;
       height: 60px;
       border-radius: 3px;
       background-color: $ice-blue;
-      
 
-     
       .board24_avatar-name {
         @include alic();
         box-sizing: border-box;
@@ -91,41 +131,32 @@ span.icon-arrow_drop_down_rot {
       }
     }
 
+    &__band5 {
+      position: relative;
+      .board24_person-cabinet__bar {
+        width: 135px;
+        height: 4px;
+        border-radius: 3px;
+        background-color: $apple-green;
+        display: inline-block;
+        z-index: 2;
+        position: absolute;
+        top: 50%;
+        left: 50px;
+        transform: translate(0, -50%);
+      }
 
-&__band5 {
-  position: relative;
-.board24_person-cabinet__bar 
- { 
-  width: 135px;
-  height: 4px;
-  border-radius: 3px;
-  background-color: $apple-green;
-  display: inline-block;
- z-index: 2;
-  position: absolute;
-  top: 50%;
-  left: 50px;
-  transform: translate( 0, -50%);
-}
-
-.board24_person-cabinet__bar1  
-{
-  width: 170px;
-  height: 4px;
-display: inline-block;
-  border-radius: 3px;
-  background-color: $pale-grey-two;
-   position: absolute;
-  top: 50%;
-  left: 50px;
-  transform: translate( 0, -50%);
-}
-
-
-
-
-  }
-
-
+      .board24_person-cabinet__bar1 {
+        width: 170px;
+        height: 4px;
+        display: inline-block;
+        border-radius: 3px;
+        background-color: $pale-grey-two;
+        position: absolute;
+        top: 50%;
+        left: 50px;
+        transform: translate(0, -50%);
+      }
+    }
   }
 }

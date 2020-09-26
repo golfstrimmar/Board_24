@@ -161,6 +161,14 @@ font-stretch: normal;
 }
 
 
+.icon-Vector:before {
+  content: "\e905";
+  color: #c2cfe0;
+}
+.icon-delete:before {
+  content: "\e903";
+  color: #c2cfe0;
+}
 .icon-edit:before {
   content: "\e900";
   color: #90a0b7;
@@ -178,15 +186,6 @@ font-stretch: normal;
 }
 .icon-close2:before {
   content: "\e904";
-}
-
-.icon-Vector-2:before {
-  content: "\e905";
-  color: #84c729;
-}
-.icon-Vector-1:before {
-  content: "\e907";
-  color: #f7685b;
 }
 
 
@@ -762,7 +761,13 @@ font-stretch: normal;
   letter-spacing: 0.1px;
   color: $azure;
 }
-
+.board24_ts-44 {
+  font-family: OpenSans;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  color: $battleship-grey;
+}
 ////////////////////////////////////////////////////////////////
 
 
