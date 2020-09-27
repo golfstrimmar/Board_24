@@ -97,21 +97,6 @@
           .board24_text1 {
             margin: 0 20px 0 0;
           }
-          .board24_button-empty-grey {
-            display: inline-block;
-            width: 175px;
-            height: 20px;
-            border-radius: 14px;
-            border: 1px solid $bluey-grey;
-            box-sizing: border-box;
-            @include center();
-            margin: 0 auto 0 0;
-            a {
-              width: 100%;
-              height: 100%;
-              text-align: center;
-            }
-          }
 
           .board24_text2 {
             margin: 14px 0 0 0;
@@ -273,9 +258,32 @@
       .board24_inter-plaza {
         box-sizing: border-box;
         padding: 0 27px 35px;
+        .board24_link{
+          &:hover{
+          cursor: pointer;
+            }
+        }
+.board24_title{
+      padding: 28px 0 2px;
 
+  .board24_link{
+    margin: 0 auto 0 20px;
+  }
+}
         // -----------
-        // -----------
+
+        .board24_load-statistic{
+          &:hover{
+          cursor: pointer;
+            }
+        }
+.board24_del-statistic{
+&:hover{
+          cursor: pointer;
+            }
+}   
+
+  // -----------
         // -----------
         // -----------
         .board24_left {
@@ -323,7 +331,7 @@
 
           .board24_column {
             width: 8.4%;
-            height: 343px;
+            // height: 343px;
             border-radius: 4px;
             background-color: $white;
             margin: 0 6px 0 0;

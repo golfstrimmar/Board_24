@@ -60,7 +60,7 @@ hr
 mixin button-blue-small(text,link)
   .board24_button-blue-small
     a.board24_button-blue-small__link(href=link)=text
-+button-blue-small("Перейти к заседанию","home.html")
+  +button-blue-small("Перейти к заседанию","home.html")
 
 
 //- ---------button-empty-----------------
@@ -68,6 +68,18 @@ mixin button-empty(text,link)
   .board24_button-empty
     a.board24_button-empty__link(href=link)=text
 +button-empty("Добавить","#!")
+
+
+//- ---------button-empty-grey--------------
+mixin button-empty-grey(text,link)
+  .board24_button-empty-grey
+    a.board24_button__link.board24_ts-41(href=link)=text
+
++button-empty-grey("Добавить","#!")
+
+
+
+
 
 //- -------button-arrow------------
 mixin button-arrow(text,link)
@@ -89,12 +101,7 @@ mixin img-bg(src, alt)
     style=`background-image: url('${src}')`,
     alt=alt
   )
-//- --------------------
-mixin chef()
-  .board24_chef__img
-    img(src="assets/img/main/image-1.png",alt="img")
 
-//- +chef()
 //- ------------------------
 mixin avatar-name()
   a.board24_avatar-name(href="#!")
@@ -215,3 +222,10 @@ mixin arrow-download
 
 //- ------overlay--------------
 background-color: rgba(50,60,71,.56);
+
+//- --------------------
+mixin chef()
+  .board24_chef__img
+    img(src="assets/img/main/image-1.png",alt="img")
+
+//- +chef()

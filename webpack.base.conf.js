@@ -172,6 +172,11 @@ module.exports = {
       template: "src/pug/pages/meet-1.pug",
       filename: "./meet-1.html",
     }),
+    new HtmlWebpackPlugin({
+      // hash: false,
+      template: "src/pug/pages/meet-2.pug",
+      filename: "./meet-2.html",
+    }),
     //  ...PAGES.map(page => new HtmlWebpackPlugin({
     //   template: `${PAGES_DIR}/${page}`,
     //   filename: `./${page.replace(/\.pug/,'.html')}`

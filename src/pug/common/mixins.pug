@@ -100,7 +100,15 @@ mixin avatar-name()
       p Эдил Нургожин
       p Председатель Совета директоров  
 
-//- +avatar-name()
+      //- +avatar-name()
+
+mixin button-empty-grey(text,link)
+  .board24_button-empty-grey
+    a.board24_button__link.board24_ts-41(href=link)=text
+
+//- +button-empty-grey("Добавить","#!")
+
+
 
 
 //- --------- fonts.scss 287----------------------
