@@ -323,16 +323,19 @@ dropstatistic.siblings(".board24_del-statistic").on("click", function () {
 // -------плашки на календаре--------------
 
 $(".board24_plaha-js").fadeOut();
-$(".board24_number").on("click", function () {
- if ($(this).hasClass("act")) {
-   $(".board24_plaha-js").fadeOut(10);
-   $(this).removeClass("act");
- } else {
-   $(this).append($(".board24_plaha-js"));
-   $(".board24_plaha-js").fadeIn(10);
-   $(this).addClass("act");
- }
-});
+$(".board24_calendar-table__row-numbers .board24_calendar-table__item").on(
+  "click",
+  function () {
+    if ($(this).hasClass("act")) {
+      $(".board24_plaha-js").fadeOut(10);
+      $(this).removeClass("act");
+    } else {
+      $(this).append($(".board24_plaha-js"));
+      $(".board24_plaha-js").fadeIn(10);
+      $(this).addClass("act");
+    }
+  }
+);
 
 
   // ==========ibg=========

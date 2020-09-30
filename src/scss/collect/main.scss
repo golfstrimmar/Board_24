@@ -272,93 +272,100 @@
     .board24_calendar__table {
       padding: 14px 0 0 0;
     }
+    // ---------------------
     .board24_calendar-table {
-      box-sizing: border-box;
-      @include jucb();
-      // --------------
-      .board24_calendar-table-column {
-        width: 30px;
-        @include jucc();
-        .board24_auto {
+      .board24_calendar-table__row {
+        @include jucb();
+        margin: 0 0 8px 0;
+        // outline: 1px solid blue;
+
+        .board24_calendar-table__item {
           @include jucc();
           @include Text-Style-24;
-          opacity: 0.6;
-          margin: 0 0 6px 0;
+          width: 30px;
+          // outline: 2px solid green;
         }
-        .board24_number {
-          width: 24px;
-          height: 24px;
+        .board24_calendar-table__item.board24_table-row-active {
+          @include Text-Style-26;
+        }
+      }
+
+      // -----------------------------------------------------
+      .board24_calendar-table__row-numbers {
+        @include jucb();
+        .board24_calendar-table__item {
           @include Text-Style-25;
           @include center();
+          padding: 0 3px;
+          height: 24px;
+          width: 24px;
+          margin: 0 3px;
           position: relative;
-       .board24_plaha { 
-          width: 280px !important;
-          border-radius: 4px;
-          box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.14);
-          background-color: $white;
-          opacity: 1 !important; 
-          position: relative;
-          position: absolute;
-          top: 50%;
-          left: 25px;
-          z-index: 2;
-          box-sizing: border-box;
-          padding: 15px 24px 30px 24px;
-          transform: translate(0,-50%);
-&:after{
- content: "";
- background-color: $white;
- position: absolute;
- width: 10px;
- height: 10px;
-  top: 50%; 
-  left: 0%;
-  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.14);
-  transform: translate(-50%,-50%) rotate(45deg);
- z-index: -1;  
-  }
-&:before{
- content: "";
- background-color: $white;
- position: absolute;
- width: 20px;
- height: 20px;
-  top: 50%; 
-  left: 0%;
-  transform: translate(0,-50%);
- z-index: 2;  
-  }
-          .board24_text{
-            width: 70%;
+          &_next {
+            @include Text-Style-28;
           }
         }
-
-.board24_plaha-mid,.board24_plaha-big{
-.board24_text{
-            width: 100%;
-          }
-}
-.board24_plaha-big{
-  padding: 15px 24px 12px 24px;
-}
-        }
-        .board24_day-active {
-          color: $azure !important;
-        }
-        .board24_number.board24_calendar-table__item_next {
-          @include Text-Style-28;
-        }
-        .board24_number.board24_number-active {
+        .board24_calendar-table__item.board24_table-active {
           background-color: $azure;
           border-radius: 50%;
-          width: 24px;
-          height: 24px;
-          @include center();
           @include Text-Style-27;
+          box-sizing: border-box;
         }
-      
       }
+      // --------------------------------
     }
   }
 }
-   
+
+.board24_plaha {
+  width: 280px !important;
+  border-radius: 4px;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.14);
+  background-color: $white;
+  opacity: 1 !important;
+  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  z-index: 2;
+  box-sizing: border-box;
+  padding: 15px 24px 58px;
+  transform: translate(0, -50%);
+  &:after {
+    content: "";
+    background-color: $white;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 0%;
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.14);
+    transform: translate(-50%, -50%) rotate(45deg);
+    z-index: -1;
+  }
+  &:before {
+    content: "";
+    background-color: $white;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 0%;
+    transform: translate(0, -50%);
+    z-index: 2;
+  }
+  .board24_text {
+    width: 70%;
+  }
+}
+
+.board24_plaha-mid,
+.board24_plaha-big {
+  padding: 15px 24px 40px;
+  .board24_text {
+    width: 100%;
+  }
+}
+.board24_plaha-big {
+  padding: 15px 24px 14px 24px;
+}
