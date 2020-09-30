@@ -282,11 +282,6 @@ $(document).ready(function () {
   });
 
   // ------------------------
-  // .board24_inter-plaza
-  // .board24_title
-  // .board24_look
-
-  // .board24_drop-statistic
 
   let title = $(".board24_title");
   let look= $(".board24_look");
@@ -307,9 +302,6 @@ title.find(".board24_look").on("click", function(){
  }
 });
 
-// .board24_drop-sub
-// .board24_load-statistic
-// dropstatistic.find(".board24_drop-sub");
 $(".board24_load-statistic").fadeOut();
 $(".board24_del-statistic").fadeOut();
 $(".board24_drop-sub").fadeOut(); 
@@ -328,6 +320,20 @@ dropstatistic.siblings(".board24_del-statistic").on("click", function () {
   $(this).css("display", "none"); 
   $(this).siblings(dropstatistic).find(".board24_drop-sub").fadeOut();
 }); ;
+// -------плашки на календаре--------------
+
+$(".board24_plaha-js").fadeOut();
+$(".board24_number").on("click", function () {
+ if ($(this).hasClass("act")) {
+   $(".board24_plaha-js").fadeOut(10);
+   $(this).removeClass("act");
+ } else {
+   $(this).append($(".board24_plaha-js"));
+   $(".board24_plaha-js").fadeIn(10);
+   $(this).addClass("act");
+ }
+});
+
 
   // ==========ibg=========
   function ibg() {

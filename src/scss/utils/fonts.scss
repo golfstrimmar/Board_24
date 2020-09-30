@@ -188,7 +188,13 @@ font-stretch: normal;
   content: "\e904";
 }
 
-
+@mixin Text-Style-10 {
+  font-family: OpenSans;
+  font-size: 13px;
+  line-height: 1.54;
+  letter-spacing: 0.1px;
+  color: $azure;
+}
 @mixin Text-Style-20 {
   font-family: OpenSans;
   font-size: 18px;
@@ -459,6 +465,13 @@ font-stretch: normal;
 
 
 // //////////////////////////////////////////////////
+.board24_ts-10 {
+  font-family: OpenSans;
+  font-size: 13px;
+  line-height: 1.54;
+  letter-spacing: 0.1px;
+  color: $azure;
+}
 .board24_ts{
    font-family: OpenSans;
   font-size: 13px;
@@ -566,14 +579,14 @@ font-stretch: normal;
   line-height: 1.5;
   letter-spacing: 0.1px;
 }
-.board24_ts-24{
-  font-family: OpenSans;
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 1.54;
-  letter-spacing: 0.1px;
-  color: $dark-grey-blue;
-}
+// .board24_ts-24{
+//   font-family: OpenSans;
+//   font-size: 13px;
+//   font-weight: 600;
+//   line-height: 1.54;
+//   letter-spacing: 0.1px;
+//   color: $dark-grey-blue;
+// }
 
 .board24_ts-38 {
   font-family: OpenSans;
@@ -785,7 +798,14 @@ font-stretch: normal;
   color: $battleship-grey;
 }
 
-
+.board24_ts-23 {
+  font-family: OpenSans;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.53;
+  letter-spacing: 0.1px;
+  color: $bluey-grey;
+}
 
 ////////////////////////////////////////////////////////////////
 

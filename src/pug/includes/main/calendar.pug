@@ -1,3 +1,5 @@
+include ../../common/mixins
+
 .board24_calendar
   .board24_calendar__body 
     .board24_calendar__header
@@ -9,53 +11,75 @@
         a.board24_calendar__triangle(href="#!")
           span.icon-arrow_drop_down
     .board24_calendar__table.board24_calendar-table
-      .board24_calendar-table__row
-        a.board24_calendar-table__item(href="#!") Sun
-        a.board24_calendar-table__item(href="#!") Mon
-        a.board24_calendar-table__item(href="#!") Tue
-        a.board24_calendar-table__item.board24_table-row-active(href="#!") Wed
-        a.board24_calendar-table__item(href="#!") Thu
-        a.board24_calendar-table__item(href="#!") Fri
-        a.board24_calendar-table__item(href="#!") Sat
-      .board24_calendar-table__row-numbers
-        a.board24_calendar-table__item(href="#!") 1
-        a.board24_calendar-table__item(href="#!") 2
-        a.board24_calendar-table__item(href="#!") 3
-        a.board24_calendar-table__item.board24_table-active(href="#!") 4
-        a.board24_calendar-table__item(href="#!") 5
-        a.board24_calendar-table__item(href="#!") 6
-        a.board24_calendar-table__item(href="#!") 7
-      .board24_calendar-table__row-numbers
-        a.board24_calendar-table__item(href="#!") 8
-        a.board24_calendar-table__item(href="#!") 9
-        a.board24_calendar-table__item(href="#!") 10
-        a.board24_calendar-table__item(href="#!") 11
-        a.board24_calendar-table__item(href="#!") 12
-        a.board24_calendar-table__item(href="#!") 13
-        a.board24_calendar-table__item(href="#!") 14
-      .board24_calendar-table__row-numbers
-        a.board24_calendar-table__item(href="#!") 15
-        a.board24_calendar-table__item(href="#!") 16
-        a.board24_calendar-table__item(href="#!") 17
-        a.board24_calendar-table__item(href="#!") 18
-        a.board24_calendar-table__item(href="#!") 19
-        a.board24_calendar-table__item(href="#!") 20
-        a.board24_calendar-table__item(href="#!") 21
-      .board24_calendar-table__row-numbers
-        a.board24_calendar-table__item(href="#!") 22
-        a.board24_calendar-table__item(href="#!") 23
-        a.board24_calendar-table__item(href="#!") 24
-        a.board24_calendar-table__item(href="#!") 25
-        a.board24_calendar-table__item(href="#!") 26
-        a.board24_calendar-table__item(href="#!") 27
-        a.board24_calendar-table__item(href="#!") 28
-      .board24_calendar-table__row-numbers
-        a.board24_calendar-table__item(href="#!") 29
-        a.board24_calendar-table__item(href="#!") 30
-        a.board24_calendar-table__item(href="#!") 31
-        a.board24_calendar-table__item.board24_calendar-table__item_next(href="#!",data="next")  1
-        a.board24_calendar-table__item.board24_calendar-table__item_next(href="#!",data="next" )  2
-        a.board24_calendar-table__item.board24_calendar-table__item_next(href="#!",data="next" )  3
-        a.board24_calendar-table__item.board24_calendar-table__item_next(href="#!",data="next" )  4
+      .board24_calendar-table__column.board24_calendar-table-column
+        a.board24_auto(href="#!") S
+        a.board24_number(href="#!") 1 
+        a.board24_number(href="#!") 8 
+        a.board24_number(href="#!") 15 
+        a.board24_number(href="#!") 22 
+        a.board24_number(href="#!") 29 
+      .board24_calendar-table__column.board24_calendar-table-column
+        a.board24_auto(href="#!") По
+        a.board24_number(href="#!") 2
+        a.board24_number(href="#!") 9 
+        a.board24_number(href="#!") 16 
+        a.board24_number(href="#!") 23 
+        a.board24_number(href="#!") 30 
+      .board24_calendar-table__column.board24_calendar-table-column
+        a.board24_auto(href="#!") Втр
+        a.board24_number(href="#!") 3
+        a.board24_number(href="#!") 10 
+        a.board24_number(href="#!") 17 
+        a.board24_number(href="#!") 24 
+        a.board24_number(href="#!") 31 
+      .board24_calendar-table__column.board24_calendar-table-column
+        a.board24_auto.board24_day-active(href="#!") Wed
+        a.board24_number(href="#!") 4
+        a.board24_number.board24_number-active(href="#!") 11 
+        a.board24_number(href="#!") 18 
+        a.board24_number(href="#!") 25 
+        a.board24_number.board24_calendar-table__item_next(href="#!") 1 
+      .board24_calendar-table__column.board24_calendar-table-column
+        a.board24_auto(href="#!") Thu
+        a.board24_number(href="#!") 5
+        a.board24_number(href="#!") 12 
+        a.board24_number(href="#!") 19 
+        a.board24_number(href="#!") 26 
+        a.board24_number.board24_calendar-table__item_next(href="#!") 2 
+      .board24_calendar-table__column.board24_calendar-table-column
+        a.board24_auto(href="#!") Fri
+        a.board24_number(href="#!") 6
+        a.board24_number(href="#!") 13 
+        a.board24_number(href="#!") 20 
+        a.board24_number(href="#!") 27 
+        a.board24_number.board24_calendar-table__item_next(href="#!") 3 
+      .board24_calendar-table__column.board24_calendar-table-column
+        a.board24_auto(href="#!") Sat 
+        a.board24_number(href="#!") 7
+        a.board24_number(href="#!") 14 
+        a.board24_number(href="#!") 21 
+        a.board24_number(href="#!") 28 
+        a.board24_number.board24_calendar-table__item_next(href="#!") 4 
+      .board24_plaha.board24_plaha-big.board24_plaha-js 
+        span.board24_ts-22 23 December, 
+        span.board24_ts-23 Sunday 
+        .board24_text.board24_ts-35.board24_m9 3 активных заседания,
+        .board24_text.board24_ts-35 7 в процессе подготовки,
+        .board24_text.board24_ts-35 17 поручений выполняются,
+        .board24_text.board24_ts-35 23 задачи в работе ...
+        .board24_m10
+        a.board24_link(href="#!").board24_ts-10 Смотреть всё &rarr;
+      .board24_plaha.board24_plaha-mid.board24_plaha-js
+        span.board24_ts-22 23 December, 
+        span.board24_ts-23 Sunday 
+        .board24_text.board24_ts-35.board24_m9 3 активных заседания,
+        .board24_text.board24_ts-35 7 в процессе подготовки,
+        .board24_text.board24_ts-35 17 поручений выполняются,
+        .board24_text.board24_ts-35 23 задачи в работе ...
+      .board24_plaha.board24_plaha-js
+        span.board24_ts-22 23 December, 
+        span.board24_ts-23 Sunday 
+        .board24_text.board24_ts-35.board24_m9 Не найдено активных заседний.
+
 
 
