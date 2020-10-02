@@ -124,7 +124,11 @@ visibility: visible;
 display: block;
 
  }
-
+.board24_point{
+  &:hover{
+  cursor: pointer;
+    }
+}
 .board24_flex-align{
     @include alic();
 }

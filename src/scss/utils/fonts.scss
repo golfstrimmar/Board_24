@@ -153,14 +153,34 @@ font-stretch: normal;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+ 
 }
 
-.icon-delete:before {
-  content: "\e903";
+.icon-Vector-4:before {
+  content: "\e90d";
+  color: #90a0b7;
+}
+.icon-Vector-5:before {
+  content: "\e90e";
+  color: #90a0b7;
+}
+
+.icon-more:before {
+  content: "\e90c";
   color: #c2cfe0;
 }
-
-
+.icon-close2:before {
+  content: "\e904";
+}
+.icon-meetings-1 .path1:before {
+  content: "\e90a";
+  color: rgb(196, 196, 196);
+}
+.icon-meetings-1 .path2:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(245, 246, 248);
+}
 .icon-Vector:before {
   content: "\e905";
   color: #c2cfe0;
@@ -181,11 +201,26 @@ font-stretch: normal;
   content: "\e902";
   color: #90a0b7;
 }
+.icon-times-solid:before {
+  content: "\e908";
+}
+.icon-bars-solid:before {
+  content: "\e907";
+}
 .icon-arrow_drop_down:before {
   content: "\e906";
 }
-.icon-close2:before {
-  content: "\e904";
+.icon-cancel1:before {
+  content: "\e909";
+}
+.icon-close1:before {
+  content: "\e909";
+}
+.icon-remove:before {
+  content: "\e909";
+}
+.icon-dismiss:before {
+  content: "\e909";
 }
 
 @mixin Text-Style-10 {
@@ -203,7 +238,13 @@ font-stretch: normal;
   letter-spacing: 0.1px;
   color: $dark-blue-grey;
 }
-
+@mixin Text-Style-47 {
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.43;
+  color: $gunmetal;
+}
 @mixin Text-Style-41 {
   font-family: OpenSans;
   font-size: 10px;
@@ -211,7 +252,14 @@ font-stretch: normal;
   letter-spacing: 0.2px;
   color: $table-gray;
 }
-
+@mixin Text-Style-48 {
+  font-family: OpenSans;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: 0.2px;
+  color: $bluey-grey;
+}
 @mixin Text-Style-23 {
   font-family: OpenSans;
   font-size: 15px;
@@ -563,7 +611,13 @@ font-stretch: normal;
   letter-spacing: 0.1px;
   color: $dark-blue-grey;
 }
-
+.board24_ts-47 {
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.43;
+  color: $gunmetal;
+}
 .board24_ts-20 {
   font-family: OpenSans;
   font-size: 18px;
@@ -579,14 +633,14 @@ font-stretch: normal;
   line-height: 1.5;
   letter-spacing: 0.1px;
 }
-// .board24_ts-24{
-//   font-family: OpenSans;
-//   font-size: 13px;
-//   font-weight: 600;
-//   line-height: 1.54;
-//   letter-spacing: 0.1px;
-//   color: $dark-grey-blue;
-// }
+.board24_ts-48 {
+  font-family: OpenSans;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: 0.2px;
+  color: $bluey-grey;
+}
 
 .board24_ts-38 {
   font-family: OpenSans;
@@ -805,6 +859,14 @@ font-stretch: normal;
   line-height: 1.53;
   letter-spacing: 0.1px;
   color: $bluey-grey;
+}
+
+.board24_ts-39 {
+  font-family: OpenSans;
+  font-size: 10px;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+  color: $dark-blue-grey;
 }
 
 ////////////////////////////////////////////////////////////////

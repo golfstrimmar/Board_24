@@ -336,7 +336,39 @@ $(".board24_calendar-table__row-numbers .board24_calendar-table__item").on(
     }
   }
 );
+// -------плашки на meeting--------------
+let meetImg = $(".meet-content-line__img");
+let plahaTab = $(".meet-content-line__tab");
+let plahaTabSub = $(".meet-content-line__tab-sub");
+let more = plahaTab.find( $(".meet-content-line__tab .icon-more"));
 
+plahaTab.fadeOut();
+plahaTabSub.fadeOut();
+
+meetImg.on("click", function () {
+  if ($(this).hasClass("act")) {
+    plahaTab.removeClass("act").fadeOut();
+    $(this).removeClass("act");
+    plahaTabSub.fadeOut().removeClass("act");
+  } else {
+    $(this).closest(".meet-content-line__body").append(plahaTab);
+    plahaTab.fadeIn();
+    $(this).addClass("act");
+  }
+});
+
+more.on("click", function () {
+
+  if (plahaTabSub.hasClass("act")) {
+    plahaTabSub.fadeOut().removeClass("act");
+  } else {
+    plahaTabSub.fadeIn().addClass("act");
+  }
+});
+
+plahaTabSub.find($(".icon-more")).on("click", function () {
+    plahaTabSub.fadeOut().removeClass("act");
+});
 
   // ==========ibg=========
   function ibg() {
