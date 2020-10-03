@@ -294,7 +294,14 @@ font-stretch: normal;
   color: $dark-blue-grey;
 }
 
-
+@mixin Text-Style-49 {
+  font-family: OpenSans;
+  font-size: 10px;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: $charcoal-grey;
+}
 
 
 
@@ -694,7 +701,14 @@ font-stretch: normal;
   color: $dark-grey-blue;
   opacity: 0.5;
 }
-
+.board24_ts-49 {
+  font-family: OpenSans;
+  font-size: 10px;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: $charcoal-grey;
+}
 
 
 .board24_ts-11 {
