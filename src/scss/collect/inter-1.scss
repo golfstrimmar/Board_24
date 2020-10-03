@@ -263,12 +263,19 @@
       position: relative;
       margin: 0 57px 0 0;
       .icon-arrow_drop_down {
+        position: relative;
         position: absolute;
-        width: 16px;
-        height: 16px;
+        // width: 16px;
+        // height: 16px;
         top: 50%;
         left: 101%;
         transform: translate(0%, -50%);
+        font-size: 20px;
+
+        &:before{
+        width: 16px;
+        height: 16px;
+        }
       }
     }
 

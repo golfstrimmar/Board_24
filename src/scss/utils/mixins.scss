@@ -264,7 +264,7 @@ display: flex;
     @include Text-Style-39;
     @include jucb();
     @include alic();
-    padding: 0 8px;
+    padding: 0 2px 0 8px ;
     text-decoration: none !important;
     .board24_line-plaha__img1 {
       @include fdc();

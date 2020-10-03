@@ -156,17 +156,26 @@ font-stretch: normal;
  
 }
 
-.icon-Vector-4:before {
-  content: "\e90d";
-  color: #90a0b7;
+
+
+
+
+
+.icon-printer:before {
+  content: "\e954";
+}
+.icon-zoom-in:before {
+  content: "\e987";
+}
+.icon-zoom-out:before {
+  content: "\e988";
 }
 .icon-Vector-5:before {
   content: "\e90e";
   color: #90a0b7;
 }
-
 .icon-more:before {
-  content: "\e90c";
+  content: "\e90f";
   color: #c2cfe0;
 }
 .icon-close2:before {
@@ -190,38 +199,21 @@ font-stretch: normal;
   color: #c2cfe0;
 }
 .icon-edit:before {
-  content: "\e900";
+  content: "\e906";
   color: #90a0b7;
 }
 .icon-attach:before {
-  content: "\e901";
+  content: "\e907";
   color: #90a0b7;
 }
 .icon-emoji:before {
-  content: "\e902";
+  content: "\e908";
   color: #90a0b7;
 }
-.icon-times-solid:before {
-  content: "\e908";
-}
-.icon-bars-solid:before {
-  content: "\e907";
-}
 .icon-arrow_drop_down:before {
-  content: "\e906";
+  content: "\e911";
 }
-.icon-cancel1:before {
-  content: "\e909";
-}
-.icon-close1:before {
-  content: "\e909";
-}
-.icon-remove:before {
-  content: "\e909";
-}
-.icon-dismiss:before {
-  content: "\e909";
-}
+
 
 @mixin Text-Style-10 {
   font-family: OpenSans;
