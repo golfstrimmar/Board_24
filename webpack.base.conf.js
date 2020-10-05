@@ -202,6 +202,11 @@ module.exports = {
       template: "src/pug/pages/about-council.pug",
       filename: "./about-council.html",
     }),
+    new HtmlWebpackPlugin({
+      // hash: false,
+      template: "src/pug/pages/about-indicators.pug",
+      filename: "./about-indicators.html",
+    }),
     //  ...PAGES.map(page => new HtmlWebpackPlugin({
     //   template: `${PAGES_DIR}/${page}`,
     //   filename: `./${page.replace(/\.pug/,'.html')}`

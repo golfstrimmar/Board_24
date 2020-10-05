@@ -1,0 +1,38 @@
+.board24_middle-about-indicators {
+  .board24_meet-content {
+    // background-color: #bee1ff; 
+    &__title {
+      background-color: #ff9419;
+          padding: 27px 0 26px;
+    }
+    &__info {
+  //       width: 777px;
+  // height: 334px;
+  // mix-blend-mode: multiply;
+  
+    }
+    &__body{
+   
+    }
+  }
+
+.board24_info{
+  padding: 0 0 26px 0;
+   &__body{
+   @include jucc();
+  background-color: $ice-blue;
+  position: relative;
+ 
+   }
+   
+   .board24_button-arrow{
+position: absolute;
+top: 24px;
+right: 24px;
+ width: 70px;
+  height: 20px;
+   }
+
+}
+
+}
