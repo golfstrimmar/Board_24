@@ -197,6 +197,11 @@ module.exports = {
       template: "src/pug/pages/about-news.pug",
       filename: "./about-news.html",
     }),
+    new HtmlWebpackPlugin({
+      // hash: false,
+      template: "src/pug/pages/about-council.pug",
+      filename: "./about-council.html",
+    }),
     //  ...PAGES.map(page => new HtmlWebpackPlugin({
     //   template: `${PAGES_DIR}/${page}`,
     //   filename: `./${page.replace(/\.pug/,'.html')}`

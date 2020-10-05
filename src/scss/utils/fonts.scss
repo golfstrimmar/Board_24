@@ -306,7 +306,15 @@ font-stretch: normal;
   color: $charcoal-grey;
 }
 
-
+@mixin Text-Style-50 {
+  font-family: OpenSans;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: $dark-blue-grey;
+}
 
 @mixin Text-Style-19 {
   font-family: OpenSans;
@@ -429,6 +437,15 @@ font-stretch: normal;
   line-height: 1.45;
   letter-spacing: 0.2px;
   color: $azure;
+}
+@mixin Text-Style-51 {
+  font-family: OpenSans;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: $cloudy-blue;
 }
 @mixin Text-Style-31 {
   font-family: OpenSans;
@@ -568,7 +585,15 @@ font-stretch: normal;
   letter-spacing: 0.2px;
   color: $textual-help-gray;
 }
-
+.board24_ts-50 {
+  font-family: OpenSans;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: $dark-blue-grey;
+}
 
 .board24_ts-7 {
   font-family: OpenSans;
@@ -809,7 +834,15 @@ font-stretch: normal;
   letter-spacing: 0.2px;
   color: $gunmetal;
 }
-
+.board24_ts-51 {
+  font-family: OpenSans;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: $cloudy-blue;
+}
 .board24_ts-32 {
   font-family: OpenSans;
   font-size: 10px;

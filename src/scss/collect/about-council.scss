@@ -1,0 +1,79 @@
+.board24_middle-about-council {
+  margin: 0 30px 0px 0;
+  .board24_meet-nav {
+    padding: 0 24px;
+    margin: 0 0 0 0;
+  }
+
+  .board24_meet-content {
+hr{
+  margin: 37px 0 10px;
+}
+
+    &__body {
+      padding: 25px 40px 0 27px;
+      background-color: #d4b584;
+      &:last-child{
+        padding: 0 0 40px 0;
+      }
+    }
+
+    &__biography {
+    }
+  }
+// ----------------------------------------
+  .board24_biography {
+    &__body {
+      @include jucs();
+    }
+    &__left {
+background-color: #e74c45;
+@include alic();
+@include fdc();
+box-sizing: border-box;
+padding: 0 22px 0 0;
+    }
+    &__right {
+      flex: 0 1 67%;  
+            background-color: #64c29e;
+
+      p {
+        @include Text-Style-50;
+        
+      }
+    }
+
+&__img{
+  width: 226px;
+  height: 226px;
+
+  img{
+    border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  }
+}
+
+.board24_button-blue-small
+  {width: 160px;
+  height: 22px;}
+&__button{
+  width: 160px;
+  height: 22px;
+  border-radius: 4px;
+  background-color: $pale-grey-two;
+}
+&__link{
+@include center();
+width: 100%;
+height: 100%;
+
+}
+
+
+  }
+
+
+
+  // -----------------------
+}
