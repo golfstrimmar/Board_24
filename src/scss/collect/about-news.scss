@@ -1,0 +1,47 @@
+.board24_middle-about-news {
+  .board24_meet-nav {
+    padding: 0 24px;
+  }
+
+  .board24_meet-content {
+    &__body {
+      padding: 26px 40px 0 27px;
+    }
+
+    &__title {
+      padding: 0 0 18px 0;
+    }
+    &__new {
+      padding: 0 0 18px 0;
+      &:last-child {
+        .board24_meet-content__text {
+          padding: 0 24px 0 0;
+          flex: 0 1 100%;
+        }
+      }
+    }
+
+    &__line {
+      position: relative;
+      @include alis();
+      padding: 15px 0 0 0;
+    }
+    &__img {
+      position: relative;
+      padding: 0 0 20% 0;
+
+      flex: 0 1 29.4%;
+    }
+    &__text {
+      flex: 0 1 70.5%;
+      padding: 0 24px;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.board24_person-about-news {
+  .board24_person-cabinet__set {
+    padding: 72px 0 0 0;
+  }
+}
