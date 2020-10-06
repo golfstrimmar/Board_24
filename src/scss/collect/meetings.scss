@@ -1,9 +1,27 @@
 .board24_middle-meetings {
-  .board24_meet__body{
-  .board24_meet-nav__body{
-margin: 0 0 0 0;
+  .board24_meet__body {
+    .board24_meet-nav__body {
+      margin: 0 0 0 0;      
+
+    }
+
+  }
+
+.board24_meet__nav{
+  .board24_button-empty{
+    input{
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    }
+    input:focus{
+      border: 3px solid #109cf1;
+      outline: none;
+    }
+  }
 }
-}
+
+
 
 
 
@@ -22,7 +40,6 @@ margin: 0 0 0 0;
           }
           .meet-content-line__text1 {
           }
-         
         }
       }
       // ----------
@@ -59,38 +76,29 @@ margin: 0 0 0 0;
       }
     }
   }
-
-
-
 }
 
-.board24_person-meet-meeting{
-.board24_person-cabinet__body{
-
-  padding: 25px;
-.board24_person-cabinet__set{
-   &:hover{
-    cursor: pointer; 
+.board24_person-meet-meeting {
+  .board24_person-cabinet__body {
+    padding: 25px;
+    .board24_person-cabinet__set {
+      &:hover {
+        cursor: pointer;
       }
-  .icon-meetings-1{
-    font-size: 16px;
-    margin: 0 14px 0 0;
+      .icon-meetings-1 {
+        font-size: 16px;
+        margin: 0 14px 0 0;
+      }
+    }
+    .board24_ts-34,
+    .board24_ts {
+      &:hover {
+        color: $azure;
+        cursor: pointer;
+      }
+    }
   }
 }
- .board24_ts-34,
- .board24_ts
- 
- {
-    &:hover{
-    color: $azure;
-    cursor: pointer; 
-      }
-  }
-
-}
-
-}
-
 
 .meet-content-line__tab {
   position: relative;
@@ -130,9 +138,6 @@ margin: 0 0 0 0;
       font-size: 20px;
     }
   }
-
-
-
 }
 
 .meet-content-line__tab-sub {
@@ -184,11 +189,11 @@ margin: 0 0 0 0;
   }
 }
 
- .meet-content-line__mark {
-            width: 24px;
-            height: 16px;
-            border-radius: 10px;
-            background-color: $butterscotch;
-            @include center();
-            margin: 0 0 0 8px;
-          }
+.meet-content-line__mark {
+  width: 24px;
+  height: 16px;
+  border-radius: 10px;
+  background-color: $butterscotch;
+  @include center();
+  margin: 0 0 0 8px;
+}

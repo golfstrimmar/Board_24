@@ -370,6 +370,20 @@ plahaTabSub.find($(".icon-more")).on("click", function () {
     plahaTabSub.fadeOut().removeClass("act");
 });
 
+
+// --------------------------------------
+
+$(".board24_bot ").on("click", function () {
+  $(this).find("input").css("z-index", "2");
+  $(this).find("input").focus();
+
+});
+
+
+
+
+
+
   // ==========ibg=========
   function ibg() {
     $.each($(".board24_ibg"), function (index, val) {
