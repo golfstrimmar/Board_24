@@ -1,38 +1,67 @@
 .board24_middle-about-indicators {
   .board24_meet-content {
-    // background-color: #bee1ff; 
+    // background-color: #bee1ff;
     &__title {
-      background-color: #ff9419;
-          padding: 27px 0 26px;
+      // background-color: #ff9419;
+      padding: 27px 0 26px;
     }
     &__info {
-  //       width: 777px;
-  // height: 334px;
-  // mix-blend-mode: multiply;
-  
     }
-    &__body{
-   
+    &__body {
     }
   }
 
-.board24_info{
-  padding: 0 0 26px 0;
-   &__body{
-   @include jucc();
-  background-color: $ice-blue;
-  position: relative;
- 
-   }
-   
-   .board24_button-arrow{
-position: absolute;
-top: 24px;
-right: 24px;
- width: 70px;
-  height: 20px;
-   }
+  .board24_info {
+    padding: 0 0 26px 0;
+    &__body {
+      @include jucc();
+      background-color: $ice-blue;
+      position: relative;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
 
-}
+    .board24_button-arrow {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      width: 70px;
+      height: 20px;
+      &__last{
+        top: 15px;
+        right: 15px;
+      } 
+    }
 
+    &__img {
+      position: relative;
+      width: 67.8%;
+      padding: 0 0 46.5%;
+      @include jucc();
+      &_natural {
+        padding: 0 0 0 0;
+      }
+      &_last {
+        width: 61.3%;
+        padding: 0 0 33.5% 0;
+        margin: 0 0 0 0;
+      }
+    }
+
+    &__title {
+      flex: 0 1 100%;
+      padding: 10px 0 22px;
+    }
+
+    &__plaza {
+      flex: 0 1 100%;
+      @include jucs();
+    }
+    &__legend {
+      width: 25%;
+      height: 100%;
+      border: solid 1px $dodger-blue;
+      margin: 0 0 0 20px;
+    }
+  }
 }

@@ -608,9 +608,21 @@ font-stretch: normal;
   line-height: 1.54;
 }
 .board24_ts-5 {
+  font-family: OpenSans;
+  font-size: 10px;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
   color: #818e9b;
 }
-.board24_ts-5,
+.board24_ts-50 {
+  font-family: OpenSans;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: #192a3e;
+}
 .board24_ts-7,
 .board24_ts-7-b {
   font-family: OpenSans;
@@ -815,23 +827,35 @@ font-stretch: normal;
   color: #109cf1;
 }
 .board24_ts-35 {
-  font-family: OpenSans;
   font-size: 13px;
   line-height: 1.54;
   letter-spacing: 0.1px;
-  color: #4c5862;
 }
-.board24_ts-37 {
-  color: #4c5862;
-}
-.board24_ts-32,
+.board24_ts-35,
 .board24_ts-37 {
   font-family: OpenSans;
+  color: #4c5862;
+}
+.board24_ts-37 {
   font-size: 10px;
   line-height: 1.6;
   letter-spacing: 0.2px;
 }
+.board24_ts-51 {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.45;
+  text-align: center;
+  color: #c2cfe0;
+}
+.board24_ts-32,
+.board24_ts-51 {
+  font-family: OpenSans;
+  letter-spacing: 0.2px;
+}
 .board24_ts-32 {
+  font-size: 10px;
+  line-height: 1.6;
   color: #90a0b7;
 }
 .board24_ts-42 {
@@ -6728,4 +6752,179 @@ hr {
 }
 .board24_person-about-news .board24_person-cabinet__set {
   padding: 72px 0 0;
+}
+.board24_middle-about-council {
+  margin: 0 30px 0 0;
+}
+.board24_middle-about-council .board24_meet-nav {
+  padding: 0 24px;
+  margin: 0;
+}
+.board24_middle-about-council .board24_meet-content {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.board24_middle-about-council .board24_meet-content hr {
+  margin: 37px 0 10px;
+}
+.board24_middle-about-council .board24_meet-content__body {
+  padding: 25px 40px 0 27px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.board24_middle-about-council .board24_meet-content__body:last-child {
+  padding: 25px 40px 40px 27px;
+}
+.board24_middle-about-council .board24_biography__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+.board24_middle-about-council .board24_biography__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 22px 0 0;
+}
+.board24_middle-about-council .board24_biography__right {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 67%;
+  flex: 0 1 67%;
+}
+.board24_middle-about-council .board24_biography__right p {
+  font-family: OpenSans;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: #192a3e;
+}
+.board24_middle-about-council .board24_biography__img {
+  width: 226px;
+  height: 226px;
+}
+.board24_middle-about-council .board24_biography__img img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+.board24_middle-about-council .board24_biography .board24_button-blue-small {
+  width: 160px;
+  height: 22px;
+}
+.board24_middle-about-council .board24_biography__button {
+  width: 160px;
+  height: 22px;
+  border-radius: 4px;
+  background-color: #ebeff2;
+}
+.board24_middle-about-council .board24_biography__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.board24_middle-about-indicators .board24_meet-content__title {
+  padding: 27px 0 26px;
+}
+.board24_middle-about-indicators .board24_info {
+  padding: 0 0 26px;
+}
+.board24_middle-about-indicators .board24_info__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #f2f9ff;
+  position: relative;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.board24_middle-about-indicators .board24_info .board24_button-arrow {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 70px;
+  height: 20px;
+}
+.board24_middle-about-indicators .board24_info .board24_button-arrow__last {
+  top: 15px;
+  right: 15px;
+}
+.board24_middle-about-indicators .board24_info__img {
+  position: relative;
+  width: 67.8%;
+  padding: 0 0 46.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.board24_middle-about-indicators .board24_info__img_natural {
+  padding: 0;
+}
+.board24_middle-about-indicators .board24_info__img_last {
+  width: 61.3%;
+  padding: 0 0 33.5%;
+  margin: 0;
+}
+.board24_middle-about-indicators .board24_info__title {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  padding: 10px 0 22px;
+}
+.board24_middle-about-indicators .board24_info__plaza {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+.board24_middle-about-indicators .board24_info__legend {
+  width: 25%;
+  height: 100%;
+  border: 1px solid #34aff9;
+  margin: 0 0 0 20px;
 }

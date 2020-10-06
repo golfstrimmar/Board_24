@@ -6,15 +6,18 @@
   }
 
   .board24_meet-content {
+    box-shadow: none;
 hr{
   margin: 37px 0 10px;
 }
 
     &__body {
       padding: 25px 40px 0 27px;
-      background-color: #d4b584;
+      // background-color: #d4b584;
+
+      box-shadow: none;
       &:last-child{
-        padding: 0 0 40px 0;
+            padding: 25px 40px 40px 27px;
       }
     }
 
@@ -27,7 +30,7 @@ hr{
       @include jucs();
     }
     &__left {
-background-color: #e74c45;
+// background-color: #e74c45;
 @include alic();
 @include fdc();
 box-sizing: border-box;
@@ -35,7 +38,7 @@ padding: 0 22px 0 0;
     }
     &__right {
       flex: 0 1 67%;  
-            background-color: #64c29e;
+            // background-color: #64c29e;
 
       p {
         @include Text-Style-50;
