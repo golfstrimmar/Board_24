@@ -1,31 +1,41 @@
 .board24_meet__nav.board24_meet-nav.board24_jucb  
   .board24_meet-nav__body.board24_flex.board24_alic.border 
     h2 Заседания
-    //- ----bot
-    .board24_bot
-      .board24_bot__text-area 
-        .board24_bot__in-text-blue
-          p.board24_ts-29 Дата
-          span.icon-arrow_drop_down
-    //- ----bot
-    .board24_bot
-      .board24_bot__text-area 
-        .board24_bot__in-text-blue
-          p.board24_ts-29 Стадия
-          span.icon-arrow_drop_down
-    //- ----bot
-    .board24_bot
-      .board24_bot__text-area 
-        .board24_bot__in-text-blue
-          p.board24_ts-29 Участник
-          span.icon-arrow_drop_down
-    //- ----bot
-    .board24_bot
-      .board24_bot__text-area 
-        .board24_bot__in-text-blue
-          p.board24_ts-29 Группа
-          span.icon-arrow_drop_dow
-    +button-empty("Найти","#!")
-  //- +button-blue("Создать заседание","#!") 
+    form(action="get")
+      //- ----bot
+      .board24_bot
+        .board24_bot__text-area 
+          .board24_bot__in-text-blue
+            p.board24_ts-7 Дата
+            span.icon-arrow_drop_down
+          input#board24_meet-date.board24_ts-7(type="text"  placeholder='Введите дату')
+
+      //- ----bot
+      .board24_bot
+        span.board24_form-span.icon-arrow_drop_down
+        select.board24_ts-7.select(name="Ответственный")
+          option(disabled) Стадия
+          option(value="Ответственный 1") Стадия 1
+          option(value="Ответственный 2") Стадия 2
+          option(value="Ответственный 3") Стадия 3
+      //- ----bot
+      .board24_bot
+        span.board24_form-span.icon-arrow_drop_down
+        select.board24_ts-7.select(name="Ответственный")
+          option(disabled) Участник
+          option(value="Ответственный 1") Участник 1
+          option(value="Ответственный 2") Участник 2
+          option(value="Ответственный 3") Участник 3
+      //- ----bot 
+      .board24_bot
+        span.board24_form-span.icon-arrow_drop_down
+        select.board24_ts-7.select(name="Ответственный")
+          option(disabled) Группа
+          option(value="Ответственный 1") Группа 1
+          option(value="Ответственный 2") Группа 2
+          option(value="Ответственный 3") Группа 3
+ 
+      .board24_button-empty
+        input.board24_button-empty__link(type='submit', name='submit', value='Найти')
   .board24_button-blue#board24_create-meeting1
-    a.board24_button-blue__link(href=link) Создать заседание
+    a.board24_button-blue__link(href=link) Создать заседание  

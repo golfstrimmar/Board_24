@@ -284,105 +284,165 @@ $(document).ready(function () {
   // ------------------------
 
   let title = $(".board24_title");
-  let look= $(".board24_look");
-  let dropstatistic=$(".board24_drop-statistic");
+  let look = $(".board24_look");
+  let dropstatistic = $(".board24_drop-statistic");
   dropstatistic.fadeOut();
 
-
-title.find(".board24_look").on("click", function(){
- if ($(this).hasClass("act")) {
-   $(this).parent().siblings(dropstatistic).fadeOut();
-   $(this).removeClass("act");
-   $(this).parent().siblings(dropstatistic).find(".board24_drop-sub").fadeOut();
- } else {
-     
-   $(this).parent().siblings(dropstatistic).fadeIn();
-   $(this).addClass("act");
-   $(this).parent().siblings(".board24_del-statistic").css("display", "none");
- }
-});
-
-$(".board24_load-statistic").fadeOut();
-$(".board24_del-statistic").fadeOut();
-$(".board24_drop-sub").fadeOut(); 
- 
-
-dropstatistic.siblings(".board24_load-statistic").on("click", function () {
- 
-  $(this).siblings(dropstatistic).find(".board24_drop-sub").fadeIn();
-  $(this).fadeOut(); 
-  $(this).siblings(".board24_del-statistic").fadeIn(); 
-
-}); 
-
-dropstatistic.siblings(".board24_del-statistic").on("click", function () {
-  $(this).siblings(".board24_load-statistic").fadeIn(); 
-  $(this).css("display", "none"); 
-  $(this).siblings(dropstatistic).find(".board24_drop-sub").fadeOut();
-}); ;
-// -------плашки на календаре--------------
-
-$(".board24_plaha-js").fadeOut();
-$(".board24_calendar-table__row-numbers .board24_calendar-table__item").on(
-  "click",
-  function () {
+  title.find(".board24_look").on("click", function () {
     if ($(this).hasClass("act")) {
-      $(".board24_plaha-js").fadeOut(10);
+      $(this).parent().siblings(dropstatistic).fadeOut();
       $(this).removeClass("act");
+      $(this)
+        .parent()
+        .siblings(dropstatistic)
+        .find(".board24_drop-sub")
+        .fadeOut();
     } else {
-      $(this).append($(".board24_plaha-js"));
-      $(".board24_plaha-js").fadeIn(10);
+      $(this).parent().siblings(dropstatistic).fadeIn();
+      $(this).addClass("act");
+      $(this)
+        .parent()
+        .siblings(".board24_del-statistic")
+        .css("display", "none");
+    }
+  });
+
+  $(".board24_load-statistic").fadeOut();
+  $(".board24_del-statistic").fadeOut();
+  $(".board24_drop-sub").fadeOut();
+
+  dropstatistic.siblings(".board24_load-statistic").on("click", function () {
+    $(this).siblings(dropstatistic).find(".board24_drop-sub").fadeIn();
+    $(this).fadeOut();
+    $(this).siblings(".board24_del-statistic").fadeIn();
+  });
+
+  dropstatistic.siblings(".board24_del-statistic").on("click", function () {
+    $(this).siblings(".board24_load-statistic").fadeIn();
+    $(this).css("display", "none");
+    $(this).siblings(dropstatistic).find(".board24_drop-sub").fadeOut();
+  });
+  // -------плашки на календаре--------------
+
+  $(".board24_plaha-js").fadeOut();
+  $(".board24_calendar-table__row-numbers .board24_calendar-table__item").on(
+    "click",
+    function () {
+      if ($(this).hasClass("act")) {
+        $(".board24_plaha-js").fadeOut(10);
+        $(this).removeClass("act");
+      } else {
+        $(this).append($(".board24_plaha-js"));
+        $(".board24_plaha-js").fadeIn(10);
+        $(this).addClass("act");
+      }
+    }
+  );
+  // -------плашки на meeting--------------
+  let meetImg = $(".meet-content-line__img");
+  let plahaTab = $(".meet-content-line__tab");
+  let plahaTabSub = $(".meet-content-line__tab-sub");
+  let more = plahaTab.find($(".meet-content-line__tab .icon-more"));
+
+  plahaTab.fadeOut();
+  plahaTabSub.fadeOut();
+
+  meetImg.on("click", function () {
+    if ($(this).hasClass("act")) {
+      plahaTab.removeClass("act").fadeOut();
+      $(this).removeClass("act");
+      plahaTabSub.fadeOut().removeClass("act");
+    } else {
+      $(this).closest(".meet-content-line__body").append(plahaTab);
+      plahaTab.fadeIn();
       $(this).addClass("act");
     }
-  }
-);
-// -------плашки на meeting--------------
-let meetImg = $(".meet-content-line__img");
-let plahaTab = $(".meet-content-line__tab");
-let plahaTabSub = $(".meet-content-line__tab-sub");
-let more = plahaTab.find( $(".meet-content-line__tab .icon-more"));
+  });
 
-plahaTab.fadeOut();
-plahaTabSub.fadeOut();
+  more.on("click", function () {
+    if (plahaTabSub.hasClass("act")) {
+      plahaTabSub.fadeOut().removeClass("act");
+    } else {
+      plahaTabSub.fadeIn().addClass("act");
+    }
+  });
 
-meetImg.on("click", function () {
-  if ($(this).hasClass("act")) {
-    plahaTab.removeClass("act").fadeOut();
-    $(this).removeClass("act");
+  plahaTabSub.find($(".icon-more")).on("click", function () {
     plahaTabSub.fadeOut().removeClass("act");
-  } else {
-    $(this).closest(".meet-content-line__body").append(plahaTab);
-    plahaTab.fadeIn();
-    $(this).addClass("act");
-  }
-});
+  });
 
-more.on("click", function () {
+  // --------------------------------------
 
-  if (plahaTabSub.hasClass("act")) {
-    plahaTabSub.fadeOut().removeClass("act");
-  } else {
-    plahaTabSub.fadeIn().addClass("act");
-  }
-});
+  $(".board24_bot ").on("click", function () {
+    $(this).find("input").css("z-index", "2");
+    $(this).find("input").focus();
+  });
 
-plahaTabSub.find($(".icon-more")).on("click", function () {
-    plahaTabSub.fadeOut().removeClass("act");
-});
+  // ---------select-------------------------
 
+  $(".select").each(function () {
+    const _this = $(this),
+      selectOption = _this.find("option"),
+      selectOptionLength = selectOption.length,
+      selectedOption = selectOption.filter(":selected"),
+      duration = 200; // длительность анимации
 
-// --------------------------------------
+    _this.hide();
+    _this.wrap('<div class="select"></div>');
+    $("<div>", {
+      class: "new-select",
+      text: _this.children("option:disabled").text(),
+    }).insertAfter(_this);
 
-$(".board24_bot ").on("click", function () {
-  $(this).find("input").css("z-index", "2");
-  $(this).find("input").focus();
+    const selectHead = _this.next(".new-select");
+    $("<div>", {
+      class: "new-select__list",
+    }).insertAfter(selectHead);
 
-});
+    const selectList = selectHead.next(".new-select__list");
+    for (let i = 1; i < selectOptionLength; i++) {
+      $("<div>", {
+        class: "new-select__item",
+        html: $("<span>", {
+          text: selectOption.eq(i).text(),
+        }),
+      })
+        .attr("data-value", selectOption.eq(i).val())
+        .appendTo(selectList);
+    }
 
+    const selectItem = selectList.find(".new-select__item");
+    selectList.slideUp(0);
+    selectHead.on("click", function () {
+      if (!$(this).hasClass("on")) {
+        $(this).addClass("on");
+        selectList.slideDown(duration);
+        $(this).parent().siblings
+          (".board24_form-span")
+          .css("transform", "translate( 0, -50%) rotate(180deg)");
 
+        selectItem.on("click", function () {
+          let chooseItem = $(this).data("value");
+          $("select").val(chooseItem).attr("selected", "selected");
+          selectHead.text($(this).find("span").text());
+          selectList.slideUp(duration);
+          selectHead.removeClass("on");
+          $(this)
+            .closest(".select")
+            .siblings(".board24_form-span")
+            .css("transform", "translate( 0, -50%)");
+        });
 
-
-
+      } else {
+        $(this).removeClass("on");
+        selectList.slideUp(duration);
+       $(this)
+         .parent()
+         .siblings(".board24_form-span")
+         .css("transform", "translate( 0, -50%)");
+      }
+    });
+  });
 
   // ==========ibg=========
   function ibg() {
