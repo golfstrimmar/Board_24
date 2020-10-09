@@ -444,6 +444,9 @@ $(document).ready(function () {
     });
   });
 
+
+
+
   // ==========ibg=========
   function ibg() {
     $.each($(".board24_ibg"), function (index, val) {

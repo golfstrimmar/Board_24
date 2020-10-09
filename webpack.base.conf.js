@@ -207,6 +207,21 @@ module.exports = {
       template: "src/pug/pages/about-indicators.pug",
       filename: "./about-indicators.html",
     }),
+    new HtmlWebpackPlugin({
+      // hash: false,
+      template: "src/pug/pages/about-company.pug",
+      filename: "./about-company.html",
+    }),
+    new HtmlWebpackPlugin({
+      // hash: false,
+      template: "src/pug/pages/about-requisites.pug",
+      filename: "./about-requisites.html",
+    }),
+    new HtmlWebpackPlugin({
+      // hash: false,
+      template: "src/pug/pages/about-contacts.pug",
+      filename: "./about-contacts.html",
+    }),
     //  ...PAGES.map(page => new HtmlWebpackPlugin({
     //   template: `${PAGES_DIR}/${page}`,
     //   filename: `./${page.replace(/\.pug/,'.html')}`

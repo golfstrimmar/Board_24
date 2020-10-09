@@ -529,7 +529,13 @@ font-stretch: normal;
   letter-spacing: 0.1px;
   color: $dodger-blue;
 }
-
+@mixin Text-Style-3 {
+  font-family: OpenSans;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  color: $charcoal-grey;
+}
 
 // //////////////////////////////////////////////////
 .board24_ts-10 {

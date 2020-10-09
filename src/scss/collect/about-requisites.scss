@@ -1,0 +1,29 @@
+.board24_middle-about-requisites {
+  .board24_meet-content__body {
+    padding: 26px 40px 455px 27px;
+  }
+  .board24_meet-content__title {
+    p {
+      &:nth-child(2) {
+        padding: 25px 0 0 0;
+      }
+    }
+  }
+}
+
+.board24_middle-about-contacts {
+  .board24_meet-content__body {
+    padding: 26px 40px 205px 27px;
+  }
+
+  .board24_meet-content__title {
+    padding: 0 0 13px;
+  }
+  .board24_board {
+    &__title {
+    }
+    p {
+      @include Text-Style-3;
+    }
+  }
+}

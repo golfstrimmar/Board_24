@@ -2435,6 +2435,9 @@ span.board24_cross {
 .board24_middle-statistic .board24_line-plaha__img1 {
   margin: 3px 0 0;
 }
+.wrapper .active {
+  color: red;
+}
 .board24_middle-promo .board24_middle__body {
   border-radius: 4px;
   -webkit-box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.06);
@@ -7078,4 +7081,79 @@ hr {
   height: 100%;
   border: 1px solid #34aff9;
   margin: 0 0 0 20px;
+}
+.board24_middle-about-company .board24_meet-content__body {
+  padding: 24px 40px 0 27px;
+}
+.board24_middle-about-company .board24_meet-content__title {
+  padding: 0 0 15px;
+}
+.board24_middle-about-company
+  .board24_meet-content
+  .board24_meet-content__body {
+  padding: 24px 40px 47px 27px;
+}
+.board24_middle-about-company
+  .board24_meet-content
+  .board24_meet-content__text {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+  color: #192a3e;
+  padding: 12px 0;
+}
+.board24_middle-about-company .board24_meet-content .board24_meet-content__img,
+.board24_middle-about-company
+  .board24_meet-content
+  .board24_meet-content__img_img1 {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.board24_middle-about-company
+  .board24_meet-content
+  .board24_meet-content__img_img1 {
+  background: #f2f9ff;
+  padding: 4% 0;
+}
+.board24_middle-about-company
+  .board24_meet-content
+  .board24_meet-content__area {
+  position: relative;
+  width: 52%;
+  padding: 0 0 24.3%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.board24_middle-about-requisites .board24_meet-content__body {
+  padding: 26px 40px 455px 27px;
+}
+.board24_middle-about-requisites .board24_meet-content__title p:nth-child(2) {
+  padding: 25px 0 0;
+}
+.board24_middle-about-contacts .board24_meet-content__body {
+  padding: 26px 40px 205px 27px;
+}
+.board24_middle-about-contacts .board24_meet-content__title {
+  padding: 0 0 13px;
+}
+.board24_middle-about-contacts .board24_board p {
+  font-family: OpenSans;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  color: #323c47;
 }

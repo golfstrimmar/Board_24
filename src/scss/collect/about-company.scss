@@ -1,0 +1,56 @@
+.board24_middle-about-company {
+  .board24_meet {
+  }
+
+  .board24_meet-nav {
+    &__body {
+    }
+  }
+
+  .board24_meet-content {
+    &__body {
+      padding: 24px 40px 0 27px;
+    }
+    &__title {
+      padding: 0 0 15px;
+    }
+
+    .board24_meet-content {
+      &__body {
+        padding: 24px 40px 47px 27px;
+      }
+      &__new {
+      }
+      &__title {
+      }
+      &__text {
+        font-family: OpenSans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.1px;
+        color: #192a3e;
+        padding: 12px 0px;
+      }
+      &__img {
+        box-sizing: border-box;
+        @include center();
+
+        &_img1 {
+          background: #f2f9ff;
+          box-sizing: border-box;
+          @include center();
+          padding: 4% 0;
+        }
+      }
+
+      &__area {
+        position: relative;
+        width: 52%;
+        padding: 0 0 24.3%;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
