@@ -2,41 +2,38 @@
   .board24_meet-nav__body.board24_flex.board24_alic.border 
     h2 Поручения
     
-    form(action="get")
+    form(method="get")
       //- ----bot
       .board24_bot
         .board24_bot__text-area 
-          .board24_bot__in-text-blue
+          .board24_bot__in-text-blue.board24_js-data
             p.board24_ts-7 Дата
             span.icon-arrow_drop_down
-          input#board24_meet-date.board24_ts-7(type="text"  placeholder='Введите дату')
-
+          input.board24_bot__input.board24_bot__input_nav.board24_ts-7(type="text"  placeholder='Введите дату')
       //- ----bot
       .board24_bot
         span.board24_form-span.icon-arrow_drop_down
-        select.board24_ts-7.select(name="Ответственный")
+        select.board24_ts-7.select(name="responsible")
           option(disabled) Ответственный
-          option(value="Ответственный 1") Ответственный 1
-          option(value="Ответственный 2") Ответственный 2
-          option(value="Ответственный 3") Ответственный 3
-      //- ----bot
+          option Ответственный 1
+          option Ответственный 2
+          option Ответственный 3
+      //- //- ----bot
       .board24_bot
         span.board24_form-span.icon-arrow_drop_down
-        select.board24_ts-7.select(name="Ответственный")
+        select.board24_ts-7.select(name="secretary")
           option(disabled) Секретарь
-          option(value="Ответственный 1") Секретарь 1
-          option(value="Ответственный 2") Секретарь 2
-          option(value="Ответственный 3") Секретарь 3
+          option(value="Секретарь 1") Секретарь 1
+          option(value="Секретарь 2") Секретарь 2
+          option(value="Секретарь 3") Секретарь 3
       //- ----bot
       .board24_bot
         span.board24_form-span.icon-arrow_drop_down
-        select.board24_ts-7.select(name="Ответственный")
+        select.board24_ts-7.select(name="meeting")
           option(disabled) Заседание
-          option(value="Ответственный 1") Заседание 1
-          option(value="Ответственный 2") Заседание 2
-          option(value="Ответственный 3") Заседание 3
+          option(value="Заседание 1") Заседание 1
+          option(value="Заседание 2") Заседание 2
+          option(value="Заседание 3") Заседание 3
  
       .board24_button-empty
         input.board24_button-empty__link(type='submit', name='submit', value='Найти')
-        
-        

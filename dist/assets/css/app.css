@@ -486,7 +486,6 @@ font-weight: normal;
 font-style: normal;
 font-stretch: normal;
 }
-
 [class*=" icon-"],
 [class^="icon-"] {
   font-family: icomoon !important;
@@ -2057,6 +2056,9 @@ span.board24_cross {
   letter-spacing: 0.2px;
   color: #192a3e;
   padding: 14px 0 0;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
 }
 .board24_middle .board24_middle-plaza__header {
   padding: 0;
@@ -2131,6 +2133,7 @@ span.board24_cross {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  padding: 2px 0 0;
 }
 .board24_calendar .board24_calendar__body .board24_calendar__date {
   display: -webkit-box;
@@ -2203,7 +2206,7 @@ span.board24_cross {
   padding: 0 16px 0 2px;
 }
 .board24_calendar .board24_calendar__body .board24_calendar__table {
-  padding: 14px 0 0;
+  padding: 12px 0 0;
 }
 .board24_calendar
   .board24_calendar__body
@@ -2635,6 +2638,9 @@ span.board24_cross {
   border-radius: 4px;
   border: 1px solid #e5e5e5;
   background-color: #fff;
+}
+.board24_middle-group .board24_plaza-line_group {
+  border: none;
 }
 .board24_middle-group .board24_plaza-line .board24_plaza-line__column {
   margin: 0 164px 0 0;
@@ -4692,9 +4698,22 @@ hr {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 15px 0 20px !important;
+  position: relative;
+}
+.board24_middle-inter-5 .board24_area1:hover {
+  cursor: pointer;
 }
 .board24_middle-inter-5 .board24_area1__text {
   padding: 0 0 10px;
+}
+.board24_middle-inter-5 .board24_area1 .board24_area1__input {
+  position: absolute;
+  width: 100%;
+  height: 82%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  padding: 14px 23px 6px 12px;
 }
 .board24_middle-inter-5 .board24-corvet__text {
   width: auto;
@@ -4803,6 +4822,7 @@ hr {
 }
 .board24_inter6 .board24_inter-plaza__text-area1 {
   margin: 10px 0 0;
+  position: relative;
 }
 .board24_inter6 .inter6-plaza2 {
   padding: 36px 24px 24px;
@@ -4874,6 +4894,35 @@ hr {
 }
 .icon-close2:hover {
   cursor: pointer;
+}
+.board24-corvet,
+.board24_bot {
+  position: relative;
+}
+.board24-corvet .board24_bot__text-area .board24_bot__in-text,
+.board24_bot .board24_bot__text-area .board24_bot__in-text {
+  opacity: 0.8;
+}
+.board24_bot__input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2 !important;
+  padding: 0 0 0 17px;
+}
+.board24_bot__input_nav {
+  padding: 0 10px;
+}
+.board24_bot__input_one {
+  height: 75%;
+  padding: 0 0 0 17px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.board24_js-data {
+  width: 100%;
 }
 .board24_meet {
   margin: 0;
@@ -4986,6 +5035,9 @@ hr {
 .board24_meet .board24_meet-nav__body form .board24_button-empty input:focus {
   border: 3px solid #109cf1;
   outline: none;
+}
+.board24_meet .board24_meet-nav__body form .board24_button-empty input:hover {
+  cursor: pointer;
 }
 .board24_meet .board24_meet-nav__body form .select {
   display: block;
@@ -5164,18 +5216,21 @@ hr {
   flex: 0 1 21.3%;
 }
 .board24_meet__popup {
-  position: absolute;
-  width: 100vw;
+  position: fixed;
+  width: 100vw !important;
   top: 0;
   left: 0;
+}
+.board24_meet__overlay,
+.board24_meet__popup {
+  min-height: 100vh;
   overflow: visible;
+  z-index: 1000;
 }
 .board24_meet__overlay {
   width: 100%;
   height: 100%;
-  min-height: 150vh;
   background-color: rgba(0, 0, 0, 0.56);
-  overflow: visible;
 }
 .board24_meet__center {
   position: absolute;

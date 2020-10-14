@@ -1,39 +1,39 @@
 .board24_meet__nav.board24_meet-nav.board24_jucb  
   .board24_meet-nav__body.board24_flex.board24_alic.border 
     h2 Заседания
-    form(action="get")
+    form
       //- ----bot
       .board24_bot
         .board24_bot__text-area 
-          .board24_bot__in-text-blue
+          .board24_bot__in-text-blue.board24_js-data
             p.board24_ts-7 Дата
             span.icon-arrow_drop_down
-          input#board24_meet-date.board24_ts-7(type="text"  placeholder='Введите дату')
+          input.board24_bot__input.board24_bot__input_nav.board24_ts-7(type="text"  placeholder='Введите дату')
 
       //- ----bot
       .board24_bot
         span.board24_form-span.icon-arrow_drop_down
-        select.board24_ts-7.select(name="Ответственный")
+        select.board24_ts-7.select(name="stage")
           option(disabled) Стадия
-          option(value="Ответственный 1") Стадия 1
-          option(value="Ответственный 2") Стадия 2
-          option(value="Ответственный 3") Стадия 3
+          option(value="Стадия 1") Стадия 1
+          option(value="Стадия 2") Стадия 2
+          option(value="Стадия 3") Стадия 3
       //- ----bot
       .board24_bot
         span.board24_form-span.icon-arrow_drop_down
-        select.board24_ts-7.select(name="Ответственный")
+        select.board24_ts-7.select(name="participant")
           option(disabled) Участник
-          option(value="Ответственный 1") Участник 1
-          option(value="Ответственный 2") Участник 2
-          option(value="Ответственный 3") Участник 3
+          option(value="Участник 1") Участник 1
+          option(value="Участник 2") Участник 2
+          option(value="Участник 3") Участник 3
       //- ----bot 
       .board24_bot
         span.board24_form-span.icon-arrow_drop_down
-        select.board24_ts-7.select(name="Ответственный")
+        select.board24_ts-7.select(name="group")
           option(disabled) Группа
-          option(value="Ответственный 1") Группа 1
-          option(value="Ответственный 2") Группа 2
-          option(value="Ответственный 3") Группа 3
+          option(value="Группа 1") Группа 1
+          option(value="Группа 2") Группа 2
+          option(value="Группа 3") Группа 3
  
       .board24_button-empty
         input.board24_button-empty__link(type='submit', name='submit', value='Найти')

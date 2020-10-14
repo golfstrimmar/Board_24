@@ -371,14 +371,7 @@ $(document).ready(function () {
     plahaTabSub.fadeOut().removeClass("act");
   });
 
-  // --------------------------------------
-
-  $(".board24_bot ").on("click", function () {
-    $(this).find("input").css("z-index", "2");
-    $(this).find("input").focus();
-  });
-
-  // ---------select-------------------------
+  // ---------select---meet----------------------
 
   $(".select").each(function () {
     const _this = $(this),
@@ -389,17 +382,20 @@ $(document).ready(function () {
 
     _this.hide();
     _this.wrap('<div class="select"></div>');
+
     $("<div>", {
       class: "new-select",
       text: _this.children("option:disabled").text(),
     }).insertAfter(_this);
 
     const selectHead = _this.next(".new-select");
+
     $("<div>", {
       class: "new-select__list",
     }).insertAfter(selectHead);
 
     const selectList = selectHead.next(".new-select__list");
+
     for (let i = 1; i < selectOptionLength; i++) {
       $("<div>", {
         class: "new-select__item",
@@ -413,17 +409,47 @@ $(document).ready(function () {
 
     const selectItem = selectList.find(".new-select__item");
     selectList.slideUp(0);
+    //  --
     selectHead.on("click", function () {
+      $(document).on("mouseup", function (e) {
+        if (
+          !selectHead.is(e.target) && // если клик был не по нашему блоку
+          selectHead.has(e.target).length === 0 // и не по его дочерним элементам
+        ) {
+          selectHead.removeClass("on");
+          selectList.slideUp(duration);
+          $(this)
+            .parent()
+            .siblings(".board24_form-span")
+            .css("transform", "translate( 0, -50%)");
+        }
+        selectHead
+          .parent()
+          .siblings(".board24_form-span")
+          .css("transform", "translate( 0, -50%)");
+      });
+
       if (!$(this).hasClass("on")) {
+        //  открытие селекта
         $(this).addClass("on");
         selectList.slideDown(duration);
-        $(this).parent().siblings
-          (".board24_form-span")
+        $(this)
+          .parent()
+          .siblings(".board24_form-span")
           .css("transform", "translate( 0, -50%) rotate(180deg)");
 
         selectItem.on("click", function () {
           let chooseItem = $(this).data("value");
-          $("select").val(chooseItem).attr("selected", "selected");
+
+          // $("select").val(chooseItem).attr("selected", "selected");
+
+          $(this)
+            .parent()
+            .parent()
+            .find("select")
+            .val(chooseItem)
+            .attr("selected", "selected");
+
           selectHead.text($(this).find("span").text());
           selectList.slideUp(duration);
           selectHead.removeClass("on");
@@ -432,20 +458,122 @@ $(document).ready(function () {
             .siblings(".board24_form-span")
             .css("transform", "translate( 0, -50%)");
         });
-
       } else {
+        // закрытие селекта
         $(this).removeClass("on");
         selectList.slideUp(duration);
-       $(this)
-         .parent()
-         .siblings(".board24_form-span")
-         .css("transform", "translate( 0, -50%)");
+        $(this)
+          .parent()
+          .siblings(".board24_form-span")
+          .css("transform", "translate( 0, -50%)");
       }
     });
+    // --
+  });
+
+  // ------------поле ввода даты на странице meet--------------------------
+
+  // $(".board24_bot ").on("click", function () {
+  //   $(this).find("input").css("z-index", "2");
+  //   $(this).find("input").focus();
+  // });
+
+  // $(document).on("mouseup", function (e) {
+  //   if (
+  //     !$(".board24_bot ").is(e.target) && // если клик был не по нашему блоку
+  //     $(".board24_bot ").has(e.target).length === 0 // и не по его дочерним элементам
+  //   ) {
+  //     $(".board24_bot ").find("input").css("z-index", "-1");
+  //     $(".board24_bot ").find("input").blur();
+  //   }
+  // });
+
+let js_data=$(".board24_js-data");
+js_data.siblings("input").fadeOut();
+js_data.siblings("textarea").fadeOut();
+
+js_data.on("click", function () {
+  $(this).siblings("input").fadeIn().focus();
+$(this).siblings("textarea").fadeIn().focus();
+  
+});
+
+$(document).on("mouseup", function (e) {
+    if (
+      !js_data.siblings("input").is(e.target) && // если клик был не по нашему блоку
+      js_data.siblings("input").has(e.target).length === 0 // и не по его дочерним элементам
+    ) {
+      js_data.siblings("input").fadeOut();
+    }
+if (
+  !js_data.siblings("textarea").parent().is(e.target) && // если клик был не по нашему блоку
+  js_data.siblings("textarea").parent().has(e.target).length === 0 // и не по его дочерним элементам
+) {
+  js_data.siblings("textarea").fadeOut();
+}
+
+
+
   });
 
 
 
+
+
+  // ------для страницы  meet попап окна3 текставая область и инпуты------------
+  // let areacenter = $(".board24_area1");
+  // let areainput = $(".board24_area1__input");
+  // areainput.fadeOut();
+
+  // areacenter.on("click", function () {
+  //   $(this).find(areainput).fadeIn().focus();
+  // });
+
+  // $(document).on("mouseup", function (e) {
+  //   if (!areacenter.is(e.target) && areacenter.has(e.target).length === 0) {
+  //     areacenter.find(areainput).fadeOut().blur();
+  //   }
+  // });
+
+  // -----------для страницы  meet попап окна1 текставая область и инпуты------------------------
+  //  let bot=$(".board24_bot");
+  // //  let botinput=$(".board24_bot__input");
+  // // let bottextarea=$(".board24_bot__text-area");
+
+  //   bot.find("input").fadeOut();
+
+  //   bot.find(".board24_bot__text-area").on("click", function () {
+  //     $(this).siblings("input").fadeIn().focus();
+      
+  //   });
+
+  // $(document).on("mouseup", function (e) {
+  //   if (
+  //     !bot.find("input").is(e.target) &&
+  //     bot.find("input").has(e.target).length === 0
+  //   ) {
+  //     bot.find("input").fadeOut(); 
+  //   }
+  // });
+
+  // // ----------------------
+
+  // $(".board24-corvet .board24-corvet__text-area").on("click", function () {
+  //   $(this).find(".board24_bot__input").fadeIn().focus();
+  // });
+  //   $(document).on("mouseup", function (e) {
+  //     if (
+  //       !$(".board24-corvet .board24-corvet__text-area .board24_bot__input").is(
+  //         e.target
+  //       ) &&
+  //       $(".board24-corvet .board24-corvet__text-area .board24_bot__input").has(
+  //         e.target
+  //       ).length === 0
+  //     ) {
+  //       $(".board24-corvet .board24-corvet__text-area .board24_bot__input")
+  //         .fadeOut();
+  //     }
+  //   });
 
   // ==========ibg=========
   function ibg() {

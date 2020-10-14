@@ -25,6 +25,10 @@
     background-color: $white;
   }
   .board24_plaza-line {
+
+    &_group{
+    border: none;
+    }
     .board24_plaza-line__title {
     }
     .board24_plaza-line__column {

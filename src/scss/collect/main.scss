@@ -19,6 +19,9 @@
   flex: 1 0 20%;
   // overflow-y: scroll;
   scrollbar-width: none;
+// &_main{
+//   margin: 0 30px 0 0; 
+// }
 
   &::-webkit-scrollbar {
     width: 0;
@@ -155,6 +158,9 @@
       padding: 26px 24px 0;
       flex: 1 0 20%;
       margin: 0 0 20px;
+      // &_main{
+      // margin: 0;
+      // }
     }
 
     // ----------------------------------
@@ -211,6 +217,7 @@
     &__text {
       @include Text-Style-39;
       padding: 14px 0 0 0;
+      flex: 0 1 100%;
     }
     &__header {
       padding: 0 0 0 0;
@@ -283,6 +290,7 @@
     border-top-left-radius: 4px;
     .board24_calendar__header {
       @include jucb();
+      padding: 2px 0 0 0;
     }
     .board24_calendar__date {
       @include jucs();
@@ -319,7 +327,7 @@
       }
     }
     .board24_calendar__table {
-      padding: 14px 0 0 0;
+      padding: 12px 0 0 0;
     }
     // ---------------------
     .board24_calendar-table {
