@@ -313,6 +313,7 @@ a{
 // -----bots*--------планка из 2-х bot вровень с корветом---------------------
   .board24-bots {
       margin: 0 0 0 54px;
+      @include juce();
       .board24-corvet__text-area {
         padding: 0 0 0 0;
         border: none;

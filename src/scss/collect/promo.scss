@@ -35,6 +35,8 @@
         .board24_middle-plaza__buttons {
           flex: 0 1 22%;
           margin: 3px 0 0 0;
+          @include alie(); 
+          @include fdc();
           .board24_button-empty {
             margin: 0 0 5px 0;
             &:last-child {

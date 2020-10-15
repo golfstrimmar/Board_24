@@ -157,7 +157,7 @@
       background-color: $pale-grey-two;
       padding: 26px 24px 0;
       flex: 1 0 20%;
-      margin: 0 0 20px;
+      // margin: 0 0 20px;
       // &_main{
       // margin: 0;
       // }
@@ -197,9 +197,11 @@
 
       .board24_middle-plaza__date {
         height: auto;
-        flex: 0 1 34%;
+        // flex: 0 1 34%;
+        width: auto;
         position: relative;
         @include Text-Style-25;
+        margin: 0 67px 0 0;
       }
     }
 
@@ -327,7 +329,7 @@
       }
     }
     .board24_calendar__table {
-      padding: 12px 0 0 0;
+      padding: 8px 0 0;
     }
     // ---------------------
     .board24_calendar-table {

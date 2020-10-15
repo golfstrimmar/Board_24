@@ -1290,6 +1290,14 @@ span.board24_cross {
 }
 .board24-bots {
   margin: 0 0 0 54px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 .board24-bots .board24-corvet__text-area {
   padding: 0;
@@ -1990,7 +1998,6 @@ span.board24_cross {
   -webkit-box-flex: 1;
   -ms-flex: 1 0 20%;
   flex: 1 0 20%;
-  margin: 0 0 20px;
 }
 .board24_middle .board24_middle-plaza__line {
   padding: 20px 0;
@@ -2030,15 +2037,14 @@ span.board24_cross {
 }
 .board24_middle .board24_middle-plaza__line .board24_middle-plaza__date {
   height: auto;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 1 34%;
-  flex: 0 1 34%;
+  width: auto;
   position: relative;
   font-family: OpenSans;
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.1px;
   color: #4c5862;
+  margin: 0 67px 0 0;
 }
 .board24_middle .board24_middle-plaza__title {
   padding: 25px 0 0;
@@ -2206,7 +2212,7 @@ span.board24_cross {
   padding: 0 16px 0 2px;
 }
 .board24_calendar .board24_calendar__body .board24_calendar__table {
-  padding: 12px 0 0;
+  padding: 8px 0 0;
 }
 .board24_calendar
   .board24_calendar__body
@@ -2505,6 +2511,18 @@ span.board24_cross {
   -ms-flex: 0 1 22%;
   flex: 0 1 22%;
   margin: 3px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 .board24_middle-promo
   .board24_middle-plaza__stretsh
@@ -2848,6 +2866,21 @@ span.board24_cross {
   .board24_button-empty {
   margin: 0;
 }
+.board24_middle-group-card .board24_middle-plaza__line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+.board24_middle-group-card
+  .board24_middle-plaza__line
+  .board24_plaza-line__img {
+  margin: 0 30px 0 0;
+}
 .board24_middle-group-card .board24_plaza-person__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2974,8 +3007,10 @@ span.board24_cross {
 }
 .board24_middle-group-card .board24_tab-item__reports .board24_tab-item__look {
   position: absolute;
-  top: -82px;
-  right: 7%;
+  height: auto;
+  margin: 0;
+  bottom: 24px;
+  left: 0;
   font-family: OpenSans;
   font-style: normal;
   font-weight: 400;
@@ -5338,6 +5373,18 @@ hr {
   position: relative;
   padding: 24px 0 30px;
 }
+.board24_middle-meet-1
+  .board24_stretsh-meet-1
+  .board24_text1-band
+  .board24_img3_minus {
+  font-family: OpenSans;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: 0.2px;
+  color: #90a0b7;
+  font-size: 25px;
+}
 .board24_middle-meet-1 .board24_stretsh-meet-1__line {
   padding: 0 24px;
   -webkit-box-sizing: border-box;
@@ -5474,12 +5521,13 @@ hr {
   .board24_button-blue {
   width: 180px;
   height: 30px;
-  margin: 0;
+  margin: 0 16px 0 0;
 }
 .board24_middle-meet-1
   .board24_stretsh-meet-1__line_line6
   .board24_button-blue:last-child {
   background-color: #f7685b;
+  margin: 0;
 }
 .board24_middle-meet-1
   .board24_stretsh-meet-1__line_line6
@@ -5496,6 +5544,12 @@ hr {
   .board24_button-empty {
   width: 180px;
   height: 30px;
+  margin: 0 16px 0 0;
+}
+.board24_middle-meet-1
+  .board24_stretsh-meet-1__line_line6
+  .board24_button-empty:last-child {
+  margin: 0;
 }
 .board24_middle-meet-1
   .board24_stretsh-meet-1__line_line6
@@ -6752,6 +6806,12 @@ hr {
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.14);
   cursor: pointer;
 }
+.board24_middle-mission
+  .board24_meet-content
+  .meet-content-line__tab
+  .icon-more {
+  margin: 0 -13px 0 0;
+}
 .board24_middle-gant {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -6972,6 +7032,7 @@ hr {
 .board24_middle-about-council .board24_meet-content {
   -webkit-box-shadow: none;
   box-shadow: none;
+  margin: 15px 0 0;
 }
 .board24_middle-about-council .board24_meet-content hr {
   margin: 37px 0 10px;
