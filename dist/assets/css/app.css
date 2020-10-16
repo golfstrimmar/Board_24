@@ -75,25 +75,39 @@
   align-items: flex-start;
 }
 .board24_alie {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
 }
 .board24_alic,
-.board24_button-blue {
+.board24_alie {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+}
+.board24_alic {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+.board24_alib {
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+.board24_alib,
+.board24_alisc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.board24_alisc {
+  -ms-flex-item-align: center;
+  align-self: center;
 }
 .board24_button-blue {
   width: 255px;
@@ -105,9 +119,17 @@
 }
 .board24_button-blue,
 .board24_button-blue__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .board24_button-blue__link {
   font-family: OpenSans;
@@ -117,14 +139,6 @@
   color: #fff;
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   text-decoration: none !important;
 }
 .board24_button-blue-small {
@@ -860,6 +874,14 @@ font-stretch: normal;
   font-size: 10px;
   line-height: 1.6;
   color: #90a0b7;
+}
+.board24_ts-52 {
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.43;
+  text-align: left;
+  color: #192a3e;
 }
 .board24_ts-42 {
   color: #323c47;
@@ -7272,4 +7294,342 @@ hr {
   line-height: 1.5;
   letter-spacing: 0.1px;
   color: #323c47;
+}
+.board24_middle-structure {
+  margin: 0 30px 0 0;
+}
+.board24_middle-structure .board24_meet__body {
+  height: auto;
+}
+.board24_middle-structure .board24_meet-nav {
+  padding: 0 24px;
+  margin: 0;
+}
+.board24_middle-structure .board24_meet-nav__body {
+  width: 100%;
+  height: 100%;
+}
+.board24_middle-structure .board24_meet-nav h2 {
+  margin: 0 auto 0 0;
+}
+.board24_middle-structure .board24_meet-nav__search {
+  width: 365px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #f5f6f8;
+  margin: 0 45px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 18px;
+}
+.board24_middle-structure .board24_meet-nav__search .icon-Vector {
+  margin: 0 10px 0 0;
+}
+.board24_middle-structure .board24_bot {
+  position: relative;
+  width: 190px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+}
+.board24_middle-structure .board24_bot span.board24_form-span {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  font-size: 15px;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.board24_middle-structure .board24_bot .select {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-family: OpenSans;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  color: #109cf1;
+}
+.board24_middle-structure .board24_bot .new-select {
+  position: relative;
+  height: 100%;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 10px !important;
+  padding: 3px 10px;
+}
+.board24_middle-structure .board24_bot .new-select,
+.board24_middle-structure .board24_bot .new-select__list {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #e5e5e5;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.board24_middle-structure .board24_bot .new-select__list {
+  position: absolute;
+  top: 41px;
+  left: 0;
+  z-index: 2;
+  background: #fff;
+  font-family: OpenSans;
+  font-size: 10px;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+  color: #4c5862;
+}
+.board24_middle-structure .board24_bot .new-select__list.on {
+  display: block;
+}
+.board24_middle-structure .board24_bot .new-select__item span {
+  display: block;
+  padding: 10px 15px;
+  font-size: 10px !important;
+}
+.board24_middle-structure .board24_bot .new-select__item span:hover {
+  color: #109cf1;
+}
+.board24_middle-structure .board24_bot .new-select:after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 9px;
+  top: 9px;
+  opacity: 0.6;
+  -webkit-transition: all 0.27s ease-in-out;
+  -o-transition: all 0.27s ease-in-out;
+  transition: all 0.27s ease-in-out;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.board24_middle-structure .board24_bot .new-select.on:after {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.board24_middle-structure .board24_meet-content {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin: 15px 0 0;
+}
+.board24_middle-structure .board24_meet-content .board24_meet-nav {
+  padding: 16px 0 0;
+  height: auto;
+}
+.board24_middle-structure .board24_meet-content__body {
+  padding: 0 24px 140px;
+}
+.board24_middle-structure .board24_meet-content__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0;
+  position: relative;
+}
+.board24_middle-structure
+  .board24_meet-content
+  .board24_avatar-name:last-of-type {
+  margin: 15 0;
+}
+.board24_middle-structure .board24_meet-content .board24_sub {
+  margin: 0 0 0 20px;
+}
+.board24_middle-structure .board24_meet-content .body_js:hover {
+  cursor: pointer;
+}
+.board24_middle-structure .board24_meet-content__card {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+}
+.board24_middle-structure .board24_content-card {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 24px 0 34px;
+}
+.board24_middle-structure .board24_content-card__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding: 20px 20px 40px;
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+.board24_middle-structure .board24_content-card__img {
+  width: 120px;
+  height: 120px;
+  border-radius: 4px;
+}
+.board24_middle-structure .board24_content-card__img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+.board24_middle-structure .board24_content-card__content {
+  padding: 0 0 0 20px;
+  margin: 0 auto 0 20px;
+}
+.board24_middle-structure .board24_content-card__string {
+  font-family: OpenSans;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  color: #90a0b7;
+}
+.board24_middle-structure .board24_content-card__string span {
+  font-family: OpenSans;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  color: #4c5862;
+}
+.board24_middle-structure
+  .board24_content-card__buttons
+  .board24_button-blue-small {
+  width: 160px;
+}
+.board24_middle-structure
+  .board24_content-card__buttons
+  .board24_button-blue-small:nth-child(2),
+.board24_middle-structure
+  .board24_content-card__buttons
+  .board24_button-blue-small:nth-child(3) {
+  width: 160px;
+  height: 22px;
+  border-radius: 4px;
+  background-color: #ebeff2;
+  margin: 8px 0 0;
+}
+.board24_middle-structure
+  .board24_content-card__buttons
+  .board24_button-blue-small:nth-child(2)
+  .board24_button-blue-small__link,
+.board24_middle-structure
+  .board24_content-card__buttons
+  .board24_button-blue-small:nth-child(3)
+  .board24_button-blue-small__link {
+  font-family: OpenSans;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #c2cfe0;
+}
+.board24_middle-structure .board24_content-card .icon-close2 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 10px;
+  right: 10px;
+  font-size: 10px;
+  opacity: 0.4;
+}
+.board24_middle-cadr .board24_meet-content__body {
+  padding: 0 24px 100px;
+}
+.board24_middle-cadr .board24_content-card {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  margin: 0;
+}
+.board24_middle-cadr .board24_content-card__body {
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 230px;
+}
+.board24_middle-cadr .icon-close2 {
+  display: none;
+}
+.board24_middle-cadr .board24_content-card__buttons .board24_fdc {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.board24_middle-cadr .board24_content-card__buttons .board24_button-empty {
+  width: 160px;
+  height: 22px;
+  border-radius: 4px;
+  margin: 8px 0 0;
+}
+.board24_middle-cadr
+  .board24_content-card__buttons
+  .board24_button-empty:last-of-type {
+  border-radius: 12px;
+  border: 1px solid #f7685b;
+}
+.board24_middle-cadr
+  .board24_content-card__buttons
+  .board24_button-empty:last-of-type
+  .board24_button-empty__link {
+  font-family: OpenSans;
+  font-size: 11px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.45;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #f7685b;
+}
+.board24_middle-cadr
+  .board24_content-card__buttons
+  .board24_button-empty
+  .board24_button-blue-small__link {
+  font-family: OpenSans;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #c2cfe0;
 }

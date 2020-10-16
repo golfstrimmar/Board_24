@@ -170,8 +170,18 @@ display: flex;
   flex-wrap: wrap;
   align-items: baseline;
 }
+.board24_alib {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
 
 @mixin alisc {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+}
+.board24_alisc {
   display: flex;
   flex-wrap: wrap;
   align-self: center;

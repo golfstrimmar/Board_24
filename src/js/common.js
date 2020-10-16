@@ -471,6 +471,84 @@ $(document).ready(function () {
     // --
   });
 
+  let js_data = $(".board24_js-data");
+  js_data.siblings("input").fadeOut();
+  js_data.siblings("textarea").fadeOut();
+
+  js_data.on("click", function () {
+    $(this).siblings("input").fadeIn().focus();
+    $(this).siblings("textarea").fadeIn().focus();
+  });
+
+  $(document).on("mouseup", function (e) {
+    if (
+      !js_data.siblings("input").is(e.target) && // если клик был не по нашему блоку
+      js_data.siblings("input").has(e.target).length === 0 // и не по его дочерним элементам
+    ) {
+      js_data.siblings("input").fadeOut();
+    }
+    if (
+      !js_data.siblings("textarea").parent().is(e.target) && // если клик был не по нашему блоку
+      js_data.siblings("textarea").parent().has(e.target).length === 0 // и не по его дочерним элементам
+    ) {
+      js_data.siblings("textarea").fadeOut();
+    }
+  });
+
+  // -----------страница  structure----------------
+  let card=$(".board24_content-card");
+  // let persons = $(".board24_meet-content__persons");
+  card.fadeOut();
+  // persons.fadeOut();
+
+  $(".board24_middle-structure ul").fadeOut();
+
+  $(".body_js").on("click", function () {
+    if ($(this).hasClass("act")) {
+      $(this).next("ul").fadeOut(200);
+      $(this).removeClass("act");
+      $(this).next("ul").find("ul").fadeOut();
+      $(this).next("ul").find(".body_js").removeClass("act");
+      card.fadeOut();
+      $(".board24_avatar-name").removeClass("act");
+    } else {
+      $(this).next("ul").fadeIn(200);
+      $(this).addClass("act");
+    }
+  });
+
+$(".board24_avatar-name").on("click", function () {
+ if ( $(this).hasClass("act")){ 
+$(this).removeClass("act")
+$(this).next(card).fadeOut();
+ }else{
+$(this).addClass("act");
+$(this).next(card).fadeIn();
+ }
+});
+
+card.find(".icon-close2").on("click", function () {
+  $(this).closest(card).fadeOut();
+  $(".board24_avatar-name").removeClass("act");
+});
+
+
+
+
+  // ==========ibg=========
+  function ibg() {
+    $.each($(".board24_ibg"), function (index, val) {
+      if ($(this).find("img").length > 0) {
+        $(this).css(
+          "background-image",
+          'url("' + $(this).find("img").attr("src") + '")'
+        );
+      }
+    });
+  }
+
+  ibg();
+
   // ------------поле ввода даты на странице meet--------------------------
 
   // $(".board24_bot ").on("click", function () {
@@ -487,38 +565,6 @@ $(document).ready(function () {
   //     $(".board24_bot ").find("input").blur();
   //   }
   // });
-
-let js_data=$(".board24_js-data");
-js_data.siblings("input").fadeOut();
-js_data.siblings("textarea").fadeOut();
-
-js_data.on("click", function () {
-  $(this).siblings("input").fadeIn().focus();
-$(this).siblings("textarea").fadeIn().focus();
-  
-});
-
-$(document).on("mouseup", function (e) {
-    if (
-      !js_data.siblings("input").is(e.target) && // если клик был не по нашему блоку
-      js_data.siblings("input").has(e.target).length === 0 // и не по его дочерним элементам
-    ) {
-      js_data.siblings("input").fadeOut();
-    }
-if (
-  !js_data.siblings("textarea").parent().is(e.target) && // если клик был не по нашему блоку
-  js_data.siblings("textarea").parent().has(e.target).length === 0 // и не по его дочерним элементам
-) {
-  js_data.siblings("textarea").fadeOut();
-}
-
-
-
-  });
-
-
-
-
 
   // ------для страницы  meet попап окна3 текставая область и инпуты------------
   // let areacenter = $(".board24_area1");
@@ -544,7 +590,7 @@ if (
 
   //   bot.find(".board24_bot__text-area").on("click", function () {
   //     $(this).siblings("input").fadeIn().focus();
-      
+
   //   });
 
   // $(document).on("mouseup", function (e) {
@@ -552,7 +598,7 @@ if (
   //     !bot.find("input").is(e.target) &&
   //     bot.find("input").has(e.target).length === 0
   //   ) {
-  //     bot.find("input").fadeOut(); 
+  //     bot.find("input").fadeOut();
   //   }
   // });
 
@@ -574,18 +620,4 @@ if (
   //         .fadeOut();
   //     }
   //   });
-
-  // ==========ibg=========
-  function ibg() {
-    $.each($(".board24_ibg"), function (index, val) {
-      if ($(this).find("img").length > 0) {
-        $(this).css(
-          "background-image",
-          'url("' + $(this).find("img").attr("src") + '")'
-        );
-      }
-    });
-  }
-
-  ibg();
 });
