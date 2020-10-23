@@ -3,9 +3,11 @@ import $ from 'jquery';
 // ------------------------------------
 // ----------это подключает все стили и в этом файле есть scss bootstrap из node modules------
 import './scss/style.scss';
+import "./css/select2.css";
 // ----------------------------------------------
 
 import './js/common.js'
+import './js/select2.js'
 
 
 // alert("ppppp"); 

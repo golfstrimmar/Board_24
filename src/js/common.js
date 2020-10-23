@@ -532,7 +532,12 @@ card.find(".icon-close2").on("click", function () {
   $(".board24_avatar-name").removeClass("act");
 });
 
-
+// =====================
+  $(document).ready(function () {
+    $(".js-example-basic-single").select2({
+      width: "100%",
+    });
+  });
 
 
   // ==========ibg=========
@@ -549,75 +554,4 @@ card.find(".icon-close2").on("click", function () {
 
   ibg();
 
-  // ------------поле ввода даты на странице meet--------------------------
-
-  // $(".board24_bot ").on("click", function () {
-  //   $(this).find("input").css("z-index", "2");
-  //   $(this).find("input").focus();
-  // });
-
-  // $(document).on("mouseup", function (e) {
-  //   if (
-  //     !$(".board24_bot ").is(e.target) && // если клик был не по нашему блоку
-  //     $(".board24_bot ").has(e.target).length === 0 // и не по его дочерним элементам
-  //   ) {
-  //     $(".board24_bot ").find("input").css("z-index", "-1");
-  //     $(".board24_bot ").find("input").blur();
-  //   }
-  // });
-
-  // ------для страницы  meet попап окна3 текставая область и инпуты------------
-  // let areacenter = $(".board24_area1");
-  // let areainput = $(".board24_area1__input");
-  // areainput.fadeOut();
-
-  // areacenter.on("click", function () {
-  //   $(this).find(areainput).fadeIn().focus();
-  // });
-
-  // $(document).on("mouseup", function (e) {
-  //   if (!areacenter.is(e.target) && areacenter.has(e.target).length === 0) {
-  //     areacenter.find(areainput).fadeOut().blur();
-  //   }
-  // });
-
-  // -----------для страницы  meet попап окна1 текставая область и инпуты------------------------
-  //  let bot=$(".board24_bot");
-  // //  let botinput=$(".board24_bot__input");
-  // // let bottextarea=$(".board24_bot__text-area");
-
-  //   bot.find("input").fadeOut();
-
-  //   bot.find(".board24_bot__text-area").on("click", function () {
-  //     $(this).siblings("input").fadeIn().focus();
-
-  //   });
-
-  // $(document).on("mouseup", function (e) {
-  //   if (
-  //     !bot.find("input").is(e.target) &&
-  //     bot.find("input").has(e.target).length === 0
-  //   ) {
-  //     bot.find("input").fadeOut();
-  //   }
-  // });
-
-  // // ----------------------
-
-  // $(".board24-corvet .board24-corvet__text-area").on("click", function () {
-  //   $(this).find(".board24_bot__input").fadeIn().focus();
-  // });
-  //   $(document).on("mouseup", function (e) {
-  //     if (
-  //       !$(".board24-corvet .board24-corvet__text-area .board24_bot__input").is(
-  //         e.target
-  //       ) &&
-  //       $(".board24-corvet .board24-corvet__text-area .board24_bot__input").has(
-  //         e.target
-  //       ).length === 0
-  //     ) {
-  //       $(".board24-corvet .board24-corvet__text-area .board24_bot__input")
-  //         .fadeOut();
-  //     }
-  //   });
 });
