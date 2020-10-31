@@ -470,30 +470,55 @@ $(document).ready(function () {
     });
     // --
   });
+  
+$(".js-example-basic-single-place").select2({
+  width: "100%",
+  tags: true,
+});
 
-  let js_data = $(".board24_js-data");
-  js_data.siblings("input").fadeOut();
-  js_data.siblings("textarea").fadeOut();
+  // let js_data = $(".board24_js-data");
+  // js_data.siblings("input").fadeOut();
+  // js_data.siblings("textarea").fadeOut();
+  // js_data.find("input").fadeOut();
+  // js_data.find("textarea").fadeOut();
 
-  js_data.on("click", function () {
-    $(this).siblings("input").fadeIn().focus();
-    $(this).siblings("textarea").fadeIn().focus();
-  });
+  // js_data.on("click", function () {
+  //   $(this).siblings("input").fadeIn().focus();
+  //   $(this).siblings("textarea").fadeIn().focus();
+  //    $(this).find("input").fadeIn().focus();
+  //   $(this).find("textarea").fadeIn().focus();
+  // });
+  
 
-  $(document).on("mouseup", function (e) {
-    if (
-      !js_data.siblings("input").is(e.target) && // если клик был не по нашему блоку
-      js_data.siblings("input").has(e.target).length === 0 // и не по его дочерним элементам
-    ) {
-      js_data.siblings("input").fadeOut();
-    }
-    if (
-      !js_data.siblings("textarea").parent().is(e.target) && // если клик был не по нашему блоку
-      js_data.siblings("textarea").parent().has(e.target).length === 0 // и не по его дочерним элементам
-    ) {
-      js_data.siblings("textarea").fadeOut();
-    }
-  });
+
+
+  // $(document).on("mouseup", function (e) {
+  //   if (
+  //     !js_data.siblings("input").is(e.target) && // если клик был не по нашему блоку
+  //     js_data.siblings("input").has(e.target).length === 0 // и не по его дочерним элементам
+  //   ) {
+  //     js_data.siblings("input").fadeOut();
+  //   }
+  //   if (
+  //     !js_data.siblings("textarea").parent().is(e.target) && // если клик был не по нашему блоку
+  //     js_data.siblings("textarea").parent().has(e.target).length === 0 // и не по его дочерним элементам
+  //   ) {
+  //     js_data.siblings("textarea").fadeOut();
+  //   }
+  //   if (
+  //     !js_data.find("input").is(e.target) && // если клик был не по нашему блоку
+  //     js_data.find("input").has(e.target).length === 0 // и не по его дочерним элементам
+  //   ) {
+  //     js_data.find("input").fadeOut();
+  //   }
+  //   if (
+  //     !js_data.find("textarea").is(e.target) && // если клик был не по нашему блоку
+  //     js_data.find("textarea").has(e.target).length === 0 // и не по его дочерним элементам
+  //   ) {
+  //     js_data.find("textarea").fadeOut();
+  //   }
+
+  // });
 
   // -----------страница  structure----------------
   let card=$(".board24_content-card");
