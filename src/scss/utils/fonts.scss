@@ -164,6 +164,61 @@ font-stretch: normal;
 
 
 
+// .icon-printer:before {
+//   content: "\e954";
+// }
+// .icon-zoom-in:before {
+//   content: "\e987";
+// }
+// .icon-zoom-out:before {
+//   content: "\e988";
+// }
+// .icon-Vector-5:before {
+//   content: "\e90e";
+//   color: #90a0b7;
+// }
+// .icon-more:before {
+//   content: "\e90f";
+//   color: #c2cfe0;
+// }
+// .icon-close2:before {
+//   content: "\e904";
+// }
+// .icon-meetings-1 .path1:before {
+//   content: "\e90a";
+//   color: rgb(196, 196, 196);
+// }
+// .icon-meetings-1 .path2:before {
+//   content: "\e90b";
+//   margin-left: -1em;
+//   color: rgb(245, 246, 248);
+// }
+// .icon-Vector:before {
+//   content: "\e905";
+//   color: #c2cfe0;
+// }
+// .icon-delete:before {
+//   content: "\e903";
+//   color: #c2cfe0;
+// }
+// .icon-edit:before {
+//   content: "\e906";
+//   color: #90a0b7;
+// }
+// .icon-attach:before {
+//   content: "\e907";
+//   color: #90a0b7;
+// }
+// .icon-emoji:before {
+//   content: "\e908";
+//   color: #90a0b7;
+// }
+// .icon-arrow_drop_down:before {
+//   content: "\e911";
+// }
+
+
+
 .icon-printer:before {
   content: "\e954";
 }
@@ -182,7 +237,13 @@ font-stretch: normal;
   color: #c2cfe0;
 }
 .icon-close2:before {
-  content: "\e904";
+  content: "\e90c";
+}
+.icon-menu:before {
+  content: "\e900";
+}
+.icon-close21:before {
+  content: "\e90d";
 }
 .icon-meetings-1 .path1:before {
   content: "\e90a";
@@ -202,20 +263,44 @@ font-stretch: normal;
   color: #c2cfe0;
 }
 .icon-edit:before {
-  content: "\e906";
-  color: #90a0b7;
-}
-.icon-attach:before {
   content: "\e907";
   color: #90a0b7;
 }
-.icon-emoji:before {
+.icon-attach:before {
   content: "\e908";
   color: #90a0b7;
+}
+.icon-emoji:before {
+  content: "\e909";
+  color: #90a0b7;
+}
+.icon-Vector1:before {
+  content: "\e906";
+  color: #c2cfe0;
+}
+.icon-delete1:before {
+  content: "\e904";
+  color: #c2cfe0;
 }
 .icon-arrow_drop_down:before {
   content: "\e911";
 }
+.icon-arrow_drop_down1:before {
+  content: "\e912";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @mixin Text-Style-8 {
   font-family: OpenSans;

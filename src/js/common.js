@@ -470,58 +470,17 @@ $(document).ready(function () {
     });
     // --
   });
-  
-$(".js-example-basic-single-place").select2({
-  width: "100%",
-  tags: true,
-});
 
-  // let js_data = $(".board24_js-data");
-  // js_data.siblings("input").fadeOut();
-  // js_data.siblings("textarea").fadeOut();
-  // js_data.find("input").fadeOut();
-  // js_data.find("textarea").fadeOut();
-
-  // js_data.on("click", function () {
-  //   $(this).siblings("input").fadeIn().focus();
-  //   $(this).siblings("textarea").fadeIn().focus();
-  //    $(this).find("input").fadeIn().focus();
-  //   $(this).find("textarea").fadeIn().focus();
-  // });
-  
+  $(".js-example-basic-single-place").select2({
+    width: "100%",
+    tags: true,
+  });
 
 
 
-  // $(document).on("mouseup", function (e) {
-  //   if (
-  //     !js_data.siblings("input").is(e.target) && // если клик был не по нашему блоку
-  //     js_data.siblings("input").has(e.target).length === 0 // и не по его дочерним элементам
-  //   ) {
-  //     js_data.siblings("input").fadeOut();
-  //   }
-  //   if (
-  //     !js_data.siblings("textarea").parent().is(e.target) && // если клик был не по нашему блоку
-  //     js_data.siblings("textarea").parent().has(e.target).length === 0 // и не по его дочерним элементам
-  //   ) {
-  //     js_data.siblings("textarea").fadeOut();
-  //   }
-  //   if (
-  //     !js_data.find("input").is(e.target) && // если клик был не по нашему блоку
-  //     js_data.find("input").has(e.target).length === 0 // и не по его дочерним элементам
-  //   ) {
-  //     js_data.find("input").fadeOut();
-  //   }
-  //   if (
-  //     !js_data.find("textarea").is(e.target) && // если клик был не по нашему блоку
-  //     js_data.find("textarea").has(e.target).length === 0 // и не по его дочерним элементам
-  //   ) {
-  //     js_data.find("textarea").fadeOut();
-  //   }
-
-  // });
 
   // -----------страница  structure----------------
-  let card=$(".board24_content-card");
+  let card = $(".board24_content-card");
   // let persons = $(".board24_meet-content__persons");
   card.fadeOut();
   // persons.fadeOut();
@@ -542,28 +501,27 @@ $(".js-example-basic-single-place").select2({
     }
   });
 
-$(".board24_avatar-name").on("click", function () {
- if ( $(this).hasClass("act")){ 
-$(this).removeClass("act")
-$(this).next(card).fadeOut();
- }else{
-$(this).addClass("act");
-$(this).next(card).fadeIn();
- }
-});
+  $(".board24_avatar-name").on("click", function () {
+    if ($(this).hasClass("act")) {
+      $(this).removeClass("act");
+      $(this).next(card).fadeOut();
+    } else {
+      $(this).addClass("act");
+      $(this).next(card).fadeIn();
+    }
+  });
 
-card.find(".icon-close2").on("click", function () {
-  $(this).closest(card).fadeOut();
-  $(".board24_avatar-name").removeClass("act");
-});
+  card.find(".icon-close2").on("click", function () {
+    $(this).closest(card).fadeOut();
+    $(".board24_avatar-name").removeClass("act");
+  });
 
-// =====================
+  // =====================
   $(document).ready(function () {
     $(".js-example-basic-single").select2({
       width: "100%",
     });
   });
-
 
   // ==========ibg=========
   function ibg() {
@@ -578,5 +536,31 @@ card.find(".icon-close2").on("click", function () {
   }
 
   ibg();
-
 });
+
+
+
+  // -----------.board24_mob-person-------------------------
+    function _(el) {
+      return document.querySelector(el);
+    }
+    let menu = _(".board24_mob-person");
+    let burger = _(".icon-menu");
+	  let body = _(".board_24__mob-main__body");
+	  let bodyBody = _("body");
+  
+  body.addEventListener("click", function (event) {
+  if (event.target == burger) {
+   menu.classList.add("header__menu_act");
+   bodyBody.style.overflow = "hidden";
+ }else{
+    if (menu.classList.contains("header__menu_act")) {
+      if ((event.target != menu)) {
+        menu.classList.remove("header__menu_act");
+        bodyBody.style.overflow = "visible";
+      }
+    }
+ }
+	   });
+
+

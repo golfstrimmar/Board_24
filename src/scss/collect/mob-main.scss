@@ -1,0 +1,266 @@
+.board_24__mob-main {
+  @include fdc(); 
+   * {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  }
+}
+
+.board_24__mob-container {
+  width: 100%;
+  background: #f5f6f8;
+  padding: 20px 15px 240px;
+position: relative;
+  @media (min-width: 376px) {
+    display: none;
+  }
+}
+
+.board_24__mob-main__body{
+	.board_24__mob-header {
+  padding: 0 0 15px 0;
+  @include jucb();
+  box-sizing: border-box;
+}
+
+.board_24__mob-logo img{
+  width: 81px;
+height: 12px;
+}
+
+.icon-menu{
+  position: relative;
+font-size: 16px;
+}
+
+
+.board_24__mob-plaha {
+.board24_board24_avatar-name__name p{
+font-family: OpenSans;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 28px;
+letter-spacing: 0.1px;
+}
+}
+	
+
+.board_24__mob-plaha{
+@include jucb();
+@include alic();padding: 0 20px;		
+background: #FFFFFF;
+box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+border-radius: 4px;
+height: 100px;  
+}
+
+.board_24__acent-button{
+background: #109CF1;
+box-shadow: 0px 4px 10px rgba(16, 156, 241, 0.24);
+border-radius: 4px;
+width: 160px;height: 42px;
+@include center();
+
+a{
+  font-family: OpenSans;
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 20px;
+	text-align: center;
+letter-spacing: 0.1px;
+color: #FFFFFF;
+}
+}
+
+.board24_calendar{
+ .board24_calendar__body {
+  //  height: 153px;
+background: #FFFFFF;
+	box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+border-radius: 4px;
+width: 100%;
+padding: 28px 23px 20px;
+ }
+
+.board24_calendar__table{
+  padding: 33px 0 0;	  
+}
+}
+
+.board24_plat
+{
+  // display: block !important;	
+  background: #FFFFFF;
+/* box shadow */
+
+box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+border-radius: 4px;
+margin: 10px 0 0 0;	
+}
+
+
+.board24_text{
+  padding: 0 0 0 20px;	
+}
+
+.board24_ts-10{
+padding: 0 0 0 20px;	
+}
+
+
+.board24_line-button{
+  @include jucs();	
+  a{
+  width: 100%;
+  height: 100%;
+}
+}
+.board24_person-cabinet__mark{
+  position: relative;
+}
+.board24_plaha-big{
+
+}
+
+.board24_line-plaha{
+background: #FFFFFF;
+border: 1px solid #E5E5E5;
+box-sizing: border-box;
+border-radius: 4px;
+padding: 12px 12px 20px 20px;	
+.board24_button-color{
+ a{
+  width: 100%;
+  height: 100%;
+	} 
+}
+
+.board24_line-plaha__miting{
+  font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 16px;
+/* or 160% */
+
+text-align: right;
+letter-spacing: 0.2px;
+
+/* Neutral / Dark gray */
+
+color: #4C5862;
+opacity: 0.5;
+}
+h3{
+  width: 90%;
+}
+.board24_line-plaha__dark{
+font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 20px;
+	letter-spacing: 0.1px;
+color: #4C5862;
+}
+
+.board24_line-plaha__light{
+  font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 20px;
+/* or 154% */
+
+letter-spacing: 0.1px;
+
+/* Neutral / Dark gray */
+
+color: #4C5862;
+opacity: 0.5;
+}
+
+.board24_line-plaha__img1{
+  margin-left: 5px;
+}
+
+.board24_button-blue-small{
+  margin: 8px 0 0 0;	
+}
+	}
+}
+
+// -----------------------------------------------
+.header__menu_act{
+  left: 95px!important;   
+}
+.board24_mob-person{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0%;
+  left: 150%;
+  background: #FFFFFF;
+box-shadow: -6px 0px 18px rgba(0, 0, 0, 0.4);
+overflow: auto;
+transition: all .3s ease-out;
+.board24_person__body{
+  @include fdc();
+  @include jucs();
+  padding: 20px 0 24px 22px;	
+  width: 100%;
+  height: auto;
+	}
+
+.board_24__mob-header{
+  padding: 20px 0 30px 22px;	
+}
+
+.board24_person-cabinet__line{
+position: relative;
+font-family: OpenSans;
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 20px;
+/* identical to box height, or 154% */
+width: 100%;
+letter-spacing: 0.1px;
+
+/* Neutral / Black */
+@include alic();
+color: #192A3E;
+padding: 20px 0 0 0;	
+&:first-child{
+  padding: 0 0 0 0;	
+}
+}
+
+.board24_person-cabinet__mark{
+  position: relative;
+  display: inline-block;
+}
+
+
+.board24_hr{
+  height: 1px;
+  width: 100%;
+background: #D3D8DD;
+
+}
+span.icon-meetings-1{
+  font-size: 14px;
+  display: inline-block;
+}
+.board24_person-cabinet__set{
+  padding: 146px 0 0 0;	
+}
+.board24_point{
+margin: 0 0 0 14px;	
+}
+}
+
+
