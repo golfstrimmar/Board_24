@@ -237,6 +237,11 @@ module.exports = {
       template: "src/pug/pages/mob-main.pug",
       filename: "./mob-main.html",
     }),
+    new HtmlWebpackPlugin({
+      // hash: false,
+      template: "src/pug/pages/mob-meetings.pug",
+      filename: "./mob-meetings.html",
+    }),
 
     //  ...PAGES.map(page => new HtmlWebpackPlugin({
     //   template: `${PAGES_DIR}/${page}`,

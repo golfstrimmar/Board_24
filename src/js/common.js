@@ -476,9 +476,6 @@ $(document).ready(function () {
     tags: true,
   });
 
-
-
-
   // -----------страница  structure----------------
   let card = $(".board24_content-card");
   // let persons = $(".board24_meet-content__persons");
@@ -524,43 +521,95 @@ $(document).ready(function () {
   });
 
   // ==========ibg=========
-  function ibg() {
-    $.each($(".board24_ibg"), function (index, val) {
-      if ($(this).find("img").length > 0) {
-        $(this).css(
-          "background-image",
-          'url("' + $(this).find("img").attr("src") + '")'
-        );
-      }
-    });
+  $(document).ready(function () {
+    function ibg() {
+      $(".board24_ibg").each(function (e) {
+        if ($(this).find("img").length > 0) {
+          $(this).css(
+            "background-image",
+            'url("' + $(this).find("img").attr("src") + '")'
+          );
+        }
+      });
+    }
+
+    ibg();
+  });
+// ------------------------
+ function _(el) {
+    return document.querySelector(el);
   }
 
-  ibg();
-});
+  // ------------------------------------
+let mobHeader = _(".board_24__mob-header");
 
-
+ window.addEventListener("scroll", function (event) {
+   if (window.pageYOffset > 50) {
+     mobHeader.style.cssText = `position: fixed; 
+  width: 100%;
+  height: 40px;
+  top: 0;
+  left: 0;
+    background-color: rgba(36, 36, 36, 0.4);
+     padding: 5px 15px 5px 15px !important;
+    align-items: center;
+    transition: all .5s ease-out;
+    z-index: 200;
+    `; 
+   } else {
+     mobHeader.style.cssText = `position: relative; 
+    background-color: transparent;
+    padding: 0 0 15px;
+top: 0; height: auto; 
+transition: all .5s ease-out;
+z-index: 200;
+`;  
+      
+   }
+ });
 
   // -----------.board24_mob-person-------------------------
-    function _(el) {
-      return document.querySelector(el);
-    }
-    let menu = _(".board24_mob-person");
-    let burger = _(".icon-menu");
-	  let body = _(".board_24__mob-main__body");
-	  let bodyBody = _("body");
-  
-  body.addEventListener("click", function (event) {
-  if (event.target == burger) {
-   menu.classList.add("header__menu_act");
-   bodyBody.style.overflow = "hidden";
- }else{
-    if (menu.classList.contains("header__menu_act")) {
-      if ((event.target != menu)) {
-        menu.classList.remove("header__menu_act");
-        bodyBody.style.overflow = "visible";
+ 
+  let menu = _(".board24_mob-person");
+  let burger = _(".icon-menu");
+  let body = _(".board_24__mob-main__body");
+  let bodyBody = _("body");
+
+  bodyBody.addEventListener("click", function (event) {
+    if (event.target == burger) {
+      menu.classList.add("header__menu_act");
+      bodyBody.style.overflow = "hidden";
+    } else {
+      if (menu.classList.contains("header__menu_act")) {
+        if (event.target != menu) {
+          menu.classList.remove("header__menu_act");
+          bodyBody.style.overflow = "visible";
+        }
       }
     }
- }
-	   });
+  });
 
+  // --------------------------
+  let drop = _(".board24_mob-drop-js");
+  let button = _(".board24_mob-button");
+  let icon = _(".icon-arrow_drop_down");
+  drop.style.display = "none";
+  button.addEventListener("click", function (event) {
+    if (button.classList.contains("act")) {
+      drop.style.cssText = `opacity: 0;`;
+      setTimeout(function () {
+        drop.style.display = "none";
+      }, 200);
+      icon.style.transform = "rotate(0deg)";
 
+      button.classList.remove("act");
+    } else {
+      drop.style.display = "block";
+      setTimeout(function () {
+        drop.style.cssText = `opacity: 1;`;
+      }, 50);
+      icon.style.transform = "rotate(180deg)";
+      button.classList.add("act");
+    }
+  });
+});
