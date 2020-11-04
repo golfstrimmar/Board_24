@@ -7785,7 +7785,7 @@ body {
 .board_24__mob-container {
   width: 100%;
   background: #f5f6f8;
-  padding: 20px 15px 240px;
+  padding: 20px 16px 240px;
   position: relative;
 }
 .board_24__mob-logo {
@@ -7952,8 +7952,8 @@ body {
 }
 .header__menu_act {
   left: 95px !important;
-    z-index: 300;  
-	}
+  z-index: 300;
+}
 .board24_mob-person {
   position: fixed;
   width: 100%;
@@ -8090,16 +8090,262 @@ body {
   justify-content: space-between;
 }
 .board24_mob-drop {
-  -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
   position: relative;
-  opacity: 0;
 }
 .icon-arrow_drop_down {
   -webkit-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+}
+.board24_mob-plaza {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: #fff;
+  -webkit-box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  margin: 10px 0 0;
+  padding: 30px 20px 37px;
+}
+.board24_mob-plaza .board24_bot {
+  min-height: 40px;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  margin: 10px 0 0;
+}
+.board24_mob-plaza .board24_bot__area {
+  width: 100%;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  height: 100%;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0;
+}
+.board24_mob-plaza .board24_bot__in {
+  width: 100%;
+  min-height: 40px;
+  padding: 0 10px 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.board24_mob-plaza .board24_bot__in p {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+  color: #109cf1;
+  margin: 0;
+}
+.board24_mob-plaza .board24_mob-plaha {
+  width: 100%;
+  padding: 20px 17px 15px 20px;
+}
+.board24_mob-plaza .board24_mob-plaha label {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: #4c5862;
+}
+.board24_mob-plaza .board24_mob-plaha .custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 4px !important;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+}
+.board24_mob-plaza .board24_mob-plaha label:before {
+  margin: 0 7px 0 0;
+}
+.board24_mob-plaza
+  .board24_mob-plaha
+  .custom-checkbox:not(:disabled):not(:checked)
+  + label:hover:before {
+  border-color: #b3d7ff;
+}
+.board24_mob-plaza
+  .board24_mob-plaha
+  .custom-checkbox:not(:disabled):active
+  + label:before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+.board24_mob-plaza .board24_mob-plaha .custom-checkbox:focus + label:before {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.board24_mob-plaza
+  .board24_mob-plaha
+  .custom-checkbox:focus:not(:checked)
+  + label:before {
+  border-color: #80bdff;
+}
+.board24_mob-plaza .board24_mob-plaha .custom-checkbox:checked + label:before {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #0ff;
+  background-image: url(../img/group/v-1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+.board24_mob-plaza .board24_mob-plaha .custom-checkbox:disabled + label:before {
+  background-color: #e9ecef;
+}
+.board24_mob-plaza .board24_mob-plaha .custom-checkbox + label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.board24_mob-plaza .board24_mob-plaha .custom-checkbox + label:before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 50% 50%;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.board24_mob-plaza .board24_mob-plaha .board24_jucb label:before {
+  margin: 0;
+}
+.board24_mob-plaza .board24_mob-plaha .board24_jucb .board24_input-mini {
+  position: relative;
+  height: 30px;
+  max-width: 246px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 93%;
+  flex: 0 1 93%;
+  background: #f2f9ff;
+  border: 1px solid #e5e5e5;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.board24_mob-plaza
+  .board24_mob-plaha
+  .board24_jucb
+  .board24_input-mini
+  .board24_mob-input {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.board24_mob-plaza .board24_mob-plaha .board24_jucb .board24_input-mini img {
+  position: absolute;
+  width: 9px;
+  height: 10px;
+  right: 8px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.board24_mob-plaza form.board24_select-area .board24_bot {
+  padding: 0;
+}
+.board24_mob-plaza form.board24_select-area .select {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+  color: #109cf1;
+}
+.board24_mob-plaza form.board24_select-area .new-select {
+  width: 100%;
+  min-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 0 0 20px;
+}
+.board24_mob-plaza form.board24_select-area .new-select__list {
+  padding: 10px 0 5px 20px;
+}
+.board24_mob-plaza form.board24_select-area .new-select__item {
+  padding: 0 0 5px;
+}
+.board24_mob-plaza form.board24_select-area .board24_form-span {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.board24_mob-plaza form.board24_select-area .board24_button-empty {
+  margin: 30px 0 0;
+  border: 1px solid #109cf1;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 40px;
+}
+.board24_mob-plaza form.board24_select-area .board24_button-empty input {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
 }
 .select2-container {
   -webkit-box-sizing: border-box;

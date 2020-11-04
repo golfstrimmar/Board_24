@@ -535,17 +535,17 @@ $(document).ready(function () {
 
     ibg();
   });
-// ------------------------
- function _(el) {
+  // ------------------------
+  function _(el) {
     return document.querySelector(el);
   }
 
   // ------------------------------------
-let mobHeader = _(".board_24__mob-header");
+  let mobHeader = _(".board_24__mob-header");
 
- window.addEventListener("scroll", function (event) {
-   if (window.pageYOffset > 50) {
-     mobHeader.style.cssText = `position: fixed; 
+  window.addEventListener("scroll", function (event) {
+    if (window.pageYOffset > 50) {
+      mobHeader.style.cssText = `position: fixed; 
   width: 100%;
   height: 40px;
   top: 0;
@@ -555,21 +555,20 @@ let mobHeader = _(".board_24__mob-header");
     align-items: center;
     transition: all .5s ease-out;
     z-index: 200;
-    `; 
-   } else {
-     mobHeader.style.cssText = `position: relative; 
+    `;
+    } else {
+      mobHeader.style.cssText = `position: relative; 
     background-color: transparent;
     padding: 0 0 15px;
 top: 0; height: auto; 
 transition: all .5s ease-out;
 z-index: 200;
-`;  
-      
-   }
- });
+`;
+    }
+  });
 
   // -----------.board24_mob-person-------------------------
- 
+
   let menu = _(".board24_mob-person");
   let burger = _(".icon-menu");
   let body = _(".board_24__mob-main__body");
@@ -589,27 +588,78 @@ z-index: 200;
     }
   });
 
-  // --------------------------
-  let drop = _(".board24_mob-drop-js");
-  let button = _(".board24_mob-button");
-  let icon = _(".icon-arrow_drop_down");
-  drop.style.display = "none";
-  button.addEventListener("click", function (event) {
-    if (button.classList.contains("act")) {
-      drop.style.cssText = `opacity: 0;`;
-      setTimeout(function () {
-        drop.style.display = "none";
-      }, 200);
-      icon.style.transform = "rotate(0deg)";
 
-      button.classList.remove("act");
+  let drop = $(".board24_mob-drop-js");
+  let button = $(".board24_mob-button");
+  let iconDrop = button.find(".icon-arrow_drop_down");
+
+  drop.fadeOut(1);
+
+  button.on("click", function () {
+    if ($(this).hasClass("act")) {
+      $(this).removeClass("act");
+      drop.slideUp(300);
+      iconDrop.css("transform", "rotate(0deg)");
+
+      hidden.slideUp(300, function () {
+        button1.removeClass("act");
+        $(this)
+          .siblings(".board24_bot__area")
+          .find(".icon-arrow_drop_down")
+          .css("transform", "rotate(0deg)");
+      });
     } else {
-      drop.style.display = "block";
-      setTimeout(function () {
-        drop.style.cssText = `opacity: 1;`;
-      }, 50);
-      icon.style.transform = "rotate(180deg)";
-      button.classList.add("act");
+      $(this).addClass("act");
+      drop.slideDown(300);
+      iconDrop.css("transform", "rotate(180deg)");
+    }
+
+  });
+
+  // ----------------------------------
+  let button1 = $(".board24_bot__area");
+  let hidden = $(".board24_mob-plaha");
+  hidden.slideUp(0);
+
+  button1.on("click", function () {
+    let thisIcon = $(this).find(".icon-arrow_drop_down");
+
+    if (button1.hasClass("act")) {
+      hidden.slideUp(300, function () {
+        button1.removeClass("act");
+      });
+      thisIcon.css("transform", "rotate(0deg)");
+    } else {
+      hidden.slideDown(300, function () {
+        button1.addClass("act");
+      });
+      thisIcon.css("transform", "rotate(180deg)");
     }
   });
+  // ----------------------------------
+  
+  // ----------------------------------
+  $(".board_24__mob-container").on(
+    "click",
+    function () {
+if (button1.hasClass("act")) {
+  let dataJs = $(".board24_data-js");
+if (!dataJs.is(event.target) && dataJs.has(event.target).length === 0) {
+  hidden.slideUp(300, function () {
+    button1.removeClass("act");
+    $(this)
+      .siblings(".board24_bot__area")
+      .find(".icon-arrow_drop_down")
+      .css("transform", "rotate(0deg)");
+  });
+}	
+}
+    }
+  );
+  // -----------
+  // -----------
+  // -----------
+  // -----------
+  // -----------
+  // -----------
 });
