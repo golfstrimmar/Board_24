@@ -588,78 +588,70 @@ z-index: 200;
     }
   });
 
+	  // -----------
+  let but = $(".button-js");
+  let hid = $(".drop-js");
+  let icon = $(".icon-js");
+  let container=$(".container-js")
 
-  let drop = $(".board24_mob-drop-js");
-  let button = $(".board24_mob-button");
-  let iconDrop = button.find(".icon-arrow_drop_down");
+  hid.slideUp(1);
 
-  // drop.fadeOut(1);
-
-  button.on("click", function () {
+  but.on("click", function () {
     if ($(this).hasClass("act")) {
       $(this).removeClass("act");
-      drop.slideUp(300);
-      iconDrop.css("transform", "rotate(0deg)");
-
-      hidden.slideUp(300, function () {
-        button1.removeClass("act");
-        $(this)
-          .siblings(".board24_bot__area")
-          .find(".icon-arrow_drop_down")
-          .css("transform", "rotate(0deg)");
-      });
+      $(this).find(icon).css("transform", "rotate(0deg)");
+      hid.slideUp(300);
+      button1.removeClass("act");
+      person1.slideUp(300);
     } else {
       $(this).addClass("act");
-      drop.slideDown(300);
-      iconDrop.css("transform", "rotate(180deg)");
-    }
-
-  });
-
-  // ----------------------------------
-  let button1 = $(".board24_bot__area");
-  let hidden = $(".board24_mob-plaha");
-  hidden.slideUp(0);
-
-  button1.on("click", function () {
-    let thisIcon = $(this).find(".icon-arrow_drop_down");
-
-    if (button1.hasClass("act")) {
-      hidden.slideUp(300, function () {
-        button1.removeClass("act");
-      });
-      thisIcon.css("transform", "rotate(0deg)");
-    } else {
-      hidden.slideDown(300, function () {
-        button1.addClass("act");
-      });
-      thisIcon.css("transform", "rotate(180deg)");
-    }
-  });
-  // ----------------------------------
-  
-  // ----------------------------------
-  $(".board_24__mob-container").on(
-    "click",
-    function () {
-if (button1.hasClass("act")) {
-  let dataJs = $(".board24_data-js");
-if (!dataJs.is(event.target) && dataJs.has(event.target).length === 0) {
-  hidden.slideUp(300, function () {
-    button1.removeClass("act");
-    $(this)
-      .siblings(".board24_bot__area")
-      .find(".icon-arrow_drop_down")
-      .css("transform", "rotate(0deg)");
-  });
-}	
-}
-    }
-  );
+      $(this).find(icon).css("transform", "rotate(180deg)");
+      hid.slideDown(300);
+      }
+	  });				
   // -----------
+  let button1 = $(".board24_button1-js");
+  let person1 =$(".board24_mob-stat-drop__level__person-area");
+person1.slideUp(1);
+button1.on("click", function () {
+  if ($(this).hasClass("act")) {
+    $(this).removeClass("act");
+    person1.slideUp(300);
+  } else {
+    $(this).addClass("act");
+    person1.slideDown(300);
+  }
+});	
+// ---------------	// 
+$(".board24_mob-stat-drop__level__item").on("click", function () {
+if (
+$(this).hasClass("act")
+  ){
+$(this).removeClass("act")
+$(this).css("background", "transparent");
+}else{
+$(this).addClass("act")
+$(this).css("background", "rgba(196, 196, 196, 0.3)");
+  }
+  });	
+
   // -----------
-  // -----------
-  // -----------
+      	container.on("click", function () {
+          if (but.hasClass("act")) {
+            let dataJs = $(".area-js");
+            if (
+              !dataJs.is(event.target) &&
+              dataJs.has(event.target).length === 0
+            ) {
+              but.removeClass("act");
+              $(this).find(icon).css("transform", "rotate(0deg)");
+              hid.slideUp(300);
+              button1.removeClass("act");
+              person1.slideUp(300);
+            }
+          }
+        
+        });
   // -----------
   // -----------
 });

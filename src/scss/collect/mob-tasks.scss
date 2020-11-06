@@ -46,11 +46,10 @@
     }
     .board24_line-plaha__text {
       margin: 15px 0 0 0 !important;
+     	
     }
 
-    .board24_line-plaha__text-link {
-      @include juce();
-    }
+    
 
     .board24_files {
       margin: 15px 0;
@@ -77,32 +76,118 @@
         line-height: 20px;
         letter-spacing: 0.1px;
         color: #098edf;
-        flex: 0 1 65%;
-        margin: 0 25px 0 0;
+        flex: 0 1 74%;
+        // margin: 0 25px 0 0;
+        	
+        padding: 0 8px 0 0;
+      @include fdc(); 	
+      span{flex: 0 1 100%;} 
+      .board24_line-plaha__text-link {
+     flex: 0 1 100%;  
+padding: 12px 0 0 0;  
+    }
       }
     }
-    .board24_mob-button {
+    .board24_mob-button1 {
       background: #ffffff;
       border: 1px solid #e5e5e5;
       box-sizing: border-box;
       border-radius: 4px;
-      height: 50px;
-      font-family: OpenSans;
+      // height: 50px; 
+        //  padding: 13px 16px 13px 20px;
+      height: auto;
+      margin: 34px 0 0 0;
+      
+      &__title{
+            font-family: OpenSans;
       font-style: normal;
       font-weight: 600;
       font-size: 15px;
       line-height: 23px;
-      /* identical to box height, or 153% */
-
       letter-spacing: 0.1px;
-
-      /* Neutral / Black */
-
       color: #192a3e;
-      margin: 34px 0 0 0;
+      width: 100%;
+      // height: 50px;
+      padding: 13px 16px 13px 20px;
+      @include jucb();
+      @include alic();
+      }	
       .icon-arrow_drop_down {
         font-size: 16px;
+        height: 16px;
       }
+      .board24_mob-stat-drop {
+       padding: 26px 18px 38px;    
+        .board24_mob-stat-drop__level {
+          &:not(:first-child){
+            margin: 20px 0 0 0;	
+          }
+          &__title {
+            font-family: OpenSans;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 0.2px;
+            color: #34aff9;
+          }
+          &__text {
+            font-family: OpenSans;
+            font-style: italic;
+            font-weight: normal;
+            font-size: 10px;
+            line-height: 14px;
+            letter-spacing: 0.1px;
+            color: #34aff9;
+          }
+          &__desigion {
+            padding: 10px 8px 0 12px;
+          }
+
+          &__title-small {
+            font-family: OpenSans;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 0.2px;
+            color: #192a3e;
+          }
+          &__text-small {
+            font-family: OpenSans;
+            font-style: italic;
+            font-weight: normal;
+            font-size: 10px;
+            line-height: 12px;
+            letter-spacing: 0.1px;
+            color: #192a3e;
+          }
+&__person-area{
+// height: 95px;
+width: 100%;
+@include jucs();
+	}
+&__item{
+background: #FFFFFF;
+border-radius: 4px; 
+width: 40px;
+height: 95px;
+  @include jucc();
+  padding: 8px 5px;	
+margin: 0 5px 0 0;	
+transition: all .2s ease-out;
+&:last-child{
+  margin: 0 0 0 0;	
+}
+}
+
+&__img{
+width: 30px;height: 30px;border-radius: 50%;
+}
+
+        }// level
+        
+      } // drop
     }
 
     .board24_mob-title {
@@ -168,6 +253,9 @@
       }
       .board24_button-blue-small {
         margin: 26px 0 0 0;
+        width: auto;
+        max-width: 180px;
+        height: auto;
       }
 
       .board24_mob-level1 {
@@ -178,7 +266,7 @@
           box-sizing: border-box;
           border-radius: 14px;
           width: 175px;
-          height: 20px;
+          // height: 20px;
           font-family: OpenSans;
           font-style: normal;
           font-weight: normal;
@@ -228,7 +316,7 @@
       font-size: 11px;
       line-height: 16px;
       letter-spacing: 0.2px;
-	    padding: 29px 0 0 0;
+      padding: 29px 0 0 0;
       color: #818e9b;
     }
 
