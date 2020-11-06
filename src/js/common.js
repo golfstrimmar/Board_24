@@ -593,7 +593,7 @@ z-index: 200;
   let button = $(".board24_mob-button");
   let iconDrop = button.find(".icon-arrow_drop_down");
 
-  drop.fadeOut(1);
+  // drop.fadeOut(1);
 
   button.on("click", function () {
     if ($(this).hasClass("act")) {

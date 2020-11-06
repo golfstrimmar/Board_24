@@ -1,0 +1,252 @@
+.board24_mob-tasks {
+  .board24_line-plaha {
+    padding: 24px 12px 60px 20px;
+    .icon-edit {
+      color: #c2cfe0;
+      font-size: 20px;
+    }
+
+    .icon-delete {
+      font-size: 20px;
+    }
+    .icon-arrow_drop_down {
+      font-size: 16px;
+    }
+
+    .board24_button-color {
+      margin: 0 auto 0 0;
+    }
+
+    .board24_line-plaha__link {
+      font-family: OpenSans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 0.1px;
+      color: #109cf1;
+      @include alic();
+      margin: 0 0 0 18px;
+    }
+
+    .board24_line-plaha__data {
+      font-family: OpenSans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 20px;
+      /* identical to box height, or 154% */
+
+      letter-spacing: 0.1px;
+
+      /* Table / Gray */
+
+      color: #707683;
+      margin: 15px 0 0 !important;
+    }
+    .board24_line-plaha__text {
+      margin: 15px 0 0 0 !important;
+    }
+
+    .board24_line-plaha__text-link {
+      @include juce();
+    }
+
+    .board24_files {
+      margin: 15px 0;
+      &__title {
+        font-family: OpenSans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        color: #4c5862;
+        opacity: 0.5;
+      }
+      &__img {
+        width: 20px;
+        height: 20px;
+      }
+
+      &__text {
+        font-family: OpenSans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        color: #098edf;
+        flex: 0 1 65%;
+        margin: 0 25px 0 0;
+      }
+    }
+    .board24_mob-button {
+      background: #ffffff;
+      border: 1px solid #e5e5e5;
+      box-sizing: border-box;
+      border-radius: 4px;
+      height: 50px;
+      font-family: OpenSans;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 23px;
+      /* identical to box height, or 153% */
+
+      letter-spacing: 0.1px;
+
+      /* Neutral / Black */
+
+      color: #192a3e;
+      margin: 34px 0 0 0;
+      .icon-arrow_drop_down {
+        font-size: 16px;
+      }
+    }
+
+    .board24_mob-title {
+      font-family: OpenSans;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 23px;
+      /* or 153% */
+      padding: 36px 0 0 0;
+      letter-spacing: 0.1px;
+
+      /* Table / Black */
+
+      color: #323c47;
+    }
+    .board24_plaha-dark {
+      padding: 20px 10px 16px 24px;
+      width: 100%;
+      background: #ebeff2;
+      border-radius: 4px;
+      position: relative;
+
+      &__title {
+        font-family: OpenSans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 16px;
+        letter-spacing: 0.2px;
+      }
+
+      .board24_edit-link {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        top: 5px;
+        right: 27px;
+
+        .icon-edit {
+          font-size: 12px;
+        }
+      }
+      .icon-close2 {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        font-size: 10px;
+        color: #c2cfe0;
+        top: 10px;
+        right: 10px;
+      }
+
+      &__text {
+        font-family: OpenSans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 16px;
+        letter-spacing: 0.2px;
+        color: #323c47;
+        width: 80%;
+      }
+      .board24_button-blue-small {
+        margin: 26px 0 0 0;
+      }
+
+      .board24_mob-level1 {
+        @include jucb();
+        @include alic();
+        &__button {
+          border: 1px solid #90a0b7;
+          box-sizing: border-box;
+          border-radius: 14px;
+          width: 175px;
+          height: 20px;
+          font-family: OpenSans;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 10px;
+          line-height: 16px;
+          text-align: center;
+          letter-spacing: 0.2px;
+          color: #707683;
+        }
+      }
+    } // plaha-dark
+
+    .board24_mob-project {
+      background: #ffffff;
+      border: 1px solid #e5e5e5;
+      box-sizing: border-box;
+      border-radius: 4px;
+      width: 100%;
+      margin: 10px 0 0 0;
+      padding: 20px 27px 22px 20px;
+      &__title {
+        font-family: OpenSans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        color: #4c5862;
+        opacity: 0.5;
+      }
+      &__text {
+        padding: 12px 0 0 0;
+        font-family: OpenSans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 16px;
+        letter-spacing: 0.2px;
+        color: #323c47;
+      }
+    } // project
+
+    .board24_mob-comments {
+      font-family: OpenSans;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 16px;
+      letter-spacing: 0.2px;
+	    padding: 29px 0 0 0;
+      color: #818e9b;
+    }
+
+    .board24_mob-comments-area {
+      background: #f5f6f8;
+      border: 1px solid #e5e5e5;
+      box-sizing: border-box;
+      border-radius: 4px;
+      padding: 16px 13px 38px 7px;
+      &__text {
+        font-family: OpenSans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        color: #192a3e;
+      }
+    }
+  } // --------------------plaha
+}

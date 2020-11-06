@@ -1,0 +1,104 @@
+include ../common/mixins
+doctype html
+html
+  head
+    title mob-tasks 
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+   
+
+  body
+    div.wrapper
+      main.page
+        section.board_24__mob-main.board_24__mob-meetings.board24_mob-tasks
+          .board_24__mob-container
+            .board_24__mob-main__body
+              .board_24__mob-header
+                .board_24__mob-logo
+                  img(src="assets/img/main/main-1.svg",alt="img")   
+                span.icon-menu
+              .board_24__mob-plaha
+                a.board24_avatar-name(href="#!")
+                  img(src="assets/img/main/image-1.png",alt="img")
+                  .board24_board24_avatar-name__name
+                    p Иван Иванов
+                a.board_24__bell(href="#!")
+                  img(src="assets/img/mob-main/bell.svg",alt="img")
+              .board24_m10
+              .board_24__acent-button
+                a(href="#!")  Поставить задачу
+              .board24_m10
+              .board24_mob-button Заседания
+                span.icon-arrow_drop_down
+              .board24_mob-drop.board24_mob-drop-js   
+                .board24_middle-plaza__line_plaha.board24_line-plaha.board24_m8
+                  .board24_alic.board24_jucs
+                    +button-color("Проведение","apple-green","promo.html")
+                    a.board24_line-plaha__link(href="#!")
+                      span.icon-edit.board24_mob-icon
+                    a.board24_line-plaha__link(href="#!")
+                      span.icon-delete.board24_mob-icon
+                    a.board24_line-plaha__link(href="#!") Еще 
+                      span.icon-arrow_drop_down 
+                  .board24_line-plaha__data.board24_m6
+                    span 8:20 am, Aug 1, 2018
+                  .board24_line-plaha__text.board24_m17
+                    h3 Заседение совета директоров № 458776 от 23 мая
+                  .board24_files.board24_jucb
+                    .board24_files__title Файлы:
+                    img.board24_files__img(src="assets/img/mob-main/img-1.png",alt="img")
+                    .board24_files__text Приложение №1 План работы СД на 2019 год — копия.docx
+                  a.board24_line-plaha__text-link.board24_ts-36(href="#!") Скачать все файлы одним архивом
+                   
+                  .board24_mob-button Статистика голосования
+                    span.icon-arrow_drop_down.icon-arrow_drop_down
+
+                  .board24_mob-title Повестка
+                  
+                  .board24_plaha-dark.board24_m10
+                    a.board24_edit-link(href="#!")
+                      span.icon-edit
+                    span.icon-close2
+                    .board24_plaha-dark__title Вопрос №1.
+                    .board24_mob-level1.board24_m10
+                      a(href="#!").board24_mob-level1__button  Корпоративное управление
+                      img.board24_mob-level1__img(src="assets/img/mob-main/img1.png",alt="img")
+                    .board24_plaha-dark__text.board24_m15 Утверждение Плана работы Совета директоров на 2020 год. Обеспечение нашей деятельности. Принятие решение 456 789 890 от 8 апреля 2020.
+                    +button-blue-small("Перейти к голосованию","group.html")
+
+                  .board24_mob-project
+                    .board24_mob-project__title  Проект решения №1.
+                    .board24_mob-project__text Таким образом, дальнейшее развитие различных форм деятельности напрямую зависит от форм воздействия. Принимая во внимание показатели успешности...
+                  .board24_mob-project
+                    .board24_mob-project__title  Проект решения №2.
+                    .board24_mob-project__text Таким образом, дальнейшее развитие различных форм деятельности напрямую зависит от форм воздействия. Принимая во внимание показатели успешности...
+
+                  .board24_mob-comments Комментарии 
+                  .board24_mob-comments-area.board24_m13
+                    .board24_mob-comments-area__text Lorem ipsum dolor sit amet, ut per pertinax assueverit, dissentias honestatis usu an. Ei vim feugait aliquando, mei enim insolens ut.
+
+            section.board24_mob-person
+              .board_24__mob-header
+                  .board_24__mob-logo
+                    img(src="assets/img/main/main-1.svg",alt="img") 
+              .board24_hr  
+              .board24_person__body 
+                a.board24_person-cabinet__line(href="#!") Главная
+                a.board24_person-cabinet__line(href="#!") Мои заседания
+                a.board24_person-cabinet__line(href="#!") Поручения
+                a.board24_person-cabinet__line(href="#!") Компания
+                a.board24_person-cabinet__line(href="#!") Видео конференции
+                a.board24_person-cabinet__line(href="#!") Чат
+                  .board24_person-cabinet__mark 704
+                a.board24_person-cabinet__line(href="#!") Группы
+                a.board24_person-cabinet__line(href="#!") Диск
+                  .board24_person-cabinet__mark 12
+                a.board24_person-cabinet__line(href="#!") Календарь
+                a.board24_person-cabinet__line(href="#!") Список отчет
+                  .board24_person-cabinet__mark 12
+                
+                .board24_person-cabinet__set.board24_ts-48.board24_alic 
+                  span.icon-meetings-1
+                    span.path1
+                    span.path2
+                  span.board24_point Настроить меню
