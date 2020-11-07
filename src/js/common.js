@@ -675,9 +675,22 @@ icomDrop.css("transform", "translate( 0%, -50%) rotate(180deg)");
   }
 });	
 
+// --------------------------
+let tabText = $(".board24-corvet__tab-text");
+let corvetDrop = $(".board24-corvet__text-area-drop");
+corvetDrop.fadeOut(0)	;
+tabText.on("click", function () {
+  if ($(this).hasClass("act")) {
+    $(this).removeClass("act");
+     $(this).find(".icon-arrow_drop_down").css("transform", "rotate(0deg)");
+$(this).siblings(corvetDrop).slideUp();
 
-
-
+  } else {
+    $(this).addClass("act");
+    $(this).siblings(corvetDrop).slideDown();
+     $(this).find(".icon-arrow_drop_down").css("transform","rotate(180deg)");
+  }
+});	
 
 	  // -----------
       	container.on("click", function () {
