@@ -247,6 +247,11 @@ module.exports = {
       template: "src/pug/pages/mob-tasks.pug",
       filename: "./mob-tasks.html",
     }),
+    new HtmlWebpackPlugin({
+      // hash: false,
+      template: "src/pug/pages/mob-tasks1.pug",
+      filename: "./mob-tasks1.html",
+    }),
 
     //  ...PAGES.map(page => new HtmlWebpackPlugin({
     //   template: `${PAGES_DIR}/${page}`,

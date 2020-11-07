@@ -1,0 +1,307 @@
+.board24_mob-tasks1{
+
+.board24_line-plaha{
+  &:not(:first-child){
+    padding: 17px 22px 6px 22px;
+  }
+
+  &__title{
+  font-family: OpenSans;
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 23px;
+letter-spacing: 0.1px;
+color: #323C47;
+	
+  }
+&__button-grey{
+background: #FFFFFF;
+border: 1px solid #E5E5E5;
+box-sizing: border-box;
+border-radius: 4px;
+font-family: OpenSans;
+font-style: normal;
+font-weight: 600;
+font-size: 11px;
+line-height: 16px;
+text-align: center;
+letter-spacing: 0.2px;
+color: #707683;
+max-width: 199px;
+height: 22px;
+padding: 3px 20px;	
+
+}
+
+.board24_mob-speaker{
+  font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+/* identical to box height, or 150% */
+
+text-align: right;
+letter-spacing: 0.1px;
+
+/* Neutral / Dark gray */
+
+color: #4C5862;
+span{
+  margin: 0 0 0 7px;	
+}
+}
+
+&__text-grey{
+font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 20px;
+	letter-spacing: 0.1px;
+padding: 26px 0 0 0;
+color: #4C5862;
+opacity: 0.5;
+}
+
+&__text-dark{
+font-family: OpenSans;
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 23px;
+letter-spacing: 0.1px;
+color: #323C47;
+padding: 3px 0 46px 0;
+p{
+  margin: 0 0 0 0;	
+}
+}
+&__tab{
+background: #FFFFFF;
+border: 1px solid #E5E5E5;
+box-sizing: border-box;
+border-radius: 4px;
+width: 100%;
+margin: 0 0 8px 0;	
+span{
+  font-family: OpenSans;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 28px;
+padding: 10px 20px;	
+letter-spacing: 0.1px;
+color: #334D6E;
+width: 100%;
+position: relative;
+.icon-arrow_drop_down{
+  position: absolute;
+width: 16px;
+height: 16px;
+font-size: 16px;
+top: 50%;
+right: 20px;
+transform: translate( 0%, -50%);
+padding: 0 0 0 0;	
+	
+}
+
+}
+
+&_low{
+span{
+  padding: 15px 20px;	
+  font-family: OpenSans;
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 20px;
+letter-spacing: 0.1px;
+color: #334D6E;
+
+}
+}
+
+}// tab
+
+
+
+.board24_line-plaha__button{
+  transition: all .3s ease-out;
+  width: 188px;
+height: 48px;
+background: #FFFFFF;
+border: 1px solid #109CF1;
+border-radius: 4px;
+margin: 0  auto;	
+font-family: OpenSans;
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 20px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.1px;
+color: #109CF1;
+@include center();	
+
+}
+
+.board24_button-act {
+  background: #109CF1;
+box-shadow: 0px 4px 10px rgba(16, 156, 241, 0.24);
+border-radius: 4px;
+
+span{color: white !important;}
+}
+
+
+
+&__text1{
+padding: 0 0 19px 0;	
+}
+
+
+&__tab-drop{
+       padding: 0 24px 18px;
+  .board24_line-plaha__text{
+    font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+letter-spacing: 0.1px;
+color: #323C47;
+margin: 12px 0 0 0!important;	
+  }
+}
+&__text1{
+font-family: OpenSans;
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 20px;
+letter-spacing: 0.1px;
+	color: #334D6E;
+}
+
+&__item{
+margin: 0 0 10px 0;	
+position: relative;  
+width: 100%;
+}
+&__question-area{
+background: #FFFFFF;
+border: 1px solid #E5E5E5;
+box-sizing: border-box;
+border-radius: 4px;
+width: 100%;
+padding: 20px 22px;	
+margin: 16px 0 0 0;	
+
+font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 20px;
+	letter-spacing: 0.1px;
+color: #192A3E;
+
+&_second{
+    padding: 12px 58px 13px 22px;
+    margin: 7px 0 0;
+}
+
+}
+
+&__question{
+  	
+@include center();	
+width: 20px;
+height: 20px; 
+border-radius: 50%;
+border: 1px solid #C2CFE0;
+position: absolute;
+top: 0%;
+left: 93%;
+span{
+  font-size: 10px;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  line-height: 1.5;
+  color: #C2CFE0;
+}
+}
+&__text2{
+margin: 20px 0 0 22px;
+font-family: OpenSans;
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 20px;
+letter-spacing: 0.1px;
+color: #334D6E;	
+}
+
+&__save{
+font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 16px;
+	letter-spacing: 0.2px;
+  color: #6A707E;
+  padding: 4px 0 15px 0;	
+}
+
+&__button2{
+width: 100%;
+height: 22px;
+background: #109CF1;
+border-radius: 4px;
+margin: 0 0 43px 0;	
+ @include center();
+span{
+font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 16px;
+text-align: center;
+letter-spacing: 0.2px;
+  color: #FFFFFF;
+ 	
+}
+}
+
+&__following{
+font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+letter-spacing: 0.1px;
+color: #109CF1;
+	
+width: 100%;
+display: inline-block;
+text-align: center;
+padding: 38px 0 35px 0;		
+	span{
+  display: inline-block;
+  width: 7px;height: 7px;
+transform: rotate(-45deg);
+border-bottom: 1px solid#109CF1;
+border-right: 1px solid#109CF1;
+}
+}
+
+  }// plaha
+
+	
+
+}

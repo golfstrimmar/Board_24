@@ -4046,7 +4046,7 @@ span.board24_cross {
   width: 16px;
   height: 16px;
   border: 1px solid #109cf1;
-  background-image: url(../img/group/v-1.svg);
+  background-image: url(../assets/img/group/v-1.svg);
   background-repeat: no-repeat;
   background-size: 80%;
   background-position: 50%;
@@ -8762,6 +8762,305 @@ body {
   line-height: 20px;
   letter-spacing: 0.1px;
   color: #192a3e;
+}
+.board24_mob-tasks1 .board24_line-plaha:not(:first-child) {
+  padding: 17px 22px 6px;
+}
+.board24_mob-tasks1 .board24_line-plaha__title {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 23px;
+  letter-spacing: 0.1px;
+  color: #323c47;
+}
+.board24_mob-tasks1 .board24_line-plaha__button-grey {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #707683;
+  max-width: 199px;
+  height: 22px;
+  padding: 3px 20px;
+}
+.board24_mob-tasks1 .board24_line-plaha .board24_mob-speaker {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: right;
+  letter-spacing: 0.1px;
+  color: #4c5862;
+}
+.board24_mob-tasks1 .board24_line-plaha .board24_mob-speaker span {
+  margin: 0 0 0 7px;
+}
+.board24_mob-tasks1 .board24_line-plaha__text-grey {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  padding: 26px 0 0;
+  color: #4c5862;
+  opacity: 0.5;
+}
+.board24_mob-tasks1 .board24_line-plaha__text-dark {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 23px;
+  letter-spacing: 0.1px;
+  color: #323c47;
+  padding: 3px 0 46px;
+}
+.board24_mob-tasks1 .board24_line-plaha__text-dark p {
+  margin: 0;
+}
+.board24_mob-tasks1 .board24_line-plaha__tab {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 100%;
+  margin: 0 0 8px;
+}
+.board24_mob-tasks1 .board24_line-plaha__tab span {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  padding: 10px 20px;
+  letter-spacing: 0.1px;
+  color: #334d6e;
+  width: 100%;
+  position: relative;
+}
+.board24_mob-tasks1 .board24_line-plaha__tab span .icon-arrow_drop_down {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 0;
+}
+.board24_mob-tasks1 .board24_line-plaha__tab_low span {
+  padding: 15px 20px;
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: #334d6e;
+}
+.board24_mob-tasks1 .board24_line-plaha .board24_line-plaha__button {
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  width: 188px;
+  height: 48px;
+  background: #fff;
+  border: 1px solid #109cf1;
+  border-radius: 4px;
+  margin: 0 auto;
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #109cf1;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  align-items: center;
+}
+.board24_mob-tasks1 .board24_line-plaha .board24_button-act {
+  background: #109cf1;
+  -webkit-box-shadow: 0 4px 10px rgba(16, 156, 241, 0.24);
+  box-shadow: 0 4px 10px rgba(16, 156, 241, 0.24);
+  border-radius: 4px;
+}
+.board24_mob-tasks1 .board24_line-plaha .board24_button-act span {
+  color: #fff !important;
+}
+.board24_mob-tasks1 .board24_line-plaha__text1 {
+  padding: 0 0 19px;
+}
+.board24_mob-tasks1 .board24_line-plaha__tab-drop {
+  padding: 0 24px 18px;
+}
+.board24_mob-tasks1 .board24_line-plaha__tab-drop .board24_line-plaha__text {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+  color: #323c47;
+  margin: 12px 0 0 !important;
+}
+.board24_mob-tasks1 .board24_line-plaha__text1 {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: #334d6e;
+}
+.board24_mob-tasks1 .board24_line-plaha__item {
+  margin: 0 0 10px;
+  position: relative;
+  width: 100%;
+}
+.board24_mob-tasks1 .board24_line-plaha__question-area {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 100%;
+  padding: 20px 22px;
+  margin: 16px 0 0;
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: #192a3e;
+}
+.board24_mob-tasks1 .board24_line-plaha__question-area_second {
+  padding: 12px 58px 13px 22px;
+  margin: 7px 0 0;
+}
+.board24_mob-tasks1 .board24_line-plaha__question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #c2cfe0;
+  position: absolute;
+  top: 0;
+  left: 93%;
+}
+.board24_mob-tasks1 .board24_line-plaha__question span {
+  font-size: 10px;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  line-height: 1.5;
+  color: #c2cfe0;
+}
+.board24_mob-tasks1 .board24_line-plaha__text2 {
+  margin: 20px 0 0 22px;
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: #334d6e;
+}
+.board24_mob-tasks1 .board24_line-plaha__save {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: #6a707e;
+  padding: 4px 0 15px;
+}
+.board24_mob-tasks1 .board24_line-plaha__button2 {
+  width: 100%;
+  height: 22px;
+  background: #109cf1;
+  border-radius: 4px;
+  margin: 0 0 43px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.board24_mob-tasks1 .board24_line-plaha__button2 span {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #fff;
+}
+.board24_mob-tasks1 .board24_line-plaha__following {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+  color: #109cf1;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  padding: 38px 0 35px;
+}
+.board24_mob-tasks1 .board24_line-plaha__following span {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border-bottom: 1px solid #109cf1;
+  border-right: 1px solid #109cf1;
 }
 .select2-container {
   -webkit-box-sizing: border-box;
