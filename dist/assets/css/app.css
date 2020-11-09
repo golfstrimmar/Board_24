@@ -435,6 +435,66 @@
 @font-face {
   font-family: OpenSans;
   src: local(OpenSans-Italic),
+    url(/assets/fonts/OpenSans-Italic.woff) format("woff"),
+    url(/assets/fonts/OpenSans-Italic.ttf) format("truetype"),
+    url(/assets/fonts/OpenSans-Italic}) format("embedded-opentype"),
+    url(/assets/fonts/OpenSans-Italic.svg) format("svg"),
+    url(/assets/fonts/OpenSans-Italic.otf),
+    url(/assets/fonts/OpenSans-Italic.eot);
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: OpenSans;
+  src: local(OpenSans-Regular),
+    url(/assets/fonts/OpenSans-Regular.woff) format("woff"),
+    url(/assets/fonts/OpenSans-Regular.ttf) format("truetype"),
+    url(/assets/fonts/OpenSans-Regular}) format("embedded-opentype"),
+    url(/assets/fonts/OpenSans-Regular.svg) format("svg"),
+    url(/assets/fonts/OpenSans-Regular.otf),
+    url(/assets/fonts/OpenSans-Regular.eot);
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: OpenSans;
+  src: local(OpenSans-SemiBold),
+    url(/assets/fonts/OpenSans-SemiBold.woff) format("woff"),
+    url(/assets/fonts/OpenSans-SemiBold.ttf) format("truetype"),
+    url(/assets/fonts/OpenSans-SemiBold}) format("embedded-opentype"),
+    url(/assets/fonts/OpenSans-SemiBold.svg) format("svg"),
+    url(/assets/fonts/OpenSans-SemiBold.otf),
+    url(/assets/fonts/OpenSans-SemiBold.eot);
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: Poppins;
+  src: local(8145), url(/assets/fonts/8145.woff) format("woff"),
+    url(/assets/fonts/8145.ttf) format("truetype"),
+    url(/assets/fonts/8145}) format("embedded-opentype"),
+    url(/assets/fonts/8145.svg) format("svg"), url(/assets/fonts/8145.otf),
+    url(/assets/fonts/8145.eot);
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: icomoon;
+  src: local(icomoon), url(/assets/fonts/icomoon.woff) format("woff"),
+    url(/assets/fonts/icomoon.ttf) format("truetype"),
+    url(/assets/fonts/icomoon}) format("embedded-opentype"),
+    url(/assets/fonts/icomoon.svg) format("svg"), url(/assets/fonts/icomoon.otf),
+    url(/assets/fonts/icomoon.eot);
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}@font-face {
+  font-family: OpenSans;
+  src: local(OpenSans-Italic),
     url(../fonts/OpenSans-Italic.woff) format("woff"),
     url(../fonts/OpenSans-Italic.ttf) format("truetype"),
     url(../fonts/OpenSans-Italic}) format("embedded-opentype"),
@@ -2365,6 +2425,67 @@ span.board24_cross {
   color: #fff;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+.board24_calendar__arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.board24_calendar__arrow {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #bfcfe2;
+  border-radius: 4px;
+  position: relative;
+}
+.board24_calendar__arrow,
+.board24_calendar__arrow:after {
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.board24_calendar__arrow:after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  top: 50%;
+  border-bottom: 1px solid #bfcfe2;
+  border-left: 1px solid #bfcfe2;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  -ms-transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.board24_calendar__arrow:hover {
+  border: 1px solid #0fa3f8;
+  cursor: pointer;
+}
+.board24_calendar__arrow:hover:after {
+  border-bottom: 1px solid #0fa3f8;
+  border-left: 1px solid #0fa3f8;
+}
+.board24_calendar__arrow-left {
+  margin: 0 9px 0 0;
+}
+.board24_calendar__arrow-left:after {
+  left: 60%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  -ms-transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.board24_calendar__arrow-right:after {
+  left: 40%;
+  -webkit-transform: translate(-50%, -50%) rotate(-135deg);
+  -ms-transform: translate(-50%, -50%) rotate(-135deg);
+  transform: translate(-50%, -50%) rotate(-135deg);
 }
 .board24_plaha-big,
 .board24_plaha-mid {
@@ -8087,17 +8208,23 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-}
-.board24_mob-drop {
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
   position: relative;
 }
-.icon-arrow_drop_down {
+.board24_mob-button .icon-arrow_drop_down {
   -webkit-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.board24_mob-drop {
+  position: relative;
 }
 .board24_mob-plaza {
   width: 100%;
@@ -8562,12 +8689,15 @@ body {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 .board24_mob-tasks
   .board24_line-plaha

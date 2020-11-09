@@ -20,17 +20,26 @@
   @include alic();
   padding: 0 28px 0 24px;
   @include jucb();
+  position: relative;
+	.icon-arrow_drop_down {
+  transition: all 0.3s ease-out;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+	 right: 20px;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+  
 }
 
 .board24_mob-drop {
-  transition: all 0.2s ease-in;
+  // transition: all 0.2s ease-in;
   position: relative;
   // opacity: 0;
 }
 
-.icon-arrow_drop_down {
-  transition: all 0.3s ease-out;
-}
+
 
 .board24_mob-plaza {
   // height: 327px;

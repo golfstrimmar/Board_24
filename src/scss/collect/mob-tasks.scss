@@ -163,9 +163,12 @@ padding: 12px 0 0 0;
             color: #192a3e;
           }
 &__person-area{
-// height: 95px;
 width: 100%;
 @include jucs();
+display: flex;
+flex-wrap: nowrap;
+overflow-x: auto;
+
 	}
 &__item{
 background: #FFFFFF;

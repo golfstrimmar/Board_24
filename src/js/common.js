@@ -587,6 +587,24 @@ z-index: 200;
       }
     }
   });
+// ----------------------
+let mobButton = $(".board24_mob-button");
+let mobDrop = $(".board24_mob-drop");
+mobDrop.slideUp(1);
+mobButton.on("click", function () {
+   let icomDrop = $(this).find(".icon-arrow_drop_down");
+  if ($(this).hasClass("act")) {
+    $(this).removeClass("act");
+    mobDrop.slideUp(300);
+    icomDrop.css("transform", "translate( 0%, -50%) rotate(0deg)");
+  } else {
+    $(this).addClass("act");
+    mobDrop.slideDown(300);
+    icomDrop.css("transform", "translate( 0%, -50%) rotate(180deg)");
+  }
+});	
+
+
 
 	  // -----------
   let but = $(".button-js");
