@@ -2,40 +2,80 @@
   .board24_meet-nav__body.board24_flex.board24_alic.border 
     h2 Заседания
     form
-      //- ----bot
-      .board24_bot
-        .board24_bot__text-area 
-          .board24_bot__in-text-blue.board24_js-data
-            p.board24_ts-7 Дата
-            span.icon-arrow_drop_down
-          input.board24_bot__input.board24_bot__input_nav.board24_ts-7(type="text"  placeholder='Введите дату')
-
-      //- ----bot
-      .board24_bot
-        span.board24_form-span.icon-arrow_drop_down
-        select.board24_ts-7.select(name="stage")
-          option(disabled) Стадия
-          option(value="Стадия 1") Стадия 1
-          option(value="Стадия 2") Стадия 2
-          option(value="Стадия 3") Стадия 3
-      //- ----bot
-      .board24_bot
-        span.board24_form-span.icon-arrow_drop_down
-        select.board24_ts-7.select(name="participant")
-          option(disabled) Участник
-          option(value="Участник 1") Участник 1
-          option(value="Участник 2") Участник 2
-          option(value="Участник 3") Участник 3
-      //- ----bot 
-      .board24_bot
-        span.board24_form-span.icon-arrow_drop_down
-        select.board24_ts-7.select(name="group")
-          option(disabled) Группа
-          option(value="Группа 1") Группа 1
-          option(value="Группа 2") Группа 2
-          option(value="Группа 3") Группа 3
- 
+      .board24_bot.board24_bot_data
+        .board24_ts-7 Дата
+          span.board24_form-span.icon-arrow_drop_down
+        .board24_hidden.board24_inter-forma.board24_flex
+          .board24_flex.board24_inter-forma__item 
+            input.custom-checkbox(type="radio" name="data-choice" value="Дата 1" id="yes5")
+            label(for="yes5") Текущая неделя
+          .board24_flex.board24_inter-forma__item 
+            input.custom-checkbox(type="radio" name="data-choice" value="Дата 2" id="yes10")
+            label(for="yes10") Месяц
+          .board24_flex.board24_inter-forma__item 
+            input.custom-checkbox(type="radio" name="data-choice" value="Дата 3" id="yes20")
+            label(for="yes20") Год
+          .board24_flex.board24_inter-forma__item.board24_inter-forma__item_last
+            input.custom-checkbox(type="radio" name="data-choice" value="Дата 4" id="yes30")
+            label(for="yes30")
+            input.board24_inter-forma__item_cube(type="text")
+            img(src="assets/img/inter/schedule.svg",alt="img")
+      .board24_bot.board24_bot_data
+        .board24_ts-7 Стадия
+          span.board24_form-span.icon-arrow_drop_down
+        .board24_hidden.board24_inter-forma.board24_flex
+          .board24_flex.board24_inter-forma__item 
+            input.custom-checkbox(type="radio" name="stage-choice" value="Дата 1" id="yes6")
+            label(for="yes6") Подготовка
+          .board24_flex.board24_inter-forma__item 
+            input.custom-checkbox(type="radio" name="stage-choice" value="Дата 2" id="yes11")
+            label(for="yes11") Проведение
+          .board24_flex.board24_inter-forma__item 
+            input.custom-checkbox(type="radio" name="stage-choice" value="Дата 3" id="yes21")
+            label(for="yes21") Завершено
+      .board24_bot.board24_bot_data
+        .board24_ts-7 Участник
+          span.board24_form-span.icon-arrow_drop_down
+        .board24_hidden.board24_inter-forma.board24_flex
+          .board24_flex.board24_inter-forma__item
+            input.board24_inter-forma__item_participant(type="text")
+            span.icon-Vector
+          .board24_flex.board24_inter-forma__item 
+            input.custom-checkbox(type="radio" name="participant-choice" value="Дата 1" id="yes33")
+            label(for="yes33")  Имя Фамилия	
+          .board24_flex.board24_inter-forma__item 
+            input.custom-checkbox(type="radio" name="participant-choice" value="Дата 2" id="yes34")
+            label(for="yes34") Имя Фамилия
+          .board24_flex.board24_inter-forma__item 
+            input.custom-checkbox(type="radio" name="participant-choice" value="Дата 2" id="yes35")
+            label(for="yes35") Имя Фамилия
+          .board24_flex.board24_inter-forma__item 
+            input.custom-checkbox(type="radio" name="participant-choice" value="Дата 2" id="yes36")
+            label(for="yes36") Имя Фамилия
+          .board24_flex.board24_inter-forma__item
+            .board24_item-drop__title Нeдавниe
+              span.icon-arrow_drop_down
+          .board24_item-drop
+            .board24_flex.board24_inter-forma__item 
+              input.custom-checkbox(type="radio" name="participant-choice" value="Дата 2" id="yes37")
+              label(for="yes37") Имя Фамилия
+            .board24_flex.board24_inter-forma__item 
+              input.custom-checkbox(type="radio" name="participant-choice" value="Дата 2" id="yes38")
+              label(for="yes38") Имя Фамилия
+            .board24_flex.board24_inter-forma__item 
+              input.custom-checkbox(type="radio" name="participant-choice" value="Дата 2" id="yes39")
+              label(for="yes39") Имя Фамилия
+      .board24_bot.board24_bot_data
+        .board24_ts-7 Группа
+          span.board24_form-span.icon-arrow_drop_down
+        .board24_hidden.board24_inter-forma.board24_flex
+          .board24_flex.board24_inter-forma__item 
+            input.custom-checkbox(type="radio" name="group-choice" value="Дата 1" id="yes7")
+            label(for="yes7")  Совет директоров
+          .board24_flex.board24_inter-forma__item 
+            input.custom-checkbox(type="radio" name="group-choice" value="Дата 2" id="yes12")
+            label(for="yes12") Название группы может быть очень длинным...
       .board24_button-empty
         input.board24_button-empty__link(type='submit', name='submit', value='Найти')
-  .board24_button-blue#board24_create-meeting1
+  .board24_button-blue.board24_create-meeting1
     a.board24_button-blue__link(href=link) Создать заседание  

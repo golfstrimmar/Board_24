@@ -304,6 +304,13 @@
 // ------------------------------
 // ------------------------------
 .board24_middle-inter-5 {
+position: absolute;
+width: 825px;
+// height: 100%;
+top: 50%;
+left: 50%;
+transform: translate( -50%, -50%);
+
   .board24_middle-plaza {
     width: 100%;
     height: 100%;
@@ -318,7 +325,7 @@
   }
 
   .board24_inter-plaza {
-    padding: 12px 19px 36px;
+    padding: 4px 21px 36px;		
   }
 
   .board24_area1 {
@@ -345,44 +352,231 @@ cursor: pointer;
   }
 
   
-
+// ------------------------------------------------
 
   .board24-corvet {
+    @include alic();
     &__text {
       width: auto;
       text-align: right;
-      margin: 0 11px 0 auto;
+      // margin: 0 11px 0 auto;
+      font-family: OpenSans;
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 20px;
+letter-spacing: 0.1px;
+color: #334D6E;
     }
+
   }
 
-  .board24-corvet {
+.board24-corvet {
     margin: 0 0 8px 0;
+ input::-webkit-input-placeholder		{
+         font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+letter-spacing: 0.1px;
+color: #109CF1!important;
+       }
     .board24-corvet__text-area {
       padding: 5px 10px 5px 17px;
-      width: 630px;
+      width: 600px;
+      &:focus{
+outline: none;
+}
+&:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
 
-      p {
-        margin: 0 0 0 0 !important;
-      }
-      .board24-corvet__in-text {
-        padding: 0 0 0 24px;
-        margin: 0 0 0 0;
-      }
     }
   }
+// --------------------------------------------------------------
+.board24-corvet-bot {
 
-  .board24_inter-plaza__corvet10 {
-    .board24-corvet__in-text {
-      width: 100%;
-      height: 100%;
-    }
-    .icon-arrow_drop_down {
-      right: 464px;
-      top: 50%;
-      transform: translateY(-55%);
-    }
+
+.board24-corvet__text-area{
+  // background-color: #e74c45;
+  border: none;
+  box-sizing: border-box;
+padding: 0 0 0 0;	
+}
+
+
+.board24_bot{
+  width: 190px!important;
+  height: 40px!important;
+  box-sizing: border-box;
+background: #FFFFFF;
+border: 1px solid #E5E5E5;
+box-sizing: border-box;
+border-radius: 4px;		
+}
+
+		.board24_bot_data{
+border: none;		
+}
+
+.board24_bot__input{
+    padding: 5px 10px 5px 17px;
+&:focus + img{
+display: none;
+
+}
+
+}
+// ----------
+.board24_bot__area{
+padding: 0 0 0 0;	
+border: none;
+// @include jucb();	
+width: 100%;
+height: 100%;	
+
+img{
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 50%;
+  left: 85%;
+  transform: translate( 0%, -50%);
+  z-index: 3;
+  transition: all .3s ease-out;
+}
+
+.board24_bot_data{
+max-width: 100%!important;
+height: 100%;
+.board24_ts-7{
+  font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+letter-spacing: 0.1px;
+color: #109CF1;
+.icon-arrow_drop_down{
+  top: 50%;
+  transform: translateY(-50%);
+}
+}
+.board24_hidden{
+  width: 100%!important;
+  padding: 3px 8px 18px;				
+}
+
+
+.board24_inter-forma__item{
+label{
+display: inline-block;
+padding: 0 0 0 17px;
+&:before{
+position: absolute;
+top: 0%;
+left: 0%;
+transform: translate( 0%, 0%);
+}
+}
+span{
+width: 10px;
+height: 10px;
+border: 1px solid #C2CFE0;
+border-radius: 50%;
+// box-sizing: border-box;
+// position: absolute;
+// right: 0;
+// bottom: 5px;
+display: inline-block;
+transform: translateY(25%);
+
+i{
+position: absolute;
+font-size: 9px;
+top: 50%;
+left: 50%;
+transform: translate( -50%, -50%);
+color: #C2CFE0;
+}
+}
+}
+
+
+.board24_inter-forma__item_last{
+  .board24_inter-forma__title{
+padding: 0 0 6px 0;	
   }
+  input{
+    width: 170px!important;
+height: 30px!important;
+&:focus{
+outline: none;
+}
+&:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+&:focus + img{
+z-index: -1;
+}
+  }
+  img{
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 67%;
+  left: 85%;
+  transform: translate( 0%, -50%);
+  z-index: 3;
+  transition: all .3s ease-out;
+}
+}
 
+
+}
+
+}
+// -----------------
+
+
+
+}
+// ----------------------------------------------
+ .board24-corvet-add{
+   margin: 36px 0 8px;		
+.board24-corvet__text-area{
+border: 1px solid #E5E5E5;
+box-sizing: border-box;
+border-radius: 4px;
+width: 100%;
+height: 100%;
+padding: 0 0 0 0;	
+.board24-corvet__text{
+  position: relative;
+  width: 100%;
+  height: 40px;
+  text-align: left;
+  padding: 0 10px 0 12px;
+  @include alic();
+}
+
+.icon-arrow_drop_down{
+   position: absolute;
+  left: 16%;
+  top:50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+}
+
+
+
+.board24-corvet__drop{
+width: 100%;
+height: 100px; 
+
+}
+}
+ }
+// --------------------------------------------------
   .board24-bots {
     .board24-corvet__text-area {
       min-height: 40px;

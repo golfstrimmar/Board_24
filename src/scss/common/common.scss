@@ -148,7 +148,7 @@ display: block;
 #workarea-content {
   opacity: 1 !important;
    opacity: 1 !important;
-  background: transparent;
+  background: transparent !important;
   /* min-height: 100vh !important; */
   overflow: visible !important;
 }
@@ -310,10 +310,16 @@ a{
       }
   }
 }
+
+
+
+
+
+
 // -----bots*--------планка из 2-х bot вровень с корветом---------------------
   .board24-bots {
       margin: 0 0 0 54px;
-      @include juce();
+      // @include juce();
       .board24-corvet__text-area {
         padding: 0 0 0 0;
         border: none;
@@ -363,7 +369,7 @@ a{
     padding: 7px 24px 36px 24px;
     box-sizing: border-box;
     hr {
-      height: 1px;
+      // height: 1px;
       background-color: $silver;
       opacity: 0.3;
     }

@@ -221,11 +221,30 @@ section.board24_middle.board24_meet
             .meet-content-line__type.board24_ts-12 Reminder
             .meet-content-line__organ.board24_ts-12 Совет директоров
             .meet-content-line__date.board24_ts-12 Dec 14, 2018
+//- --------------------
+//- ----------------
+//- ----------------
+//- ----------------
+//- ----------------
+//- ----------------
+//- ----------------
+#board24_meet-popup2.board24_meet__popup
+  .board24_meet__overlay
+    .board24_meet__center.board24_jucc.board24_center
+      span.board24_cross.icon-close2
+      .board24_meet__title.board24_ts-4 Вы хотите создать заседание самостоятельно, или дать поручение секретарю?
+      .board24_meet__buttons.board24_jucc
+        +button-empty("Создать поручение секретарю","#!")
+        +button-blue("Собрать заседание самостоятельно","#!")
 
+//- --------------------
+//- --------------------
+//- -------Собрать заседание самостоятельно		-------------
+//- --------------------
+//- --------------------
 #board24_meet-popup1.board24_meet__popup
   .board24_meet__overlay
-    .board24_meet__center
-      section.board24_middle-inter-6.board24_middle-inter-2.board24_inter6
+    section.board24_middle-inter-6.board24_middle-inter-2.board24_inter6.board24_center
         span.board24_cross.icon-close2
         .board24_inter6__header.board24_ts-4 Создать заседание
         .board24_inter6__inter-plaza1.board24_inter-plaza
@@ -253,18 +272,7 @@ section.board24_middle.board24_meet
                 .board24_bot__text.board24_ts-5 Время 
                 .board24_bot__text-area.board24_js-data  
                   input.board24_ts.board24_bot__input.board24_bot__input_data(type="text"  placeholder='Укажите время') 
-                  //- .board24_bot__in-text-blue
-                  //-   p.board24_ts-29  
                   span.icon-arrow_drop_down
-        
-
-          //- .board24-corvet.board24_m8  
-          //-   .board24-corvet__text.board24_ts-5 Тип
-          //-   .board24-corvet__text-area   
-          //-     a.board24-corvet__in-text(href="#!").board24_ts.board24_jucb.board24_alic  
-          //-       span.board24_ts-6 Онлайн встреча 
-          //-       span.board24_ts-29 Добавить еще
-        
           .board24-corvet.board24_m8
             .board24-corvet__text.board24_ts-5 Тип
             .board24-corvet__text-area.board24-corvet__text-area_select
@@ -360,128 +368,146 @@ section.board24_middle.board24_meet
             +button-blue("Добавить вопрос","#!")
             +button-empty("Добавить из засседания","#!")
             +button-empty("Добавить из поручения","#!")
-        .board24_inter6__buttons1.board24_inter__buttons.board24_jucs.board24_m34
-            forma.board24_inter-forma.board24_flex 
-              .board24_flex.board24_inter-forma__item 
-                input.custom-checkbox(type="checkbox" name="inter2" value="1" id="yes2")
-                label.board24_ts-7-b(for="yes2") Сохранить как шаблон
+        .board24_inter6__buttons1.board24_inter__buttons.board24_jucc.board24_m34
             +button-empty("Отменить","#!") 
             +button-blue("Создать заседание","#!")
-#board24_meet-popup2.board24_meet__popup
-  .board24_meet__overlay
-    .board24_meet__center.board24_jucc
-      span.board24_cross.icon-close2
-      .board24_meet__title.board24_ts-4 Вы хотите создать заседание самостоятельно, или дать поручение секретарю?
-      .board24_meet__buttons.board24_jucc
-        +button-empty("Создать поручение секретарю","#!")
-        +button-blue("Собрать заседание самостоятельно","#!")
 
+//- ------------------
+//- ------------------
+//- ------------------
+//- ------------------
+//- ---Создать поручение секретарю		---------------
+//- ------------------
 #board24_meet-popup3.board24_meet__popup 
   .board24_meet__overlay
-    .board24_meet__center.board24_jucc
-      section.board24_middle-inter-5.board24_middle-inter.board24_middle-inter-2
-          span.board24_cross.icon-close2
-          .board24_inter__header.board24_ts-4 Новое поручение 
-          //- inter-plaza
-          .board24_inter__plaza.board24_inter-plaza
-            .board24_inter-plaza__header.board24_ts-5 Название поручения 
-    
-            .board24_inter-plaza__discription.board24_ts-6.board24_jucb  Поручение №1234567890
-              forma.board24_inter-forma.board24_flex 
-                .board24_flex.board24_inter-forma__item 
-                  input.custom-checkbox(type="checkbox" name="i6" value="1" id="i6")
-                  label.board24_text-small-blue.board24_ts-7(for="i6") Отметить как важное  
-            hr
-            //- area1
-            .board24_inter-plaza__text-area1.board24_area1 
-              //- input.board24_area1__input.board24_ts(type="textarea"  placeholder='Leave a note here ... ')
-              textarea.board24_area1__input.board24_ts( type="text"  placeholder=" Leave a note here ..." )
-              .board24_js-data
-                .board24_area1__text
-                  span.board24_ts Leave a note here ... 
-                  span.board24_ts-6 
+  form.board24_middle-inter-5.board24_middle-inter.board24_middle-inter-2.board24_center
+    span.board24_cross.icon-close2
+    .board24_inter__header.board24_inter6__header.board24_ts-4 Новое поручение 
+    //- inter-plaza
+    .board24_inter__plaza.board24_inter-plaza
+      .board24_inter-plaza__header.board24_ts-5 Название поручения 
+      .board24_inter-plaza__discription.board24_ts-6.board24_jucb  
+        input.board24_ts-6.board24_bot__input(type="text"  placeholder='Поручение №1234567890')
+        forma.board24_inter-forma.board24_flex 
+          .board24_flex.board24_inter-forma__item 
+            input.custom-checkbox(type="checkbox" name="i6" value="1" id="i6")
+            label.board24_text-small-blue.board24_ts-7(for="i6") Отметить как важное  
+      hr
+      //- area1
+      .board24_inter-plaza__text-area1.board24_area1 
+        textarea.board24_area1__input.board24_ts( type="text"  placeholder=" Leave a note here ..." )
+        .board24_js-data
+          .board24_area1__text
+            span.board24_ts Leave a note here ... 
+            span.board24_ts-6 
               
-              .board24_jucb
-                .board24_jucb
-                  a.board24_area1__img(href="#!") 
-                    img(src="assets/img/inter/vt-1.svg",   alt="img")
-                  a.board24_area1__img(href="#!")
-                    img(src="assets/img/inter/vt-2.svg",   alt="img")
-                  a.board24_area1__img(href="#!")
-                    img(src="assets/img/inter/vt-3.svg",   alt="img")
-                .board24_flex
-                  .board24_area1__button 
-                    +button-color-cub("Отменить","pale-grey","#!")
-                  .board24_area1__button
-                    +button-color-cub("Сохранить","silver","#!")
-            //-  corvet
-            .board24-corvet
-              .board24-corvet__text.board24_ts-5 Ответственный
-              .board24-corvet__text-area   
-                .board24-corvet__in-text.board24_ts
-                  span.board24_ts-7-b Добавить еще 
-                  span.board24_ts Lorem ipsum dolor, sit amet consecadipisicing elit. Sed             sunt quam neque voluptates accusdicta assumenda, molestiae obcaecati            suscipit harum facead veniam, consectetur quae quas? Vel, accusantium           minus?
-                img(src="assets/img/inter/edit.svg",alt="img") 
-            //-  corvet
-            .board24-corvet
-              .board24-corvet__text.board24_ts-5 Постановщик
-              .board24-corvet__text-area   
-                .board24-corvet__in-text.board24_ts
-                  span.board24_ts-7-b Добавить еще
-                  span.board24_ts Lorem ipsum dolor, sit amet consecadipisicing elit. Sed             sunt quam neque voluptates accusdicta assumenda, molestiae obcaecati            suscipit harum facead veniam, consectetur quae quas? Vel, accusantium           minus?
-                img(src="assets/img/inter/edit.svg",alt="img") 
-            //-  corvet
-            .board24-corvet
-              .board24-corvet__text.board24_ts-5 Соисполнители
-              .board24-corvet__text-area   
-                .board24-corvet__in-text.board24_ts
-                  span.board24_ts-7-b Добавить еще
-                  span.board24_ts Lorem ipsum dolor, sit amet consecadipisicing elit. Sed             sunt quam neque voluptates accusdicta assumenda, molestiae obcaecati            suscipit harum facead veniam, consectetur quae quas? Vel, accusantium           minus?
-                img(src="assets/img/inter/edit.svg",alt="img") 
-            //-  corvet
-            .board24-corvet
-              .board24-corvet__text.board24_ts-5 Наблюдатели
-              .board24-corvet__text-area   
-                .board24-corvet__in-text.board24_ts
-                  span.board24_ts-7-b Добавить еще 
-                  span.board24_ts Lorem ipsum dolor, sit amet consecadipisicing elit. Sed             sunt quam neque voluptates accusdicta assumenda, molestiae obcaecati            suscipit harum facead veniam, consectetur quae quas? Vel, accusantium           minus?
-                img(src="assets/img/inter/edit.svg",alt="img") 
+        .board24_jucb
+          .board24_jucb
+            a.board24_area1__img(href="#!") 
+              img(src="assets/img/inter/vt-1.svg",   alt="img")
+            a.board24_area1__img(href="#!")
+              img(src="assets/img/inter/vt-2.svg",   alt="img")
+            a.board24_area1__img(href="#!")
+              img(src="assets/img/inter/vt-3.svg",   alt="img")
+          .board24_flex
+            .board24_area1__button 
+              +button-color-cub("Отменить","pale-grey","#!")
+            .board24_area1__button
+              +button-color-cub("Сохранить","silver","#!")
+      //-  corvet
+      .board24-corvet
+        .board24-corvet__text Ответственный
+        input.board24-corvet__text-area(type="text" placeholder="Добавить еще")   
+      .board24-corvet
+        .board24-corvet__text Постановщик
+        input.board24-corvet__text-area(type="text" placeholder="Добавить еще")   
+      .board24-corvet
+        .board24-corvet__text Соисполнители		
+        input.board24-corvet__text-area(type="text" placeholder="Добавить еще")   
+      .board24-corvet
+        .board24-corvet__text Наблюдатели 		
+        input.board24-corvet__text-area(type="text" placeholder="Добавить еще")   
             
-            //- bots
-            .board24_inter-plaza__bots.board24-corvet.board24-bots
-              .board24-corvet__text.board24_ts-5 Крайний <br> срок
-              .board24-corvet__text-area
-                //- bot
-                .board24_bot
-                  input.board24_ts.board24_bot__input(type="text"  placeholder='Введите дату')
-                  .board24_js-data
-                    .board24_bot__text-area
-                      .board24_bot__in-text.board24_ts Введите дату
-                      img(src="assets/img/inter/schedule.svg",alt="img")
-                //- bot
-                .board24_bot
-                  .board24_bot__text-area 
-                    .board24_bot__in-text-blue
-                      p.board24_ts-7-b Планирование сроков 
-                      span.icon-arrow_drop_down
-                //- bot
-                .board24_bot
-                  .board24_bot__text-area 
-                    .board24_bot__in-text-blue
-                      p.board24_ts-7-b Дополнительно  
-                      span.icon-arrow_drop_down
+      //-         //- bots
+      .board24-corvet.board24-corvet-bot
+        .board24-corvet__text Крайний срок
+        .board24-corvet__text-area
+          //- bot
+          .board24_bot
+            .board24_bot__area
+              input.board24_ts.board24_bot__input(type="text"  placeholder='')  
+              img(src="assets/img/inter/schedule.svg",alt="img")
+          //- bot
+          .board24_bot
+            .board24_bot__area
+              .board24_bot_data
+                .board24_ts-7 Планирование сроков
+                  span.board24_form-span.icon-arrow_drop_down
+                .board24_hidden.board24_inter-forma.board24_flex
+                  .board24_flex.board24_inter-forma__item.board24_inter-forma__item_last
+                    .board24_inter-forma__title Начать поручение:
+                    input.board24_inter-forma__item_cube(type="text")
+                    img(src="assets/img/inter/schedule.svg",alt="img")
+                  .board24_flex.board24_inter-forma__item.board24_inter-forma__item_last
+                    .board24_inter-forma__title Длительность:
+                    input.board24_inter-forma__item_cube(type="text")
+                  .board24_flex.board24_inter-forma__item.board24_inter-forma__item_last
+                    .board24_inter-forma__title Завершениe:
+                    input.board24_inter-forma__item_cube(type="text")
+                    img(src="assets/img/inter/schedule.svg",alt="img")
+          
+          .board24_bot
+            .board24_bot__area
+              .board24_bot_data
+                .board24_ts-7 Дополнительно
+                  span.board24_form-span.icon-arrow_drop_down
+                .board24_hidden.board24_inter-forma.board24_flex
+                  .board24_flex.board24_inter-forma__item 
+                    input.custom-checkbox(type="radio" name="stage-choice1"      value="Дата 1" id="stage-choice-1")
+                    label(for="stage-choice-1") Разрешить ответственному менять сроки поручения&nbsp;		
+                      span
+                        i ?
+                  .board24_flex.board24_inter-forma__item 
+                    input.custom-checkbox(type="radio" name="stage-choice1"      value="Дата 2" id="stage-choice-2")
+                    label(for="stage-choice-2") Пропустить выходные и праздничные дни&nbsp;
+                      span
+                        i ?
+                  .board24_flex.board24_inter-forma__item 
+                    input.custom-checkbox(type="radio" name="stage-choice1" value="Дата 3" id="stage-choice-3")
+                    label(for="stage-choice-3") Принять работу после завершения поручения&nbsp;
+                      span
+                        i ?
+                  .board24_flex.board24_inter-forma__item 
+                    input.custom-checkbox(type="radio" name="stage-choice1" value="Дата 3" id="stage-choice-4")
+                    label(for="stage-choice-4") Добавить себе в избранное&nbsp;
+                      span
+                        i ?		
+                  .board24_flex.board24_inter-forma__item 
+                    input.custom-checkbox(type="radio" name="stage-choice1" value="Дата 3" id="stage-choice-5")
+                    label(for="stage-choice-5") Добавить в план рабочего дня&nbsp;
+                      span
+                        i ?		
+                  .board24_flex.board24_inter-forma__item 
+                    input.custom-checkbox(type="radio" name="stage-choice1" value="Дата 3" id="stage-choice-6")
+                    label(for="stage-choice-6") Сроки определяются сроками подпоручений&nbsp;
+                      span
+                        i ?
+                  .board24_flex.board24_inter-forma__item 
+                    input.custom-checkbox(type="radio" name="stage-choice1" value="Дата 3" id="stage-choice-7")
+                    label(for="stage-choice-7") Автоматически завершать поручение при завершении подзадач (и наоборот)&nbsp;
+                      span
+                        i ?
+        //- corvet
+      .board24-corvet.board24-corvet-add
+        .board24-corvet__text-area
+          .board24-corvet__text Дополнительно
+            span.board24_form-span.icon-arrow_drop_down
+          .board24-corvet__drop
 
-            //- corvet
-            .board24_inter-plaza__corvet10.board24-corvet
-              .board24-corvet__text-area 
-                a.board24-corvet__in-text.board24_alic.board24_jucs(href="#!")    
-                  span.board24_ts Дополнительно
-                  span.icon-arrow_drop_down  
-
-          .board24_inter__buttons.board24_jucs
-            forma.board24_inter-forma.board24_flex 
-              .board24_flex.board24_inter-forma__item 
-                input.custom-checkbox(type="checkbox" name="i5" value="1" id="i5")
-                label.board24_ts-7-b(for="i5") Сохранить как шаблон
-            +button-empty("Отменить","#!") 
-            +button-blue("Поставить поручение","#!")
+      .board24_inter__buttons.board24_jucs
+          forma.board24_inter-forma.board24_flex 
+            .board24_flex.board24_inter-forma__item 
+              input.custom-checkbox(type="checkbox" name="i5" value="1" id="i5")
+              label.board24_ts-7-b(for="i5") Сохранить как шаблон
+          +button-empty("Отменить","#!") 
+          +button-blue("Поставить поручение","#!")

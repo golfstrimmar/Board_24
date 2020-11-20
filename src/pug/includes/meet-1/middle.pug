@@ -22,9 +22,29 @@ section.board24_middle.board24_middle-group.board24_middle-meet-1
             .board24_left
               .board24_text.board24_alic
                 span.board24_ts-34 Файлы:
-                img(src="assets/img/meet/img-1.png",alt="img")
-                span.board24_ts-14 Приложение №1 План работы СД на 2019 год — копия.docx
-              a.board24_link.board24_ts-29.board24_m3(href="#!") Скачать все  файлы одним архивом
+                .board24_100
+                .board24_stretsh-meet-1__line__files.board24_fdc
+                  .board24_stretsh-meet-1__line__file
+                    img(src="assets/img/meet/img-1.png",alt="img")
+                    .board24_ts-14 Приложение №1 План работы СД на 2019 год — копия.docx
+                  .board24_stretsh-meet-1__line__file
+                    img(src="assets/img/meet/img-1.png",alt="img")
+                    .board24_ts-14 Приложение №1 План работы СД на 2019 год — копия.docx
+                  .board24_stretsh-meet-1__line__file
+                    img(src="assets/img/meet/img-1.png",alt="img")
+                    .board24_ts-14 Приложение №1 План работы СД на 2019 год — копия.docx
+                  .board24_stretsh-meet-1__line__file
+                    img(src="assets/img/meet/img-1.png",alt="img")
+                    .board24_ts-14 Приложение №1 План работы СД на 2019 год — копия.docx
+                  .board24_stretsh-meet-1__line__file
+                    img(src="assets/img/meet/img-1.png",alt="img")
+                    .board24_ts-14 Приложение №1 План работы СД на 2019 год — копия.docx
+                  .board24_stretsh-meet-1__line__file
+                    img(src="assets/img/meet/img-1.png",alt="img")
+                    .board24_ts-14 Приложение №1 План работы СД на 2019 год — копия.docx
+              .board24_directives.board24_jacs
+                a.board24_link.board24_ts-29.board24_m3(href="#!") Скачать все  файлы одним архивом
+                a.board24_link.board24_ts-29.board24_m3(href="#!") Добавить файлы
             .board24_right.board24_alic.board24_auto
               a.board24_else.board24_auto(href="#!") 
                 span.board24_ts-29 Еще
@@ -545,7 +565,8 @@ section.board24_middle.board24_middle-group.board24_middle-meet-1
                 span.icon-edit
               .board24_text2.board24_ts-34 Утверждение Плана работы Совета директоров на 2020 год.Обеспечение нашей деятельности. Принятие решение 456 789 890 от 8 апреля 2020.
               .board24_level.board24_alic
-                +button-blue("Перейти к голосованию","#!") 
+                +button-blue("Перейти к голосованию","#!")
+
                 a.board24_ts-36.board24_auto.board24_alic(href="#!") Скачать файлы одним архивом
                   +arrow-download 
                 .board24_ts-41 Докладчик
@@ -598,10 +619,51 @@ section.board24_middle.board24_middle-group.board24_middle-meet-1
                     +chef()
 
           .board24_stretsh-meet-1__line.board24_stretsh-meet-1__line_line6.board24_jucs
-            +button-blue("Добавить вопрос","#!")
+            //- +button-blue("Добавить вопрос","#!")
+            .board24_button-blue.board24_button-blue-js
+              a.board24_button-blue__link(href="#!") Добавить вопрос
             +button-empty("Добавить из засседания","#!")
             +button-empty("Добавить из поручения","#!")
             +button-blue("Завершить заседание","#!")
+
+#board24_person-meet-popup-add-voice.board24_person-meet-popup
+      .board24_meet__overlay
+      .board24_popup__body.board24_fdc
+          span.icon-close2
+          .board24_meet-mob-title Добавление нового вопроса
+          .inter6-plaza2__corvet.board24-corvet
+            .board24-corvet__text.board24_ts-5 Вопрос №1
+            input(type="text"  placeholder='Описание вопроса')
+            span.board24_ts 
+              img(src="assets/img/inter/edit.svg",alt="img") 
+          .inter6-plaza2__corvet.board24-corvet
+            .board24-corvet__text.board24_ts-5 Докладчик:
+            input(type="text"  placeholder='Константин Константинопольский ')
+            a.board24-corvet-a.board24_ts-29(href="#!") &nbsp + Добавить докладчика 
+            span.board24_ts 
+              img(src="assets/img/inter/edit.svg",alt="img") 
+          .inter6-plaza2__corvet.board24-corvet
+            .board24-corvet__text.board24_ts-5 Проект решения №1		
+            input(type="text"  placeholder='Текст описание проект решения')
+            span.board24_ts 
+              img(src="assets/img/inter/edit.svg",alt="img") 
+          .board24_corvet__area-buttons
+            .board24_button-empty
+              a.board24_button-empty__link(href="#!") Добавить проект решения
+            .board24_button-empty.board24_button-empty_orange
+              a.board24_button-empty__link(href="#!") Утвердить повестку дня
+            .board24_button-empty.board24_button-empty_green
+              a.board24_button-empty__link(href="#!") Начать заседание
+            .board24_button-empty.board24_button-empty_red
+              a.board24_button-empty__link(href="#!") 
+          .board24_inter6__buttons1.board24_inter__buttons.board24_jucc.board24_m34
+            forma.board24_inter-forma
+              .board24_inter-forma__item 
+                input.custom-checkbox(type="checkbox" name="meet1" value="1" id="meet1")
+                label.board24_ts-7-b(for="meet1") Сделать поручением	
+            +button-empty("Отменить","#!") 
+            +button-blue("Сохранить","#!")
+
 
 #board24_person-meet-popup.board24_person-meet-popup
     .board24_popup__overlay
