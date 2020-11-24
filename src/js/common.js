@@ -137,6 +137,23 @@ corvetDrop1.slideUp(1);
         .slideDown(300);
     }
   });
+// ---------------------------
+let meetTree =$("#board_24-popup-meet-3");
+let marker = $(".board24_text1-band-img_marker");
+let meetTreeOverlay=$(".board_24-popup-meet-3__overlay");
+meetTree.fadeOut(1);
+
+marker.on("click", function () {
+meetTree.fadeIn();
+});				
+$(".icon-close2").on("click", function () {
+  meetTree.fadeOut(1);
+
+});
+
+meetTreeOverlay.on("click", function () {
+   meetTree.fadeOut();
+});
 
   // ------------meet-popup--------------
   let meetlink1 = $("#board24_link-meet");

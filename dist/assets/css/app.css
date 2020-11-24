@@ -5961,6 +5961,7 @@ hr {
   letter-spacing: 0.2px;
   color: #90a0b7;
   font-size: 25px;
+  margin-top: -34px;
 }
 .board24_middle-meet-1 .board24_stretsh-meet-1__line {
   padding: 0 24px;
@@ -6134,12 +6135,6 @@ hr {
 }
 .board24_middle-meet-1
   .board24_stretsh-meet-1__line_line6
-  .board24_button-blue:last-child {
-  background-color: #f7685b;
-  margin: 0;
-}
-.board24_middle-meet-1
-  .board24_stretsh-meet-1__line_line6
   .board24_button-blue__link {
   font-family: OpenSans;
   font-size: 11px;
@@ -6269,7 +6264,7 @@ hr {
   .board24_left
   .board24_italic
   .board24_text1-band
-  img.board24_text1-band-img {
+  .board24_text1-band-img {
   width: 8px;
   height: 8px;
 }
@@ -6365,7 +6360,7 @@ hr {
   .board24_left
   .board24_text1
   .board24_text1-band
-  img.board24_text1-band-img {
+  .board24_text1-band-img {
   width: 8px;
   height: 8px;
 }
@@ -6590,7 +6585,7 @@ hr {
   align-items: center;
 }
 #board24_person-meet-popup-add-voice {
-  z-index: 10;
+  z-index: 1110;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -7313,6 +7308,299 @@ hr {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+.board24_middle-meet-3 .board24_text1-band-img_marker {
+  position: relative;
+}
+.board24_middle-meet-3 .board24_text1-band-img_marker:after,
+.board24_middle-meet-3 .board24_text1-band-img_marker:before {
+  content: "";
+  position: absolute;
+  background: #109cf1;
+  width: 1px;
+  height: 9px;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+}
+.board24_middle-meet-3 .board24_text1-band-img_marker:before {
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.board24_middle-meet-3 .board24_text1-band-img_marker:after {
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+  -ms-transform: translate(-50%, -50%) rotate(90deg);
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.board24_middle-meet-3 .board24_text1-band-img_marker span {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background: rgba(0, 0, 0, 0);
+  top: 50%;
+  left: 50%;
+  border: 1px solid #109cf1;
+  border-radius: 4px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.board24_middle-meet-3 .board24_stretsh-meet-1__button-blue {
+  width: 300px;
+  height: 30px;
+  margin: 0 24px;
+}
+.board24_middle-meet-3
+  .board24_stretsh-meet-1__button-blue
+  .board24_button-blue__link {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #fff;
+}
+.board_24-popup-meet-3 {
+  position: fixed;
+  width: 100vw;
+  z-index: 10000;
+         top: 0;
+    left: 0;
+  height: 100vh;
+}
+.board_24-popup-meet-3__overlay {
+  height: 100vh;
+  background-color: rgba(50, 60, 71, 0.56);
+  position: fixed;
+  width: 100vw !important;
+  top: 0;
+  left: 0;
+}
+.board_24-popup-meet-3 .board24_popup__body {
+  width: 825px;
+  height: 557px;
+  position: fixed;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background: #fff;
+  -webkit-box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 25px 23px 44px 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 2;
+}
+.board_24-popup-meet-3__title {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.1px;
+  color: #323c47;
+}
+.board_24-popup-meet-3__text1 {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: #34aff9;
+  padding: 15px 0 0;
+}
+.board_24-popup-meet-3__text2 {
+  font-family: OpenSans;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 0.1px;
+  color: #34aff9;
+}
+.board_24-popup-meet-3__text3 {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: #192a3e;
+  padding: 13px 0 0;
+}
+.board_24-popup-meet-3__text4 {
+  font-family: OpenSans;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 0.1px;
+  color: #192a3e;
+}
+.board_24-popup-meet-3__text5 {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: #6a707e;
+}
+.board_24-popup-meet-3 .board24_avatar-name {
+  height: 36px;
+  padding: 21px 0 0;
+}
+.board_24-popup-meet-3 .board24_board24_avatar-name__name p:first-child {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: #192a3e;
+}
+.board_24-popup-meet-3__button-area {
+  margin: 43px 0 0;
+}
+.board_24-popup-meet-3 .board_24-popup-meet-3-button-area {
+  width: 780px;
+  height: 97px;
+  border: 1px solid #e5e5e5;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 21px 90px 24px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.board_24-popup-meet-3 .board_24-popup-meet-3-button-area__title {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: #334d6e;
+  margin: 0 30px 0 0;
+}
+.board_24-popup-meet-3
+  .board_24-popup-meet-3-button-area
+  .board24_button-empty {
+  width: 160px;
+  height: 48px;
+  margin: 0 24px 0 0;
+}
+.board_24-popup-meet-3 .board_24-popup-meet-3-button-area .board24_button-blue {
+  margin: 0 12px 0 0;
+  width: 160px;
+  height: 48px;
+}
+.board_24-popup-meet-3 .board_24-popup-meet-3-button-area__reference {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  color: #c2cfe0;
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  border: 1px solid #c2cfe0;
+  border-radius: 50%;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.board_24-popup-meet-3__title1 {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: #818e9b;
+  padding: 24px 0 0;
+}
+.board_24-popup-meet-3__area-opinion {
+  width: 780px;
+  height: 110px;
+  border: 1px solid #e5e5e5;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 4px;
+  position: relative;
+  margin: 11px 0 0;
+}
+.board_24-popup-meet-3__area-opinion img {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  bottom: 17px;
+  right: 17px;
+}
+.board_24-popup-meet-3__area-opinion textarea {
+  width: 100%;
+  height: 70%;
+  border: none;
+  resize: none;
+}
+.board_24-popup-meet-3__area-opinion textarea:focus {
+  outline: none;
+}
+.board_24-popup-meet-3__area-opinion textarea:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.board_24-popup-meet-3__save {
+  padding: 7px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+.board_24-popup-meet-3__save .board24_button-blue {
+  background: #109cf1;
+  border-radius: 4px;
+  width: 170px;
+  height: 22px;
+  margin: 0;
+}
+.board_24-popup-meet-3__save .board24_button-blue__link {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #fff;
 }
 .board24_middle-meetings .board24_meet__body .board24_meet-nav__body {
   margin: 0;

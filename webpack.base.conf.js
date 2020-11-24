@@ -179,6 +179,11 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       // hash: false,
+      template: "src/pug/pages/meet-3.pug",
+      filename: "./meet-3.html",
+    }),
+    new HtmlWebpackPlugin({
+      // hash: false,
       template: "src/pug/pages/meetings.pug",
       filename: "./meetings.html",
     }),
