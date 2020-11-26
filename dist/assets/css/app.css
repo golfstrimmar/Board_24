@@ -7270,7 +7270,7 @@ hr {
   margin: 0 0 0 auto;
 }
 .board24_middle-meet-2 .board24_stretsh-meet-1 .board24_drop .board24_line2 {
-  padding: 24px 22px;
+  padding: 24px 0 24px 22px;
 }
 .board24_middle-meet-2
   .board24_stretsh-meet-1
@@ -7283,15 +7283,28 @@ hr {
   .board24_stretsh-meet-1
   .board24_drop
   .board24_line2
-  .board24_button-blue,
-.board24_middle-meet-2
-  .board24_stretsh-meet-1
-  .board24_drop
-  .board24_line2
   .board24_button-empty {
   width: 160px;
   height: 48px;
   margin: 0 3% 0 0;
+}
+.board24_middle-meet-2
+  .board24_stretsh-meet-1
+  .board24_drop
+  .board24_line2
+  .board24_button-blue {
+  margin: 0 12px 0 0;
+  width: 160px;
+  height: 48px;
+}
+.board24_middle-meet-2
+  .board24_stretsh-meet-1
+  .board24_drop
+  .board24_line2
+  .board24_link {
+  width: auto;
+  height: auto;
+  margin: 0;
 }
 .board24_middle-meet-2
   .board24_stretsh-meet-1
@@ -7344,7 +7357,7 @@ hr {
   max-width: 100%;
   max-height: 108px;
   padding: 16px 22px;
-  resize:none;
+  resize: none;
 }
 .board24_middle-meet-2
   .board24_stretsh-meet-1
@@ -7741,7 +7754,7 @@ hr {
   height: 70%;
   border: none;
   resize: none;
-  padding: 16px 0 0 22px;	
+  padding: 16px 0 0 22px;
 }
 .board_24-popup-meet-3__area-opinion textarea:focus {
   outline: none;

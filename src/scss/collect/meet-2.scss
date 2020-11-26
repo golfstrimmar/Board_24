@@ -108,7 +108,7 @@ background-color: $ice-blue;
 }
 // --
 .board24_line2{
-  padding: 24px 22px;
+  padding: 24px 0 24px 22px;
   .board24_text{
     margin: 0 60px 0 0;
   }
@@ -118,9 +118,13 @@ background-color: $ice-blue;
   margin: 0 3% 0 0;
 }
 .board24_button-blue{
-  margin: 0 3% 0 0; 
+  margin: 0 12px 0 0; 
    width: 160px;
   height: 48px;
+}
+.board24_link{
+  width: auto;height: auto;
+  margin: 0 0 0 0;
 }
 }
 
