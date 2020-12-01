@@ -190,6 +190,25 @@ blueJs.on("click", function () {
  $(".board24_meet__overlay").on("click", function () {
    voice.fadeOut();
  });
+// ----------------------------------
+
+
+let interTen = $("#board24_middle-inter-10");
+let blueTen = $(".board24_icon-js");
+let closeTen = $(".board24_middle-inter-10 .icon-close2");
+interTen.fadeOut(0);
+
+blueTen.on("click", function () {
+  interTen.fadeIn();
+});
+closeTen.on("click", function () {
+  interTen.fadeOut();
+});
+$(".board24_popup__overlay").on("click", function () {
+  interTen.fadeOut();
+});
+
+
 
   // ---------------------
   $(".board24_chef__img").on("click", function () {

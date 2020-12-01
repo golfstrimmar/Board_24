@@ -37,6 +37,11 @@
     position: relative;
     padding: 24px 0 30px 0;
 
+.board24_icon-js{
+  &:hover{
+cursor: pointer;
+  }
+}
     // -----------
     .board24_text1-band {
       .board24_img3_minus {
@@ -436,7 +441,9 @@
   width: 100vw;
   height: 100vh;
   z-index: 20;
-
+  top: 0;
+  left: 0;
+  z-index: 1110;
   .board24_popup {
     &__overlay {
       width: 100%;
@@ -488,13 +495,7 @@
 }
 
 // ------------------------------------------------
-// .board24_person-meet-popup{
-// position: fixed;
-// top: 0;
-// left: 0;
-// right: 0;
-// bottom: 0;
-// }
+
 #board24_person-meet-popup-add-voice {
   z-index: 1110;
   @include center();
@@ -680,6 +681,32 @@
     }
   }
 }
+// ----------------------------
+
+#board24_middle-inter-10{
+  z-index: 1000;
+  @include center();
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  .board24_popup__overlay{
+    position: fixed;
+    width: 100vw;
+  height: 100vh;
+    top: 0%;
+    left: 0%;
+    // z-index: 1110;
+    background-color: rgba(50, 60, 71, 0.56);
+      @include center();
+  }
+  .board24_middle-inter-10{
+    z-index: 2;
+  }
+}
+
+
 
 .board24_inter-plaza__discription {
   .board24_inter-forma {
