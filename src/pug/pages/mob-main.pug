@@ -26,7 +26,7 @@ html
                   img(src="assets/img/mob-main/bell.svg",alt="img")
               .board24_m10
               .board_24__acent-button
-                a(href="#!")  Accent button
+                a(href="#!")  Поставить задачу
               .board24_m10
               .board24_calendar
                 .board24_calendar__body 
@@ -132,30 +132,17 @@ html
                     img(src="assets/img/main/Vector-1.svg",alt="img")
                     img(src="assets/img/main/Vector-2.svg",alt="img")
                   +button-blue-small("Перейти к заседанию","group.html")
-            section.board24_mob-person
-              .board_24__mob-header
-                  .board_24__mob-logo
-                    img(src="assets/img/main/main-1.svg",alt="img") 
-              .board24_hr  
-              .board24_person__body 
-                a.board24_person-cabinet__line(href="#!") Главная
-                a.board24_person-cabinet__line(href="#!") Мои заседания
-                a.board24_person-cabinet__line(href="#!") Поручения
-                a.board24_person-cabinet__line(href="#!") Компания
-                a.board24_person-cabinet__line(href="#!") Видео конференции
-                a.board24_person-cabinet__line(href="#!") Чат
-                  .board24_person-cabinet__mark 704
-                a.board24_person-cabinet__line(href="#!") Группы
-                a.board24_person-cabinet__line(href="#!") Диск
-                  .board24_person-cabinet__mark 12
-                a.board24_person-cabinet__line(href="#!") Календарь
-                a.board24_person-cabinet__line(href="#!") Список отчет
-                  .board24_person-cabinet__mark 12
-                .board24_person-cabinet__set.board24_ts-48.board24_alic 
-                  span.icon-meetings-1
-                    span.path1
-                    span.path2
-                  span.board24_point Настроить меню
+            include ../includes/mob/mob-person
+
+  #board24_poup-assignment.board24_poup-assignment
+    .board24_poup-assignment__body board24_poup-assignment__body
+
+
+
+
+
+
+
 
 
 

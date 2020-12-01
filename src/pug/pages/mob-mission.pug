@@ -5,7 +5,6 @@ html
     title mob-mission
     meta(charset="utf-8")
     meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
-   
 
   body
     div.wrapper
@@ -30,6 +29,81 @@ html
               .board24_m10
               .board24_mob-button Поручения
                 span.icon-arrow_drop_down
+              .board24_mob-errand
+                .board24_mob-errand__body
+                  .board24_mob-errand__button button search
+                  .board24_mob-errand__list.board24_mob-errand-list
+                    .board24_mob-errand-list__body 
+                    
+                      .board24_meet-content__line
+                        .board24_meet-content-line__body
+                          .board24_meet-content-line__text.board24_ts-22 Список поручений
+                  
+                      .board24_meet-content__line
+                        .board24_meet-content-line__body
+                          forma.board24_inter-forma.board24_flex 
+                            .board24_flex.board24_inter-forma__item 
+                              input.custom-checkbox(type="checkbox" name="meetings1" value="1"   id="meetings1")
+                              label.board24_ts-7-b(for="meetings1")
+                          .meet-content-line__img-high
+                            span.icon-meetings-1
+                              span.path1
+                              span.path2
+                          .meet-content-line__text.board24_ts-24 Название
+
+                      .board24_meet-content__line.meet-content-line
+                        .board24_meet-content-line__body
+                          forma.board24_inter-forma.board24_flex 
+                            .board24_flex.board24_inter-forma__item 
+                              input.custom-checkbox(type="checkbox" name="meetings2" value="1"   id="meetings2")
+                              label.board24_ts-7-b(for="meetings2")
+                          .meet-content-line__img
+                            img.board24_point(src="assets/img/meetings/v-2.svg",alt="img")
+                          .meet-content-line__text.board24_ts-38 Заседание 21 мая
+                          .meet-content-line__type.board24_ts-12 Dec 14, 2018
+                          a.board24_avatar-name.board24_auto(href="#!")
+                            img(src="assets/img/main/image-1.png",alt="img")
+                            .board24_board24_avatar-name__name.board24_alic
+                              .board24_ts-12 Lindsey Stroud
+                          span.board24_point.icon-more
+                 
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
               .board24_mob-area.board24_m20
                 .board24_mob-area__title Новое поручение
                 .board24_mob-area__name Название поручения
@@ -54,6 +128,10 @@ html
                         +button-color-cub("Отменить","pale-grey","#!")
                       .board24_area1__button
                         +button-color-cub("Сохранить","silver","#!")
+
+
+
+
                             //-  corvet
                 .board24-corvet
                   .board24-corvet__text.board24_ts-5 Ответственный
@@ -102,31 +180,4 @@ html
                 .board24_m8
                 +button-blue("Поставить поручение ","#!")
 
-
-
-
-            section.board24_mob-person
-              .board_24__mob-header
-                  .board_24__mob-logo
-                    img(src="assets/img/main/main-1.svg",alt="img") 
-              .board24_hr  
-              .board24_person__body 
-                a.board24_person-cabinet__line(href="#!") Главная
-                a.board24_person-cabinet__line(href="#!") Мои заседания
-                a.board24_person-cabinet__line(href="#!") Поручения
-                a.board24_person-cabinet__line(href="#!") Компания
-                a.board24_person-cabinet__line(href="#!") Видео конференции
-                a.board24_person-cabinet__line(href="#!") Чат
-                  .board24_person-cabinet__mark 704
-                a.board24_person-cabinet__line(href="#!") Группы
-                a.board24_person-cabinet__line(href="#!") Диск
-                  .board24_person-cabinet__mark 12
-                a.board24_person-cabinet__line(href="#!") Календарь
-                a.board24_person-cabinet__line(href="#!") Список отчет
-                  .board24_person-cabinet__mark 12
-                
-                .board24_person-cabinet__set.board24_ts-48.board24_alic 
-                  span.icon-meetings-1
-                    span.path1
-                    span.path2
-                  span.board24_point Настроить меню
+            include ../includes/mob/mob-person

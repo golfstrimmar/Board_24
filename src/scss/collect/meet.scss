@@ -504,13 +504,16 @@
 .board24_js-data {
   .board24_bot__input {
     border: none;
+    resize:none;
   }
 }
 .board24_bot {
   .board24_bot__input_data {
     padding: 0 0 0 17px !important;
+    border-radius: 4px;
   }
   .board24_bot__text-area {
+   
     img,
     span {
       position: absolute;

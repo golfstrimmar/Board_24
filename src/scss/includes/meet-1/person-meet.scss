@@ -81,10 +81,9 @@ border: none;
     }
     .icon-arrow_drop_down {
       font-size: 20px;
+      transition: all 0.3s ease-in-out;
     }
-    // span.icon-arrow_drop_down_rot {
-    //   transform: rotate(180deg);
-    // }
+  
     &__plaha {
       border-radius: 4px;
       border: solid 1px #e5e5e5;

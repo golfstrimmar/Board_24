@@ -1,5 +1,6 @@
 body {
   min-height: 100vh;
+  
 }
 
 .board_24__mob-main {
@@ -8,6 +9,17 @@ body {
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+  }
+
+  textarea,input{
+    resize:none;
+    outline: none;
+border: none;
+    &:focus{
+outline: none;
+border: none;
+}
+&:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
   }
 }
 
@@ -295,4 +307,18 @@ body {
   padding: 5px 15px 5px 22px !important;
   @include alic();
   transition: all 0.3s ease-out;
+}
+
+.board24_poup-assignment{
+  &__body{
+    background: #FFFFFF;
+box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
+    position: fixed;
+    top:  0; left: 0;
+    width: 343px;
+height: 953px;
+z-index: 1000;
+display: none;
+  }
 }

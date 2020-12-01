@@ -1,8 +1,9 @@
 .board_24__mob-meetings {
-  .board_24__acent-button {
-    width: 100%;
-  }
+ 
 }
+ .board_24__acent-button {
+    width: 100% !important;
+  }
 
 .board24_mob-button {
   width: 100%;
@@ -268,5 +269,91 @@ input{
 }
                   }
                   }
-		
 
+
+.board24_mob-errand{
+  &__body{}
+  &__button{
+    background: #1F51FF;
+    height: 20px;
+    width: 100%;
+    margin: 10px 0 10px 0;
+  }
+  &__list{
+   margin: 10px 0 0 0;
+  }
+// --------------------------------------------
+  .board24_mob-errand-list{
+     &__body{
+background: #FFFFFF;
+box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+border-radius: 4px;
+width: 100%;
+height: 100%;
+ }
+
+
+.board24_meet-content__line{
+background: #FFFFFF;
+border-radius: 4px;
+border: 1px solid #F5F6F8;
+
+&:nth-child(1){
+.board24_meet-content-line__body{
+  padding: 23px 0 23px 24px;	
+}
+}
+&:nth-child(2){
+.board24_meet-content-line__body{
+  padding: 15px 0 15px 24px;	
+.board24_inter-forma{
+  padding: 0 0 0 0;	
+  @include center();	
+   label{
+     margin: 0 0 0 0;
+   } 
+}
+
+.meet-content-line__img-high{
+  height: 16px!important;	
+  margin: 0 0 0 14px;
+}
+
+.meet-content-line__text{
+margin: 0 0 5px 27px; 
+}
+}
+}
+
+.board24_meet-content-line__body{
+padding: 15px 0 15px 24px;
+@include alic();
+@include jucs();
+}
+
+
+
+
+
+}// line
+
+// .board24_meet-content-line{
+
+// }
+
+
+
+}// list
+
+}
+
+
+
+
+
+
+// -------------------------------------------
+
+ 
+  // &__body{}
+  // &__{}
