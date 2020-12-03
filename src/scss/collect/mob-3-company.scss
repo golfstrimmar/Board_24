@@ -1,0 +1,32 @@
+.board24__mob-3-company{
+
+&__text1{
+font-family: OpenSans;
+font-style: italic;
+font-weight: normal;
+font-size: 10px;
+line-height: 14px;
+letter-spacing: 0.1px;
+color: #192A3E;
+}
+&__line{
+  margin: 8px 0 0;
+}
+&__img{
+      margin: 14px auto 10px;
+    position: relative;
+    width: 63%;
+    padding: 0 0 44% 0;
+}
+
+&__line:not(:first-child){
+ margin: 25px 0 0;
+}
+
+.board24_line-plaha__img1 {
+    height: 11px;
+}
+
+
+
+}

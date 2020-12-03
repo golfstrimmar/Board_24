@@ -1,0 +1,51 @@
+include ../common/mixins
+doctype html
+html
+  head
+    title mob-3-company
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+   
+
+  body
+    div.wrapper
+      main.page
+        section.board_24__mob-main.board_24__mob-meetings.board24__mob-1-company.board24__mob-3-company
+          .board_24__mob-container.container-js
+            .board_24__mob-main__body
+              .board_24__mob-header
+                .board_24__mob-logo
+                  img(src="assets/img/main/main-1.svg",alt="img")   
+                span.icon-menu
+              .board_24__mob-plaha
+                a.board24_avatar-name(href="#!")
+                  img(src="assets/img/main/image-1.png",alt="img")
+                  .board24_board24_avatar-name__name
+                    p Иван Иванов
+                a.board_24__bell(href="#!")
+                  img(src="assets/img/mob-main/bell.svg",alt="img")
+              .board24_m10
+                        //-  синяя кнопка
+              include ../includes/mob/mob-acent-button
+              .board24_m10
+              include ../includes/mob/mob-tab-компания
+              .board24__mob-1-company__content
+                .board24__mob-2-company__title.Text-Style-22 Ключевые показатели компании
+                div
+                  .board24__mob-3-company__line
+                    .board24__mob-3-company__text1  Выручка
+                    .board24__mob-3-company__img
+                      +img-bg("assets/img/mob-main/img-2.png", "img")
+                    +button-arrow("Скачать","home.html")
+                  .board24__mob-3-company__line
+                    .board24__mob-3-company__text1  Чистая прибыль (убыток) (Млн. руб.)
+                    .board24__mob-3-company__img
+                      +img-bg("assets/img/mob-main/img-4.png", "img")
+                    +button-arrow("Скачать","home.html")
+                  .board24__mob-3-company__line
+                    .board24__mob-3-company__text1  EBITDA (Млн. руб.)
+                    .board24__mob-3-company__img
+                      +img-bg("assets/img/mob-main/img-5.png", "img")
+                    +button-arrow("Скачать","home.html")
+
+            include ../includes/mob/mob-person

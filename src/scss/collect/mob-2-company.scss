@@ -1,0 +1,68 @@
+.board24__mob-2-company{
+
+.board24__mob-1-company__content{
+  @include jucs();
+}
+
+
+&__ava{
+width: 90px;
+height: 90px;
+background: #C4C4C4;
+border-radius: 50%;
+margin: 0 auto;
+margin: 28px auto;
+}
+
+&__title{
+
+flex: 0 1 100%;
+}
+
+&__text1{
+font-family: OpenSans;
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 20px;
+letter-spacing: 0.1px;
+color: #192A3E;
+margin: 20px 0 0 0;
+}
+&__text2{
+  font-family: OpenSans;
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 20px;
+letter-spacing: 0.1px;
+color: #192A3E;
+margin: 5px 0 0 0;
+
+}
+&__text3{
+margin: 18px 0 0 0;  
+  font-family: OpenSans;
+font-style: italic;
+font-weight: normal;
+font-size: 10px;
+line-height: 14px;
+letter-spacing: 0.1px;
+color: #192A3E;
+
+}
+
+.board24_button-empty{
+  height: 40px;
+width: 100%;
+margin: 0 0 10px 0;
+}
+
+
+
+
+
+
+
+
+}

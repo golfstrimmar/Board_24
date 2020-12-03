@@ -1,0 +1,48 @@
+.board24__mob-1-company{
+
+  
+
+  .board24_middle-plaza__img{
+position: relative;
+height: 150px;
+width: 100%;
+  }
+
+&__content{
+background: #FFFFFF;
+box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+border-radius: 4px;
+margin: 10px 0 0 0;
+padding: 24px 24px 50px;
+}
+
+.board24_middle-plaza__date{
+display: inline-block;
+padding: 20px 0 0 0;
+}
+.board24_middle-plaza__header{}
+.board24_middle-plaza__img{
+  margin: 18px 0 0 0;
+}
+
+.board24_middle-plaza__line:not(:first-child){
+  margin: 53px 0 0;
+}
+
+
+
+
+.board24_middle-plaza__text{
+  font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 16px;
+letter-spacing: 0.2px;
+color: #192A3E;
+padding: 16px 0 0;
+}
+
+
+
+}

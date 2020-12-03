@@ -198,35 +198,31 @@ $(document).ready(function () {
 
   meet1popup1overlay.on("click", function () {
     meet1popup1.fadeOut();
-    
   });
 
   // -------------------------
-let meet1popup2 = $("#board24_meet-1__popup2");
-let meet1popup2overlay = $("#board24_meet-1__popup2 .board24_meet__overlay");
-let popup2js = $(".meet-1-popup2-js");
-let closemeet1popup2 = $("#board24_meet-1__popup2 .icon-close2");
+  let meet1popup2 = $("#board24_meet-1__popup2");
+  let meet1popup2overlay = $("#board24_meet-1__popup2 .board24_meet__overlay");
+  let popup2js = $(".meet-1-popup2-js");
+  let closemeet1popup2 = $("#board24_meet-1__popup2 .icon-close2");
 
   meet1popup2.fadeOut(0);
 
-popup2js.on("click", function () {
-  meet1popup2.fadeIn();
-});
+  popup2js.on("click", function () {
+    meet1popup2.fadeIn();
+  });
 
-closemeet1popup2.on("click", function () {
-  meet1popup2.fadeOut();
+  closemeet1popup2.on("click", function () {
+    meet1popup2.fadeOut();
+  });
 
-});
-
-meet1popup2overlay.on("click", function () {
-  meet1popup2.fadeOut();
-  $(".board24_inter-4-box1__drop ").slideUp().removeClass("act");
-   $(".board24_inter-4-box1__drop ")
-     .siblings(".icon-arrow_drop_down")
-     .css("transform", "rotate(0deg)");
-});
-
-
+  meet1popup2overlay.on("click", function () {
+    meet1popup2.fadeOut();
+    $(".board24_inter-4-box1__drop ").slideUp().removeClass("act");
+    $(".board24_inter-4-box1__drop ")
+      .siblings(".icon-arrow_drop_down")
+      .css("transform", "rotate(0deg)");
+  });
 
   // ----------------------------------
 
@@ -698,14 +694,7 @@ meet1popup2overlay.on("click", function () {
       icomDrop.css("transform", "translate( 0%, -50%) rotate(180deg)");
     }
   });
-// -----------------------
-
-
-
-
-
-
-
+  // -----------------------
 
   // -----------
   let but = $(".button-js");
@@ -793,26 +782,34 @@ meet1popup2overlay.on("click", function () {
       icomDrop.css("transform", "translate( 0%, -50%) rotate(180deg)");
     }
   });
-// -----------попап по синей кнопке mob-main и остальные--------------
-let popupAssignment=$("#board24_poup-assignment");
-let popupAssignmentbutton=$("#board24_poup-assignment-button");
-let popupAssignmentoverlay=$(".board24_poup-assignment__overlay");
+  // -----------попап по синей кнопке mob-main и остальные--------------
+  let popupAssignment = $("#board24_poup-assignment");
+  let popupAssignmentbutton = $("#board24_poup-assignment-button");
+  let popupAssignmentoverlay = $(".board24_poup-assignment__overlay");
 
   popupAssignment.fadeOut(1);
 
-popupAssignmentbutton.on("click", function () {
-  popupAssignment.fadeIn();
-});
+  popupAssignmentbutton.on("click", function () {
+    popupAssignment.fadeIn();
+  });
 
-popupAssignment.on("click", function () {
-  if ($(this).find(".icon-close2").is(event.target)){
-  $(this).fadeOut();
-}
-});
+  popupAssignment.on("click", function () {
+    if ($(this).find(".icon-close2").is(event.target)) {
+      $(this).fadeOut();
+    }
+  });
 
-popupAssignmentoverlay.on("click", function () {
-  popupAssignment.fadeOut();
-});
+  popupAssignmentoverlay.on("click", function () {
+    popupAssignment.fadeOut();
+  });
+  // --------------mob-modal ????------------------------
+  $(".board_24__mob-modal__modal-in");
+$(".icon-close2");
+
+$(".icon-close2").on("click", function () {
+  $(this).parent(".board_24__mob-modal__modal-in").fadeOut();
+});				
+
 
   // --------------------------
   let tabText = $(".board24-corvet__tab-text");
