@@ -1,189 +1,73 @@
-.board_24__mob-mission {
-  .board24_mob-area {
-    background: #ffffff;
-    box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    padding: 16px 20px 40px;
-    &__title {
-      /* Новое поручение */
-      font-family: OpenSans;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 20px;
-      line-height: 30px;
-      letter-spacing: 0.1px;
-      color: #323c47;
-    }
 
-    &__name {
-      /* Название поручения */
-      font-family: OpenSans;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 10px;
-      line-height: 16px;
-      letter-spacing: 0.2px;
-      color: #818e9b;
-      padding: 26px 0 0 0;
-    }
-    &__text {
-      /* Поручение №1234567890 */
-      font-family: OpenSans;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 13px;
-      line-height: 20px;
-      letter-spacing: 0.1px;
-      color: #323c47;
-      padding: 4px 0 0 0;
-    }
-    hr {
-      border: 1px solid #d3d8dd;
-      border-bottom: none;
-    }
-    &__mark {
-      padding: 4px 0 0 0;
-      &_low {
-        padding: 47px 0 0;
-      }
-      .board24_inter-forma {
-        padding: 0 0 0 0;
-        margin: 0 0 0 0;
-      }
-    }
-    .board24_area1 {
-      padding: 8px 10px;
-      margin: 16px 0 24px 0;
-    }
-    .board24_area1__input {
-      min-height: 130px;
-      margin: 0 0 11px 0;
-      border: none;
-      // resize:none;
-      &:focus {
-        // border: 1px solid #E5E5E5!important;
-        outline: none;
-        border: none;
-      }
-    }
-    .pale-grey a {
-      opacity: 0.4;
-    }
-    .silver a {
-      opacity: 1;
-    }
-
-    .board24_area1__button {
-      @media (max-width: 370px) {
-        margin: 8px 8px 0 0;
-      }
-    }
-    .board24-corvet {
-      margin: 0 0 8px 0;
+  .board24_mob-errand {
+    &__body {
       width: 100%;
-      &__text-area {
-        width: 69%;
-        padding: 0 0 0 0;
-  @media (max-width: 370px) {
-          width: 100%;
-        }
-        input {
-          width: 100%;
-          height: 100%;
-          padding: 0 0 0 9px;
-        }
-
-        img {
-          width: 10px;
-          height: 10px;
-          top: 50%;
-          transform: translate(0, -50%);
-        }
-        ::-webkit-input-placeholder {
-          font-family: OpenSans;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 12px;
-          line-height: 18px;
-          letter-spacing: 0.1px;
-          color: #109cf1;
-        }
-      }
-
-      &__text {
-        width: auto;
-        @media (max-width: 370px) {
-          width: 100%;
-          text-align: left;
-        }
-      }
-
-      &__tab {
+      height: 100%;
+    }
+   
+    // --------------------------------------------
+    .board24_mob-errand-list {
+      &__body {
         background: #ffffff;
-        border: 1px solid #e5e5e5;
-        box-sizing: border-box;
+        box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
         border-radius: 4px;
-        padding: 0 0 0 32px;
-        margin: 0 0 0 auto;
-        width: 69%;
-        padding: 0;
- @media (max-width: 370px) {
-          width: 100%;
+        width: 100%;
+        height: 100%;
+      }
+
+
+
+
+
+      .board24_meet-content__line {
+        background: #ffffff;
+        border-radius: 4px;
+        border: 1px solid #f5f6f8;
+
+        .board24_meet-content-line__body {
+          padding: 0 0 0 24px;
+          height: 64px;
+          box-sizing: border-box;
+          @include alic();
+          @include jucs();
         }
-       
 
-        &_big {
-          width: 100% !important;
-
-          .board24-corvet__tab-text {
-            font-family: OpenSans;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 13px;
-            line-height: 20px;
-            letter-spacing: 0.1px;
-            color: #334d6e;
-            width: 100% !important;
-            @include jucs();
-            padding: 0 12px 0 11px;
+        .board24_inter-forma {
+          padding: 0 0 0 0;
+          @include center();
+          label {
+            margin: 0 0 0 0;
           }
         }
-        .icon-arrow_drop_down {
-          font-size: 18px;
-          width: 18px;
-          height: 18px;
-          transition: all 0.3s ease-in-out;
+
+        .meet-content-line__img {
+          height: 16px !important;
+          margin: 0 0 0 14px;
         }
-      }
 
-      &__tab-text {
-        font-family: OpenSans;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 18px;
-        letter-spacing: 0.1px;
-        color: #109cf1;
-        width: 100%;
-        height: 38px;
-        // @include center();
-        @include alic();
-        padding: 0 12px 0 32px;	
-        span.icon-arrow_drop_down {
-          margin: 0 0 0 auto;
+        .meet-content-line__text {
+          margin: 0 0 5px 27px;
+          flex: 0 1 60%;
         }
-      }
+        .icon-more {
+          font-size: 20px;
+          margin: 0 2px 0 auto;
+        }
 
-      .board24-corvet__text-area-drop {
-        width: 100%;
-        padding: 20px;
-      }
-    }
+        &:nth-child(1) {
+          .board24_meet-content-line__body {
+            height: 68px;
+          }
+        }
+        &:nth-child(2) {
+          .board24_meet-content-line__body {
+            height: 48px;
+          }
+        }
+      } // line
 
-    .board24_button-empty,
-    .board24_button-blue {
-      width: 100%;
-      height: 48px;
-    }
-  } // area
-}
+      // .board24_meet-content-line{
+
+      // }
+    } // list
+  }

@@ -25,9 +25,12 @@ html
                 a.board_24__bell(href="#!")
                   img(src="assets/img/mob-main/bell.svg",alt="img")
               .board24_m10
-              .board_24__acent-button
-                a(href="#!")  Поставить задачу
+              include ../includes/mob/mob-acent-button
+
+
+
               .board24_m10
+              //- ------------------------------------
               .board24_calendar
                 .board24_calendar__body 
                   .board24_calendar__header
@@ -57,6 +60,7 @@ html
                       a.board24_calendar-table__item(href="#!") 5
                       a.board24_calendar-table__item(href="#!") 6
                       a.board24_calendar-table__item(href="#!") 7
+              //- ---------------------------------------
               .board24_plat.board24_plaha-big 
                 span.board24_ts-22 23 December, 
                 span.board24_ts-23 Sunday
@@ -86,56 +90,18 @@ html
                     +button-color("Завершено","silver","statistic.html")
                     .board24_person-cabinet__mark 42
                   .board24_m17
-              .board24_middle-plaza__line_plaha.board24_line-plaha.board24_m8
-                .board24_alic.board24_jucb
-                  +button-color("Проведение","apple-green","promo.html")
-                  a.board24_line-plaha__miting.board24_ts-37(href="#!") Онлайн встреча
-                .board24_line-plaha__text.board24_m17
-                  h3 Заседание Совета директоров от 31 мая порядковый ...
-                .board24_line-plaha__data.board24_m6
-                  span.board24_line-plaha__light Дата:&nbsp;
-                  span.board24_line-plaha__dark December 23, 2018
-                .board24_line-plaha__download.board24_alic.board24_m19  
-                  a.board24_line-plaha__text-link.board24_ts-36(href="#!") Скачать файлы одним архивом
-                  .board24_line-plaha__img1
-                    img(src="assets/img/main/Vector-1.svg",alt="img")
-                    img(src="assets/img/main/Vector-2.svg",alt="img")
-                  +button-blue-small("Перейти к заседанию","group.html")
-              .board24_middle-plaza__line_plaha.board24_line-plaha.board24_m8
-                .board24_alic.board24_jucb
-                  +button-color("Проведение","apple-green","promo.html")
-                  a.board24_line-plaha__miting.board24_ts-37(href="#!") Онлайн встреча
-                .board24_line-plaha__text.board24_m17
-                  h3 Заседание Совета директоров от 31 мая порядковый ...
-                .board24_line-plaha__data.board24_m6
-                  span.board24_line-plaha__light Дата:&nbsp;
-                  span.board24_line-plaha__dark December 23, 2018
-                .board24_line-plaha__download.board24_alic.board24_m19  
-                  a.board24_line-plaha__text-link.board24_ts-36(href="#!") Скачать файлы одним архивом
-                  .board24_line-plaha__img1
-                    img(src="assets/img/main/Vector-1.svg",alt="img")
-                    img(src="assets/img/main/Vector-2.svg",alt="img")
-                  +button-blue-small("Перейти к заседанию","group.html")
-              .board24_middle-plaza__line_plaha.board24_line-plaha.board24_m8
+             
+                //- --------------------------------------------------------
+              include ../includes/mob/middle-plaza__line_plaha
+              include ../includes/mob/middle-plaza__line_plaha
+              include ../includes/mob/middle-plaza__line_plaha
+             
+             
 
-                .board24_alic.board24_jucb
-                  +button-color("Проведение","apple-green","promo.html")
-                  a.board24_line-plaha__miting.board24_ts-37(href="#!") Онлайн встреча
-                .board24_line-plaha__text.board24_m17
-                  h3 Заседание Совета директоров от 31 мая порядковый ...
-                .board24_line-plaha__data.board24_m6
-                  span.board24_line-plaha__light Дата:&nbsp;
-                  span.board24_line-plaha__dark December 23, 2018
-                .board24_line-plaha__download.board24_alic.board24_m19  
-                  a.board24_line-plaha__text-link.board24_ts-36(href="#!") Скачать файлы одним архивом
-                  .board24_line-plaha__img1
-                    img(src="assets/img/main/Vector-1.svg",alt="img")
-                    img(src="assets/img/main/Vector-2.svg",alt="img")
-                  +button-blue-small("Перейти к заседанию","group.html")
+
             include ../includes/mob/mob-person
 
-  #board24_poup-assignment.board24_poup-assignment
-    .board24_poup-assignment__body board24_poup-assignment__body
+
 
 
 

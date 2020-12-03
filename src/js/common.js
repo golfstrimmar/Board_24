@@ -60,7 +60,7 @@ $(document).ready(function () {
     }
   });
 
-  // ----------------------
+  // --------переклюлчение попапов--------------
   let meeting1 = $(".board24_create-meeting1");
 
   let meetPopup1 = $("#board24_meet-popup1");
@@ -698,6 +698,14 @@ meet1popup2overlay.on("click", function () {
       icomDrop.css("transform", "translate( 0%, -50%) rotate(180deg)");
     }
   });
+// -----------------------
+
+
+
+
+
+
+
 
   // -----------
   let but = $(".button-js");
@@ -785,6 +793,26 @@ meet1popup2overlay.on("click", function () {
       icomDrop.css("transform", "translate( 0%, -50%) rotate(180deg)");
     }
   });
+// -----------попап по синей кнопке mob-main и остальные--------------
+let popupAssignment=$("#board24_poup-assignment");
+let popupAssignmentbutton=$("#board24_poup-assignment-button");
+let popupAssignmentoverlay=$(".board24_poup-assignment__overlay");
+
+  popupAssignment.fadeOut(1);
+
+popupAssignmentbutton.on("click", function () {
+  popupAssignment.fadeIn();
+});
+
+popupAssignment.on("click", function () {
+  if ($(this).find(".icon-close2").is(event.target)){
+  $(this).fadeOut();
+}
+});
+
+popupAssignmentoverlay.on("click", function () {
+  popupAssignment.fadeOut();
+});
 
   // --------------------------
   let tabText = $(".board24-corvet__tab-text");

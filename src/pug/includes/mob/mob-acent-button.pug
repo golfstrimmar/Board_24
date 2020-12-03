@@ -1,0 +1,70 @@
+#board24_poup-assignment-button.board_24__acent-button
+  a(href="#!")  Поставить задачу
+
+#board24_poup-assignment.board24_poup-assignment
+  .board24_poup-assignment__overlay
+  .board24_poup-assignment__body
+    span.board24_cross.icon-close2
+    .board24_poup-assignment__title  Новое поручение
+    .board24_inter__plaza.board24_inter-plaza
+      .board24_inter-plaza__header.board24_ts-5 Название поручения 
+      .board24_inter-plaza__discription.board24_ts-6.board24_jucb  
+        input.board24_ts-6.board24_bot__input(type="text"  placeholder='Поручение №1234567890')
+        hr
+        forma.board24_inter-forma.board24_flex 
+          .board24_flex.board24_inter-forma__item 
+            input.custom-checkbox(type="checkbox" name="i106" value="1" id="i106")
+            label.board24_text-small-blue.board24_ts-7(for="i106") Отметить как важное  
+    .board24_inter-plaza__text-area1.board24_area1 
+      textarea.board24_ts( type="text"  placeholder=" Leave a note here ..." )
+      .board24_jucb
+        .board24_jucb
+          a.board24_area1__img(href="#!") 
+            img(src="assets/img/inter/vt-1.svg",   alt="img")
+          a.board24_area1__img(href="#!")
+            img(src="assets/img/inter/vt-2.svg",   alt="img")
+        
+        .board24_flex
+          .board24_area1__button 
+            +button-color-cub("Отменить","pale-grey","#!")
+          .board24_area1__button
+            +button-color-cub("Сохранить","silver","#!")
+    
+    .board24_poup-assignment__bots
+      .board24_bot
+        .board24_bot__area
+          select.js-example-basic-single( name="BOARD24_TYPE") 
+            option(value="123")  Ответственный  
+      .board24_bot
+        .board24_bot__area
+          select.js-example-basic-single( name="BOARD24_TYPE") 
+            option(value="123")  Постановщик  
+      .board24_bot
+        .board24_bot__area
+          select.js-example-basic-single( name="BOARD24_TYPE") 
+            option(value="123")  Соисполнители  
+      .board24_bot
+        .board24_bot__area
+          select.js-example-basic-single( name="BOARD24_TYPE") 
+            option(value="123")  Наблюдатели  
+      .board24_bot
+        .board24_bot__area
+          input.board24_bot-mob-input(type="text")
+          img(src="assets/img/inter/schedule.svg",alt="img") 
+      .board24_bot
+        .board24_bot__area
+          select.js-example-basic-single( name="BOARD24_TYPE") 
+            option(value="123")  Планирование сроков  
+      .board24_bot
+        .board24_bot__area
+          select.js-example-basic-single( name="BOARD24_TYPE") 
+            option(value="123")  Дополнительно   
+    
+    forma.board24_inter-forma.board24_flex 
+      .board24_flex.board24_inter-forma__item 
+        input.custom-checkbox(type="checkbox" name="i107" value="1" id="i107")
+        label.board24_text-small-blue.board24_ts-7(for="i107") Сохранить как шаблон   
+    .board24_button-empty
+      .board24_button-empty__link Отменить
+    .board24_button-blue
+      .board24_button-blue__link Поставить поручение

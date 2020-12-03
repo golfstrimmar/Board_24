@@ -108,7 +108,17 @@ mixin button-empty-grey(text,link)
 
 //- +button-empty-grey("Добавить","#!")
 
-
+mixin meet-content__line(id,text)
+  .board24_meet-content__line
+    .board24_meet-content-line__body
+      forma.board24_inter-forma.board24_flex 
+        .board24_flex.board24_inter-forma__item 
+          input.custom-checkbox(type="checkbox" name=id value="1"   id=id)
+          label.board24_ts-7-b(for=id)
+      a(href="#!").meet-content-line__img
+        img.board24_point(src="assets/img/meetings/v-2.svg",alt="img")
+      .meet-content-line__text.board24_ts-38=text
+      a.board24_point.icon-more(href="#!")
 
 
 //- --------- fonts.scss 287----------------------
