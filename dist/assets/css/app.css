@@ -1650,8 +1650,6 @@ span.board24_cross {
   width: 100%;
   height: 60px;
   background: #fff;
-  -webkit-box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
   border-radius: 4px;
   font-family: OpenSans;
   font-style: normal;
@@ -1754,8 +1752,6 @@ span.board24_cross {
   -ms-flex-direction: column;
   flex-direction: column;
   background: #fff;
-  -webkit-box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
   border-radius: 4px;
   margin: 10px 0 0;
   padding: 30px 20px 37px;
@@ -2135,27 +2131,9 @@ span.board24_cross {
 .board24_button-empty:active {
   background-color: #9dd1f1;
 }
-.board24_bot-mob-input {
+.board24_bot-mob-input,
+.board24_bot-mob-input:focus {
   padding: 0 0 0 10px;
-}
-.board24_mob-button_company {
-  min-height: 60px;
-  background: #fff;
-  -webkit-box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
-  border-radius: 4px;
-}
-.board24_mob-button_company,
-.board24_mob-button_company__title {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 .board24_mob-button_company__title {
   font-family: OpenSans;
@@ -2168,9 +2146,16 @@ span.board24_cross {
   padding: 0 28px 0 24px;
   position: relative;
   height: 60px;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  background: #fff;
 }
 .board24_mob-button_company .icon-arrow_drop_down {
   -webkit-transition: all 0.3s ease-out;
@@ -10090,6 +10075,18 @@ body {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
+.board_24__mob-meetings .board24_mob-button_active-active {
+  background: rgba(0, 0, 0, 0);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.board_24__mob-meetings
+  .board24_mob-button_active-active
+  > .board24_mob-button_company__title,
+.board_24__mob-meetings .board24_mob-button_active-active > .board24_mob-drop {
+  -webkit-box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
 .board24_mob-tasks .board24_line-plaha {
   padding: 24px 12px 60px 20px;
 }
@@ -10815,6 +10812,11 @@ body {
   border-bottom: 1px solid #109cf1;
   border-right: 1px solid #109cf1;
 }
+.board24_mob-errand,
+.board_24__mob-mission .board24_mob-button_active-active .board24_mob-errand {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 .board24_mob-errand__body {
   width: 100%;
   height: 100%;
@@ -11066,6 +11068,15 @@ body {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+.board24__mob-1-company .board24_mob-button_active-active {
+  background: #fff !important;
+}
+.board24__mob-1-company
+  .board24_mob-button_active-active
+  .board24_mob-button_company__title {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 .board24__mob-1-company .board24_middle-plaza__img {
   position: relative;
   height: 150px;
@@ -11178,6 +11189,186 @@ body {
 .board24__mob-3-company .board24_line-plaha__img1 {
   height: 11px;
 }
+.board24__mob-1-employees .board24_mob-button_active-active {
+  background: #fff !important;
+  -webkit-box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+.board24__mob-1-employees
+  .board24_mob-button_active-active
+  .board24_mob-button-small
+  .board24_mob-drop,
+.board24__mob-1-employees
+  .board24_mob-button_active-active
+  .board24_mob-button_company__title,
+.board24__mob-1-employees .board24_mob-button_active-active .board24_mob-drop {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.board24__mob-1-employees .board_24__mob-container {
+  width: 100%;
+  background: #f5f6f8;
+  padding: 20px 16px 30px;
+}
+.board24__mob-1-card__body {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 20px 20px 27px;
+}
+.board24__mob-1-card__img {
+  position: relative;
+  width: 30%;
+  width: 40%;
+  padding: 0 0 40%;
+}
+.board24__mob-1-card__img .board24_bg {
+  border-radius: 4px;
+}
+.board24__mob-1-card__title {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.1px;
+  color: #334d6e;
+  padding: 10px 0 0;
+}
+.board24__mob-1-card__string span {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1px;
+  letter-spacing: 0.1px;
+  color: #000;
+}
+.board24__mob-1-card__string span:first-child {
+  color: #4c5862;
+  opacity: 0.7;
+}
+.board24__mob-1-card .board24_button-empty {
+  height: 40px;
+  width: 100%;
+}
+.board24__mob-1-card .board24_button-empty__link {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #109cf1;
+}
+.board24_mob-button-small {
+  border: 1px solid #e5e5e5;
+  background: #fff !important;
+}
+.board24_mob-button_company__title_small {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+  color: #109cf1;
+  padding: 0 28px 0 37px;
+  height: auto !important;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.board24_mob-button_company__title_small .icon-arrow_drop_down {
+  font-size: 18px;
+}
+.board24_mob-button_employees {
+  min-height: 50px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.board24_mob-button_active {
+  -webkit-box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.board24__mob-2-employees .board24_mob-button_active-active {
+  background: #fff !important;
+  -webkit-box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+.board24__mob-2-employees
+  .board24_mob-button_active-active
+  .board24_mob-button-small
+  .board24_mob-drop,
+.board24__mob-2-employees
+  .board24_mob-button_active-active
+  .board24_mob-button_company__title,
+.board24__mob-2-employees .board24_mob-button_active-active .board24_mob-drop {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.board24__mob-2-content {
+  padding: 33px 0 0;
+}
+.board24__mob-2-content__point {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #192a3e;
+}
+.board24__mob-2-content .board24_avatar-name {
+  margin: 10px 0 0 94px;
+}
+.board24__mob-2-content .board24_avatar-name:first-child {
+  margin: 37px 0 0 94px;
+}
+.board24__mob-2-content .board24_avatar-name:last-child {
+  margin: 10px 0 50px 94px;
+}
+.board24__mob-2-content .board24__mob-1-employees__card {
+  margin: 0 0 50px;
+}
+.board24__mob-2-content__body .board24__ml-1 {
+  margin: 0 0 0 18px;
+}
+.board24__mob-2-content__body .board24__ml-2 {
+  margin: 0 0 0 36px;
+}
+.board24__mob-2-content__body .board24__ml-3 {
+  margin: 0 0 0 54px;
+}
+.board24__mob-2-content__body .board24__ml-4 {
+  margin: 0 0 0 72px;
+}
 @media (max-width: 370px) {
   .board_24__mob-modal .board24_inter-plaza__text-area1 {
     min-height: 200px;
@@ -11209,6 +11400,13 @@ body {
   }
   .board_24__mob-modal .board24_bot__mob-text {
     text-align: left;
+  }
+}
+@media (max-width: 320px) {
+  .board24__mob-1-card__string span {
+    display: inline-block;
+    width: 100%;
+    padding: 3px 0 0;
   }
 }
 .select2-container {

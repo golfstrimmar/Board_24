@@ -1,0 +1,135 @@
+.board24__mob-1-employees {
+  .board24_mob-button_active-active {
+    background: #fff !important;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+    .board24_mob-button_company__title {
+      box-shadow: none;
+    }
+    .board24_mob-drop {
+      box-shadow: none;
+    }
+  }
+
+  .board24_mob-button_active-active .board24_mob-button-small {
+    .board24_mob-drop {
+      box-shadow: none;
+    }
+  }
+
+  // ------------------------
+
+  &__card {
+  }
+
+  .board_24__mob-container {
+    width: 100%;
+    background: #f5f6f8;
+    padding: 20px 16px 30px;
+  }
+}
+
+// ------------------------------------------------------
+
+.board24__mob-1-card {
+  &__body {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 20px 20px 27px;
+  }
+  &__img {
+    position: relative;
+    width: 30%;
+    padding: 0 0 20px 0;
+    width: 40%;
+    padding: 0 0 40%;
+    .board24_bg {
+      border-radius: 4px;
+    }
+  }
+  &__title {
+    font-family: OpenSans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.1px;
+    color: #334d6e;
+    padding: 10px 0 0 0;
+  }
+  &__string {
+    span {
+      font-family: OpenSans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 1px;
+      letter-spacing: 0.1px;
+      color: $black;
+
+      &:first-child {
+        color: #4c5862;
+        opacity: 0.7;
+      }
+      @media (max-width: 320px) {
+        display: inline-block;
+        width: 100%;
+        padding: 3px 0 0 0;
+      }
+    }
+  }
+  .board24_button-empty {
+    height: 40px;
+    width: 100%;
+    &__link {
+      font-family: OpenSans;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.1px;
+      color: #109cf1;
+    }
+  }
+}
+
+// ------------------------------------------------
+
+.board24_mob-button-small {
+  border: 1px solid #e5e5e5;
+  background: #fff !important;
+}
+.board24_mob-button_company__title_small {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+  color: #109cf1;
+  padding: 0 28px 0 37px;
+  height: auto !important;
+  width: 100%;
+  position: relative;
+  @include alic();
+
+  .icon-arrow_drop_down {
+    font-size: 18px;
+  }
+}
+
+.board24_mob-button_employees {
+  min-height: 50px !important;
+  @include alic();
+}
+
+.board24_mob-button_active {
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease-in-out;
+}

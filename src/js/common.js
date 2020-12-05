@@ -678,24 +678,45 @@ $(document).ready(function () {
     }
   });
 
-  // ----------------------
+  // ------ правильные табы. открывают только то что нужно----------------
   let mobButton = $(".board24_mob-button");
-  let mobDrop = $(".board24_mob-drop");
-  mobDrop.slideUp(1);
+  $(".board24_mob-drop").slideUp(1);
+
   mobButton.on("click", function () {
     let icomDrop = $(this).find(".icon-arrow_drop_down");
+    let mobDrop = $(this).next(".board24_mob-drop");
     if ($(this).hasClass("act")) {
       $(this).removeClass("act");
       mobDrop.slideUp(300);
       icomDrop.css("transform", "translate( 0%, -50%) rotate(0deg)");
+      $(this).parent().removeClass("board24_mob-button_active-active");
     } else {
       $(this).addClass("act");
+      $(this).parent().addClass("board24_mob-button_active-active");
       mobDrop.slideDown(300);
       icomDrop.css("transform", "translate( 0%, -50%) rotate(180deg)");
     }
   });
   // -----------------------
+  // -----------попап по синей кнопке mob-main и остальные--------------
+  let popupAssignment = $("#board24_poup-assignment");
+  let popupAssignmentbutton = $("#board24_poup-assignment-button");
+let popupAssignmentoverlay = $(".board24_poup-assignment__overlay");
+  popupAssignment.fadeOut();
 
+  popupAssignmentbutton.on("click", function () {
+    popupAssignment.fadeIn();
+  });
+
+  popupAssignment.on("click", function () {
+    if ($(this).find(".icon-close2").is(event.target)) {
+      $(this).fadeOut();
+    }
+  });
+
+  popupAssignmentoverlay.on("click", function () {
+    popupAssignment.fadeOut();
+  });
   // -----------
   let but = $(".button-js");
   let hid = $(".drop-js");
@@ -782,34 +803,14 @@ $(document).ready(function () {
       icomDrop.css("transform", "translate( 0%, -50%) rotate(180deg)");
     }
   });
-  // -----------попап по синей кнопке mob-main и остальные--------------
-  let popupAssignment = $("#board24_poup-assignment");
-  let popupAssignmentbutton = $("#board24_poup-assignment-button");
-  let popupAssignmentoverlay = $(".board24_poup-assignment__overlay");
 
-  popupAssignment.fadeOut(1);
-
-  popupAssignmentbutton.on("click", function () {
-    popupAssignment.fadeIn();
-  });
-
-  popupAssignment.on("click", function () {
-    if ($(this).find(".icon-close2").is(event.target)) {
-      $(this).fadeOut();
-    }
-  });
-
-  popupAssignmentoverlay.on("click", function () {
-    popupAssignment.fadeOut();
-  });
   // --------------mob-modal ????------------------------
   $(".board_24__mob-modal__modal-in");
-$(".icon-close2");
+  $(".icon-close2");
 
-$(".icon-close2").on("click", function () {
-  $(this).parent(".board_24__mob-modal__modal-in").fadeOut();
-});				
-
+  $(".icon-close2").on("click", function () {
+    $(this).parent(".board_24__mob-modal__modal-in").fadeOut();
+  });
 
   // --------------------------
   let tabText = $(".board24-corvet__tab-text");
