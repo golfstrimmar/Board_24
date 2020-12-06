@@ -1,0 +1,93 @@
+#board24_poup-quiz.board24_poup-assignment.board24_poup-quiz
+  .board24_poup-assignment__overlay
+  forma.board24_poup-assignment__body
+    span.board24_cross.icon-close2
+    .board24_poup-assignment__title  Опрос
+    .board24_inter__plaza.board24_inter-plaza
+      .board24_inter-plaza__header.board24_ts-5 Название поручения 
+      .board24_inter-plaza__discription.board24_ts-6.board24_jucb  
+        input.board24_ts-6.board24_bot__input(type="text"  placeholder='Поручение №1234567890')
+        hr
+        
+    .board24_inter-plaza__text-area1.board24_area1 
+      textarea.board24_ts( type="text"  placeholder=" Leave a note here ..." )
+      .board24_jucb
+        .board24_jucb
+          a.board24_area1__img(href="#!") 
+            img(src="assets/img/inter/vt-1.svg",   alt="img")
+          a.board24_area1__img(href="#!")
+            img(src="assets/img/inter/vt-2.svg",   alt="img")
+        
+        .board24_flex
+          .board24_area1__button 
+            +button-color-cub("Отменить","pale-grey","#!")
+          .board24_area1__button
+            +button-color-cub("Сохранить","silver","#!")
+    
+    .board24_poup-assignment__bots
+      .board24_bot
+        .board24_bot__area
+          select.js-example-basic-single( name="BOARD24_TYPE") 
+            option(value="123")  Участники  
+      .board24_bot
+        .board24_bot__area  
+          input.board24_bot-mob-input(type="text" placeholder="Крайний срок")
+          img(src="assets/img/inter/schedule.svg",alt="img") 
+      .board24_bot
+        .board24_bot__area
+          select.js-example-basic-single( name="BOARD24_TYPE") 
+            option(value="123")  Дополнительно  
+
+    .board24_button-empty.board24_m60
+      .board24_button-empty__link + Добавить категорию вопроса 
+
+    .board24_bot
+        .board24_bot__area  
+          input.board24_bot-mob-input(type="text" placeholder="Вопрос №1")
+          img(src="assets/img/inter/edit.svg",alt="img")  
+    .board24_bot
+      .board24_bot__area
+        select.js-example-basic-single( name="BOARD24_TYPE") 
+          option(value="123")  Варианты ответа 
+    
+    .board24_inter-forma.board24_flex.board24_m15 
+      .board24_flex.board24_inter-forma__item 
+        input.custom-checkbox(type="checkbox" name="m3" value="1" id="m3")
+        label.board24_text-small-blue.board24_ts-7(for="m3") Разрешить несколько ответов
+    .board24_inter-forma.board24_flex 
+      .board24_flex.board24_inter-forma__item 
+        input.custom-checkbox(type="checkbox" name="m4" value="1" id="m4")
+        label.board24_text-small-blue.board24_ts-7(for="m4") Разрешить комментарии к ответу
+    
+    .board24_bot.board24_m12 
+        .board24_bot__area  
+          input.board24_bot-mob-input(type="text" placeholder="Ответ №1")
+          img(src="assets/img/inter/edit.svg",alt="img") 
+    .board24_bot.board24_m10 
+        .board24_bot__area  
+          input.board24_bot-mob-input(type="text" placeholder="Ответ №2")
+          img(src="assets/img/inter/edit.svg",alt="img") 
+
+    .board24_button-empty.board24_m20
+      .board24_button-empty__link Добавить вариант ответа  
+    .board24_buttons-empty
+      .board24_button-empty
+        .board24_button-empty__link Добавить из поручения  
+      .board24_button-empty
+        .board24_button-empty__link Добавить из заседания  
+      .board24_button-empty
+        .board24_button-empty__link + Вопросы вне повестки  
+    
+    .board24_button-blue
+      .board24_button-blue__link Добавить вопрос
+    
+    .board24_inter__comments.board24_inter-comments
+      .board24_inter-comments__title.board24_ts-2 Комментарии
+      .board24_inter-comments__block
+        .board24_inter-comments__plaha
+          textarea.board24_ts( type="text"  placeholder=" Lorem ipsum dolor sit amet, ut per pertinax assueverit, dissentias honestatis usu an. Ei vim feugait aliquando, mei enim insolens ut." )
+          img.board24_inter-plaza__link(src="assets/img/inter/edit.svg",alt="img") 
+ 
+
+    .board24_button-blue.board24_button-blue-last
+      .board24_button-blue__link Создать опрос

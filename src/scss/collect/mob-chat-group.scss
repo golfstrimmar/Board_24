@@ -1,0 +1,150 @@
+.board24__mob-chat-group{
+
+.board24_poup-assignment__overlay{
+  min-height: 150vh;
+}
+
+ .board_24__mob-container{
+   min-height: auto;
+   padding: 20px 16px 0px;
+ }
+
+  
+.board24_mob-button_active{
+  @include alic();
+  span{
+font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 20px;
+display: flex;
+align-items: flex-end;
+letter-spacing: 0.1px;
+color: #000000;
+padding: 0 0 0 7px;	
+    &:first-child{
+      width: 8px;height: 8px;
+      border-bottom: 1px solid $azure;
+      border-left: 1px solid $azure;
+      transform: rotate(45deg);
+      padding: 0 0 0 0;	
+    }
+    &:last-child{
+      width: 6px;
+      height: 6px;
+      background: #84C729;
+      border-radius: 50%;
+      margin: 3px 0 0 0;
+      margin: 3px 0 0 9px;
+    }
+  }
+
+
+
+
+}
+
+
+.board24__mob-chat-content{
+@include jucs();
+
+  .board24_mob-button_active{
+  box-shadow: none!important;
+  flex: 0 1 100%;
+}
+.board24_mob-button_company__title_small{
+  padding: 0 0 0 10px;	
+}
+  background: $white;
+  padding: 0 16px 0 16px;	
+  
+  
+  .board24_flex{
+    margin: 30px 0 0 0;
+    flex: 0 1 100%;
+  }
+  
+  
+  img{
+    border-radius: 50%;
+    width: 16px;height: 16px;
+    margin: 0 10px 0 0;
+  }
+  &__name{
+font-family: OpenSans;
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 18px;
+display: flex;
+align-items: center;
+letter-spacing: 0.2px;
+color: #192A3E;
+margin: 0 10px 0 0;
+  }
+  &__text{
+font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 16px;
+text-align: right;
+letter-spacing: 0.2px;
+color: #90A0B7;
+&_typing{
+
+  font-style: italic;
+}
+
+  }
+  &__blue-area{
+background: #109CF1;
+flex: 0 1 100%;
+padding: 20px;	
+box-sizing: border-box;
+font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 20px;
+letter-spacing: 0.1px;
+color: #FFFFFF;
+border-radius: 10px;
+position: relative;
+&:after{
+ content: "";
+ background: #109CF1;
+ position: absolute;
+ width: 10px;
+ height: 10px;
+ top: 0; 
+ left: 0;
+ z-index: 2;
+  }
+  }
+  &__border-area{
+flex: 0 1 86%;
+padding: 20px;	
+box-sizing: border-box;
+border: 1px solid #E4E9EE;
+font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 20px;
+letter-spacing: 0.1px;
+color: #334D6E;
+margin: 7px 0 0 auto;
+  }
+
+.board24_flex_you{
+  @include juce();
+  margin: 34px 0 0 0;
+}
+
+
+}
+
+
+}

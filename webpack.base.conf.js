@@ -292,6 +292,41 @@ module.exports = {
       template: "src/pug/pages/mob-2-employees.pug",
       filename: "./mob-2-employees.html",
     }),
+    new HtmlWebpackPlugin({
+      // hash: false,
+      template: "src/pug/pages/mob-1-group.pug",
+      filename: "./mob-1-group.html",
+    }),
+    new HtmlWebpackPlugin({
+      // hash: false,
+      template: "src/pug/pages/mob-2-group.pug",
+      filename: "./mob-2-group.html",
+    }),
+    new HtmlWebpackPlugin({
+      // hash: false,
+      template: "src/pug/pages/mob-chat-group.pug",
+      filename: "./mob-chat-group.html",
+    }),
+    new HtmlWebpackPlugin({
+      // hash: false,
+      template: "src/pug/pages/mob-video.pug",
+      filename: "./mob-video.html",
+    }),
+    new HtmlWebpackPlugin({
+      // hash: false,
+      template: "src/pug/pages/mob-calendar.pug",
+      filename: "./mob-calendar.html",
+    }),
+    new HtmlWebpackPlugin({
+      // hash: false,
+      template: "src/pug/pages/mob-chat-1.pug",
+      filename: "./mob-chat-1.html",
+    }),
+    new HtmlWebpackPlugin({
+      // hash: false,
+      template: "src/pug/pages/mob-chat-2.pug",
+      filename: "./mob-chat-2.html",
+    }),
 
     //  ...PAGES.map(page => new HtmlWebpackPlugin({
     //   template: `${PAGES_DIR}/${page}`,

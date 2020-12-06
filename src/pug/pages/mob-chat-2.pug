@@ -1,0 +1,64 @@
+include ../common/mixins
+doctype html
+html
+  head
+    title mob-chat-2 
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+   
+
+  body
+    div.wrapper
+      main.page
+        section.board_24__mob-main.board_24__mob-meetings.board_24__mob-chat-2
+          .board_24__mob-container.container-js
+            .board_24__mob-main__body
+              .board_24__mob-header
+                .board_24__mob-logo
+                  img(src="assets/img/main/main-1.svg",alt="img")   
+                span.icon-menu
+              .board_24__mob-plaha
+                a.board24_avatar-name(href="#!")
+                  img(src="assets/img/main/image-1.png",alt="img")
+                  .board24_board24_avatar-name__name
+                    p Иван Иванов
+                a.board_24__bell(href="#!")
+                  img(src="assets/img/mob-main/bell.svg",alt="img")
+              .board24_m10
+
+              
+          
+          .board24__mob-chat-group
+            .board24__mob-chat-content
+              .board24__mob-chat-content__arrow
+              .board24_mob-drop__line.board24_mob-drop-line
+                .board24_mob-drop-line__img
+                  +chef()
+                .board24_mob-drop-line__content
+                  .board24_mob-drop-line__title Чат группы совет директоров
+                  .board24_mob-drop-line__text  Your idea for this application is nice! 
+                .board24_mob-drop-line__data  30 Dec 2018, 12:34
+              
+              
+              .board24_flex
+                img(src="assets/img/mob-main/img-8.png",alt="img").board24__mob-chat-content__img 
+                .board24__mob-chat-content__name Lindsey Stroud
+                .board24__mob-chat-content__text 11:1
+              .board24__mob-chat-content__blue-area.board24_m10 Lorem ipsum dolor  sit amet, consectetur adipiscing elit, sed do      eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursusmattis molestie.
+              .board24_flex.board24_flex_you
+                img(src="assets/img/mob-main/img-8.png",alt="img").board24__mob-chat-content__img 
+                .board24__mob-chat-content__name You
+                .board24__mob-chat-content__text 11:12
+              .board24__mob-chat-content__border-area Lorem ipsum dolor sit amet,  consectetur adipiscing elit, sed do eiusmodtempor       incididunt ut labore et dolore magna aliqua.
+              .board24_flex
+                img(src="assets/img/mob-main/img-8.png",alt="img").board24__mob-chat-content__img 
+                .board24__mob-chat-content__name Lindsey Stroud
+                .board24__mob-chat-content__text 11:12
+              .board24__mob-chat-content__blue-area.board24_m10 Your idea for  this application is nice!
+              .board24_flex
+                img(src="assets/img/mob-main/img-8.png",alt="img").board24__mob-chat-content__img 
+                .board24__mob-chat-content__name Lindsey Stroud
+                .board24__mob-chat-content__text.board24__mob-chat-content__text_typing Typing a message...  
+           
+           
+          include ../includes/mob/mob-person

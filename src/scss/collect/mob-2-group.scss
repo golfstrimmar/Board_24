@@ -1,0 +1,423 @@
+.board24__mob-2-group {
+  // ------------------------------------------
+  &__tabs {
+    .board24_mob-button_company__title_small {
+      font-family: OpenSans;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 20px;
+      letter-spacing: 0.1px;
+      color: #334d6e;
+    }
+
+    // materials
+.board24_mob-button_materiels {
+      .board24_mob-drop {
+        &__body {
+          position: relative;
+          padding: 12px 25px 70px 25px;
+          width: 100%;
+          height: 100%;
+        }
+        &__button {
+          position: absolute;
+          width: 130px;
+          height: 30px;
+          top: -39px;
+          left: 47%;
+        }
+        &__items {
+          @include jucb();
+        }
+
+        &__item {
+          @include jucb();
+          flex: 0 1 45%;
+          margin: 42px 0 0 0;
+          &:nth-child(1) {
+            margin: 0 0 0 0;
+          }
+          &:nth-child(2) {
+            margin: 0 0 0 0;
+          }
+        }
+        &__img {
+          margin: 0 auto;
+          @include center();
+          img {
+            width: 70px;
+            height: 70px;
+          }
+        }
+        .board24_jucs {
+          flex: 0 1 100%;
+          @include alis();
+          padding: 25px 0 0 0;
+        }
+        &__icon {
+          display: inline-flex;
+        }
+        &__text {
+          flex: 0 1 70%;
+          margin: 0 0 0 6px;
+          font-family: OpenSans;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 10px;
+          line-height: 16px;
+          letter-spacing: 0.2px;
+          color: #323c47;
+        }
+      }
+    } // materials
+
+    //   &_calendar{
+    // }
+    // // calendar
+.board24_mob-button_info{
+        .board24_mob-drop{
+          padding: 30px 60px  30px 18px;	
+        }
+          .board24__mob-1-card__string{
+
+        }
+
+.board24_mob-button_info__text{
+  font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+letter-spacing: 0.1px;
+color: #109CF1;
+
+}
+
+.board24_m30{
+margin: 30px 0 0 0;
+}
+.board24_m28{
+margin: 28px 0 0 0;
+}
+// .board24_chef__img{
+// margin: 0 18px 0 0;
+// }
+
+.board24_mob-button_info__members{
+@include jucb();		
+}
+.board24_chef__img{
+  width: 30px;height: 30px;
+}
+
+
+.board24_mob-button_info__arrow{
+  width: 30px;height: 30px;
+  border-radius: 50%;
+  border: 1px solid #109CF1;
+  position: relative;
+  &:after{
+   content: "";
+   background-color: $white;
+   border-bottom: 1px solid #109CF1;
+   border-right: 1px solid #109CF1;
+   position: absolute;
+   width: 8px;
+   height: 8px;
+   z-index: 2;
+    top: 50%; 
+    left: 44%;
+    @include anim(0.2s);
+    transform: translate(-50%,-50%) rotate(-45deg);
+    // @include Text-Style-10;
+    }
+}
+
+.board24_mob-button_info__look{
+  @include jucb();		
+}
+
+    }
+    //   // info
+
+.board24_mob-button_reports{
+.board24_mob-drop{
+padding: 0 20px 50px 20px;	
+&__plaha{
+  width: 100%;
+min-height: 50px;  
+background: #FFFFFF;
+border: 1px solid #E5E5E5;
+box-sizing: border-box;
+border-radius: 4px;
+position: relative;
+padding: 12px 20px;	
+}
+
+&__title{
+  font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+letter-spacing: 0.1px;
+color: #323C47;
+
+}
+
+&__text{
+  font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 16px;
+letter-spacing: 0.2px;
+color: #90A0B7;
+}
+&__img{
+position: absolute;
+width: 16px;
+height: 16px;
+top: 50%;
+right: 20px;
+transform: translate( 0, -50%);
+}
+&__link{
+  font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 16px;
+letter-spacing: 0.2px;
+color: #109CF1;
+}
+
+
+}
+
+
+
+ }
+
+    // // reports
+    .board24_mob-button_poll{
+
+.board24_mob-drop{
+
+&__polles{
+
+}
+&__tab{
+
+}
+&__text{
+span{
+  font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 20px;
+letter-spacing: 0.1px;
+color: #192A3E;
+position: relative;
+// display: inline-flex;
+&:last-child{
+margin: 0px 0 0 27px;
+font-family: OpenSans;
+font-style: normal;
+font-weight: 600;
+font-size: 11px;
+line-height: 16px;
+text-align: right;
+letter-spacing: 0.2px;
+color: #F7685B;
+}
+
+
+
+}
+.icon-arrow_drop_down{
+  font-size: 20px;
+  color: #AEAEAE;
+ display: inline-block;
+ position: relative;
+ margin: 0 0 0 6px;
+}
+.icon-arrow_drop_down:before {
+  position: absolute; 
+  width: 16px;
+  height: 16px;
+left: 0;
+    top: -15px;
+}
+}
+&__tab{
+
+
+}
+}
+
+
+
+    }
+    // // poll
+   .board24_mob-button_news{
+
+    .board24_middle-plaza__img{
+      position: relative;
+height: 150px;
+width: 100%;
+    }
+   }
+
+    // // news
+  }
+
+  // --------------------------------------
+}
+
+
+.board24_poup-mob-poll{
+  .board24_poup-assignment__body{
+    height: 759px!important;
+  }
+.board24_middle-inter-1__title{
+  font-family: OpenSans;
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 20px;
+letter-spacing: 0.1px;
+color: #334D6E;
+flex: 0 1 100%;
+}
+.board24_button-blue{
+max-width: 293px;
+height: 40px;
+}
+
+.board24_middle-inter-1__disiption{
+padding: 3px 0 0 0;	
+}
+
+hr {
+    margin: 26px 0 9px;
+}
+.board24_question-drop-down__title{
+  margin: 7px 0 0 0;
+}
+.board24_plaha{
+margin: 8px 0 10px;}
+.board24_button-blue{
+margin: 35px 0 0;
+}
+.board24_tab-item__look{
+  font-family: OpenSans;
+font-style: normal;
+font-weight: 600;
+font-size: 11px;
+line-height: 16px;
+letter-spacing: 0.2px;
+color: #109CF1;
+}
+ 
+}
+
+
+// -------------------
+// -------------------
+
+.board24_poup-quiz{
+  .board24_poup-assignment__body{
+    height: 1546px!important;
+  }
+  .board24_poup-assignment__overlay{
+height: 1560px!important;
+  }
+
+.board24_button-empty{
+  height: 30px;
+}
+
+.board24_poup-assignment__bots{
+  padding: 62px 0 0 0;
+}
+    
+
+
+.board24_bot-mob-input::-webkit-input-placeholder {
+  font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+letter-spacing: 0.1px;
+color: #109CF1;
+padding: 6px 0 0 20px!important;
+}
+
+.board24_bot-mob-input:focus + img{opacity: 0; transition: opacity 0.3s ease;}
+
+
+.board24_button-blue{
+  height: 40px;
+}
+
+
+.board24_button-blue:not(:last-of-type){
+height: 30px;
+.board24_button-blue__link{
+  font-size: 11px!important;
+  font-weight: 600!important;
+}
+
+}
+
+.board24_m60 {
+  margin: 0 0 60px 0;
+}
+
+
+.board24_button-empty__link{
+
+font-size: 11px!important;
+
+}
+ .board24_bot__area img{
+   width: 12px;height: 12px;
+ }
+
+ .board24_buttons-empty{
+   margin: 80px 0 0;
+ }
+
+.board24_inter-comments{
+  margin: 44px 0 0 0;
+}
+
+
+
+
+.board24_inter-comments__plaha{
+  width: 100%!important;
+  
+  padding: 0 0 0 0!important;	
+  textarea{
+    background: #F5F6F8;
+box-sizing: border-box;
+border-radius: 4px;
+width: 100%;
+height: 100%; 
+padding: 17px;
+
+  }
+}
+
+.board24_button-blue-last{
+ margin: 46px 0 0; 
+}
+
+
+
+}

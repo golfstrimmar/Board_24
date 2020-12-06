@@ -1,0 +1,64 @@
+.board24__mob-1-group{
+  
+  &__card{
+    
+  }
+ 
+ 
+ 
+
+.board24__mob-1-group-card{
+  border: 1px solid #E5E5E5;
+box-sizing: border-box;
+background: #FFFFFF;
+border-radius: 4px;
+width: 100%;
+margin: 10px 0 0 0;
+padding: 28px 24px 32px 24px;	
+   &__img{
+    position: relative;
+   width: 90px;height: 90px;
+    
+.board24_img-bg{
+border-radius: 50%;
+}
+  }
+.board24_jucs{
+  margin: 0 0 30px 0;
+}
+.board24_fdc{
+  flex: 0 1 65%;
+  padding: 0 0 0 13px;
+}
+
+   &__title{
+    font-family: OpenSans;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 28px;
+letter-spacing: 0.1px;
+color: #334D6E;
+	
+  }
+   &__discriiption{
+font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+letter-spacing: 0.1px;
+color: #192A3E;
+  }
+
+
+  .board24_button-empty{
+    height: 30px;
+    width: 100%;
+  }
+}
+
+
+
+
+}

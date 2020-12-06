@@ -1,0 +1,71 @@
+include ../common/mixins
+doctype html
+html
+  head
+    title mob-1-group
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+   
+
+  body
+    div.wrapper
+      main.page
+        section.board_24__mob-main.board_24__mob-meetings.board24__mob-1-employees.board24__mob-1-group
+          .board_24__mob-container.container-js
+            .board_24__mob-main__body
+              .board_24__mob-header
+                .board_24__mob-logo
+                  img(src="assets/img/main/main-1.svg",alt="img")   
+                span.icon-menu
+              .board_24__mob-plaha
+                a.board24_avatar-name(href="#!")
+                  img(src="assets/img/main/image-1.png",alt="img")
+                  .board24_board24_avatar-name__name
+                    p Иван Иванов
+                a.board_24__bell(href="#!")
+                  img(src="assets/img/mob-main/bell.svg",alt="img")
+              .board24_m10
+                        //-  синяя кнопка
+              #board24_poup-assignment-button.board_24__acent-button
+                a(href="#!")  Создать поручение секретарю
+              include ../includes/mob/mob-acent-button
+              
+              .board24_m10
+              include ../includes/mob/mob-tab-сотрудники
+              .board24_m10
+              .board24_mob-button_active.board24_mob-button-small
+                .board24_mob-button_company__title_small.board24_mob-button.board24_mob-button_employees Дополнительно
+                  span.icon-arrow_drop_down
+                .board24_mob-drop
+                  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dolore dicta quidem nesciunt non fugit similique, doloribus expedita illo vel ex velit at soluta consequatur fugiat doloremque ducimus eius nisi.
+              .board24__mob-1-group__card.board24__mob-1-group-card
+                .board24__mob-1-group-card__body
+                  .board24_jucs
+                    .board24__mob-1-group-card__img
+                      +img-bg("assets/img/mob-main/img-7.png", "img-7")
+                    .board24_fdc
+                      .board24__mob-1-group-card__title Совет директоров 
+                      .board24__mob-1-group-card__title АО «Test_01»
+                      .board24__mob-1-group-card__discriiption  Группа для взаимодействия членов совета директоров
+                  +button-empty("Собрать заседание группы","#!")
+                  .board24_m7
+                  +button-empty("Групповой звонок","#!")
+                  .board24_m7
+                  +button-empty("Написать в чат","#!")
+              .board24__mob-1-group__card.board24__mob-1-group-card
+                .board24__mob-1-group-card__body
+                  .board24_jucs
+                    .board24__mob-1-group-card__img
+                      +img-bg("assets/img/mob-main/img-7.png", "img-7")
+                    .board24_fdc
+                      .board24__mob-1-group-card__title Совет директоров 
+                      .board24__mob-1-group-card__title АО «Test_01»
+                      .board24__mob-1-group-card__discriiption  Группа для взаимодействия членов совета директоров
+                  +button-empty("Собрать заседание группы","#!")
+                  .board24_m7
+                  +button-empty("Групповой звонок","#!")
+                  .board24_m7
+                  +button-empty("Написать в чат","#!")
+
+           
+            include ../includes/mob/mob-person

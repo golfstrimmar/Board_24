@@ -701,8 +701,8 @@ $(document).ready(function () {
   // -----------попап по синей кнопке mob-main и остальные--------------
   let popupAssignment = $("#board24_poup-assignment");
   let popupAssignmentbutton = $("#board24_poup-assignment-button");
-let popupAssignmentoverlay = $(".board24_poup-assignment__overlay");
-  popupAssignment.fadeOut();
+  let popupAssignmentoverlay = $(".board24_poup-assignment__overlay");
+  popupAssignment.fadeOut(1);
 
   popupAssignmentbutton.on("click", function () {
     popupAssignment.fadeIn();
@@ -717,6 +717,46 @@ let popupAssignmentoverlay = $(".board24_poup-assignment__overlay");
   popupAssignmentoverlay.on("click", function () {
     popupAssignment.fadeOut();
   });
+
+  // -----попап на мобилке pop-poll----------------------
+  let popButton = $(".board24_pop-poll-js");
+  let popPopup = $("#board24_poup-mob-poll");
+  let popPopupOverlay = $(".board24_poup-assignment__overlay");
+
+  popPopup.fadeOut(1);
+
+  popButton.on("click", function () {
+    popPopup.fadeIn();
+  });
+
+  popPopupOverlay.on("click", function () {
+    popPopup.fadeOut();
+  });
+
+  popPopup.find(".icon-close2").on("click", function () {
+    popPopup.fadeOut();
+  });
+
+  // -------------попап на мобилке pop-quiz-----------------------
+$("#board24_poup-quiz");
+$(".board24_mob-quiz-js");
+$("#board24_poup-quiz").fadeOut(1);
+
+$(".board24_mob-quiz-js").on("click", function () {
+  $("#board24_poup-quiz").fadeIn();
+});
+
+ popPopupOverlay.on("click", function () {
+   $("#board24_poup-quiz").fadeOut();
+ });
+
+$("#board24_poup-quiz")
+  .find(".icon-close2")
+  .on("click", function () {
+    $("#board24_poup-quiz").fadeOut();
+  });
+
+
   // -----------
   let but = $(".button-js");
   let hid = $(".drop-js");

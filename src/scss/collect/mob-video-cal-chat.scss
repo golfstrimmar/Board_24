@@ -1,0 +1,132 @@
+.board_24__mob-video{
+  .board24_mob-drop__screen{
+ position: relative;
+ width: 100%;
+ padding: 0 0 104%;	
+
+  }
+
+ 
+
+}
+
+
+.board_24__mob-calendar{
+    .board24_mob-drop{
+width: 100%;
+height: 579px;
+background: #FFFFFF;
+border: 1px solid #E5E5E5;
+box-sizing: border-box;
+border-radius: 4px;
+    }
+
+
+}
+
+
+.board_24__mob-chat-1{
+  .board24_mob-drop{
+    background: #FFFFFF;
+  }
+  
+
+}
+
+
+
+
+
+.board_24__mob-chat-2 {
+  overflow: hidden!important;
+  .board_24__mob-container {
+    padding: 20px 16px 0px;
+    min-height: auto;
+  }
+
+
+
+
+.board24__mob-chat-content{
+  position: relative;
+  padding: 74px 16px 0 16px;	
+
+}
+
+
+.board24_mob-drop__line{
+  background: #FFFFFF;
+box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+border-radius: 4px;
+position: relative;
+position: absolute;
+min-width: 343px;
+width: 100vw;
+height: 74px;
+top: 0%;
+left: 63px;
+
+&:after{
+ content: "";
+ background-color: #FFFFFF;
+ position: absolute;
+ width: 10px;
+ height: 10px;
+ z-index: 3;
+ border-bottom: 1px solid $azure;
+ border-left: 1px solid $azure;
+  top: 50%; 
+  left: -25px;
+  transform: translate(0,-50%) rotate(45deg);
+  }
+}
+}
+
+
+.board24_mob-drop-line{
+    min-height: 73px;
+    padding: 16px;	
+    background: #FFFFFF;
+    @include jucb();	
+    border-bottom: 1px solid #E5E5E5;
+    &__img{
+      .board24_chef__img{
+ width: 20px!important;height: 20px!important;
+      }
+   
+    }
+    &__content{
+    
+    }
+    &__title{
+    font-family: OpenSans;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 20px;
+color: #192A3E;
+    }
+    &__text{
+      font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+letter-spacing: 0.1px;
+color: #192A3E;
+    }
+    &__data{
+    font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 16px;
+text-align: right;
+letter-spacing: 0.2px;
+color: #90A0B7;
+flex: 0 1 20%;
+    }
+  }
+
+
+ 
