@@ -922,7 +922,7 @@ span.board24_cross {
   top: 0;
   left: 0;
   z-index: 1000;
-  @include jucc();
+  @include center();	
 
   &__overlay {
     position: relative;
@@ -943,6 +943,7 @@ span.board24_cross {
     z-index: 2;
     position: relative;
     height: 953px !important;
+   
   }
 
   .board24_inter__plaza {

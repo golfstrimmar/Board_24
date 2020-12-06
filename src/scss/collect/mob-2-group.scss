@@ -68,6 +68,7 @@
           line-height: 16px;
           letter-spacing: 0.2px;
           color: #323c47;
+        
         }
       }
     } // materials
@@ -201,7 +202,7 @@ color: #109CF1;
  }
 
     // // reports
-    .board24_mob-button_poll{
+.board24_mob-button_poll{
 
 .board24_mob-drop{
 
@@ -262,7 +263,7 @@ left: 0;
 
     }
     // // poll
-   .board24_mob-button_news{
+.board24_mob-button_news{
 
     .board24_middle-plaza__img{
       position: relative;
@@ -273,6 +274,13 @@ width: 100%;
 
     // // news
   }
+
+.board24_mob-errand-list__body{
+  box-shadow: none;
+}
+
+
+
 
   // --------------------------------------
 }
@@ -392,16 +400,26 @@ font-size: 11px!important;
    margin: 80px 0 0;
  }
 
-.board24_inter-comments{
-  margin: 44px 0 0 0;
+.board24_button-blue-last{
+ margin: 46px 0 0; 
+}
+
 }
 
 
 
 
+.board24_inter-comments{
+  margin: 44px 0 0 0;
+  textarea:focus + .board24_inter-plaza__link{
+z-index: -1;
+}
+}
+
+
+
 .board24_inter-comments__plaha{
   width: 100%!important;
-  
   padding: 0 0 0 0!important;	
   textarea{
     background: #F5F6F8;
@@ -412,12 +430,4 @@ height: 100%;
 padding: 17px;
 
   }
-}
-
-.board24_button-blue-last{
- margin: 46px 0 0; 
-}
-
-
-
 }

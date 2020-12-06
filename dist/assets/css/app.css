@@ -2010,6 +2010,9 @@ span.board24_cross {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .board24_poup-assignment__overlay {
   position: relative;
@@ -10710,8 +10713,40 @@ body {
   color: #192a3e;
 }
 .board24_mob-tasks1 .board24_line-plaha__question-area_second {
-  padding: 12px 58px 13px 22px;
+  padding: 0 !important;
   margin: 7px 0 0;
+  min-height: 110px;
+}
+.board24_mob-tasks1 .board24_line-plaha__question-area_second textarea {
+  height: 105px !important;
+  background: #fff !important;
+}
+.board24_mob-tasks1
+  .board24_line-plaha__question-area_second
+  textarea:focus
+  + img {
+  z-index: -1;
+}
+.board24_mob-tasks1
+  .board24_line-plaha__question-area_second
+  .board24_inter-comments__block {
+  min-height: 110px !important;
+}
+.board24_mob-tasks1
+  .board24_line-plaha__question-area_second
+  .board24_inter-comments__plaha {
+  position: relative;
+  min-height: 110px !important;
+}
+.board24_mob-tasks1
+  .board24_line-plaha__question-area_second
+  .board24_inter-plaza__link {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  bottom: 8px;
+  right: 8px;
+  z-index: 3;
 }
 .board24_mob-tasks1 .board24_line-plaha__question {
   display: -webkit-box;
@@ -10812,7 +10847,41 @@ body {
   border-bottom: 1px solid #109cf1;
   border-right: 1px solid #109cf1;
 }
+.board24_mob-tasks1
+  .board24_line-plaha
+  .board24__mob-2-group__tabs
+  .board24_mob-button_active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.board24_mob-tasks1
+  .board24_line-plaha
+  .board24__mob-2-group__tabs
+  .board24_mob-button_company__title_small {
+  padding: 0 20px !important;
+}
+.board24_mob-tasks1
+  .board24_line-plaha
+  .board24__mob-2-group__tabs
+  .icon-arrow_drop_down {
+  width: 16px;
+  height: 16px;
+}
+.board24_mob-tasks1
+  .board24_line-plaha
+  .board24__mob-2-group__tabs
+  .board24_mob-drop__img {
+  right: 10px;
+}
 .board24_mob-errand,
+.board24_mob-tasks1
+  .board24_line-plaha
+  .board24__mob-2-group__tabs
+  .board24_mob-drop,
+.board24_mob-tasks1
+  .board24_line-plaha
+  .board24__mob-2-group__tabs
+  .board24_mob-errand-list__body,
 .board_24__mob-mission .board24_mob-button_active-active .board24_mob-errand {
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -11734,6 +11803,10 @@ body {
   height: 150px;
   width: 100%;
 }
+.board24__mob-2-group .board24_mob-errand-list__body {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 .board24_poup-mob-poll .board24_poup-assignment__body {
   height: 759px !important;
 }
@@ -11830,14 +11903,20 @@ body {
 .board24_poup-quiz .board24_buttons-empty {
   margin: 80px 0 0;
 }
-.board24_poup-quiz .board24_inter-comments {
+.board24_poup-quiz .board24_button-blue-last {
+  margin: 46px 0 0;
+}
+.board24_inter-comments {
   margin: 44px 0 0;
 }
-.board24_poup-quiz .board24_inter-comments__plaha {
+.board24_inter-comments textarea:focus + .board24_inter-plaza__link {
+  z-index: -1;
+}
+.board24_inter-comments__plaha {
   width: 100% !important;
   padding: 0 !important;
 }
-.board24_poup-quiz .board24_inter-comments__plaha textarea {
+.board24_inter-comments__plaha textarea {
   background: #f5f6f8;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -11845,9 +11924,6 @@ body {
   width: 100%;
   height: 100%;
   padding: 17px;
-}
-.board24_poup-quiz .board24_button-blue-last {
-  margin: 46px 0 0;
 }
 .board24__mob-chat-group .board24_poup-assignment__overlay {
   min-height: 150vh;

@@ -109,6 +109,7 @@ transition: all 0.3s ease-in-out;
 	
 }
 
+
 }
 
 &_low{
@@ -212,8 +213,34 @@ line-height: 20px;
 color: #192A3E;
 
 &_second{
-    padding: 12px 58px 13px 22px;
+    // padding: 12px 58px 13px 22px;
+    padding: 0 0 0 0!important;	
     margin: 7px 0 0;
+    min-height: 110px;
+    textarea{
+      height: 105px!important;
+      background: $white !important;
+    
+    &:focus + img{
+z-index: -1;
+}}
+    .board24_inter-comments__block{
+min-height: 110px!important;
+    }
+    .board24_inter-comments__plaha{
+      position: relative;
+      min-height: 110px!important;
+    }
+   
+.board24_inter-plaza__link{
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  bottom: 8px;
+  right: 8px;
+ z-index: 3;
+}
+
 }
 
 }
@@ -300,6 +327,30 @@ border-bottom: 1px solid#109CF1;
 border-right: 1px solid#109CF1;
 }
 }
+
+.board24__mob-2-group__tabs{
+  .board24_mob-button_active {
+    box-shadow: none;
+  }
+  .board24_mob-button_company__title_small{
+    padding: 0 20px 0 20px!important;
+  } 
+  .icon-arrow_drop_down {
+    width: 16px;
+    height: 16px;
+}
+  .board24_mob-drop__img {
+    right: 10px;
+}
+.board24_mob-errand-list__body{
+  box-shadow: none;
+}
+.board24_mob-drop{
+  box-shadow: none;
+}
+}
+
+
 
   }// plaha
 
