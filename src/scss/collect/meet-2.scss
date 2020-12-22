@@ -41,10 +41,16 @@
         .board24_title {
           margin: 0 auto 0 0;
         }
-        .board24_chef__img {
+        .board24_chef__img-meet-2 {
           width: 24px;
           height: 24px;
           margin: 0 0 0 11px;
+          border-radius: 50%;
+          img{
+              width:100%;
+              height: 100%;
+              border-radius: 50%;
+          }
         }
         .board24_button-empty-grey {
           margin: 0 0 0 20px;
@@ -132,7 +138,7 @@
 
         .board24_inter-comments__plaha {
           margin: 0 20px 0 0;
-          width: 90.6%;
+          width: 90.6% !important;
           background-color: $white;
           // height: auto;
           // padding: 16px 22px 16px 22px;
@@ -146,6 +152,7 @@
             max-height: 108px;
             padding: 16px 22px 16px 22px;
             resize: none;
+            background: white;
             &:focus {
               outline: none;
             }

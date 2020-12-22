@@ -108,8 +108,13 @@ $(document).ready(function () {
     meetPopup2.fadeOut();
   });
 
+  // -------------------------------------------------
+  $(".meet-content-line .icon-more").on("click", function () {
+    meetPopup3.fadeIn();
+  });
+
   // -------------------------------------
-  let spanButton = $(".board24-corvet__text	");
+  let spanButton = $(".board24-corvet__text-add	");
   let corvetDrop1 = $(".board24-corvet__drop");
   corvetDrop1.slideUp(1);
   spanButton.on("click", function () {
@@ -164,21 +169,36 @@ $(document).ready(function () {
   meetpopup1.find($(".board24_cross")).on("click", function () {
     meetpopup1.fadeOut();
   });
-  // --------------------------
+// --------------------------------------------------------------
+  let interTen = $("#board24_middle-inter-10");
+  let blueTen = $(".board24_icon-js");
+  let closeTen = $(".board24_middle-inter-10 .icon-close2");
+  interTen.fadeOut(0);
+
+blueTen.on("click", function () {
+  interTen.fadeIn();
+});
+
+closeTen.on("click", function () {
+  interTen.fadeOut();
+});
+
+
   let voice = $("#board24_person-meet-popup-add-voice");
   let blueJs = $(".board24_button-blue-js");
   let closeVoice = $("#board24_person-meet-popup-add-voice .icon-close2");
   voice.fadeOut(0);
-
   blueJs.on("click", function () {
     voice.fadeIn();
   });
   closeVoice.on("click", function () {
     voice.fadeOut();
   });
-  $(".board24_meet__overlay").on("click", function () {
-    voice.fadeOut();
-  });
+
+
+
+
+ 
 
   // ---------------------------------------------
   let meet1popup1 = $("#board24_meet-1__popup1");
@@ -196,9 +216,25 @@ $(document).ready(function () {
     meet1popup1.fadeOut();
   });
 
-  meet1popup1overlay.on("click", function () {
-    meet1popup1.fadeOut();
-  });
+
+// jQuerобщее закрытие 3-x попапов
+ $(document).on("mouseup", function (e) {
+   let meetCenter = $(this).find(".board24_meet__center");
+   if (
+     !meetCenter.is(e.target) && // если клик был не по нашему блоку
+     meetCenter.has(e.target).length === 0 // и не по его дочерним элементам
+   ) {
+     voice.fadeOut();
+     interTen.fadeOut();
+     meet1popup1.fadeOut();
+      meet1popup2.fadeOut();
+      $(".board24_inter-4-box1__drop ").slideUp().removeClass("act");
+      $(".board24_inter-4-box1__drop ")
+        .siblings(".icon-arrow_drop_down")
+        .css("transform", "rotate(0deg)");
+   }
+ });
+
 
   // -------------------------
   let meet1popup2 = $("#board24_meet-1__popup2");
@@ -216,30 +252,12 @@ $(document).ready(function () {
     meet1popup2.fadeOut();
   });
 
-  meet1popup2overlay.on("click", function () {
-    meet1popup2.fadeOut();
-    $(".board24_inter-4-box1__drop ").slideUp().removeClass("act");
-    $(".board24_inter-4-box1__drop ")
-      .siblings(".icon-arrow_drop_down")
-      .css("transform", "rotate(0deg)");
-  });
+  // meet1popup2overlay.on("click", function () {
+
+   
+  // });
 
   // ----------------------------------
-
-  let interTen = $("#board24_middle-inter-10");
-  let blueTen = $(".board24_icon-js");
-  let closeTen = $(".board24_middle-inter-10 .icon-close2");
-  interTen.fadeOut(0);
-
-  blueTen.on("click", function () {
-    interTen.fadeIn();
-  });
-  closeTen.on("click", function () {
-    interTen.fadeOut();
-  });
-  $(".board24_popup__overlay").on("click", function () {
-    interTen.fadeOut();
-  });
 
   // ---------------------
   $(".board24_chef__img").on("click", function () {
@@ -650,7 +668,7 @@ $(document).ready(function () {
 
   window.addEventListener("scroll", function (event) {
     if (window.pageYOffset > 50) {
-      mobHeader.classList.add("board_24__mob-header-act");
+      mobHeader.classList.add('board_24__mob-header-act');
     } else {
       if (mobHeader.classList.contains("board_24__mob-header-act")) {
         mobHeader.classList.remove("board_24__mob-header-act");
@@ -738,24 +756,23 @@ $(document).ready(function () {
   });
 
   // -------------попап на мобилке pop-quiz-----------------------
-$("#board24_poup-quiz");
-$(".board24_mob-quiz-js");
-$("#board24_poup-quiz").fadeOut(1);
+  $("#board24_poup-quiz");
+  $(".board24_mob-quiz-js");
+  $("#board24_poup-quiz").fadeOut(1);
 
-$(".board24_mob-quiz-js").on("click", function () {
-  $("#board24_poup-quiz").fadeIn();
-});
+  $(".board24_mob-quiz-js").on("click", function () {
+    $("#board24_poup-quiz").fadeIn();
+  });
 
- popPopupOverlay.on("click", function () {
-   $("#board24_poup-quiz").fadeOut();
- });
-
-$("#board24_poup-quiz")
-  .find(".icon-close2")
-  .on("click", function () {
+  popPopupOverlay.on("click", function () {
     $("#board24_poup-quiz").fadeOut();
   });
 
+  $("#board24_poup-quiz")
+    .find(".icon-close2")
+    .on("click", function () {
+      $("#board24_poup-quiz").fadeOut();
+    });
 
   // -----------
   let but = $(".button-js");
@@ -785,12 +802,13 @@ $("#board24_poup-quiz")
   button1.on("click", function () {
     if ($(this).hasClass("act")) {
       $(this).removeClass("act");
-      person1.slideUp(300);
+      $(this).siblings(person1).slideUp(300);
     } else {
       $(this).addClass("act");
-      person1.slideDown(300);
+      $(this).siblings(person1).slideDown(300);
     }
   });
+
   // ---------------	//
   $(".board24_mob-stat-drop__level__item").on("click", function () {
     if ($(this).hasClass("act")) {

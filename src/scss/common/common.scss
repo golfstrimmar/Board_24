@@ -35,6 +35,7 @@ body {
 .board24_container {
   width: 100%;
   @include jucb();
+  position: relative;
 }
 
 .board24_ibg {

@@ -500,6 +500,7 @@ font-weight: normal;
 font-style: normal;
 font-stretch: normal;
 }
+
 [class*=" icon-"],
 [class^="icon-"] {
   font-family: icomoon !important;
@@ -1024,6 +1025,7 @@ h6 {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  position: relative;
 }
 .board24_ibg {
   background-repeat: no-repeat;
@@ -1817,7 +1819,7 @@ span.board24_cross {
   width: 12px;
   height: 12px;
   border: 1px solid #0ff;
-  background-image: url(/assets/img/group/v-1.svg);
+  background-image: url(../img/group/v-1.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
@@ -2257,7 +2259,7 @@ span.board24_cross {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  height: 455px;
+  height: 700px;
 }
 .board24_person__cabinet {
   width: 255px;
@@ -5533,15 +5535,6 @@ hr {
 .board24_mar60 {
   margin: 0 0 0 60px;
 }
-.board24_middle-inter-5 {
-  position: absolute;
-  width: 825px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
 .board24_middle-inter-5 .board24_middle-plaza,
 .board24_middle-inter-5 .board24_middle-plaza__body {
   width: 100%;
@@ -6260,31 +6253,41 @@ hr {
   flex: 0 1 21.3%;
 }
 .board24_meet__popup {
+  position: relative;
   position: fixed;
-  width: 100vw !important;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
-}
-.board24_meet__overlay,
-.board24_meet__popup {
-  min-height: 100vh;
-  overflow: visible;
+  overflow: scroll;
   z-index: 1000;
 }
 .board24_meet__overlay {
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   background-color: rgba(0, 0, 0, 0.56);
+  overflow: visible;
+  z-index: 1000;
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .board24_meet__center {
-  position: absolute;
-  width: auto;
-  height: auto;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+#board24_meet-popup2 .board24_meet__title {
+  width: 50%;
+  text-align: center;
+  padding: 0 0 40px;
 }
 .board24_inter6__header {
   text-align: left;
@@ -6305,7 +6308,7 @@ hr {
 }
 .board24_meet__center {
   width: 1016px;
-  height: 223px;
+  position: relative;
   border-radius: 4px;
   -webkit-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12);
@@ -6666,7 +6669,7 @@ hr {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  margin: 0 6px 0 0;
+  margin: 0 6px 0 2px;
 }
 .board24_middle-meet-1 .board24_middle-plaza__stretsh {
   margin: 0;
@@ -6946,7 +6949,7 @@ hr {
   .board24_inter__comments
   .board24_inter-comments__block
   .board24_inter-comments__plaha {
-  width: 87.4%;
+  width: 87.4% !important;
 }
 .board24_middle-meet-1
   .board24_stretsh-meet-1
@@ -7247,20 +7250,22 @@ hr {
   width: 8px;
 }
 #board24_person-meet-popup {
+  position: relative;
   position: fixed;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100vw;
-  height: 100vh;
-  z-index: 20;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
-  z-index: 1110;
+  overflow: scroll;
+  z-index: 1000;
 }
 #board24_person-meet-popup .board24_popup__overlay {
   width: 100%;
-  height: 100%;
-  background-color: rgba(50, 60, 71, 0.56);
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.56);
+  overflow: visible;
+  z-index: 1000;
+  padding: 50px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7283,7 +7288,6 @@ hr {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 825px;
-  height: 539px;
   border-radius: 4px;
   background-color: #f2f9ff;
   padding: 30px 27px 90px;
@@ -7312,7 +7316,6 @@ hr {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-#board24_person-meet-popup-add-voice,
 #board24_person-meet-popup
   .board24_popup__body
   .board24_popup-plaha__body
@@ -7326,17 +7329,6 @@ hr {
   -ms-flex-align: center;
   align-items: center;
 }
-#board24_person-meet-popup-add-voice {
-  z-index: 1110;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-}
 #board24_person-meet-popup-add-voice .icon-close2 {
   position: absolute;
   width: 10px;
@@ -7345,33 +7337,10 @@ hr {
   right: 10px;
   font-size: 10px;
 }
-#board24_person-meet-popup-add-voice .board24_meet__overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
 #board24_person-meet-popup-add-voice .board24_popup__body {
   width: 825px;
-  height: 400px;
-  background: #fff;
-  -webkit-box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  margin: 0;
-  position: relative;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
   padding: 23px 45px 36px 24px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  z-index: 2;
+  z-index: 10000;
 }
 #board24_person-meet-popup-add-voice .board24_meet-mob-title {
   font-family: OpenSans;
@@ -7536,10 +7505,22 @@ hr {
   color: #fff;
 }
 #board24_middle-inter-10 {
+  position: relative;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: scroll;
   z-index: 1000;
 }
-#board24_middle-inter-10,
 #board24_middle-inter-10 .board24_popup__overlay {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.56);
+  overflow: visible;
+  z-index: 1000;
+  padding: 50px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7551,17 +7532,11 @@ hr {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-}
-#board24_middle-inter-10 .board24_popup__overlay {
-  background-color: rgba(50, 60, 71, 0.56);
 }
 #board24_middle-inter-10 .board24_middle-inter-10 {
   z-index: 2;
+  width: 825px !important;
+  padding: 18px 24px 47px 21px !important;
 }
 .board24_inter-plaza__discription .board24_inter-forma {
   padding: 0;
@@ -7588,7 +7563,6 @@ hr {
   z-index: -1;
 }
 .board24_meet-1__popup1 .board24_meet__center {
-  height: 397px;
   width: 825px;
   padding: 47px 120px 70px;
   display: -webkit-box;
@@ -7603,6 +7577,7 @@ hr {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin: 0 auto;
 }
 .board24_meet-1__popup1 .board24_meet__buttons {
   padding: 45px 0 0;
@@ -7703,6 +7678,7 @@ hr {
   min-height: 546px !important;
   height: auto !important;
   padding: 47px 120px 54px;
+  position: relative;
 }
 .board24_meet-1__popup2 .board24_inter-4-box1 {
   padding-right: 19px;
@@ -7844,6 +7820,11 @@ hr {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+.board24_person-meet
+  .board24_person-cabinet__plaha
+  .board24_line-plaha__img1:hover {
+  cursor: pointer;
+}
 .board24_person-meet .board24_person-cabinet__band {
   width: 235px;
   height: 60px;
@@ -7966,10 +7947,21 @@ hr {
 .board24_middle-meet-2 .board24_stretsh-meet-1__line_line4 .board24_title {
   margin: 0 auto 0 0;
 }
-.board24_middle-meet-2 .board24_stretsh-meet-1__line_line4 .board24_chef__img {
+.board24_middle-meet-2
+  .board24_stretsh-meet-1__line_line4
+  .board24_chef__img-meet-2 {
   width: 24px;
   height: 24px;
   margin: 0 0 0 11px;
+  border-radius: 50%;
+}
+.board24_middle-meet-2
+  .board24_stretsh-meet-1__line_line4
+  .board24_chef__img-meet-2
+  img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
 .board24_middle-meet-2
   .board24_stretsh-meet-1__line_line4
@@ -8084,7 +8076,7 @@ hr {
   .board24_inter-comments
   .board24_inter-comments__plaha {
   margin: 0 20px 0 0;
-  width: 90.6%;
+  width: 90.6% !important;
   background-color: #fff;
 }
 .board24_middle-meet-2
@@ -8105,6 +8097,7 @@ hr {
   max-width: 100%;
   max-height: 108px;
   padding: 16px 22px;
+  background: #fff;
   resize: none;
 }
 .board24_middle-meet-2
@@ -10456,6 +10449,14 @@ body {
   letter-spacing: 0.2px;
   color: #707683;
 }
+.board24_mob-tasks
+  .board24_line-plaha
+  .board24_plaha-dark
+  .board24_mob-level1__img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
 .board24_mob-tasks .board24_line-plaha .board24_mob-project {
   background: #fff;
   border: 1px solid #e5e5e5;
@@ -10630,7 +10631,7 @@ body {
   -webkit-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  width: 188px;
+  width: 100%;
   height: 48px;
   background: #fff;
   border: 1px solid #109cf1;
@@ -10681,6 +10682,21 @@ body {
   color: #323c47;
   margin: 12px 0 0 !important;
 }
+.board24_mob-tasks1
+  .board24_line-plaha__tab-drop
+  .board24_meet-content-line__body {
+  padding: 0 0 0 6px !important;
+}
+.board24_mob-tasks1 .board24_line-plaha__tab-drop .meet-content-line__img {
+  margin: 0 !important;
+}
+.board24_mob-tasks1 .board24_line-plaha__tab-drop .meet-content-line__text {
+  margin: 0 0 0 15px !important;
+}
+.board24_mob-tasks1 .board24_line-plaha__tab-drop .board24_line-plaha__button {
+  margin: 0 !important;
+  width: 80%;
+}
 .board24_mob-tasks1 .board24_line-plaha__text1 {
   font-family: OpenSans;
   font-style: normal;
@@ -10697,12 +10713,10 @@ body {
 }
 .board24_mob-tasks1 .board24_line-plaha__question-area {
   background: #fff;
-  border: 1px solid #e5e5e5;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  border-radius: 4px;
   width: 100%;
-  padding: 20px 22px;
+  padding: 20px 0;
   margin: 16px 0 0;
   font-family: OpenSans;
   font-style: normal;
@@ -10787,14 +10801,17 @@ body {
   color: #334d6e;
 }
 .board24_mob-tasks1 .board24_line-plaha__save {
+  color: #6a707e;
+  padding: 4px 0 15px;
+}
+.board24_mob-tasks1 .board24_line-plaha__button2,
+.board24_mob-tasks1 .board24_line-plaha__save {
   font-family: OpenSans;
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
   line-height: 16px;
   letter-spacing: 0.2px;
-  color: #6a707e;
-  padding: 4px 0 15px;
 }
 .board24_mob-tasks1 .board24_line-plaha__button2 {
   width: 100%;
@@ -10813,15 +10830,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-.board24_mob-tasks1 .board24_line-plaha__button2 span {
-  font-family: OpenSans;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 16px;
   text-align: center;
-  letter-spacing: 0.2px;
   color: #fff;
 }
 .board24_mob-tasks1 .board24_line-plaha__following {
@@ -11205,6 +11214,7 @@ body {
   font-weight: 600;
   font-size: 13px;
   margin: 20px 0 0;
+  width: 100%;
 }
 .board24__mob-2-company__text1,
 .board24__mob-2-company__text2 {
