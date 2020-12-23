@@ -797,15 +797,18 @@ closeTen.on("click", function () {
   });
   // -----------
   let button1 = $(".board24_button1-js");
-  let person1 = $(".board24_mob-stat-drop__level__person-area");
-  person1.slideUp(1);
+  $(".board24_mob-stat-drop__level__person-area").slideUp(1);
+  
   button1.on("click", function () {
+  let person1 = $(this).siblings(".board24_mob-stat-drop__level__person-area");
     if ($(this).hasClass("act")) {
       $(this).removeClass("act");
-      $(this).siblings(person1).slideUp(300);
+      // $(this).siblings(person1).slideUp(300);
+      person1.slideUp(300);
     } else {
       $(this).addClass("act");
-      $(this).siblings(person1).slideDown(300);
+      // $(this).siblings(person1).slideDown(300);
+      person1.slideDown(300);
     }
   });
 

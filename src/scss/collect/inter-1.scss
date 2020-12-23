@@ -298,18 +298,26 @@
           padding: 18px 24px 47px 21px;
   .board24_middle-inter-4__p1 {
     padding: 10px 6px 22px 10px;
-     &_next{
-    .board24-corvet:nth-child(2),.board24-corvet:nth-child(3){
-          margin: 8px 0 0 61px;
-          .board24-corvet__text {
-            padding: 0 10px 0 0;	
-          }
-      input{
-        width: 594px!important;
-        margin: 0 0 0 89px;
-      }
-    }
-    }
+    //  &_next{
+    // .board24-corvet:nth-child(2),.board24-corvet:nth-child(3){
+    //       margin: 8px 0 0 61px;
+    //       .board24-corvet__text {
+    //         padding: 0 10px 0 0;	
+    //       }
+    //   input{
+    //     width: 594px!important;
+    //     margin: 0 0 0 89px;
+    //   }
+    // }
+    // }
+ &_next{
+   margin: 8px 0 0 0;
+   .board24-corvet{
+     margin: 8px 0 0 0
+   }
+
+  }
+
   }
   .board24-corvet {
     .board24-corvet__text-area {
