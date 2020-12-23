@@ -464,36 +464,43 @@ closeTen.on("click", function () {
   );
   // -------плашки на meeting--------------
   let meetImg = $(".meet-content-line__img");
-  let plahaTab = $(".meet-content-line__tab");
-  let plahaTabSub = $(".meet-content-line__tab-sub");
-  let more = plahaTab.find($(".meet-content-line__tab .icon-more"));
 
-  plahaTab.fadeOut();
-  plahaTabSub.fadeOut();
+  $(".meet-content-line__tab").fadeOut(1);
+  $(".meet-content-line__tab-sub").fadeOut(1);
 
   meetImg.on("click", function () {
+
+    let plahaTab = $(this).siblings(".meet-content-line__tab");
+    let plahaTabSub = $(this).siblings(".meet-content-line__tab").find(
+      ".meet-content-line__tab-sub"
+    );
+
     if ($(this).hasClass("act")) {
       plahaTab.removeClass("act").fadeOut();
       $(this).removeClass("act");
       plahaTabSub.fadeOut().removeClass("act");
-    } else {
-      $(this).closest(".meet-content-line__body").append(plahaTab);
+    } 
+    else {
       plahaTab.fadeIn();
       $(this).addClass("act");
     }
   });
 
-  more.on("click", function () {
+
+let more = $(".meet-content-line__tab").find($(".board24_point-js"));
+more.on("click", function () {
+let plahaTabSub = $(this).parent().siblings(".meet-content-line__tab-sub");
     if (plahaTabSub.hasClass("act")) {
       plahaTabSub.fadeOut().removeClass("act");
     } else {
       plahaTabSub.fadeIn().addClass("act");
     }
-  });
+});
 
-  plahaTabSub.find($(".icon-more")).on("click", function () {
-    plahaTabSub.fadeOut().removeClass("act");
-  });
+$(".board24_point-sub").on("click", function () {
+  $(this).parent().fadeOut().removeClass("act");
+});
+
 
   // ---------select---meet----------------------
 
@@ -828,21 +835,25 @@ closeTen.on("click", function () {
   $(".board24_line-plaha__question").fadeOut(0);
 
   $(".board24_line-plaha__button").on("click", function () {
-    if ($(this).hasClass("board24_button-act")) {
-      $(this).removeClass("board24_button-act");
-      $(this)
-        .parent(".board24_line-plaha__item")
-        .remove($(".board24_line-plaha__question"));
-      $(".board24_line-plaha__question").fadeOut(1);
+    let question = $(this).siblings(".board24_line-plaha__question");
+    if ($(this).hasClass("act")) {
+      question.fadeOut();
+      $(this).removeClass("act");
+      // $(this)
+        // .parent(".board24_line-plaha__item")
+        // .remove($(".board24_line-plaha__question"));
+      
     } else {
-      $(this).addClass("board24_button-act");
+      $(this).addClass("act");
+      question.fadeIn();
       $(".board24_line-plaha__button")
         .not($(this))
-        .removeClass("board24_button-act");
-      $(".board24_line-plaha__question").fadeIn(1);
-      $(this)
-        .parent(".board24_line-plaha__item")
-        .append($(".board24_line-plaha__question"));
+        .removeClass("act")
+        .siblings(".board24_line-plaha__question").fadeOut();
+      
+      // $(this)
+        // .parent(".board24_line-plaha__item")
+        // .append($(".board24_line-plaha__question"));
     }
   });
 
@@ -902,7 +913,10 @@ closeTen.on("click", function () {
       }
     }
   });
-  // -----------
+
+
+
 
   // -----------
 });
+

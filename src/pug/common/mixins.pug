@@ -121,45 +121,75 @@ mixin meet-content__line(id,text)
       a.board24_point.icon-more(href="#!")
 
 
-//- --------- fonts.scss 287----------------------
-//- hr
+mixin desk-meet-line(id,text, d,name)
+  .board24_meet-content__line.meet-content-line
+    .meet-content-line__body.board24_jucs.board24_alic 
+      forma.board24_inter-forma.board24_flex 
+        .board24_flex.board24_inter-forma__item 
+          input.custom-checkbox(type="checkbox" name=id value="1"   id=id)
+          label.board24_ts-7-b(for=id)
+      .meet-content-line__img
+        img.board24_point(src="assets/img/meetings/v-2.svg",alt="img")
+      
+      .meet-content-line__tab
+        .board24_ts-47 Skype
+          span.board24_point.icon-more.board24_point-js
+        .board24_ts-35 December 22, 2018
+        .board24_ts-38.board24_m3 Заседение директоров№123   456 789...
+        a.board24_avatar-name.board24_alic.board24_auto(href="#!")
+          img(src="assets/img/main/image-1.png",alt="img")
+          .board24_board24_avatar-name__name
+            span.board24_ts-12 George Fields
+            br
+            span.board24_ts-41 Совет директоров 
 
-//- h4 h4 Text Style 22
-
-//- hr
-
-//- h2 h2 Text Style 20
-
-//- hr
-
-//- h3 h3 Text Style 34
-
-//- hr
-
-//- h5 h5 Text Style 38
-
-//- hr
-
-//- h6 h6 Text Style 25
-
-//- hr
-
-
-//- span.board24_cross.icon-close2
+        .meet-content-line__tab-sub
+          .board24_ts-37.board24_point
+            span.icon-Vector-5 
+            span Завершить задачу
+          .board24_ts-37.board24_point
+            span.icon-Vector-5 
+            span Начать выполнение задачи
+          .board24_ts-37.board24_point
+            span.icon-Vector-5 
+            span Удалить задачу
+          span.board24_point.board24_point-sub.icon-more
 
 
 
+      .meet-content-line__text.board24_ts-38=text
+      .meet-content-line__type.board24_ts-12=d
+      a.board24_avatar-name.board24_auto(href="#!")
+        img(src="assets/img/main/image-1.png",alt="img")
+        .board24_board24_avatar-name__name.board24_alic
+          .board24_ts-12=name
+      span.board24_point.icon-more
 
 
-//- .butterscotch{
-//- background-color: #ffb946;
-//-  }
-//- .apple-green{
-//-   background-color: $apple-green;
-//- }
-//- .silver{
-//-   background-color: $silver;} 
+//- -------------------------------------
+mixin mission-tab()
 
-//- .azure{
-//-   background-color: $azure;
-//- }
+  .meet-content-line__tab
+    .board24_ts-47.board24_jucb Skype 
+      span.board24_point.icon-more.meet-content-line__img.board24_point-js
+    .board24_ts-35 December 22, 2018
+    .board24_ts-38.board24_m3 Заседение директоров№123   456 789...
+    a.board24_avatar-name.board24_alic.board24_auto(href="#!")
+      img(src="assets/img/main/image-1.png",alt="img")
+      .board24_board24_avatar-name__name
+        span.board24_ts-12 George Fields
+        br
+        span.board24_ts-41 Совет директоров 
+    .meet-content-line__tab-sub
+      .board24_ts-37.board24_point 
+        span.icon-Vector-5 
+        span Завершить задачу
+      .board24_ts-37.board24_point 
+        span.icon-Vector-5 
+        span Начать выполнение задачи
+      .board24_ts-37.board24_point 
+        span.icon-Vector-5 
+        span Удалить задачу
+      span.board24_point.icon-more.board24_point-sub
+
+

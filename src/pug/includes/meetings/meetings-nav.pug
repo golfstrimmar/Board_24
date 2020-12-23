@@ -3,36 +3,80 @@
     h2 Заседания
     form
       .board24_bot.board24_bot_data
-        .board24_ts-7 Дата
+        #board24-date.board24_ts-7
+          | Дата
           span.board24_form-span.icon-arrow_drop_down
         .board24_hidden.board24_inter-forma.board24_flex
-          .board24_flex.board24_inter-forma__item 
-            input.custom-checkbox(type="radio" name="data-choice" value="Дата 1" id="yes5")
+          .board24_flex.board24_inter-forma__item  
+            input#yes5.custom-checkbox(type="radio" name="data-choice" value="Текущая неделя" onclick="checkboxstatus(this)")
             label(for="yes5") Текущая неделя
-          .board24_flex.board24_inter-forma__item 
-            input.custom-checkbox(type="radio" name="data-choice" value="Дата 2" id="yes10")
+          .board24_flex.board24_inter-forma__item
+            input#yes10.custom-checkbox(type="radio" name="data-choice" value="Месяц" onclick="checkboxstatus(this)")
             label(for="yes10") Месяц
-          .board24_flex.board24_inter-forma__item 
-            input.custom-checkbox(type="radio" name="data-choice" value="Дата 3" id="yes20")
+          .board24_flex.board24_inter-forma__item
+            input#yes20.custom-checkbox(type="radio" name="data-choice" value="Год" onclick="checkboxstatus(this)")
             label(for="yes20") Год
           .board24_flex.board24_inter-forma__item.board24_inter-forma__item_last
-            input.custom-checkbox(type="radio" name="data-choice" value="Дата 4" id="yes30")
+            input#yes30.custom-checkbox(type="radio" name="data-choice" value="valueNuumber" onclick="checkboxstatus(this)")
             label(for="yes30")
-            input.board24_inter-forma__item_cube(type="text")
-            img(src="assets/img/inter/schedule.svg",alt="img")
+            input#board24_cube.board24_inter-forma__item_cube(type="text")
+            img(src="assets/img/inter/schedule.svg" alt="img")
+
+        //- .board24_ts-7 Дата
+        //-   span.board24_form-span.icon-arrow_drop_down
+        //- .board24_hidden.board24_inter-forma.board24_flex
+        //-   .board24_flex.board24_inter-forma__item 
+        //-     input.custom-checkbox(type="radio" name="data-choice" value="Дата 1" id="yes5")
+        //-     label(for="yes5") Текущая неделя
+        //-   .board24_flex.board24_inter-forma__item 
+        //-     input.custom-checkbox(type="radio" name="data-choice" value="Дата 2" id="yes10")
+        //-     label(for="yes10") Месяц
+        //-   .board24_flex.board24_inter-forma__item 
+        //-     input.custom-checkbox(type="radio" name="data-choice" value="Дата 3" id="yes20")
+        //-     label(for="yes20") Год
+        //-   .board24_flex.board24_inter-forma__item.board24_inter-forma__item_last
+        //-     input.custom-checkbox(type="radio" name="data-choice" value="Дата 4" id="yes30")
+        //-     label(for="yes30")
+        //-     input.board24_inter-forma__item_cube(type="text")
+        //-     img(src="assets/img/inter/schedule.svg",alt="img")
+        //-         .board24_bot.board24_bot_data
+
+       
+        
       .board24_bot.board24_bot_data
         .board24_ts-7 Стадия
           span.board24_form-span.icon-arrow_drop_down
         .board24_hidden.board24_inter-forma.board24_flex
           .board24_flex.board24_inter-forma__item 
-            input.custom-checkbox(type="radio" name="stage-choice" value="Дата 1" id="yes6")
+            input.custom-checkbox(type="radio" name="stage-choice" value="Подготовка" id="yes6")
             label(for="yes6") Подготовка
           .board24_flex.board24_inter-forma__item 
-            input.custom-checkbox(type="radio" name="stage-choice" value="Дата 2" id="yes11")
+            input.custom-checkbox(type="radio" name="stage-choice" value="Проведение" id="yes11")
             label(for="yes11") Проведение
           .board24_flex.board24_inter-forma__item 
-            input.custom-checkbox(type="radio" name="stage-choice" value="Дата 3" id="yes21")
+            input.custom-checkbox(type="radio" name="stage-choice" value="Завершено" id="yes21")
             label(for="yes21") Завершено
+
+
+        
+        
+      //- .board24_bot.board24_bot_data
+      //-   #board24-stage.board24_ts-7
+      //-     | Стадия
+      //-     span.board24_form-span.icon-arrow_drop_down
+      //-   .board24_hidden.board24_inter-forma.board24_flex
+      //-     .board24_flex.board24_inter-forma__item  
+      //-       input#yes6.custom-checkbox(type="radio" name="stage-choice" value="Подготовка" onclick="checkboxstatus(this)")
+      //-       label(for="yes6") Подготовка
+      //-     .board24_flex.board24_inter-forma__item
+      //-       input#yes21.custom-checkbox(type="radio" name="stage-choice" value="Проведение" onclick="checkboxstatus(this)")
+      //-       label(for="yes21") Проведение
+      //-     .board24_flex.board24_inter-forma__item
+      //-       input#yes20.custom-checkbox(type="radio" name="stage-choice" value="Завершено" onclick="checkboxstatus(this)")
+      //-       label(for="yes20") Завершено
+        
+      
+      
       .board24_bot.board24_bot_data
         .board24_ts-7 Участник
           span.board24_form-span.icon-arrow_drop_down
@@ -77,3 +121,19 @@
             label(for="yes12") Название группы может быть очень длинным...
       .board24_button-empty
         input.board24_button-empty__link(type='submit', name='submit', value='Найти')
+
+script.
+  function checkboxstatus(currentObj) {
+    if (currentObj.checked) {
+      let carentValue = currentObj.value;
+      if (carentValue === "valueNuumber") {
+        let cubeValue = document.getElementById("board24_cube").value;
+        console.log(cubeValue);
+        document.getElementById("board24-date").textContent = cubeValue;
+      } else {
+        console.log(carentValue);
+        document.getElementById("board24-date").textContent = carentValue;
+        
+      }
+    }
+  }
