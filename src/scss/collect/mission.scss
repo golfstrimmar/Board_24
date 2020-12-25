@@ -60,6 +60,7 @@
     .board24_meet-content__items {
       padding: 0 24px 25px;
       .board24_meet-content-items__column{
+        z-index: 1;
         &_yellow{
         .meet-content-line__tab:after {
           background-color: $butterscotch;

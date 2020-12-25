@@ -75,12 +75,14 @@ $(document).ready(function () {
 
   meeting1.on("click", function () {
     meetPopup2.fadeIn();
+    $("body").addClass("lock")
   });
 
   $(".board24_cross").on("click", function () {
     meetPopup1.fadeOut();
     meetPopup2.fadeOut();
     meetPopup3.fadeOut();
+    $("body").removeClass("lock");
   });
 
   $(document).on("mouseup", function (e) {
@@ -91,6 +93,7 @@ $(document).ready(function () {
       meetPopup1.fadeOut(); // скрываем его
       meetPopup2.fadeOut(); // скрываем его
       meetPopup3.fadeOut(); // скрываем его
+      $("body").removeClass("lock");
     }
   });
 
@@ -111,6 +114,7 @@ $(document).ready(function () {
   // -------------------------------------------------
   $(".meet-content-line .icon-more").on("click", function () {
     meetPopup3.fadeIn();
+    
   });
 
   // -------------------------------------
@@ -466,7 +470,7 @@ closeTen.on("click", function () {
   let meetImg = $(".meet-content-line__img");
 
   $(".meet-content-line__tab").fadeOut(1);
-  $(".meet-content-line__tab-sub").fadeOut(1);
+  // $(".meet-content-line__tab-sub").fadeOut(1);
 
   meetImg.on("click", function () {
 
@@ -832,30 +836,30 @@ $(".board24_point-sub").on("click", function () {
 
   // --------------------
 
-  $(".board24_line-plaha__question").fadeOut(0);
+  // $(".board24_line-plaha__question").fadeOut(0);
 
-  $(".board24_line-plaha__button").on("click", function () {
-    let question = $(this).siblings(".board24_line-plaha__question");
-    if ($(this).hasClass("act")) {
-      question.fadeOut();
-      $(this).removeClass("act");
-      // $(this)
-        // .parent(".board24_line-plaha__item")
-        // .remove($(".board24_line-plaha__question"));
+  // $(".board24_line-plaha__button").on("click", function () {
+  //   let question = $(this).siblings(".board24_line-plaha__question");
+  //   if ($(this).hasClass("act")) {
+  //     question.fadeOut();
+  //     $(this).removeClass("act");
+  //     // $(this)
+  //       // .parent(".board24_line-plaha__item")
+  //       // .remove($(".board24_line-plaha__question"));
       
-    } else {
-      $(this).addClass("act");
-      question.fadeIn();
-      $(".board24_line-plaha__button")
-        .not($(this))
-        .removeClass("act")
-        .siblings(".board24_line-plaha__question").fadeOut();
+  //   } else {
+  //     $(this).addClass("act");
+  //     question.fadeIn();
+  //     $(".board24_line-plaha__button")
+  //       .not($(this))
+  //       .removeClass("act")
+  //       .siblings(".board24_line-plaha__question").fadeOut();
       
-      // $(this)
-        // .parent(".board24_line-plaha__item")
-        // .append($(".board24_line-plaha__question"));
-    }
-  });
+  //     // $(this)
+  //       // .parent(".board24_line-plaha__item")
+  //       // .append($(".board24_line-plaha__question"));
+  //   }
+  // });
 
   // -------------------
   let linePlahaTab = $(".board24_line-plaha__tab");

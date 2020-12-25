@@ -162,6 +162,7 @@ color: #FFFFFF;
 
   &__button-area {
     margin: 43px 0 0 0;
+
   }
 
   .board_24-popup-meet-3-button-area {
@@ -170,7 +171,7 @@ color: #FFFFFF;
     border: 1px solid #e5e5e5;
     box-sizing: border-box;
     border-radius: 4px;
-    padding: 21px 90px 24px 20px;
+    padding: 21px 82px 24px 20px;
     @include alis();
     &__title {
       font-family: OpenSans;
@@ -205,6 +206,15 @@ color: #FFFFFF;
       border-radius: 50%;
       @include center();
     }
+
+    ul{
+      @include jucb();
+      li:last-child{
+          margin: 0 12px 0 0!important;
+      }
+      }
+
+
   } // .board_24-popup-meet-3-button-area
 
   &__title1 {

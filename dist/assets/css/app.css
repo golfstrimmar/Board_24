@@ -1093,6 +1093,9 @@ h6 {
 .board24_page .board24_m0 {
   margin: 0 !important;
 }
+.lock {
+  overflow: hidden !important;
+}
 .board24_active {
   opacity: 1;
   visibility: visible;
@@ -6245,7 +6248,6 @@ hr {
   background-color: rgba(0, 0, 0, 0.56);
   overflow: visible;
   z-index: 1000;
-  padding: 50px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8391,7 +8393,7 @@ hr {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 21px 90px 24px 20px;
+  padding: 21px 82px 24px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8444,6 +8446,19 @@ hr {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+.board_24-popup-meet-3 .board_24-popup-meet-3-button-area ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.board_24-popup-meet-3 .board_24-popup-meet-3-button-area ul li:last-child {
+  margin: 0 12px 0 0 !important;
 }
 .board_24-popup-meet-3__title1 {
   font-family: OpenSans;
@@ -8634,7 +8649,7 @@ hr {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 9px 15px;
-  z-index: 5;
+  z-index: 5 !important;
 }
 .meet-content-line__tab:after {
   content: "";
@@ -8666,7 +8681,7 @@ hr {
   font-size: 20px;
 }
 .meet-content-line__tab-sub {
-  z-index: 5;
+  z-index: 5000 !important;
   position: relative;
   position: absolute;
   left: 245px;
@@ -8682,6 +8697,9 @@ hr {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 22px 15px;
+}
+.meet-content-line__tab-sub.act {
+  z-index: 5000 !important;
 }
 .meet-content-line__tab-sub .icon-more {
   position: absolute;
@@ -8866,6 +8884,12 @@ hr {
 }
 .board24_middle-mission .board24_meet-content .board24_meet-content__items {
   padding: 0 24px 25px;
+}
+.board24_middle-mission
+  .board24_meet-content
+  .board24_meet-content__items
+  .board24_meet-content-items__column {
+  z-index: 1;
 }
 .board24_middle-mission
   .board24_meet-content
@@ -10638,8 +10662,6 @@ body {
   -webkit-box-shadow: 0 4px 10px rgba(16, 156, 241, 0.24);
   box-shadow: 0 4px 10px rgba(16, 156, 241, 0.24);
   border-radius: 4px;
-}
-.board24_mob-tasks1 .board24_line-plaha .board24_button-act span {
   color: #fff !important;
 }
 .board24_mob-tasks1 .board24_line-plaha__text1 {

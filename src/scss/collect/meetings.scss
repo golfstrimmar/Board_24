@@ -197,8 +197,10 @@
       // ----------
       .meet-content-line {
         height: 52px;
+
         &__body {
           position: relative;
+          // !important
         }
         .board24_inter-forma {
           margin: 0 2.5% 0 0 !important;
@@ -265,7 +267,7 @@
   background-color: $white;
   box-sizing: border-box;
   padding: 9px 15px;
-  z-index: 5;
+  z-index: 5!important;
   &:after {
     content: "";
     background-color: $butterscotch;
@@ -293,7 +295,7 @@
 }
 
 .meet-content-line__tab-sub {
-  z-index: 5;
+  z-index: 5000!important;
   position: relative;
   position: absolute;
   left: 245px;
@@ -306,6 +308,9 @@
   background-color: $white;
   box-sizing: border-box;
   padding: 22px 15px;
+  &.act{
+    z-index: 5000!important;
+  }
   .icon-more {
     position: absolute;
     width: 20px;
