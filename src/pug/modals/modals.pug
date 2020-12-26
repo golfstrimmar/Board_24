@@ -1,0 +1,557 @@
+//- -------модалка выбора- кому создавать поручение(синяя кнопка)----везде-----
+mixin meet-popup2()
+  .board24_meet-popup2.board24_meet__popup
+    .board24_meet__overlay
+      .board24_meet__center.board24_jucc.board24_center.board24_island
+        span.board24_cross.icon-close2.close-js
+        .board24_meet__title.board24_ts-4 Вы хотите создать заседание самостоятельно, или дать поручение секретарю?
+        .board24_meet__buttons.board24_jucc
+          //- +button-empty("Создать поручение секретарю","#!")
+          .board24_button-empty
+            a.board24_button-empty__link.popup-init-js(href="#!" rel="board24_meet-popup3")  Создать поручение секретарю
+          .board24_button-blue
+            a.board24_button-blue__link.popup-init-js(href="#!" rel="board24_meet-popup1")  Создать поручение секретарю
+
+//------------Новое поручение (по кнопке создать поручение секретарю)-------везде
+mixin meet-popup3()
+  .board24_meet-popup3.board24_meet__popup 
+    .board24_meet__overlay
+      form.board24_middle-inter-5.board24_middle-inter.board24_middle-inter-2.board24_center.board24_island
+        span.board24_cross.icon-close2.close-js
+        .board24_inter__header.board24_inter6__header.board24_ts-4 Новое поручение 
+        //- inter-plaza
+        .board24_inter__plaza.board24_inter-plaza
+          .board24_inter-plaza__header.board24_ts-5 Название поручения 
+          .board24_inter-plaza__discription.board24_ts-6.board24_jucb  
+            input.board24_ts-6.board24_bot__input(type="text"  placeholder='Поручение №1234567890')
+            forma.board24_inter-forma.board24_flex 
+              .board24_flex.board24_inter-forma__item 
+                input.custom-checkbox(type="checkbox" name="i6" value="1" id="i6")
+                label.board24_text-small-blue.board24_ts-7(for="i6") Отметить как важное  
+          hr
+          //- area1
+          .board24_inter-plaza__text-area1.board24_area1 
+            textarea.board24_area1__input.board24_ts( type="text"  placeholder=" Leave a note here ..." )
+            .board24_js-data
+              .board24_area1__text
+                span.board24_ts Leave a note here ... 
+                span.board24_ts-6 
+
+            .board24_jucb
+              ul.board24_jucb
+                li
+                  a.board24_area1__img(href="#!") 
+                    img(src="assets/img/inter/vt-1.svg",   alt="img")
+                li
+                  a.board24_area1__img(href="#!")
+                    img(src="assets/img/inter/vt-2.svg",   alt="img")
+                li
+                  a.board24_area1__img(href="#!")
+                    img(src="assets/img/inter/vt-3.svg",   alt="img")
+              .board24_flex
+                .board24_area1__button 
+                  +button-color-cub("Отменить","pale-grey","#!")
+                .board24_area1__button
+                  +button-color-cub("Сохранить","silver","#!")
+          - 
+            items = [
+              { text: "Ответственный "},
+              { text: "Соисполнители "},
+              { text: "Наблюдатели "},
+            ]
+          each item in items
+            .board24-corvet
+              .board24-corvet__text=item.text
+              input.board24-corvet__text-area(type="text" placeholder="Добавить еще") 
+
+
+          //-         //- bots
+          .board24-corvet.board24-corvet-bot
+            .board24-corvet__text Крайний срок
+            .board24-corvet__text-area
+              //- bot
+              .board24_bot
+                .board24_bot__area
+                  input.board24_ts.board24_bot__input(type="text"  placeholder='')  
+                  img(src="assets/img/inter/schedule.svg",alt="img")
+              //- bot
+              .board24_bot
+                .board24_bot__area
+                  .board24_bot_data
+                    .board24_ts-7 Планирование сроков
+                      span.board24_form-span.icon-arrow_drop_down
+                    .board24_hidden.board24_inter-forma.board24_flex
+                      .board24_flex.board24_inter-forma__item.board24_inter-forma__item_last
+                        .board24_inter-forma__title Начать поручение:
+                        input.board24_inter-forma__item_cube(type="text")
+                        img(src="assets/img/inter/schedule.svg",alt="img")
+                      .board24_flex.board24_inter-forma__item.board24_inter-forma__item_last
+                        .board24_inter-forma__title Длительность:
+                        input.board24_inter-forma__item_cube(type="text")
+                      .board24_flex.board24_inter-forma__item.board24_inter-forma__item_last
+                        .board24_inter-forma__title Завершениe:
+                        input.board24_inter-forma__item_cube(type="text")
+                        img(src="assets/img/inter/schedule.svg",alt="img")
+
+              .board24_bot
+                .board24_bot__area
+                  .board24_bot_data
+                    .board24_ts-7 Дополнительно
+                      span.board24_form-span.icon-arrow_drop_down
+                    .board24_hidden.board24_inter-forma.board24_flex
+                      - 
+                        items = [
+                          { 
+                            title: "Разрешить ответственному менять сроки поручения&nbsp; ",
+                            value  : "Дата 1 ",
+                            id : "stage-choice-1",
+                            for : " stage-choice-1 ",
+                                },
+                          { 
+                            title: "Пропустить выходные и праздничные дни&nbsp; ",
+                            value  : "Дата 2 ",
+                            id : "stage-choice-2",
+                            for : " stage-choice-2 ",
+                                },
+                          { 
+                            title: "Принять работу после завершения поручения&nbsp; ",
+                            value  : "Дата 3 ",
+                            id : "stage-choice-3",
+                            for : " stage-choice-3 ",
+                                },
+                          { 
+                            title: "Добавить себе в избранное&nbsp;",
+                            value  : "Дата 4 ",
+                            id : "stage-choice-4",
+                            for : " stage-choice-4 ",
+                                },
+                          { 
+                            title: "Добавить в план рабочего дня&nbsp; ",
+                            value  : "Дата 5 ",
+                            id : "stage-choice-5",
+                            for : " stage-choice-5 ",
+                                },
+                          { 
+                            title: "Сроки определяются сроками подпоручений&nbsp;",
+                            value  : "Дата 6 ",
+                            id : "stage-choice-6",
+                            for : " stage-choice-6 ",
+                                },
+                          { 
+                            title: "Автоматически завершать поручение при завершении подзадач (и  наоборот)&nbsp; ",
+                            value  : "Дата 7 ",
+                            id : "stage-choice-7",
+                            for : " stage-choice-7 ",
+                                },
+                        ]
+
+
+                      each item in items
+                        .board24_flex.board24_inter-forma__item 
+                          input.custom-checkbox(type="radio" name="stage-choice1"      value=item.value  id=item.id)
+                          label(for=item.for)=item.title
+                            span
+                              i ?
+
+            //- corvet
+          .board24-corvet.board24-corvet-add
+            .board24-corvet__text-area
+              .board24-corvet__text.board24-corvet__text-add Дополнительно
+                span.board24_form-span.icon-arrow_drop_down
+              .board24-corvet__drop
+
+          .board24_inter__buttons.board24_jucs
+              forma.board24_inter-forma.board24_flex 
+                .board24_flex.board24_inter-forma__item 
+                  input.custom-checkbox(type="checkbox" name="i5" value="1" id="i5")
+                  label.board24_ts-7-b(for="i5") Сохранить как шаблон
+              +button-empty("Отменить","#!") 
+              +button-blue("Поставить поручение","#!")
+
+//- -------Собрать заседание самостоятельно		--везде -----------
+mixin meet-popup1()
+  .board24_meet-popup1.board24_meet__popup
+    .board24_meet__overlay
+      section.board24_middle-inter-6.board24_middle-inter-2.board24_inter6.board24_center.board24_island
+          span.board24_cross.icon-close2.close-js
+          .board24_inter6__header.board24_ts-4 Создать заседание
+          .board24_inter6__inter-plaza1.board24_inter-plaza
+            .board24_bot.board24_meet-up
+              .board24_bot__text.board24_ts-5 Название заседания
+              input.board24_ts-6.board24_bot__input(type="text"  placeholder='Office meet-up')
+              //- .board24_bot__text-area.board24_js-data 
+            hr
+            .board24_bot.board24_meet-up
+              .board24_bot__text.board24_ts-5 Тема 
+              input.board24_ts-6.board24_bot__input(type="text"  placeholder='Office meet-upOffice meet-upOffice meet-up')
+              //- .board24_bot__text-area.board24_js-data
+            hr
+            .board24_inter-plaza__bots.board24-corvet.board24-bots
+              .board24-corvet__text-area
+                //- bot
+                .board24_bot
+                  .board24_bot__text.board24_ts-5 Дата
+                  .board24_bot__text-area.board24_js-data
+                    input.board24_ts.board24_bot__input.board24_bot__input_data(type="text"  placeholder='Введите дату')
+                    .board24_bot__in-text.board24_ts-5 
+                    img(src="assets/img/inter/schedule.svg",alt="img")  
+                bot
+                .board24_bot
+                  .board24_bot__text.board24_ts-5 Время 
+                  .board24_bot__text-area.board24_js-data  
+                    input.board24_ts.board24_bot__input.board24_bot__input_data(type="text"  placeholder='Укажите время') 
+                    span.icon-arrow_drop_down
+            .board24-corvet.board24_m8
+              .board24-corvet__text.board24_ts-5 Тип
+              .board24-corvet__text-area.board24-corvet__text-area_select
+                select.js-example-basic-single( name="BOARD24_TYPE") 
+                  option(value="123")  Тест 
+                            //- ------------------
+            .board24-corvet.board24_m8 
+              .board24-corvet__text.board24_ts-5 Председатель:
+              .board24-corvet__text-area   
+                a.board24-corvet__in-text(href="#!").board24_ts.board24_alic.board24_jucb 
+                  span.board24_ts-6 Совет директоров
+                  span.icon-close2
+            .board24-corvet.board24_m8 
+              .board24-corvet__text.board24_ts-5 Секретарь:
+              .board24-corvet__text-area   
+                a.board24-corvet__in-text(href="#!").board24_ts.board24_alic
+                  span.board24_ts-29 Добавить 
+            .board24-corvet.board24_m8 
+              .board24-corvet__text.board24_ts-5 Участник,без права голоса
+              .board24-corvet__text-area   
+                a.board24-corvet__in-text(href="#!").board24_ts.board24_alic.board24_jucb
+                  span.board24_ts-6 Совет директороов
+                  span.icon-close2
+            .board24-corvet.board24_m8 
+              .board24-corvet__text.board24_ts-5 Участник,с правом голоса
+              .board24-corvet__text-area   
+                a.board24-corvet__in-text(href="#!").board24_ts.board24_alic
+                  span.board24_ts-29 Добавить 
+                  span.board24_ts 
+            .board24-corvet.board24_m8 
+              .board24-corvet__text.board24_ts-5 Коллегиальный орган
+              .board24-corvet__text-area 
+                a.board24-corvet__in-text(href="#!").board24_ts.board24_alic
+                  span.board24_ts-29 Добавить 
+                  span.board24_ts 
+            .board24-corvet.board24_m8 
+              .board24-corvet__text.board24_ts-5 Место проведения
+              .board24-corvet__text-area   
+                a.board24-corvet__in-text(href="#!").board24_ts.board24_alic
+                  span.board24_ts-29 Добавить 
+                  span.board24_ts
+            .board24_inter6__title1.board24_ts-5 Описание задачи
+            .board24_inter-plaza__text-area1.board24_area1 
+              .board24_js-data
+                textarea.board24_bot__input.board24_bot__input_one.board24_ts( type="text"  placeholder=" Leave a note here ..." )
+                .board24_area1__text.board24_ts
+                  span.board24_ts Leave a note here..
+                  span Lorem ipsum dolor sit, amet consectetur adipisicing Doloremque eligendi       quibusdam hic, dolorem, laboriosam vero blanditiis labore ex quo autem,    dolores     similique sapiente Officia saepe autem delectus perspiciatis!
+              .board24_jucb
+                .board24_jucb
+                  a.board24_area1__img(href="#!") 
+                    img(src="assets/img/inter/vt-1.svg",   alt="img")
+                  a.board24_area1__img(href="#!")
+                    img(src="assets/img/inter/vt-2.svg",   alt="img")
+                  a.board24_area1__img(href="#!")
+                    img(src="assets/img/inter/vt-3.svg",   alt="img")
+                .board24_flex
+                  .board24_area1__button 
+                    +button-color-cub("Отменить","pale-grey","#!")
+                  .board24_area1__button
+                    +button-color-cub("Сохранить","silver","#!")
+          .board24_inter6__inter-plaza2.board24_inter-plaza.inter6-plaza2
+            span.icon-close2
+            .inter6-plaza2__corvet.board24-corvet
+              .board24-corvet__text.board24_ts-5 Вопрос №1
+              input.board24_ts.board24_bot__input.board24-corvet__text-area(type="text"  placeholder='Описание вопроса')
+              .board24-corvet__text-area
+                .board24_js-data
+                  a.board24-corvet__in-text(href="#!").board24_ts  
+                    span.board24_ts-8 Описание вопроса 
+                    span.board24_ts 
+                      img(src="assets/img/inter/edit.svg",alt="img") 
+
+            .inter6-plaza2__corvet.board24-corvet.board24_m8
+              .board24-corvet__text.board24_ts-5 Докладчик:
+              .board24-corvet__text-area   
+                a.board24-corvet__in-text(href="#!").board24_ts
+                  span.board24_ts-8  Константин Константинопольский 
+                  span.board24_ts 
+                a.board24-corvet-a.board24_ts-29(href="#!") &nbsp + Добавить докладчика  
+                img(src="assets/img/inter/edit.svg",alt="img")
+            .inter6-plaza2__corvet.board24-corvet.board24_m8
+              .board24-corvet__text.board24_ts-5 Проект решение №1
+              input.board24_ts.board24_bot__input.board24-corvet__text-area(type="text"  placeholder='Текст описание проект решения') 
+              .board24-corvet__text-area   
+                .board24_js-data
+                  a.board24-corvet__in-text(href="#!").board24_ts
+                    span.board24_ts-8 Текст описание проект решения 
+                    span.board24_ts 
+                      img(src="assets/img/inter/edit.svg",alt="img") 
+            +button-empty("Добавить проект решения","#!")
+          .board24_inter6__buttons.board24_m24.board24_alic 
+              +button-blue("Добавить вопрос","#!")
+              +button-empty("Добавить из засседания","#!")
+              +button-empty("Добавить из поручения","#!")
+          .board24_inter6__buttons1.board24_inter__buttons.board24_jucc.board24_m34
+              +button-empty("Отменить","#!") 
+              +button-blue("Создать заседание","#!")
+
+
+
+//- 
+
+//- //- ============meet-1=====Повестка заседания==== кнопка добавить из заседания
+mixin meet-1__popup1()
+  .board24_meet-1__meetings.board24_meet__popup.board24_meet-1__popup1
+    .board24_meet__overlay
+      .board24_meet__center.board24_island
+        span.board24_cross.icon-close2.close-js
+        .board24_meet__title.board24_ts-4 Повестка заседания
+        .board24_meet__title.board24_ts-4 
+          span  «
+          span Заседание Совета директоров от 31 мая
+          span  »
+        .board24_meet__buttons.board24_jucc
+          +button-empty("Отклонить ","#!")
+          +button-blue("Утвердить","#!")
+        .board24_inter__comments.board24_inter-comments
+          .board24_inter-comments__title.board24_ts-2 Комментарии
+          .board24_inter-comments__block
+            .board24_inter-comments__plaha
+              textarea( type="text"  placeholder=" Добавить комментарий..." )
+              span.icon-edit
+            .board24_inter-comments__shef
+              img(src="assets/img/main/image-1.png",alt="img")
+
+//- //- ===========meet-1========Утверждение протокола=========кнопка добавить из поручения
+mixin meet-1__popup2()
+  .board24_meet-1__statement.board24_meet__popup.board24_meet-1__popup1.board24_meet-1__popup2
+    .board24_meet__overlay
+      .board24_meet__center.board24_island
+        span.board24_cross.icon-close2.close-js
+        .board24_meet__title.board24_ts-4 Утверждение протокола
+        .board24_meet__title.board24_ts-4 
+          span  «
+          span Заседание Совета директоров от 31 мая
+          span  »
+        .board24_m19
+        .board24_middle-inter-4__box1.board24_inter-4-box1.board24_tab-js 
+          .board24_inter-4-box1__tab.board24_alic
+            span.board24_ts-24 Протокол заседания
+            span.board24_inter-4-box1__tab-span  DOCX, PDF
+            +arrow-download
+        .board24_m8
+        .board24_middle-inter-4__box1.board24_inter-4-box1.board24_tab-js 
+          .board24_inter-4-box1__tab.board24_alic
+            span.board24_ts-24.board24_inter-4-box1__title Статистика
+            span.icon-arrow_drop_down
+            .board24_inter-4-box1__drop
+              .board24_inter-4-box1__color-bar.board24_flex
+                a.board24_box1-color-bar__item.board24_box1-color-bar__item_green(href="#!")
+                a.board24_box1-color-bar__item.board24_box1-color-bar__item_green(href="#!")
+                a.board24_box1-color-bar__item.board24_box1-color-bar__item_green(href="#!")
+                a.board24_box1-color-bar__item.board24_box1-color-bar__item_green(href="#!")
+                a.board24_box1-color-bar__item.board24_box1-color-bar__item_green(href="#!")
+                a.board24_box1-color-bar__item.board24_box1-color-bar__item_scotch(href="#!")
+                a.board24_box1-color-bar__item.board24_box1-color-bar__item_scotch(href="#!")
+                a.board24_box1-color-bar__item.board24_box1-color-bar__item_scotch(href="#!")
+                a.board24_box1-color-bar__item.board24_box1-color-bar__item_scotch(href="#!")
+                a.board24_box1-color-bar__item.board24_box1-color-bar__item_scotch(href="#!")
+              .board24_inter-4-box1__statistic.board24_alic   
+                span.board24_ts-2 Статус: 
+                .box1-statistic1.board24_ts-38 &nbsp 5 «За» |
+                .box1-statistic1.board24_ts-38 &nbsp 2 «Против» |
+              .board24_inter-4-box1__item
+                span.board24_ts-8 Вопрос из заседания: 
+                span.board24_ts-25  &nbsp №331 Заседание Совета дир ...
+              .board24_inter-4-box1__item
+                span.board24_ts-8 Дата:
+                span.board24_ts-9  &nbsp 12.02.2020 | 17:00
+        .board24_m8
+        .board24_middle-inter-4__box1.board24_inter-4-box1.board24_tab-js
+            .board24_inter-4-box1__tab.board24_alic
+              span.board24_ts-24.board24_inter-4-box1__title Комментарии
+              span.icon-arrow_drop_down
+              .board24_inter-4-box1__drop Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quasi velit rem totam ex ullam ad dicta cum tempore quod magnam  exercitationem, atque veritatis voluptas necessitatibus suscipit doloribus aliquid consequuntur.
+        .board24_meet__buttons.board24_jucc
+          +button-empty("Отклонить ","#!")
+          +button-blue("Утвердить","#!")
+        .board24_inter__comments.board24_inter-comments
+          .board24_inter-comments__title.board24_ts-2 Комментарии
+          .board24_inter-comments__block
+            .board24_inter-comments__plaha
+              textarea( type="text"  placeholder=" Добавить комментарий..." )
+              span.icon-edit
+            .board24_inter-comments__shef
+              img(src="assets/img/main/image-1.png",alt="img")
+
+//- //- ================кнопка==Добавить вопрос================meet-1=====================================================
+mixin meet-1__popup3()
+  #board24_person-meet-popup-add-voice.board24_person-meet-popup-add-voice.board24_meet__popup.board24_meet-1__popup1
+    .board24_meet__overlay
+      .board24_popup__body.board24_fdc.board24_meet__center.board24_island
+        span.icon-close2.close-js
+        .board24_meet-mob-title Добавление нового вопроса
+        .inter6-plaza2__corvet.board24-corvet
+          .board24-corvet__text.board24_ts-5 Вопрос №1
+          input(type="text"  placeholder='Описание вопроса')
+          span.board24_ts 
+            img(src="assets/img/inter/edit.svg",alt="img") 
+        .inter6-plaza2__corvet.board24-corvet
+          .board24-corvet__text.board24_ts-5 Докладчик:
+          input(type="text"  placeholder='Константин Константинопольский ')
+          a.board24-corvet-a.board24_ts-29(href="#!") &nbsp + Добавить докладчика 
+          span.board24_ts 
+            img(src="assets/img/inter/edit.svg",alt="img") 
+        .inter6-plaza2__corvet.board24-corvet
+          .board24-corvet__text.board24_ts-5 Проект решения №1		
+          input(type="text"  placeholder='Текст описание проект решения')
+          span.board24_ts 
+            img(src="assets/img/inter/edit.svg",alt="img") 
+        .board24_corvet__area-buttons
+          .board24_button-empty
+            a.board24_button-empty__link(href="#!") Добавить проект решения
+          .board24_button-empty.board24_button-empty_orange
+            a.board24_button-empty__link(href="#!") Утвердить повестку дня
+          .board24_button-empty.board24_button-empty_green
+            a.board24_button-empty__link(href="#!") Начать заседание
+          .board24_button-empty.board24_button-empty_red
+            a.board24_button-empty__link(href="#!") 
+        .board24_inter6__buttons1.board24_inter__buttons.board24_jucc.board24_m34
+          forma.board24_inter-forma
+            .board24_inter-forma__item 
+              input.custom-checkbox(type="checkbox" name="meet1" value="1" id="meet1")
+              label.board24_ts-7-b(for="meet1") Сделать поручением	
+          +button-empty("Отменить","#!") 
+          +button-blue("Сохранить","#!")
+
+//- //- ======meet-1============карандашик
+
+mixin meet-1__popup4()
+  #board24_middle-inter-10.board24_middle-inter-10.board24_meet__popup
+    .board24_meet__overlay
+      section.board24_middle-inter-2.board24_middle-inter-4.board24_middle-inter-10.board24_island
+        span.board24_cross.icon-close2.close-js
+        .board24_middle-inter-4__title.board24_ts-4 Собрание совета директоров по центральному региону от 13.11.19
+        .board24_middle-inter-4__p1.board24_inter-plaza
+          .inter6-plaza2__corvet.board24-corvet
+            .board24-corvet__text.board24_ts-5 Вопрос №1
+            input.board24_ts.board24_bot__input.board24-corvet__text-area(type="text"  placeholder='Вопрос решения проекта для совета директоров')
+            img(src="assets/img/inter/edit.svg",alt="img") 
+          .board24-corvet
+            .board24-corvet__text.board24_ts-5 Категория
+            .board24-corvet__text-area.board24-corvet__text-area_select
+              select.js-example-basic-single( name="BOARD24_TYPE") 
+                option(value="123")  Корпоративное управление 
+          .board24-corvet
+            .board24-corvet__text.board24_ts-5 Категория
+            .board24-corvet__text-area.board24-corvet__text-area_select
+              select.js-example-basic-single( name="BOARD24_TYPE") 
+                option(value="123")  Корпоративное управление 
+        .board24_middle-inter-10__text Описание
+        .board24_area1 
+          textarea.board24_area1__text( type="text"  placeholder=" Leave a note here ..." )
+          .board24_jucb
+            .board24_jucb
+              a.board24_area1__img(href="#!") 
+                img(src="assets/img/inter/vt-1.svg",   alt="img")
+              a.board24_area1__img(href="#!")
+                img(src="assets/img/inter/vt-2.svg",   alt="img")
+              a.board24_area1__img(href="#!")
+                img(src="assets/img/inter/vt-3.svg",   alt="img")
+            .board24_flex
+              .board24_area1__button 
+                +button-color-cub("Отменить","pale-grey","#!")
+              .board24_area1__button
+                +button-color-cub("Сохранить","silver","#!")
+        +button-blue("+ Добавить файл","#!")
+        .board24_middle-inter-4__p1.board24_inter-plaza.board24_middle-inter-4__p1_next
+          .inter6-plaza2__corvet.board24-corvet
+            .board24-corvet__text.board24_ts-5 Вопрос №2
+            input.board24_ts.board24_bot__input.board24-corvet__text-area(type="text"  placeholder='Вопрос решения проекта для совета директоров')
+            img(src="assets/img/inter/edit.svg",alt="img") 
+          .inter6-plaza2__corvet.board24-corvet
+            .board24-corvet__text.board24_ts-5 Ответ №1
+            input.board24_ts.board24_bot__input.board24-corvet__text-area(type="text"  placeholder='Проект решения №1')
+            img(src="assets/img/inter/edit.svg",alt="img") 
+          .inter6-plaza2__corvet.board24-corvet
+            .board24-corvet__text.board24_ts-5 Ответ №2
+            input.board24_ts.board24_bot__input.board24-corvet__text-area(type="text"  placeholder='Проект решения от 12.08.11')
+            img(src="assets/img/inter/edit.svg",alt="img") 
+        .board24_middle-inter-4__box2.board24_inter-4-box2.board24_tab-js
+          .board24_inter-4-box2__title.board24_inter-4-box1__title.board24_ts-24 Задачи
+          span.icon-arrow_drop_down
+          .board24_inter-4-box1__drop 
+            .board24_inter-4-box2__menu.board24_flex
+              .board24_inter-4-box2__menu-item.board24_inter-4-box2__menu-item_active.board24_ts Список     
+              .board24_inter-4-box2__menu-item.board24_ts Добавить новую задачу   
+              .board24_inter-4-box2__menu-item.board24_ts Привязать к существующей задаче     
+            hr
+            .board24_inter-4-box2__rezult.board24_ts-6 Нет активных задач 
+            hr
+            .board24_inter-4-box2__buttons.board24_flex
+              forma.board24_inter-forma.board24_flex 
+                .board24_flex.board24_inter-forma__item 
+                  input.custom-checkbox(type="checkbox" name="i17" value="1" id="i17")
+                  label.board24_ts-11(for="i17") Для всех 
+              .board24_inter-4-box2__rect
+                span.icon-arrow_drop_down
+              +button-blue("Применить","#!")
+        +button-blue("Сохранить","#!")
+
+//- //- ==============================Статистика утверждение повестки по заседанию============================================================
+mixin meet-1__popup5()
+  #board24_person-meet-popup.board24_person-meet-popup.board24_meet__popup
+    .board24_meet__overlay
+      .board24_popup__body.board24_fdc.board24_meet__center.board24_island
+        span.board24_cross.icon-close2.close-js
+        .board24_popup__title.board24_ts-22 Статистика утверждение повестки по заседанию
+        .board24_popup__discription.board24_ts-42 Утверждении отчета о соблюдении принципов и положений Кодекса корпоративного управления.
+        - for (var x = 0; x < 16; x++)
+          .board24_popup__plaha.board24_popup-plaha.board24_m18 
+            .board24_popup-plaha__body
+              a.board24_avatar-name(href="#!")
+                img(src="assets/img/main/image-1.png",alt="img")
+                .board24_board24_avatar-name__name
+                  p Эдил Нургожин
+                  p Председатель Совета директоров 
+              .board24_avatar-link.board24_ts-42(href="#!") Утверждено
+
+  //- --------------meet-3 плюсик на----------------------
+mixin popup-meet-3()
+  #board_24-popup-meet-3.board_24-popup-meet-3.board_24-popup-meet-3.board24_meet__popup
+    .board24_meet__overlay
+      .board24_popup__body.board24_fdc.board24_meet__center.board24_island
+        span.board24_cross.icon-close2.close-js
+        .board_24-popup-meet-3__title Добавление голоса от участника
+        .board_24-popup-meet-3__text1 Вопрос №1
+        .board_24-popup-meet-3__text2 Об утверждении отчета о соблюдении принципов и положений  Кодекса корпоративного управления.
+        .board_24-popup-meet-3__text3 Проект–решения №1
+        .board_24-popup-meet-3__text4 Утвердить план работы Совета директоров на 2019 год,  согласно приложению № 1.
+        a.board24_avatar-name(href="#!")
+          img(src="assets/img/main/image-1.png",alt="img")
+          .board24_board24_avatar-name__name
+            p Куатова Айнур Саиновна
+            p Управляющий директор, член Совета Директоров
+        .board_24-popup-meet-3__button-area.board_24-popup-meet-3-button-area
+          .board_24-popup-meet-3-button-area__title Бюллетень
+          ul
+            li.board24_buttons__button.board24_button-empty
+              a.board24_button-empty__link(href="!#") За
+            li.board24_buttons__button.board24_button-empty
+              a.board24_button-empty__link(href="!#") Против
+            li.board24_buttons__button.board24_button-blue
+              a.board24_button-blue__link(href="!#") Воздержался
+          a.board_24-popup-meet-3-button-area__reference(href="#!") ?
+        .board_24-popup-meet-3__title1 Особое мнение
+        .board_24-popup-meet-3__area-opinion
+          textarea( type="text"  placeholder=" Leave a note here ..." )
+          img(src="assets/img/inter/edit.svg",alt="img")
+        .board_24-popup-meet-3__save
+          .board_24-popup-meet-3__text5 Версия сохранена от 12:43, 11.09.2019
+          .board24_button-blue
+            a.board24_button-blue__link(href="!#") Сохранить особое мнение

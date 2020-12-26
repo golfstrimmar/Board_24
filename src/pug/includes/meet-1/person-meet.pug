@@ -1,9 +1,19 @@
 include ../../common/mixins
+include ../../modals/modals
+
+//- синяя кнопка создать заседание
++meet-popup2
+//- собрать заседани самостоятельно
++meet-popup1
+//- создать поручение секретарю
++meet-popup3
+
+
 
 section#person.board24_person.board24_person-meet
   .board24_person__body
-    .board24_create-meeting1
-      +button-blue("Создать заседание","#!")
+    .board24_button-blue.board24_create-meeting1
+      a.board24_button-blue__link.popup-init-js(href="#!" rel="board24_meet-popup2") Создать заседание  
     .board24_person__cabinet.board24_m15.board24_person-cabinet
       .board24_person-cabinet__body.board24_fdc
         .board24_person-cabinet__band.board24_center 
@@ -135,7 +145,6 @@ section#person.board24_person.board24_person-meet
             hr
 
 
-include ../meet/meetPopups
 
 
 

@@ -1,4 +1,7 @@
 include ../../common/mixins
+include ../../modals/modals
+
++popup-meet-3
 
 section.board24_middle.board24_middle-group.board24_middle-meet-1.board24_middle-meet-3
   .board24_middle__body
@@ -69,7 +72,7 @@ section.board24_middle.board24_middle-group.board24_middle-meet-1.board24_middle
                       img.board24_text1-band-img.board24_img1(src="assets/img/meet/Vector2.svg",alt="img")
                       img.board24_text1-band-img.board24_img2(src="assets/img/meet/Vector2.svg",alt="img")
                       
-                      .board24_text1-band-img.board24_text1-band-img_marker.board24_img2
+                      a(href="#!" rel="board_24-popup-meet-3").popup-init-js.board24_text1-band-img.board24_text1-band-img_marker.board24_img2
                         span
 
                       .board24_text1-band-img.board24_img3_minus -
@@ -85,9 +88,9 @@ section.board24_middle.board24_middle-group.board24_middle-meet-1.board24_middle
                     .board24_text1-band
                       img.board24_text1-band-img.board24_img1(src="assets/img/meet/Vector2.svg",alt="img")
                       img.board24_text1-band-img.board24_img2(src="assets/img/meet/Vector2.svg",alt="img")
-                      .board24_text1-band-img.board24_text1-band-img_marker.board24_img2
+                      a(href="#!" rel="board_24-popup-meet-3").popup-init-js.board24_text1-band-img.board24_text1-band-img_marker.board24_img2
                         span
-                      .board24_text1-band-img.board24_text1-band-img_marker.board24_img2
+                      a(href="#!" rel="board_24-popup-meet-3").popup-init-js.board24_text1-band-img.board24_text1-band-img_marker.board24_img2
                         span
                       .board24_text1-band-img.board24_img3_minus -
                       img.board24_text1-band-img.board24_img3(src="assets/img/meet/Vector1.svg",alt="img") 
@@ -239,36 +242,5 @@ section.board24_middle.board24_middle-group.board24_middle-meet-1.board24_middle
                     +chef()
 
 
-#board_24-popup-meet-3.board_24-popup-meet-3
-    .board_24-popup-meet-3__overlay
-    .board24_popup__body.board24_fdc
-      span.board24_cross.icon-close2
-      .board_24-popup-meet-3__title Добавление голоса от участника
-      .board_24-popup-meet-3__text1 Вопрос №1
-      .board_24-popup-meet-3__text2 Об утверждении отчета о соблюдении принципов и положений Кодекса корпоративного управления.
-      .board_24-popup-meet-3__text3 Проект–решения №1
-      .board_24-popup-meet-3__text4 Утвердить план работы Совета директоров на 2019 год, согласно приложению № 1.
-      a.board24_avatar-name(href="#!")
-        img(src="assets/img/main/image-1.png",alt="img")
-        .board24_board24_avatar-name__name
-          p Куатова Айнур Саиновна
-          p Управляющий директор, член Совета Директоров
-      .board_24-popup-meet-3__button-area.board_24-popup-meet-3-button-area
-        .board_24-popup-meet-3-button-area__title Бюллетень
-        ul
-          li.board24_buttons__button.board24_button-empty
-            a.board24_button-empty__link(href="!#") За
-          li.board24_buttons__button.board24_button-empty
-            a.board24_button-empty__link(href="!#") Против
-          li.board24_buttons__button.board24_button-blue
-            a.board24_button-blue__link(href="!#") Воздержался
-        a.board_24-popup-meet-3-button-area__reference(href="#!") ?
-      .board_24-popup-meet-3__title1 Особое мнение
-      .board_24-popup-meet-3__area-opinion
-        textarea( type="text"  placeholder=" Leave a note here ..." )
-        img(src="assets/img/inter/edit.svg",alt="img")
-      .board_24-popup-meet-3__save
-        .board_24-popup-meet-3__text5 Версия сохранена от 12:43, 11.09.2019
-        .board24_button-blue
-          a.board24_button-blue__link(href="!#") Сохранить особое мнение
+
 

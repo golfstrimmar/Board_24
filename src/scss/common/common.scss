@@ -133,15 +133,6 @@ body {
   @include alic();
 }
 
-span.board24_cross {
-  width: 10px;
-  height: 10px;
-  color: $cloudy-blue;
-  position: absolute;
-  font-size: 10px;
-  top: 10px;
-  right: 10px;
-}
 
 // ------------------------------------------------
 #workarea-content {
